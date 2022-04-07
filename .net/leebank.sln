@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{0D1D8D6F-59B7-4BAA-86F7-B58DE4B61D71}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+		..\database\scripts.sql = ..\database\scripts.sql
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "api", "api\api.njsproj", "{F49D2AC4-79CB-4A78-94AF-B0FB31B590D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "middleware", "middleware", "{74011CA2-F7C4-493D-B4AC-74222446C634}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "website\", "{FBB73B65-8D88-4CF4-8EA6-AC387705C8D6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61768"
+		Debug.AspNetCompiler.PhysicalPath = "website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61768\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61768"
+		Release.AspNetCompiler.PhysicalPath = "website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61768\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61768"
+		SlnRelativePath = "website\"
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "integration", "middleware\integration\integration.njsproj", "{6CE97BDF-56F2-4B73-A62B-D510C0BD356C}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "service", "middleware\service\service.njsproj", "{C5E58079-0AFD-4267-B110-DA5189B1CFC5}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "common", "middleware\common\common.njsproj", "{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F49D2AC4-79CB-4A78-94AF-B0FB31B590D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49D2AC4-79CB-4A78-94AF-B0FB31B590D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49D2AC4-79CB-4A78-94AF-B0FB31B590D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49D2AC4-79CB-4A78-94AF-B0FB31B590D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB73B65-8D88-4CF4-8EA6-AC387705C8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB73B65-8D88-4CF4-8EA6-AC387705C8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB73B65-8D88-4CF4-8EA6-AC387705C8D6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB73B65-8D88-4CF4-8EA6-AC387705C8D6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E58079-0AFD-4267-B110-DA5189B1CFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E58079-0AFD-4267-B110-DA5189B1CFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E58079-0AFD-4267-B110-DA5189B1CFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E58079-0AFD-4267-B110-DA5189B1CFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C} = {74011CA2-F7C4-493D-B4AC-74222446C634}
+		{C5E58079-0AFD-4267-B110-DA5189B1CFC5} = {74011CA2-F7C4-493D-B4AC-74222446C634}
+		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85} = {74011CA2-F7C4-493D-B4AC-74222446C634}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1B50201-FF48-407B-9715-DE40B52678C1}
+	EndGlobalSection
+EndGlobal

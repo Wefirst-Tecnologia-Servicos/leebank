@@ -1,0 +1,14 @@
+{
+  "doubsEMail": {
+    "template": {
+      "subject": "WebSite LeeBank: Tire suas duvidas",
+      "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
+      "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
+    },
+    "sendGrid": {
+      "sender": "victorprospero@hotmail.com",
+      "recipient": "zagnole@wefirst.com.br",
+      "apiKey": "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"
+    }
+  }
+}
