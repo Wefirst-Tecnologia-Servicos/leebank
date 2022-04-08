@@ -17,10 +17,6 @@
 * LeeBank API for Currency Conversion;
 * Out of Scope Menu Items;
 
-## DOING
-
-* Conformation modal after mail sending;
-
 ## DONE
 
 * ~~Database Generated with [Cockroach Labs](https://www.cockroachlabs.com/);~~
