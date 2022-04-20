@@ -1,0 +1,195 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>website</Name>
+    <RootNamespace>website</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ea3dc0de-929d-4814-8c5a-ffdc7e4649ee</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="frontend\about-insurance.html" />
+    <Content Include="frontend\card-machine.html" />
+    <Content Include="frontend\cash.html" />
+    <Content Include="frontend\css\index.css" />
+    <Content Include="frontend\download\LeeBank_Politicas_de_Privacidade.pdf" />
+    <Content Include="frontend\download\LeeBank_QRCode_App.png" />
+    <Content Include="frontend\download\LeeBank_Termos_de_Uso_de_Consetimentos_de_Dados.pdf" />
+    <Content Include="frontend\exchange-legal-person.html" />
+    <Content Include="frontend\exchange-natural-person.html" />
+    <Content Include="frontend\img\046eb6b1ab0933f6ea969ab94c99462d.jfif" />
+    <Content Include="frontend\img\0e9e147efe961816dff61378ff15ff68.jfif" />
+    <Content Include="frontend\img\0f895227f21a862a5dd9991e22fe6ec7.png" />
+    <Content Include="frontend\img\1c43d4f0c76ef9b4f1483d6ac8e9ff2f.png" />
+    <Content Include="frontend\img\220a7f1c9222af41cf345b17a667d08f.jfif" />
+    <Content Include="frontend\img\2fc019317f471750193f71c7c7ab9656.jfif" />
+    <Content Include="frontend\img\3d3806bcdb3bdde163f493023b1af01a.png" />
+    <Content Include="frontend\img\41c38f5b582cabfc519e188542602397.jfif" />
+    <Content Include="frontend\img\4b32b74b2de8db13ec5184db6c7d5275.jfif" />
+    <Content Include="frontend\img\4ca5c89c5d2b0c25c1834590175d929a.png" />
+    <Content Include="frontend\img\4e3a6c6ae695f0145684a1a8b76d7d18.png" />
+    <Content Include="frontend\img\51b64c822c595f5da0e09804f6c14415.jfif" />
+    <Content Include="frontend\img\677ddbbc0d235ae04c059324ed23d924.jfif" />
+    <Content Include="frontend\img\6ce0f5045ecb391eb64b94368664838e.png" />
+    <Content Include="frontend\img\6f57c5de0beba1ff23ae223480c834dd.png" />
+    <Content Include="frontend\img\82524c39e454d9a2a5bb3da3364665fe.jfif" />
+    <Content Include="frontend\img\90f829907f3adfb0f329c655dac6a196.png" />
+    <Content Include="frontend\img\98df9fca26822b51d28d5c0cf8371731.png" />
+    <Content Include="frontend\img\99b6bae1c911c35ecc1dce6f94d9fe5e%28editado%29.png" />
+    <Content Include="frontend\img\99b6bae1c911c35ecc1dce6f94d9fe5e.png" />
+    <Content Include="frontend\img\9cca282885826da5123c2c814eeec4b6.png" />
+    <Content Include="frontend\img\9f79467bc9b461739b1313b67acc87ef.jfif" />
+    <Content Include="frontend\img\a27740fe76f06709d520543b075b7091.png" />
+    <Content Include="frontend\img\a5ca5bd8d5bc6349f4da07d89790096b.jfif" />
+    <Content Include="frontend\img\b1aa37d6ca0cf5e58e82da2480b7a660.jfif" />
+    <Content Include="frontend\img\b58f79f5c830ea551d85a61a6edcb1c3.png" />
+    <Content Include="frontend\img\b890a1f74f39f73b0e23c362442fc628.jfif" />
+    <Content Include="frontend\img\bf9d291b610b819c3ad57519b5d12b9b.png" />
+    <Content Include="frontend\img\c787c356b7b74b28975cb2598bca5fec.png" />
+    <Content Include="frontend\img\cf7145b7a361fae6e969674353625d61.jfif" />
+    <Content Include="frontend\img\dc712c0cbcfed6ddb8e162bf8062ff26.png" />
+    <Content Include="frontend\img\ddea292f06af13a44b0866b24d3dbd22.png" />
+    <Content Include="frontend\img\def5c6d043740ef33b726036b861c969.png" />
+    <Content Include="frontend\img\e371957e7cd032d2115d348937361bdb.png" />
+    <Content Include="frontend\img\ea3f28c609bc015d272962a1a8bf94fe.png" />
+    <Content Include="frontend\img\f406d1ca552723f51440795a6154124f.jfif" />
+    <Content Include="frontend\index.html" />
+    <Content Include="frontend\insurance.html" />
+    <Content Include="frontend\investments.html" />
+    <Content Include="frontend\js\app\app.js" />
+    <Content Include="frontend\js\app\dictionary.js" />
+    <Content Include="frontend\js\app\doubts.js" />
+    <Content Include="frontend\js\app\menu.js" />
+    <Content Include="frontend\js\component\footer.js" />
+    <Content Include="frontend\js\component\menu.js" />
+    <Content Include="frontend\js\component\template\footer.html" />
+    <Content Include="frontend\js\component\template\menu.html" />
+    <Content Include="frontend\js\controller\body.js" />
+    <Content Include="frontend\payment-gateway.html" />
+    <Content Include="frontend\plugin\angularjs\angular.min.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.rtl.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.rtl.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.rtl.min.css" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.bundle.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.esm.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.esm.js.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.esm.min.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.js.map" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.min.js" />
+    <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.min.js.map" />
+    <Content Include="server.js" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="frontend\" />
+    <Folder Include="frontend\css\" />
+    <Folder Include="frontend\download\" />
+    <Folder Include="frontend\img\" />
+    <Folder Include="frontend\js\" />
+    <Folder Include="frontend\js\app\" />
+    <Folder Include="frontend\js\component\" />
+    <Folder Include="frontend\js\component\template\" />
+    <Folder Include="frontend\js\controller\" />
+    <Folder Include="frontend\plugin\" />
+    <Folder Include="frontend\plugin\angularjs\" />
+    <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\" />
+    <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\css\" />
+    <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\js\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

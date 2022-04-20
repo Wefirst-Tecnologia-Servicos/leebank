@@ -3,6 +3,8 @@
 *.db
 *.pbd
 
+server-instance-access/
+
 #NodeJS Project
 node_modules/
 
