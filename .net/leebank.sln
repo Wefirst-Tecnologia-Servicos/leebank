@@ -19,7 +19,9 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "service", "middleware\servi
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "common", "middleware\common\common.njsproj", "{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website", "website\website.njsproj", "{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-marketing", "website-marketing\website-marketing.njsproj", "{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-vixi", "website-vixi\website-vixi.njsproj", "{F8C44AC8-5564-4574-8249-11148284D293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C44AC8-5564-4574-8249-11148284D293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C44AC8-5564-4574-8249-11148284D293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
