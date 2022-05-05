@@ -32,6 +32,6 @@ app.use('/', menuRoutes);
 app.use('/', translationRoutes);
 app.use('/', doubtsRoutes);
 
-app.listen(config.http.port, () => {
+app.listen(config.http.port, config.http.host, () => {
     console.log(`Server is listening on PORT ${config.http.port}...`);
 });

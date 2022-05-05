@@ -1,6 +1,7 @@
 {
   "http": {
     "port": 3000,
+    "host": "localhost",
     "cors": {
       "allowedOrigins": ["*", "localhost:1337"]
     }
