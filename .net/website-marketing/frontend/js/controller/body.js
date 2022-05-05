@@ -32,4 +32,16 @@
                 document.getElementsByTagName("body")[0].classList.remove("loading");
             });
         }
+
+        $scope.redirectTo = link => {
+            var currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
+            // get the target anchor
+            var anchor = "";
+            if (link.indexOf("#") > -1) {
+                anchor = `#${link.split("#")[1]}`;
+                link = link.split("#")[0];
+            }
+            // redirect to the target link
+            window.location.href = `${link}?lang=${currentLanguage}${anchor}`;
+        }
     });

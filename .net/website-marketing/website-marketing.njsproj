@@ -65,6 +65,7 @@
     <Content Include="frontend\img\header-banner1.jpg" />
     <Content Include="frontend\img\header-banner2.png" />
     <Content Include="frontend\img\header-bannerv2.jpg" />
+    <Content Include="frontend\img\insurance.jpg" />
     <Content Include="frontend\img\intagram-icon.png" />
     <Content Include="frontend\img\linkedin-icon.png" />
     <Content Include="frontend\img\logo1.png" />
@@ -136,6 +137,7 @@
     <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.js.map" />
     <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.min.js" />
     <Content Include="frontend\plugin\bootstrap-5.1.3-dist\js\bootstrap.min.js.map" />
+    <Content Include="frontend\plugin\jquery\jquery-3.6.0.min.js" />
     <Content Include="server.js" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
@@ -156,6 +158,7 @@
     <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\" />
     <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\css\" />
     <Folder Include="frontend\plugin\bootstrap-5.1.3-dist\js\" />
+    <Folder Include="frontend\plugin\jquery\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

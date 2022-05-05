@@ -22,16 +22,14 @@
 
     <menu-component></menu-component>
 
-    <div class="container-fluid background-image" style="background-image: url(/img/82524c39e454d9a2a5bb3da3364665fe.jfif);" ng-controller="BodyController">
+    <div class="container-fluid background-image" style="background-image: url(/img/insurance.jpg);" ng-controller="BodyController">
         <div class="min-height">
             <div class="row">
                 <div class="col-md-6 text-position-left">
                     <h2>{{dictionary.insurance}}</h2>
                     <p>{{dictionary.sleepSoundly}}</p>
                     <p>{{dictionary.seeBelow}}</p>
-                    <a href="javascript:redirectTo('about-insurance.html');">
-                        <button class="button-page" type="button">{{dictionary.ourInsurance}}</button>
-                    </a>
+                    <button ng-click="redirectTo('about-insurance.html')" class="button-page" type="button">{{dictionary.ourInsurance}}</button>
                 </div>
             </div>
         </div>
