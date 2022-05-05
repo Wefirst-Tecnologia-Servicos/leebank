@@ -188,3 +188,5 @@ INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('withLeeBank', 'Com os
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('withOurExchange', 'Com o nosso serviço de câmbio é possível fazer remessas para fora do país, de forma rápida e segura. Se você precisar enviar dinheiro para amigos e familiares no exterior, conte conosco.', 'With our exchange service it is possible to make remittances abroad, quickly and safely. If you need to send money to friends and family abroad, count on us.', '通过我们的跨境汇款服务，可以快速安全地向国外汇款。如果您需要汇款给国外的朋友和家人，我们随时为您服务');
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('yourDoubts', 'Tire suas dúvidas conosco.', 'Take your doubts with us.', '向我们提出您的疑问');
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('ZH', '中文', '中文', '中文');
+
+UPDATE DICTIONARY SET PT = 'Oferecemos serviços também para pessoas jurídicas, tudo de forma transparente e sem surpresas no final. Quer saber mais? Clique no botão abaixo de acordo com seu o seu perfil:' WHERE ID = 'weAlsoOffer';

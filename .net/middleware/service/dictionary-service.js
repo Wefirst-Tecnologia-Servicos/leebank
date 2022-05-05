@@ -29,6 +29,8 @@ module.exports = {
             });
         });
     },
-
-    getAll: getAll
+    getAll: getAll,
+    updateDictionary: (key, languageCode, newDescription) => {
+        return dao.updateDictionary(key, languageCode, newDescription);
+    }
 };

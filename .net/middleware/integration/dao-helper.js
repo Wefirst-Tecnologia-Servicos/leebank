@@ -29,5 +29,24 @@ module.exports = {
                 });
             }
         });
+    },
+    runCommand: sqlCommand => {
+        return new Promise((resolve, reject) => {
+            var client = new Client({ connectionString });
+            client.connect(err => {
+                if (err) {
+                    console.log(err);
+                }
+            });
+            client.query(sqlCommand, (err, res) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    _loadedDatasets = {};
+                    resolve(res.rowCount);
+                }
+                client.end();
+            });
+        });
     }
 };

@@ -24,5 +24,8 @@ module.exports = {
                 resolve(languageCodes);
             });
         });
+    },
+    updateDictionary: (key, languageCode, newDescription) => {
+        return helper.runCommand(`UPDATE DICTIONARY SET ${languageCode} = '${newDescription}' WHERE DICTIONARYID = '${key}';`)
     }
 };

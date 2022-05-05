@@ -18,6 +18,27 @@ router.get("/dictionary/languages/:languageID", (request, response) => {
     }
 });
 
+router.post("/dictionary/save", (request, response) => {
+    try {
+        const dictionaryModel = {
+            Key: request.body.Key,
+            LanguageCode: request.body.LanguageCode,
+            Description: request.body.Description
+        };
+
+        if (!dictionaryModel.Key || !dictionaryModel.LanguageCode || !dictionaryModel.Description) {
+            response.status(400).send('Incorrect Parameters');
+        }
+
+        service.updateDictionary(dictionaryModel.Key, dictionaryModel.LanguageCode, dictionaryModel.Description).then((nRows) => {
+            response.status(200).send({ status: "OK", rowsAffected: nRows });
+        });
+    } catch (error) {
+        console.log(error);
+        response.status(500).send('Internal Server Error');
+    }
+});
+
 router.get("/dictionary/:languageID", (request, response) => {
     try {
         const languageID = request.params["languageID"];
