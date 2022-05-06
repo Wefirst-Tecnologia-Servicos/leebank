@@ -4,6 +4,7 @@ body {
 
 .row {
     margin-right: 0;
+    min-height: inherit;
 }
 
 p, h1, h2, h3, h4, ul, li, label, a {
@@ -92,16 +93,19 @@ img {
 }
 
 .text-position-left {
-    padding: 96px 0px 127px 112px;
+    padding-left: 112px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .text-position-right {
-    padding: 96px 112px 127px 0px;
+    padding-right: 112px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .carousel-item {
     padding: 260px 0 260px 0;
-    min-height: 612px;
 }
 
 .second-row {
@@ -166,13 +170,9 @@ button {
     font-size: 18px;
 }
 
-.min-height {
-    min-height: 650px;
-    padding: 70px 0;
-}
-
 .form-exchange {
-    padding: 100px 100px 0 100px;
+    padding: 0px 100px;
+    margin: 40px 0 40px 0;
 }
 
     .form-exchange form {
