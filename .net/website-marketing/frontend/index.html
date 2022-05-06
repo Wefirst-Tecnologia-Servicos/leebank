@@ -24,24 +24,27 @@
             //window.screen.height;
             //window.screen.width;
             setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer)").css("min-height", window.screen.height + "px");
-                //$("div.container-fluid:not(#navMenu, div.footer), div.carousel-item").css("max-width", window.screen.width + "px");
+                $("div.container-fluid:not(#divMenuContainer, div.footer)").css("min-height", window.innerHeight + "px");
+                $("div.container-fluid:not(#navMenu, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
             }, 500);
 
             // ---------- Animation ---------- //
-            
-            $("body").css({ overflow: "hidden" });
-            $("menu-component").hide();
-            setTimeout(function () {
-                $("#divAnimation h1").fadeToggle("slow");
+            if (window.location.href.indexOf("lang=") > -1) {
+                $("#divAnimation").remove();
+            } else {
+                $("body").css({ overflow: "hidden" });
+                $("menu-component").hide();
                 setTimeout(function () {
-                    $("#divAnimation").fadeOut("slow", function () {
-                        $("menu-component").show();
-                        $("#divAnimation").remove();
-                        $("body").css({ overflow: "scroll" });
-                    });
+                    $("#divAnimation h1").fadeToggle("slow");
+                    setTimeout(function () {
+                        $("#divAnimation").fadeOut("slow", function () {
+                            $("menu-component").show();
+                            $("#divAnimation").remove();
+                            $("body").css({ overflow: "scroll" });
+                        });
+                    }, 2000);
                 }, 2000);
-            }, 2000);
+            }
         });
     </script>
 
@@ -63,85 +66,77 @@
         <div class="container-fluid background-image" style="background-image: url(/img/header-banner2.jpg);"></div>
 
         <div class="container-fluid background-image" id="our-future" style="background-image: url(/img/div1.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.ourFuture}} <br /> {{dictionary.startHere}}</h2>
-                        <p>{{dictionary.leeBankWasBorn}} <b class="bold-color">{{dictionary.agility}} {{dictionary.and}} {{dictionary.security}}</b> {{dictionary.toTheMorThan}}</p>
-                        <p>{{dictionary.weArePersonalized}} <b>{{dictionary.nativeLanguage}}</b></p>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.ourFuture}} <br /> {{dictionary.startHere}}</h2>
+                    <p>{{dictionary.leeBankWasBorn}} <b class="bold-color">{{dictionary.agility}} {{dictionary.and}} {{dictionary.security}}</b> {{dictionary.toTheMorThan}}</p>
+                    <p>{{dictionary.weArePersonalized}} <b>{{dictionary.nativeLanguage}}</b></p>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid second-row">
-            <div class="min-height">
-                <div class="row wrapper">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md" style="padding-top: 45px;">
-                                <h1 class="text-center">{{dictionary.digital}}</h1>
-                                <h1 class="text-center">{{dictionary.intuitive}}</h1>
-                                <h1 class="text-center">{{dictionary.efficient}}</h1>
-                                <p class="text-center" style="margin-top:0;">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
-                            </div>
-                            <div class="img-phone">
-                                <img src="img/cellphone.png" style="max-width: 100%;" />
-                            </div>
+            <div class="row wrapper">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md" style="padding-top: 45px;">
+                            <h1 class="text-center">{{dictionary.digital}}</h1>
+                            <h1 class="text-center">{{dictionary.intuitive}}</h1>
+                            <h1 class="text-center">{{dictionary.efficient}}</h1>
+                            <p class="text-center" style="margin-top:0;">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
                         </div>
-                        <div class="row img-download" style="padding-top: 65px;">
-                            <div class="col-md-4">
-                                <img style="padding: 5px 0px 5px 20px;" src="img/google-play-icon.png" />
-                                <img style="padding: 5px 0px 5px 20px;" src="img/apple-store-icon.png" />
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/LeeBank_QRCode_App.png" />
-                            </div>
-                            <div class="col-md">
-                                <p style="margin-top:20px;">{{dictionary.pointYourCell}}</p>
-                            </div>
+                        <div class="img-phone">
+                            <img src="img/cellphone.png" style="max-width: 100%;" />
                         </div>
                     </div>
-                    <div class="col-md-6 img-desktop">
-                        <img src="img/cellphone.png" style="max-width: 100%;" />
+                    <div class="row img-download" style="padding-top: 65px;">
+                        <div class="col-md-4">
+                            <img style="padding: 5px 0px 5px 20px;" src="img/google-play-icon.png" />
+                            <img style="padding: 5px 0px 5px 20px;" src="img/apple-store-icon.png" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/LeeBank_QRCode_App.png" />
+                        </div>
+                        <div class="col-md">
+                            <p style="margin-top:20px;">{{dictionary.pointYourCell}}</p>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-6 img-desktop">
+                    <img src="img/cellphone.png" style="max-width: 100%;" />
                 </div>
             </div>
         </div>
 
         <div class="container-fluid" style="background: linear-gradient(180deg, #373737 0%, rgba(86, 53, 150, 0.22) 100%); ">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.completeBank}}</h2>
-                        <p>{{dictionary.weAreComplete}}</p>
-                        <p>{{dictionary.cashIn}}</p>
-                    </div>
-                    <div class="col-md-6" style="padding-top: 60px;">
-                        <img class="mx-auto d-block" style="width: 70%;" src="/img/credit-card.png" />
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.completeBank}}</h2>
+                    <p>{{dictionary.weAreComplete}}</p>
+                    <p>{{dictionary.cashIn}}</p>
+                </div>
+                <div class="col-md-6" style="padding-top: 60px;">
+                    <img class="mx-auto d-block" style="width: 70%;" src="/img/credit-card.png" />
                 </div>
             </div>
         </div>
 
         <div id="exchange" class="container-fluid background-image" style="background-image: url(/img/div2.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.exchange}}</h2>
-                        <p>
-                            {{dictionary.withOurExchange}}
-                        </p>
-                        <p>
-                            {{dictionary.weAlsoOffer}}
-                        </p>
-                        <div class="row" style="margin-top: 80px;">
-                            <div class="col-md-5">
-                                <button ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
-                            </div>
-                            <div class="col-md-5">
-                                <button ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
-                            </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.exchange}}</h2>
+                    <p>
+                        {{dictionary.withOurExchange}}
+                    </p>
+                    <p>
+                        {{dictionary.weAlsoOffer}}
+                    </p>
+                    <div class="row" style="margin-top: 80px;">
+                        <div class="col-md-5">
+                            <button ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
+                        </div>
+                        <div class="col-md-5">
+                            <button ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
                         </div>
                     </div>
                 </div>
@@ -149,78 +144,66 @@
         </div>
 
         <div id="insurance" class="container-fluid background-image" style="background-image: url(/img/div3.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.insurance}}</h2>
-                        <p>{{dictionary.withLeeBank}}</p>
-                        <a href="insurance.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.insurance}}</h2>
+                    <p>{{dictionary.withLeeBank}}</p>
+                    <a href="insurance.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
                 </div>
             </div>
         </div>
 
         <div id="investments" class="container-fluid background-image" style="background-image: url(/img/div4.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.investment}}</h2>
-                        <p>{{dictionary.investSafely}}</p>
-                        <p>{{dictionary.makeYourMoney}}</p>
-                        <a href="investments.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.investment}}</h2>
+                    <p>{{dictionary.investSafely}}</p>
+                    <p>{{dictionary.makeYourMoney}}</p>
+                    <a href="investments.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
                 </div>
             </div>
         </div>
 
         <div id="cardMachine" class="container-fluid background-image" style="background-image: url(/img/div5.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.leePay}}</h2>
-                        <p>{{dictionary.leeBankMachine}}</p>
-                        <p>{{dictionary.clickToLearn}}</p>
-                        <a href="card-machine.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.leePay}}</h2>
+                    <p>{{dictionary.leeBankMachine}}</p>
+                    <p>{{dictionary.clickToLearn}}</p>
+                    <a href="card-machine.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
                 </div>
             </div>
         </div>
 
         <div id="paymentGateway" class="container-fluid background-image" style="background-image: url(/img/div6.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.paymentGateway}}</h2>
-                        <p>{{dictionary.idealSolution}}</p>
-                        <a href="payment-gateway.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.paymentGateway}}</h2>
+                    <p>{{dictionary.idealSolution}}</p>
+                    <a href="payment-gateway.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
                 </div>
             </div>
         </div>
 
         <div id="giftCard" class="container-fluid background-image" style="background-image: url(/img/div8.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>
-                            {{dictionary.giftCard}}
-                        </h2>
-                        <p>{{dictionary.wantPracticality}}</p>
-                        <p>{{dictionary.logInto}}</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>
+                        {{dictionary.giftCard}}
+                    </h2>
+                    <p>{{dictionary.wantPracticality}}</p>
+                    <p>{{dictionary.logInto}}</p>
                 </div>
             </div>
         </div>
 
         <div id="cash" class="container-fluid background-image" style="background-image: url(/img/div7.jpg);">
-            <div class="min-height">
-                <div class="row">
-                    <div class="col-md-6 text-position-left">
-                        <h2>{{dictionary.cash}}</h2>
-                        <p>{{dictionary.greatestPracticality}}</p>
-                        <p>{{dictionary.awayFromHome}}</p>
-                        <a href="cash.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-position-left">
+                    <h2>{{dictionary.cash}}</h2>
+                    <p>{{dictionary.greatestPracticality}}</p>
+                    <p>{{dictionary.awayFromHome}}</p>
+                    <a href="cash.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
                 </div>
             </div>
         </div>
@@ -247,35 +230,33 @@
         </div>
 
         <div id="contact" class="container-fluid background-image" style="background-image: url(/img/div9.jpg);">
-            <div class="min-height">
-                <div class="row" style="padding: 50px 0 50px 0;">
-                    <div class="col-md-6" style="padding: 125px 139px 0px 160px;">
-                        <h2>{{dictionary.anyQuestion}} <br /> {{dictionary.contactUs}}</h2>
-                        <p>{{dictionary.ourHelpCenter}}</p>
-                        <div class="d-grid gap-2" style="display:none !important;">
-                            <button class="btn btn-primary" type="button" style="width: 100%; padding: 15px 0 15px 0;">{{dictionary.helpCenter}}</button>
+            <div class="row" style="padding: 50px 0 50px 0;">
+                <div class="col-md-6" style="padding: 125px 139px 0px 160px;">
+                    <h2>{{dictionary.anyQuestion}} <br /> {{dictionary.contactUs}}</h2>
+                    <p>{{dictionary.ourHelpCenter}}</p>
+                    <div class="d-grid gap-2" style="display:none !important;">
+                        <button class="btn btn-primary" type="button" style="width: 100%; padding: 15px 0 15px 0;">{{dictionary.helpCenter}}</button>
+                    </div>
+                </div>
+                <div class="col-md-6 form">
+                    <form>
+                        <h3>{{dictionary.yourDoubts}}</h3>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">{{dictionary.name}}:</label>
+                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName">
                         </div>
-                    </div>
-                    <div class="col-md-6 form">
-                        <form>
-                            <h3>{{dictionary.yourDoubts}}</h3>
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">{{dictionary.name}}:</label>
-                                <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">{{dictionary.email}}:</label>
-                                <input type="email" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail">
-                            </div>
-                            <div class="mb-3">
-                                <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
-                                <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">{{dictionary.email}}:</label>
+                            <input type="email" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
+                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

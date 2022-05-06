@@ -1,3 +1,11 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.row {
+    margin-right: 0;
+}
+
 p, h1, h2, h3, h4, ul, li, label, a {
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -73,8 +81,9 @@ img {
     }
 
 .background-image {
-    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
