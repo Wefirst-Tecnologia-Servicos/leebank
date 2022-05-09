@@ -323,6 +323,10 @@ body.loading div.loader-wrapper {
     align-items: center;
 }
 
+.img-download {
+    padding-top: 30%;
+}
+
 
 @media only screen and (max-device-width: 767px) {
     /* celulares */
@@ -365,6 +369,7 @@ body.loading div.loader-wrapper {
 
     .second-row .img-download {
         text-align: center;
+        padding-top: 0 !important;
     }
 
     .second-row .img-download img{
@@ -404,4 +409,53 @@ body.loading div.loader-wrapper {
     #contact button{
         width:90% !important;
     }
+
+    .indexImageDiv1 {
+        background-position: 70%;
+    }
+
+    .indexImageDiv2 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv3 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv4 {
+        background-position: 20%;
+    }
+
+    .indexImageDiv5 {
+        background-position: 60%;
+    }
+
+    .indexImageDiv6 {
+        background-position: 45%;
+    }
+
+    .indexImageDiv7 {
+        background-position: 76%;
+    }
+
+    .payment-gateway-image {
+        background-position: 67%;
+    }
+
+    .insurance-image {
+        background-position: 64%;
+    }
+
+    .exchange-natural-person-image {
+        background-position: 40%;
+    }
+
+    .exchange-legal-person-image {
+        background-position: 22%;
+    }
+
+    .space{
+        display:none;
+    }
+
 }

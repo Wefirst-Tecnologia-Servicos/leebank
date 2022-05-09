@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Apophis Tecnologia & Arte Ltda.">
+
+    <link href="plugin/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
+
+    <link href="css/index.css" rel="stylesheet" />
+
+    <script src="js/app/app.js"></script>
+    <script src="js/app/dictionary.js"></script>
+    <script src="js/app/doubts.js"></script>
+    <script src="js/app/menu.js"></script>
+
+    <script src="js/component/menu.js"></script>
+    <script src="js/component/footer.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //window.screen.height;
+            //window.screen.width;
+            setInterval(function () {
+                $("div.container-fluid:not(#divMenuContainer, div.footer)").css("min-height", window.innerHeight + "px");
+                $("div.container-fluid:not(#navMenu, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
+            }, 500);
+        });
+    </script>
+
+</head>
+
+<body ng-app="leebank">
+
+    <menu-component></menu-component>
+
+    <div class="container-fluid background-image investments-image" style="background-image: url(/img/investments.jpg); padding-top: 100px;" ng-controller="BodyController">
+        <div class="row">
+            <div class="col-md-6 text-position-left">
+                <h2>{{dictionary.investment}}</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="js/controller/body.js"></script>
+    <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

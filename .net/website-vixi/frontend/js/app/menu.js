@@ -1,0 +1,16 @@
+﻿/**
+ * @license WeFirst
+ * @description
+ * This module provides an AngularJS service for Menu
+ */
+
+angular
+    .module("leebank")
+    .service("MenuService", function ($http) {
+        var apiBasePath = "http://201.30.147.96:3001/";
+        return {
+            getMenuTree: languageID => {
+                return $http.get(`${apiBasePath}menu/${languageID}`);
+            }
+        }
+    });
