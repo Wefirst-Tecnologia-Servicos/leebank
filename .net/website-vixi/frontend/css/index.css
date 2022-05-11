@@ -1,5 +1,11 @@
+@font-face {
+    src: url(../fonts/DMSans-Regular.ttf);
+    font-family: DM Sans;
+}
+
 body {
     overflow-x: hidden !important;
+    background-color: #191919;
 }
 
 .row {
@@ -8,10 +14,9 @@ body {
 }
 
 p, h1, h2, h3, h4, ul, li, label, a {
-    font-family: Montserrat, sans-serif;
+    font-family: 'DM Sans';
     font-style: normal;
     color: #ffffff;
-    text-shadow: 2px 4px 5px #563596;
     text-decoration-line: none;
 }
 
@@ -32,7 +37,8 @@ img {
 }
 
 .navbar {
-    background-image: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
+    background: linear-gradient(180deg, #191818 14.18%, rgba(91, 81, 81, 0.64) 50.64%, #191818 86.02%);
+    box-shadow: 0px 18px 12px #191818;
     position: absolute;
 }
 
@@ -140,15 +146,16 @@ button {
         background-color: #252bb3;
     }
 
-.form {
-    background-color: rgb(0,0,0, 0.6);
-    border-radius: 15px;
-    padding: 50px 25px 50px 50px;
+.form form {
+    background-color: #191818;
+    box-shadow: 17px 23px 15px 10px black;
+    padding: 3% 3%;
+    margin: 0 30%;
 }
 
 .footer {
     padding: 20px 100px;
-    background-color: #563596;
+    background-color: #292828;
 }
 
     .footer p {
@@ -158,12 +165,12 @@ button {
     }
 
     .footer img {
-        width: 7%;
-        margin: 10px;
+        width: 13%;
+        margin-right: 25px;
     }
 
-    .footer .float-end {
-        padding-top: 42px;
+    .footer .links p {
+        line-height: 40px;
     }
 
 .text-about p {
@@ -304,24 +311,24 @@ svg rect {
 }
 
 div.loader-wrapper {
-    display:none;
+    display: none;
 }
 
 body.loading {
-    overflow:hidden;
+    overflow: hidden;
 }
 
-body.loading div.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(76, 53, 118, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    body.loading div.loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(76, 53, 118, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 .img-download {
     padding-top: 30%;
@@ -359,12 +366,12 @@ body.loading div.loader-wrapper {
         padding: 15px;
     }
 
-    .second-row .img-phone{
-        display:flex;
+    .second-row .img-phone {
+        display: flex;
     }
 
-    .second-row .img-desktop{
-        display:none;
+    .second-row .img-desktop {
+        display: none;
     }
 
     .second-row .img-download {
@@ -372,21 +379,21 @@ body.loading div.loader-wrapper {
         padding-top: 0 !important;
     }
 
-    .second-row .img-download img{
+        .second-row .img-download img {
+            width: 60%;
+            padding: 10px 0px 0 0 !important;
+        }
+
+    button {
+        margin: 10px;
+    }
+
+    .button-page {
+        width: 70%;
+    }
+
+    .button-buy button {
         width: 60%;
-        padding:10px 0px 0 0 !important;
-    }
-
-    button{
-        margin:10px;
-    }
-
-    .button-page{
-        width:70%;
-    }
-
-    .button-buy button{
-        width:60%;
     }
 
     .wrapper {
@@ -398,16 +405,16 @@ body.loading div.loader-wrapper {
             order: 1;
         }
 
-    .row.text-about{
-        padding:0 !important;
-    }
-
-    #contact .row{
+    .row.text-about {
         padding: 0 !important;
     }
 
-    #contact button{
-        width:90% !important;
+    #contact .row {
+        padding: 0 !important;
+    }
+
+    #contact button {
+        width: 90% !important;
     }
 
     .indexImageDiv1 {
@@ -454,8 +461,7 @@ body.loading div.loader-wrapper {
         background-position: 22%;
     }
 
-    .space{
-        display:none;
+    .space {
+        display: none;
     }
-
 }

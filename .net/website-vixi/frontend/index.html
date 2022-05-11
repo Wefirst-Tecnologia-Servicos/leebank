@@ -25,24 +25,6 @@
                 $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("min-height", window.innerHeight + "px");
                 $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
             }, 500);
-
-            // ---------- Animation ---------- //
-            if (window.location.href.indexOf("lang=") > -1) {
-                $("#divAnimation").remove();
-            } else {
-                $("body").css({ overflow: "hidden" });
-                $("menu-component").hide();
-                setTimeout(function () {
-                    $("#divAnimation h1").fadeToggle("slow");
-                    setTimeout(function () {
-                        $("#divAnimation").fadeOut("slow", function () {
-                            $("menu-component").show();
-                            $("#divAnimation").remove();
-                            $("body").css({ overflow: "scroll" });
-                        });
-                    }, 2000);
-                }, 2000);
-            }
         });
     </script>
 
@@ -54,202 +36,96 @@
 
     <div ng-controller="BodyController">
 
-        <div id="divAnimation" class="background-image" style="background-image: url(/img/header-banner1.jpg);">
-            <div class="container-fluid d-flex h-100 align-items-center justify-content-center carrouselText">
-                <h1>{{dictionary.helloWeAreLeeBank}}</h1>
-                <h1 style="display:none;">{{dictionary.theFirstBank}} <br /> {{dictionary.theChineseCommunity}}</h1>
-            </div>
-        </div>
-
-        <div class="container-fluid background-image" style="background-image: url(/img/header-banner2.jpg);"></div>
-
-        <div class="container-fluid background-image indexImageDiv1" id="our-future" style="background-image: url(/img/div1.jpg);">
+        <div class="container-fluid background-image" style="background-image: url(img/indexDiv1.png);">
             <div class="row">
                 <div class="col-md-6 text-position-left">
-                    <h2>{{dictionary.ourFuture}} <br /> {{dictionary.startHere}}</h2>
-                    <p>{{dictionary.leeBankWasBorn}} <b class="bold-color">{{dictionary.agility}} {{dictionary.and}} {{dictionary.security}}</b> {{dictionary.toTheMorThan}}</p>
-                    <p>{{dictionary.weArePersonalized}} <b>{{dictionary.nativeLanguage}}</b></p>
+                    <h2>Guiando você <br /> para o seu futuro</h2>
+                    <p>
+                        Viemos para inspirar as pessoas a irem mais longe, alcançarem seus sonhos, através de uma parceria de confiança
+                        que cresce a cada dia.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid second-row ">
-            <div class="row wrapper">
+        <div class="container-fluid" style="">
+            <div class="row">
+                <div class="col-md-6 text-position-left align-middle">
+                    <h2>VIXI Exchange</h2>
+                    <p>Somos o sinônimo de competência, confiança e acessibilidade.</p>
+                    <p>Queremos que nossos clientes tenham a sensação exata de que podem contar conosco e que nosso produto atenda suas expectaivas e necessidades. </p>
+                </div>
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md" style="padding-top: 45px;">
-                            <h1 class="text-center">{{dictionary.digital}}</h1>
-                            <h1 class="text-center">{{dictionary.intuitive}}</h1>
-                            <h1 class="text-center">{{dictionary.efficient}}</h1>
-                            <p class="text-center" style="margin-top:0;">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
-                        </div>
-                        <div class="img-phone">
-                            <img src="img/cellphone.png" style="max-width: 100%;" />
-                        </div>
-                    </div>
-                    <div class="row img-download">
-                        <div class="col-md-4">
-                            <img style="padding: 5px 0px 5px 20px;" src="img/google-play-icon.png" />
-                            <img style="padding: 5px 0px 5px 20px;" src="img/apple-store-icon.png" />
-                        </div>
-                        <div class="col-md-3">
-                            <img src="img/LeeBank_QRCode_App.png" />
-                        </div>
-                        <div class="col-md">
-                            <p style="margin-top:20px;">{{dictionary.pointYourCell}}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 img-desktop">
-                    <img src="img/cellphone.png" style="max-width: 100%;" />
+                    <img class="mx-auto d-block" src="img/indexDiv2.png" />
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid" style="background: linear-gradient(180deg, #373737 0%, rgba(86, 53, 150, 0.22) 100%); ">
+        <div class="container-fluid background-image" style="background-image: url(img/indexDiv3.png)">
             <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.completeBank}}</h2>
-                    <p>{{dictionary.weAreComplete}}</p>
-                    <p>{{dictionary.cashIn}}</p>
-                </div>
-                <div class="col-md-6" style="padding-top: 60px;">
-                    <img class="mx-auto d-block" style="width: 70%;" src="/img/credit-card.png" />
-                </div>
-            </div>
-        </div>
-
-        <div id="exchange" class="container-fluid background-image indexImageDiv2" style="background-image: url(/img/div2.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.exchange}}</h2>
+                <div class="col-md-6 space"></div>
+                <div class="col-md-6 text-position-right">
+                    <h2>OTC</h2>
+                    <p>A mesa de OTC da VIXI tem uma oferta de liquidez que garante ao cliente institucional a quantia desejada de Bitcoin, Ethereum, Decred, Stablecoins e outros ativos digitais.</p>
+                    <p>Principais problemas resolvidos pela mesa de OTC da VIXI:</p>
                     <p>
-                        {{dictionary.withOurExchange}}
+                        <b>Slippage</b><br />
+                        A diferença de tempo entre a hora do pedido e sua liquidação incorre muitas vezes em uma diferença do preço inicial devido ao tamanho da ordem.
                     </p>
                     <p>
-                        {{dictionary.weAlsoOffer}}
+                        <b>Limites de negociação</b><br />
+                        É comum que as grandes exchanges imponham limites de trading e negociação diários para manter a sua liquidez. Para clientes que operam com alto volume essa prática é inadequada.
                     </p>
-                    <div class="row" style="margin-top: 80px;">
-                        <div class="col-md-5">
-                            <button ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
-                        </div>
-                        <div class="col-md-5">
-                            <button ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
-                        </div>
-                    </div>
+                    <a href="#"><p><b><u>Saiba mais   ></u></b></p></a>
                 </div>
             </div>
         </div>
 
-        <div id="insurance" class="container-fluid background-image indexImageDiv3" style="background-image: url(/img/div3.jpg);">
+        <div id="exchange" class="container-fluid background-image" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.insurance}}</h2>
-                    <p>{{dictionary.withLeeBank}}</p>
-                    <a href="insurance.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                    <h2>Compliance<br />Segurança</h2>
+                    <p>
+                        Prezamos por uma relação de confiança e transparência com nossos clientes. Por conta disso, a segurança dos dados e a privacidade dos nossos usuários é de extrema importância para nós.
+                    </p>
+                    <p>
+                        Nossa política de Compliance segue todas as normas da LGPD, além de oferecer sigilo absoluto sobre você e suas moedas. Também contamos com uma equipe de segurança digital altamente capacitada.
+                    </p>
+                    <a href="#"><p><b><u>Saiba mais   ></u></b></p></a>
+                </div>
+                <div class="col-md-6">
+                    <img class="mx-auto d-block" src="img/indexDiv4.png" />
                 </div>
             </div>
         </div>
 
-        <div id="investments" class="container-fluid background-image indexImageDiv4" style="background-image: url(/img/div4.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.investment}}</h2>
-                    <p>{{dictionary.investSafely}}</p>
-                    <p>{{dictionary.makeYourMoney}}</p>
-                    <a href="investments.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="cardMachine" class="container-fluid background-image indexImageDiv5" style="background-image: url(/img/div5.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.leePay}}</h2>
-                    <p>{{dictionary.leeBankMachine}}</p>
-                    <p>{{dictionary.clickToLearn}}</p>
-                    <a href="card-machine.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="paymentGateway" class="container-fluid background-image indexImageDiv6" style="background-image: url(/img/div6.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.paymentGateway}}</h2>
-                    <p>{{dictionary.idealSolution}}</p>
-                    <a href="payment-gateway.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="giftCard" class="container-fluid background-image indexImageDiv7" style="background-image: url(/img/div8.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>
-                        {{dictionary.giftCard}}
-                    </h2>
-                    <p>{{dictionary.wantPracticality}}</p>
-                    <p>{{dictionary.logInto}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="cash" class="container-fluid background-image indexImageDiv8" style="background-image: url(/img/div7.jpg);">
-            <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
-                    <h2>{{dictionary.cash}}</h2>
-                    <p>{{dictionary.greatestPracticality}}</p>
-                    <p>{{dictionary.awayFromHome}}</p>
-                    <a href="cash.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel slide mh-10" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active background-image" style="background-image: url(/img/footer-banner1.jpg);">
-                    <div class="d-flex h-100 align-items-center justify-content-center carrouselText">
-                        <h1>{{dictionary.callMe}}</h1>
-                    </div>
-                </div>
-                <div class="carousel-item background-image" style="background-image: url(/img/footer-banner2.jpg);">
-                    <div class="d-flex h-100 align-items-center justify-content-center carrouselText">
-                        <h1>{{dictionary.reachingHorizons}}</h1>
-                    </div>
-                </div>
-                <div class="carousel-item background-image" style="background-image: url(/img/footer-banner3.jpg);">
-                    <div class="d-flex h-100 align-items-center justify-content-center carrouselText text-center">
-                        <h1>{{dictionary.completeService}}</h1>
-                    </div>
-                </div>
-                <img src="/Img/logo2.png" style="max-width: 30%; position: absolute; right: 0px; bottom: 0px;" />
-            </div>
-        </div>
-
-        <div id="contact" class="container-fluid background-image indexImageDiv9" style="background-image: url(/img/div9.jpg);">
+        <div id="contact" class="container-fluid background-image" style="">
             <div class="row" style="padding: 50px 0 50px 0;">
-                <div class="col-md-6" style="padding: 125px 139px 0px 160px;">
-                    <h2>{{dictionary.anyQuestion}} <br /> {{dictionary.contactUs}}</h2>
-                    <p>{{dictionary.ourHelpCenter}}</p>
-                    <div class="d-grid gap-2" style="display:none !important;">
-                        <button class="btn btn-primary" type="button" style="width: 100%; padding: 15px 0 15px 0;">{{dictionary.helpCenter}}</button>
-                    </div>
-                </div>
-                <div class="col-md-6 form">
+                <div class="col-md-12 form">
+                    <h2>Cadastre-se</h2>
                     <form>
-                        <h3>{{dictionary.yourDoubts}}</h3>
+                        <p>Peencha os campos abaixo para <br /> a solicitação do cadastro</p>
                         <div class="mb-3">
-                            <label for="nome" class="form-label">{{dictionary.name}}:</label>
-                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName">
+                            <label for="nome" class="form-label">Nome Completo:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome Completo" ng-model="doubts.SenderName">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">{{dictionary.email}}:</label>
-                            <input type="email" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="text" class="form-control" id="email" placeholder="E-mail" ng-model="doubts.SenderEMail">
                         </div>
                         <div class="mb-3">
-                            <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
-                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                            <label for="cellphone" class="form-label">Telefone:</label>
+                            <input type="text" class="form-control" id="cellphone" placeholder="Telefone" ng-model="doubts.SenderEMail">
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="cpf" class="form-label">CPF:</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="E-mail" ng-model="doubts.SenderEMail">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cnpj" class="form-label">CNPJ:</label>
+                                <input type="text" class="form-control" id="cnpj" placeholder="E-mail" ng-model="doubts.SenderEMail">
+                            </div>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
