@@ -23,6 +23,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-marketing", "websit
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-vixi", "website-vixi\website-vixi.njsproj", "{F8C44AC8-5564-4574-8249-11148284D293}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "maintenance", "maintenance\maintenance.njsproj", "{22119661-8F33-444A-A774-67AD213BAB36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{F8C44AC8-5564-4574-8249-11148284D293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22119661-8F33-444A-A774-67AD213BAB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22119661-8F33-444A-A774-67AD213BAB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22119661-8F33-444A-A774-67AD213BAB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22119661-8F33-444A-A774-67AD213BAB36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

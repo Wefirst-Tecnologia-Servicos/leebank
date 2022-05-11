@@ -18,37 +18,21 @@ router.get("/dictionary/languages/:languageID", (request, response) => {
     }
 });
 
-router.post("/dictionary/save", (request, response) => {
+router.post("/dictionary", (request, response) => {
     try {
         const dictionaryModel = {
-            Key: request.body.Key,
-            LanguageCode: request.body.LanguageCode,
-            Description: request.body.Description
+            Website: request.body.Website,
+            LanguageID: request.body.LanguageID
         };
 
-        if (!dictionaryModel.Key || !dictionaryModel.LanguageCode || !dictionaryModel.Description) {
+        if (!dictionaryModel.Website || !dictionaryModel.LanguageID) {
             response.status(400).send('Incorrect Parameters');
-        }
-
-        service.updateDictionary(dictionaryModel.Key, dictionaryModel.LanguageCode, dictionaryModel.Description).then((nRows) => {
-            response.status(200).send({ status: "OK", rowsAffected: nRows });
-        });
-    } catch (error) {
-        console.log(error);
-        response.status(500).send('Internal Server Error');
-    }
-});
-
-router.get("/dictionary/:languageID", (request, response) => {
-    try {
-        const languageID = request.params["languageID"];
-        if (!languageID) {
-            response.status(400).send('Missing parameters. You must send languageID.');
         } else {
-            service.getAll(languageID).then((translations) => {
+            service.getAll(request.body.Website, dictionaryModel.LanguageID).then(translations => {
                 response.status(200).send(translations);
             });
         }
+        
     } catch (error) {
         console.log(error);
         response.status(500).send('Internal Server Error');

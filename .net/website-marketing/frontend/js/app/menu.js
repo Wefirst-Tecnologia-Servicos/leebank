@@ -10,7 +10,10 @@ angular
         var apiBasePath = "http://201.30.147.96:3001/";
         return {
             getMenuTree: languageID => {
-                return $http.get(`${apiBasePath}menu/${languageID}`);
+                return $http.post(`${apiBasePath}menu/`, {
+                    Website: "LEE-MARKETING",
+                    LanguageID: languageID
+                });
             }
         }
     });

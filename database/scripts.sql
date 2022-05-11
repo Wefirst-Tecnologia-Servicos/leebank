@@ -190,3 +190,6 @@ INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('yourDoubts', 'Tire su
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH) VALUES ('ZH', '中文', '中文', '中文');
 
 UPDATE DICTIONARY SET PT = 'Oferecemos serviços também para pessoas jurídicas, tudo de forma transparente e sem surpresas no final. Quer saber mais? Clique no botão abaixo de acordo com seu o seu perfil:' WHERE ID = 'weAlsoOffer';
+
+ALTER TABLE DICTIONARY ADD COLUMN WEBSITE CHAR(20) NOT NULL DEFAULT 'LEE-MARKETING';
+ALTER TABLE MENU ADD COLUMN WEBSITE CHAR(20) NOT NULL DEFAULT 'LEE-MARKETING';

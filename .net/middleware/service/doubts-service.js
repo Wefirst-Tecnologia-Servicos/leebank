@@ -4,7 +4,7 @@ const config = require('./config.json');
 const email = require('../common/email-helper');
 
 module.exports = {
-    send: (doubtsModel) => {
+    send: doubtsModel => {
 
         var subject = config.doubsEMail.template.subject;
         var text = config.doubsEMail.template.text;

@@ -5,7 +5,7 @@
 * **website-marketing**: LeeBank Marketing WebSite Front-end project;
 * **website-vixi**: Vixi WebSite Front-end project;
 * **api**: API that supports the websites;
-* **middleware**: Back-end layered project to the api;
+* **middleware**: Back-end layered project to the api and console projects;
 
 ## Requirements Documention
 

@@ -8,6 +8,7 @@ const swaggerFile = require('./swagger/swagger_output.json');
 const menuRoutes = require('./routes/menu');
 const translationRoutes = require('./routes/dictionary');
 const doubtsRoutes = require('./routes/doubts');
+const maintenanceRoutes = require('./routes/maintenance');
 
 const app = express();
 
@@ -25,12 +26,13 @@ app.use(cors((req, callback) => {
     callback(null, { origin: allowedOrigin });
 }));
 
-app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/', menuRoutes);
-app.use('/', translationRoutes);
-app.use('/', doubtsRoutes);
+app.use("/", menuRoutes);
+app.use("/", translationRoutes);
+app.use("/", doubtsRoutes);
+app.use("/", maintenanceRoutes);
 
 app.listen(config.http.port, config.http.host, () => {
     console.log(`Server is listening on PORT ${config.http.port}...`);

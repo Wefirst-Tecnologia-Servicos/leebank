@@ -4,5 +4,8 @@
   "description": "Service layer",
   "author": {
     "name": "WeFirst"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
   }
 }

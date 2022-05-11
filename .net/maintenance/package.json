@@ -1,0 +1,12 @@
+{
+  "name": "run-db-script",
+  "version": "0.0.0",
+  "description": "run-db-script",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "prompt": "^1.3.0"
+  }
+}

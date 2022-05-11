@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "REST API",
+    "version": "2.0.0",
+    "title": "LeeBank REST API",
     "description": ""
   },
   "host": "localhost:3000",
@@ -11,15 +11,24 @@
     "http"
   ],
   "paths": {
-    "/menu/{languageID}": {
-      "get": {
+    "/menu/": {
+      "post": {
         "description": "",
         "parameters": [
           {
-            "name": "languageID",
-            "in": "path",
-            "required": true,
-            "type": "string"
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Website": {
+                  "example": "any"
+                },
+                "LanguageID": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
@@ -59,7 +68,7 @@
         }
       }
     },
-    "/dictionary/save": {
+    "/dictionary": {
       "post": {
         "description": "",
         "parameters": [
@@ -69,41 +78,14 @@
             "schema": {
               "type": "object",
               "properties": {
-                "Key": {
+                "Website": {
                   "example": "any"
                 },
-                "LanguageCode": {
-                  "example": "any"
-                },
-                "Description": {
+                "LanguageID": {
                   "example": "any"
                 }
               }
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/dictionary/{languageID}": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "languageID",
-            "in": "path",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
@@ -148,6 +130,20 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/maintenance/datasets/reset": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"

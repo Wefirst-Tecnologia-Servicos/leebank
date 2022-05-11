@@ -42,11 +42,13 @@ module.exports = {
                 if (err) {
                     reject(err);
                 } else {
-                    _loadedDatasets = {};
                     resolve(res.rowCount);
                 }
                 client.end();
             });
         });
+    },
+    resetDatasets: () => {
+        _loadedDatasets = {};
     }
 };

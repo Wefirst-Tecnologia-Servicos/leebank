@@ -4,14 +4,18 @@ const express = require("express");
 const router = express.Router();
 const service = require("../../middleware/service/menu-service");
 
-router.get("/menu/:languageID", (request, response) => {
+router.post("/menu/", (request, response) => {
 
     try {
-        const languageID = request.params["languageID"];
-        if (!languageID) {
-            response.status(400).send('Missing parameters. You must send languageID.');
+        const menuModel = {
+            Website: request.body.Website,
+            LanguageID: request.body.LanguageID
+        };
+
+        if (!menuModel.Website || !menuModel.LanguageID) {
+            response.status(400).send('Incorrect Parameters');
         } else {
-            service.getTreeView(languageID).then(menuTree => {
+            service.getTreeView(menuModel.Website, menuModel.LanguageID).then(menuTree => {
                 response.status(200).send(menuTree);
             });
         }

@@ -13,7 +13,10 @@ angular
                 return $http.get(`${apiBasePath}dictionary/languages/${languageID}`);
             },
             getDictionary: languageID => {
-                return $http.get(`${apiBasePath}dictionary/${languageID}`);
+                return $http.post(`${apiBasePath}dictionary`, {
+                    Website: "LEE-MARKETING",
+                    LanguageID: languageID
+                });
             }
         }
     });

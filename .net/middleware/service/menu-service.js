@@ -6,13 +6,20 @@ const translation = require("./dictionary-service");
 module.exports = {
 
     // builds the treeview menu
-    getTreeView: languageID => {
+    getTreeView: (website, languageID) => {
 
         return new Promise((resolve, reject) => {
 
             dao.getAll().then(menuData => {
 
-                translation.getAll(languageID).then(translations => {
+                // filter the website results
+                for (var i = menuData.length - 1; i > -1; i--) {
+                    if (menuData[i].website.trim() != website.trim()) {
+                        menuData.splice(i, 1);
+                    }
+                }
+
+                translation.getAll(website, languageID).then(translations => {
 
                     // translate all menu
                     for (var i = 0; i < menuData.length; i++) {
