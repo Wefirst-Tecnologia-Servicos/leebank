@@ -6,6 +6,18 @@
 angular
     .module("leebank", [])
     .constant("MODULE_VERSION", "2.0.0")
+    .config(function ($httpProvider) {
+        $httpProvider.defaults.transformRequest.push((data, headersGetter) => {
+            $("body").addClass("loading");
+            return data;
+        });
+
+        $httpProvider.defaults.transformResponse.push((data, headersGetter) => {
+            setTimeout(() => { $("body").removeClass("loading"); }, 50);
+            return data;
+        });
+        
+    })
     .service("GlobalService", function ($http) {
         return {
             getQueryStringParam: paramName => {
@@ -22,4 +34,16 @@ angular
                 return result;
             }
         }
-    });
+    })
+    .directive('onFinishRender', function ($timeout) {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attr) {
+                if (scope.$last === true) {
+                    $timeout(function () {
+                        scope.$emit('ngRepeatFinished');
+                    });
+                }
+            }
+        }
+    });;

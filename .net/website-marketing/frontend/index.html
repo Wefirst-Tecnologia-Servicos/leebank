@@ -10,7 +10,8 @@
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
 
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+
     <script src="js/app/app.js"></script>
     <script src="js/app/dictionary.js"></script>
     <script src="js/app/doubts.js"></script>
@@ -19,14 +20,13 @@
     <script src="js/component/menu.js"></script>
     <script src="js/component/footer.js"></script>
 
+    <script src="js/global.js"></script>
+
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
-            setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("min-height", window.innerHeight + "px");
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
-            }, 500);
 
             // ---------- Animation ---------- //
+
             if (window.location.href.indexOf("lang=") > -1) {
                 $("#divAnimation").remove();
             } else {
@@ -48,7 +48,7 @@
 
 </head>
 
-<body ng-app="leebank">
+<body ng-app="leebank" class="loading">
 
     <menu-component></menu-component>
 
@@ -241,15 +241,15 @@
                         <h3>{{dictionary.yourDoubts}}</h3>
                         <div class="mb-3">
                             <label for="nome" class="form-label">{{dictionary.name}}:</label>
-                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName">
+                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName" />
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">{{dictionary.email}}:</label>
-                            <input type="email" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail">
+                            <input type="text" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail" />
                         </div>
                         <div class="mb-3">
                             <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
-                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea />
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>

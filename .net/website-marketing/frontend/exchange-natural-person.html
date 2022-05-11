@@ -9,7 +9,7 @@
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
 
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
 
     <script src="js/app/app.js"></script>
     <script src="js/app/dictionary.js"></script>
@@ -19,19 +19,10 @@
     <script src="js/component/menu.js"></script>
     <script src="js/component/footer.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            //window.screen.height;
-            //window.screen.width;
-            setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer)").css("min-height", window.innerHeight + "px");
-                $("div.container-fluid:not(#navMenu, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
-            }, 500);
-        });
-    </script>
+    <script src="js/global.js"></script>
 
 </head>
-<body ng-app="leebank">
+<body ng-app="leebank" class="loading">
 
     <menu-component></menu-component>
 

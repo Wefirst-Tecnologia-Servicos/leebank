@@ -13,6 +13,10 @@
                     allElements[i].setAttribute("placeholder", $scope.dictionary[attr]);
                 }
             }
+
+            $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
+                $("body").removeClass("loading");
+            });
         });
 
         $scope.doubts = {
@@ -22,14 +26,13 @@
         }
 
         $scope.sendDoubts = () => {
-            document.getElementsByTagName("body")[0].classList.add("loading");
+            console.log($scope.doubts);
             DoubtsService.send($scope.doubts).then(() => {
                 $scope.doubts = {
                     SenderName: "",
                     SenderEMail: "",
                     Description: "",
                 };
-                document.getElementsByTagName("body")[0].classList.remove("loading");
             });
         }
 
