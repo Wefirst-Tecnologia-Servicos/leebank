@@ -9,7 +9,14 @@
 
 ## Requirements Documention
 
-- **marketing-website:** https://www.figma.com/file/oT9taLNymAnvVi0zsSs78e/Lee-Bank-Website---Sitemap?node-id=0%3A1
+- **website-marketing:** https://www.figma.com/file/oT9taLNymAnvVi0zsSs78e/Lee-Bank-Website---Sitemap?node-id=0%3A1
+- **website-vixi:** https://www.figma.com/file/oT9taLNymAnvVi0zsSs78e/Lee-Bank-%7C-VIXI-Website---Sitemap?node-id=307%3A7
+- **Login:** zagnole@wefirst.com.br
+- **Password:** @Wefirst#22
+
+- **website-vixi References:** https://bullish.com/ 
 
 ## Support
 - **WeFirst**: Rodrigo Zagnole +55 11 99525-3003
+
+

@@ -6,7 +6,7 @@
         </button>
         <div id="divMenu" class="collapse navbar-collapse">
             <div class="navbar-right">
-                <ul class="navbar-nav ms-auto" ng-repeat="item in $ctrl.menu">
+                <ul class="navbar-nav me-auto" ng-repeat="item in $ctrl.menu">
                     <li class="nav-item {{item.children.length > 0 ? 'dropdown' : ''}}">
                         <a class="nav-link {{item.children.length > 0 ? 'dropdown-toggle' : ''}}" ng-click="$ctrl.menuAction(item.link, item.text);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span ng-hide="item.text == '_currentLanguage'">{{item.translated_text}}</span>
