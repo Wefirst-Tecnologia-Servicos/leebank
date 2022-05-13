@@ -1,1 +1,3 @@
+-------- VIXI -------
 12/05 - 2 horas - Daniel - Codificação da página OTC
+13/05 - 7 horas - Daniel - Codificação da página OTC responsivo para mobile e formulário da página principal
