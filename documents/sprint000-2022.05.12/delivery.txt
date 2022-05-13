@@ -1,10 +1,15 @@
 
 --------- VIXI ----------
+11/05 - Victor - 8 horas - Adaptação do backend da LeeBank para suportar à vixi e também possíveis outros sites
 11/05 - Daniel - 8 horas - Codificação da página inicial do VIXI
 12/05 - Daniel - 3 horas - Concluido codificação para apresentação página inicial do VIXI
+12/05 - Victor - 30 Min  - Reunião para entrega da sprint 0
 12/05 - Daniel - 30 Min  - Reunião para entrega da sprint 0
+12/05 - Victor - 1 Hora  - Sprint Retrospective (refatoração de código, elaboração de documentações)
+
 --------- LEE BANK ----------
 04/05 - Daniel - 5 Horas - Redimensionamento de imagens e ajustes em textos
+05/05 - Victor - 1 Hora  - Criação de scripts para auxiliar o daniel nos responsivos;
 05/05 - Daniel - 8 Horas - Ajustado responsivo para web, criação da animação de introdução, ajustes de texto e troca de imagem
 06/05 - Daniel - 7 horas - concluído responsivo para modelos desktop e efetuado correções nos tamanhos de imagem das máquinas de cartão
 09/05 - Daniel - 3 horas - concluído responsivo mobile
