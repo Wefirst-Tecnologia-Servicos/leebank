@@ -69,6 +69,7 @@
     <Content Include="frontend\img\intagram-icon.png" />
     <Content Include="frontend\img\linkedin-icon.png" />
     <Content Include="frontend\img\logo1.png" />
+    <Content Include="frontend\img\logo1.svg" />
     <Content Include="frontend\img\logo2.png" />
     <Content Include="frontend\img\machine1.jpg" />
     <Content Include="frontend\img\machine1.png" />

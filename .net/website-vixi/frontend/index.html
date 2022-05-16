@@ -36,7 +36,7 @@
 
     <div ng-controller="BodyController">
 
-        <div class="container-fluid background-image" style="background-image: url(img/indexDiv1.png);">
+        <div class="container-fluid background-image index-div-1" style="background-image: url(img/indexDiv1.png);">
             <div class="row">
                 <div class="col-md-6 text-position-left">
                     <h1>Guiando você <br /> para o seu futuro</h1>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="">
+        <div class="container-fluid background-image index-div-2" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
                     <h1>VIXI Exchange</h1>
@@ -57,15 +57,15 @@
                     <p>Somos o sinônimo de competência, confiança e acessibilidade.</p>
                     <p>Queremos que nossos clientes tenham a sensação exata de que podem contar conosco e que nosso produto atenda suas expectaivas e necessidades. </p>
                 </div>
-                <div class="col-md-6 d-flex  align-items-center">
+                <div class="col-md-6 d-flex align-items-center display-none-cel">
                     <img class="mx-auto d-block" src="img/indexDiv2.png" />
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid background-image" style="background-image: url(img/indexDiv3.png); background-position: 0% 0%; background-size: contain; ">
+        <div class="container-fluid background-image index-div-3" style="background-image: url(img/indexDiv3.png); background-position: 0% 0%; background-size: contain; ">
             <div class="row">
-                <div class="col-md-6 space"></div>
+                <div class="col-md-6"></div>
                 <div class="col-md-6 text-position-right" style="padding-top: 30%;">
                     <h1>OTC</h1>
                     <hr />
@@ -84,7 +84,7 @@
             </div>
         </div>
 
-        <div id="exchange" class="container-fluid background-image" style="">
+        <div id="exchange" class="container-fluid background-image index-div-4" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
                     <h1>Compliance<br />Segurança</h1>
@@ -97,13 +97,13 @@
                     </p>
                     <a href="#"><p><b><u>Saiba mais   ></u></b></p></a>
                 </div>
-                <div class="col-md-6 d-flex  align-items-center">
+                <div class="col-md-6 d-flex align-items-center display-none-cel">
                     <img class="mx-auto d-block" src="img/indexDiv4.png" />
                 </div>
             </div>
         </div>
 
-        <div id="contact" class="container-fluid background-image" style="">
+        <div id="contact" class="container-fluid index-div-5" style="">
             <div class="row" style="padding: 50px 0 50px 0;">
                 <div class="col-md-12 form-index">
                     <div class="row">
@@ -114,7 +114,7 @@
                     </div>
                     <form>
                         <p>Peencha os campos abaixo para <br /> a solicitação do cadastro</p>
-                        <hr />
+                        <hr class="display-none-cel"/>
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome Completo:</label>
                             <input type="text" class="form-control" id="nome" placeholder="Nome Completo" ng-model="doubts.SenderName">
