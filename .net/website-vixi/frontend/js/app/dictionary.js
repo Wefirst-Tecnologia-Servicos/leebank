@@ -14,7 +14,7 @@ angular
             },
             getDictionary: languageID => {
                 return $http.post(`${apiBasePath}dictionary`, {
-                    Website: "LEE-MARKETING",
+                    Website: "VIXI",
                     LanguageID: languageID
                 });
             }
