@@ -21,7 +21,9 @@ module.exports = {
                         console.log(`${rowCount} rows affected.`)
                         lines.splice(0, 1);
                         processNextCommand(callback);
-                    })
+                    }).catch(err => {
+                        callback(err);
+                    });
                 } else {
                     lines.splice(0, 1);
                     processNextCommand(callback);
@@ -32,11 +34,15 @@ module.exports = {
         }
 
         return new Promise((resolve, reject) => {
-            processNextCommand(() => {
-                resolve();
+            processNextCommand(err => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve();
+                }
             });
         });
-        
+
     },
     resetDatasets: () => {
         dao.resetDatasets();

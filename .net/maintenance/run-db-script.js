@@ -12,9 +12,14 @@ prompt.get(['filePath'], (err, result) => {
             console.log(err);
             return 1;
         };
+
     }
     console.log("Processing...");
+
     service.runScriptFile(result.filePath).then(() => {
+        prompt.get(['Process finished, press any key to exit...'], (err, result) => { });
+    }).catch(err => {
+        console.log(err);
         prompt.get(['Process finished, press any key to exit...'], (err, result) => { });
     });
 });

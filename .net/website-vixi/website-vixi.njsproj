@@ -88,7 +88,6 @@
     <Content Include="frontend\img\placeHolderIcon.png" />
     <Content Include="frontend\img\Página 5.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
-    <Content Include="frontend\index - Copy.html" />
     <Content Include="frontend\index.html" />
     <Content Include="frontend\js\app\app.js" />
     <Content Include="frontend\js\app\dictionary.js" />
