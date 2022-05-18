@@ -7,7 +7,7 @@ module.exports = {
     getAll: () => {
         return new Promise((resolve, reject) => {
             helper.getLoadedDataset(_tableName).then(dataset => {
-                resolve(dataset.rows);
+                resolve(dataset);
             });
         });
     }

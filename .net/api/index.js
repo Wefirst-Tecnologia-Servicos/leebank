@@ -35,5 +35,5 @@ app.use("/", doubtsRoutes);
 app.use("/", maintenanceRoutes);
 
 app.listen(config.http.port, config.http.host, () => {
-    console.log(`Server is listening on PORT ${config.http.port}...`);
+    console.log(config.trace.displayMessage.replace("{host}", config.http.host).replace("{port}", config.http.port));
 });

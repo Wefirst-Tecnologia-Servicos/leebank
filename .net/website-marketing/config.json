@@ -7,6 +7,6 @@
     }
   },
   "trace": {
-    "displayMessage": "LeeBank API listening on {host}:{port}..."
+    "displayMessage": "LeeBank WebSite listening on {host}:{port}..."
   }
 }

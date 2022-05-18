@@ -6,6 +6,6 @@
     "name": "WeFirst"
   },
   "dependencies": {
-    "pg": "^8.7.3"
+    "mysql": "^2.18.1"
   }
 }
