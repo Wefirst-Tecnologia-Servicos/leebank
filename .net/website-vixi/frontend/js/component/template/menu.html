@@ -1,6 +1,9 @@
 ﻿<nav class="navbar fixed-top navbar-expand-sm navbar-dark">
     <div class="container-fluid" id="divMenuContainer">
         <a class="navbar-brand active logo" aria-current="page" href="index.html?lang={{$ctrl.currentLanguage}}"><img src="../../../img/logo.png" /></a>
+        <ul class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLanguage" style="display:contents;">
+            Português
+        </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,6 +30,22 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
+    </div>
+    <div id="menuLanguage" class="navbar-collapse collapse">
+        <div class="navbar-right">
+            <ul class="navbar-nav me-auto">
+                <li>
+                    <a class="nav-item" href="#">中文</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">English</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">Português</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

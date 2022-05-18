@@ -459,3 +459,110 @@ body.loading div.loader-wrapper {
     }
 
 }
+
+@media only screen and (min-width: 1920px) {
+    p {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    a, li {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .second-row h1 {
+        font-size: 130px;
+        line-height: 140px;
+    }
+
+    .second-row p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .second-row .qrcode {
+        width: 80% !important;
+    }
+
+    .sign-up {
+        width: 430px !important;
+    }
+
+        .sign-up img {
+            width: 80%;
+        }
+
+    .navbar {
+        height: 10%;
+    }
+
+    button {
+        font-size: 40px !important;
+        width: 80%;
+    }
+
+    .footer p {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .carrouselText {
+        margin-top: 10%;
+    }
+
+    .form input, .form textarea {
+        font-size: 30px;
+    }
+
+    .form h3 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .form label {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .form textarea {
+        height: 300px !important;
+    }
+
+    .indexImageDiv9 .row{
+        padding: 100px 0 100px 0 !important;
+    }
+
+    .form {
+        padding: 100px 50px 100px 100px;
+    }
+
+    .form button{
+        margin-top: 15px;
+    }
+
+    .text-about p {
+        font-size: 35px;
+    }
+
+    .text-about {
+        padding: 100px 100px !important;
+    }
+
+    embed {
+        width: 20%;
+    }
+}

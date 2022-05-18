@@ -11,7 +11,7 @@ angular
         return {
             getMenuTree: languageID => {
                 return $http.post(`${apiBasePath}menu/`, {
-                    Website: "LEE-MARKETING",
+                    Website: "VIXI",
                     LanguageID: languageID
                 });
             }
