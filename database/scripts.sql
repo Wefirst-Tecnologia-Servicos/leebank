@@ -236,4 +236,11 @@ INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiPrivacyP
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiTerms', 'Termos de uso', 'Terms of Use', '??', 'VIXI'); 
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiHelp', 'Central de Ajuda', 'Help Center', '??', 'VIXI'); 
 INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiAllRights', '© Razão Social da VIXI, 2022. Todos os direitos reservados', '© VIXI Corporate Name, 2022. All rights reserved', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiTel', 'Tel', 'Phone', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiAddress', 'Endereço da Empresa', 'Company Address', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiPrivacyPolice', 'Política de Privacidade', 'Privacy Policy', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiTerms', 'Termos de uso', 'Terms of Use', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiHelp', 'Central de Ajuda', 'Help Center', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiAllRights', '© Razão Social da VIXI, 2022. Todos os direitos reservados', '© VIXI Corporate Name, 2022. All rights reserved', '??', 'VIXI'); 
 
+UPDATE DICTIONARY SET PT = '© Lee Bank Instituicao de Pagamento LTDA, 2022. Todos os direitos reservados', EN = '© Lee Bank Payment Institution LTDA, 2022. All rights reserved' WHERE DICTIONARYID = 'righsReserved'; 

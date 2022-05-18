@@ -2,3 +2,4 @@
 12/05 - 2 horas - Daniel - Codificação da página OTC
 13/05 - 7 horas - Daniel - Codificação da página OTC responsivo para mobile e formulário da página principal
 16/05 - 6 horas - Daniel - Codificação do rodapé e páginas do responsivo da vixi e codificação geral da leebank para altas resoluções
+17/05 - 1 hora  - Daniel - Efetuado a tradução dos textos no site VIXI
