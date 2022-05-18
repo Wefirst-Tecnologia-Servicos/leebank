@@ -30,6 +30,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="config.json" />
     <Content Include="frontend\about-insurance.html" />
     <Content Include="frontend\card-machine.html" />
     <Content Include="frontend\cash.html" />
