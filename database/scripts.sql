@@ -239,3 +239,19 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelp', '
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiAllRights', '© Razão Social da VIXI, 2022. Todos os direitos reservados', '© VIXI Corporate Name, 2022. All rights reserved', '??', 'VIXI'); 
 
 UPDATE dictionary SET pt = '© Lee Bank Instituicao de Pagamento LTDA, 2022. Todos os direitos reservados', en = '© Lee Bank Payment Institution LTDA, 2022. All rights reserved' WHERE dictionaryid = 'righsReserved'; 
+
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuWho', 'Quem Somos', 'Who We Are', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuArticle', 'Artigo', 'Article', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuSafety', 'Compliance Segurança', 'Compliance Security', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiManagement', 'Política para Gestão de Risco', 'Policy for Risk Management', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuPrevention', 'Política de Prevenção à Lavagem de Dinheiro e Combate ao Terrorismo', 'Anti-Money Laundering and Combating Terrorism Policy', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuInformation', 'Política de Segurança da Informação e Cibernética', 'Information Security and Cybernetics Policy', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuPolicyCompliance', 'Política de Compliance', 'Compliance Policy', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuProcedures', 'Procedimento', 'Procedures', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuKyt', 'KYT - Know Your Transaction', 'KYT - Know Your Transaction', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuKyc', 'KYC - Know Your Customer', 'KYC - Know Your Customer', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuKyp', 'KYP - Know Your Partner', 'KYP - Know Your Partner', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuEnglish', 'English', 'English', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenuPortugues', 'Português', 'Português', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenu中文', '中文', '中文', '??', 'VIXI'); 
+INSERT INTO DICTIONARY (DICTIONARYID, PT, EN, ZH, WEBSITE) VALUES ('vixiMenusign', 'Cadastre-se', 'Sign Up', '??', 'VIXI'); 
