@@ -9,10 +9,10 @@ angular
     .service("DictionaryService", function ($http) {
         var apiBasePath = "http://201.30.147.96:3001/";
         return {
-            getLanguages: languageID => {
+            getLanguages: function (languageID) {
                 return $http.get(`${apiBasePath}dictionary/languages/${languageID}`);
             },
-            getDictionary: languageID => {
+            getDictionary: function (languageID) {
                 return $http.post(`${apiBasePath}dictionary`, {
                     Website: "LEE-MARKETING",
                     LanguageID: languageID

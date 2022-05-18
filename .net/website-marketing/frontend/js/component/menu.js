@@ -30,8 +30,9 @@ angular
                 }
             };
 
-            MenuService.getMenuTree(this.currentLanguage).then(menuTree => {
+            MenuService.getMenuTree(this.currentLanguage).then(function (menuTree) {
                 this.menu = menuTree.data.children;
+                console.log(this.menu);
             });
         }
     });

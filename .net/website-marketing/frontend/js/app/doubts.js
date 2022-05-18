@@ -9,7 +9,7 @@ angular
     .service("DoubtsService", function ($http) {
         var apiBasePath = "http://201.30.147.96:3001/";
         return {
-            send: doubtsData => {
+            send: function (doubtsData) {
                 return $http.post(`${apiBasePath}doubts`, doubtsData);
             }
         }

@@ -8,7 +8,6 @@ const swaggerFile = require('./swagger/swagger_output.json');
 const menuRoutes = require('./routes/menu');
 const translationRoutes = require('./routes/dictionary');
 const doubtsRoutes = require('./routes/doubts');
-const maintenanceRoutes = require('./routes/maintenance');
 
 const app = express();
 
@@ -32,7 +31,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", menuRoutes);
 app.use("/", translationRoutes);
 app.use("/", doubtsRoutes);
-app.use("/", maintenanceRoutes);
 
 app.listen(config.http.port, config.http.host, () => {
     console.log(config.trace.displayMessage.replace("{host}", config.http.host).replace("{port}", config.http.port));
