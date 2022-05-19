@@ -9,6 +9,7 @@ angular
     .component("menuComponent", {
         templateUrl: "js/component/template/menu.html",
         controller: function (MenuService, GlobalService) {
+            var ctrl = this;
 
             this.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
 
@@ -31,8 +32,7 @@ angular
             };
 
             MenuService.getMenuTree(this.currentLanguage).then(function (menuTree) {
-                this.menu = menuTree.data.children;
-                console.log(this.menu);
+                ctrl.menu = menuTree.data.children;
             });
         }
     });
