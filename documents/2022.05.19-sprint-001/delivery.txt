@@ -7,3 +7,4 @@
 18/05 - 4 horas - Victor - Migração dos dados para Mysql
 18/05 - 2 horas - Daniel - Tradução do menu
 19/05 - 2 horas - Victor - Componente Footer
+19/05 - 1 hora  - Victor - Sprint Retrospective
