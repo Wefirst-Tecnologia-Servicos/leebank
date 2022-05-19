@@ -9,8 +9,9 @@ angular
     .component("footerComponent", {
         templateUrl: "js/component/template/footer.html",
         controller: function (DictionaryService, GlobalService) {
+            var ctrl = this;
             DictionaryService.getDictionary(GlobalService.getQueryStringParam("lang") ?? "PT").then(translations => {
-                this.dictionary = translations.data;
+                ctrl.dictionary = translations.data;
             });
         }
     });

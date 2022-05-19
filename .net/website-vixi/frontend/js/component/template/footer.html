@@ -1,11 +1,11 @@
 ﻿<div class="container-fluid footer">
     <div class="row" style="border-bottom: 1px solid #ffffff; padding-bottom: 15px;">
         <div class="col-md">
-            <p>{{dictionary.vixiEmail}}: Email da VIXI</p>
+            <p>{{$ctrl.dictionary.vixiEmail}}: Email da VIXI</p>
             <p>
-                {{dictionary.vixiTel}}: +XX (XX) XXXX-XXXX
+                {{$ctrl.dictionary.vixiTel}}: +XX (XX) XXXX-XXXX
             </p>
-            <p>{{dictionary.vixiAddress}}</p>
+            <p>{{$ctrl.dictionary.vixiAddress}}</p>
             <div class="col-md-6 display-none-cel">
                 <a href="#" target="_blank">
                     <img src="../../../img/placeHolderIcon.png" />
@@ -16,9 +16,9 @@
             </div>
         </div>
         <div class="col-md-6 links">
-            <a href="#"><p>{{dictionary.vixiPrivacyPolice}}</p></a>
-            <a href="#"><p>{{dictionary.vixiTerms}}</p></a>
-            <a href="#"><p>{{dictionary.vixiHelp}}</p></a>
+            <a href="#"><p style="color:#fff;">{{$ctrl.dictionary.vixiPrivacyPolice}}</p></a>
+            <a href="#"><p>{{$ctrl.dictionary.vixiTerms}}</p></a>
+            <a href="#"><p>{{$ctrl.dictionary.vixiHelp}}</p></a>
         </div>
         <div class="col-md-6 display-none-desk">
             <a href="#" target="_blank" style="margin-left: auto;">
@@ -31,7 +31,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <p class="text-center" style="padding-top:10px; ">{{dictionary.vixiAllRights}}</p>
+            <p class="text-center" style="padding-top:10px; ">{{$ctrl.dictionary.vixiAllRights}}</p>
         </div>
     </div>
 </div>
