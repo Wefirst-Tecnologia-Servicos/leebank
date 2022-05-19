@@ -293,3 +293,21 @@ UPDATE dictionary SET zh = '市场不会看到变化，隐藏您的进入或退�
 UPDATE dictionary SET zh = '它与根据固定规则参与交易所无关。 这保证了交易者能够更广泛地交易证券，而不受传统平台的限制。' WHERE dictionaryid = 'vixiUnbound';
 UPDATE dictionary SET zh = '返回首页' WHERE dictionaryid = 'vixiHomepage';
 
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(20, 10, 'vixiMenuWho', null, '#', null, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(21, 20, 'vixiOtc', null, 'index.html#otc', null, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(22, 30, 'vixiMenuArticle', null, '#', null, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(23, 40, 'vixiMenuSafety', null, '#', null, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(24, 10, 'vixiCompliance', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(25, 20, 'vixiMenuManagement', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(26, 30, 'vixiMenuPrevention', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(27, 40, 'vixiMenuInformation', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(28, 50, 'vixiMenuPolicyCompliance', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(29, 60, 'vixiMenuProcedures', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(30, 70, 'vixiMenuKyt', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(31, 80, 'vixiMenuKyc', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(32, 90, 'vixiMenuKyp', null, '#', 23, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(33, 50, '_currentLanguage', null, '#', null, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(34, 10, 'EN', null, 'setLanguage', 33, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(35, 20, 'PT', null, 'setLanguage', 33, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(36, 30, 'ZH', null, 'setLanguage', 33, 'VIXI');
+INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(37, 60, 'vixiMenusign', null, '#', null, 'VIXI');
