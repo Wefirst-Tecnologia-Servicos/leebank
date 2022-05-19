@@ -52,7 +52,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
-                                        <div class="float-end">
+                                        <div class="float-end input-coin">
                                             <div class="border">
                                                 <select id="coin" class="form-select campo-esquerdo campo">
                                                     <option selected>USD - Dólar Americano</option>
@@ -75,7 +75,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="mb-3">
-                                                <select id="coin" class="form-select campo">
+                                                <select id="coin" class="form-select campo select-transfer">
                                                     <option selected>
                                                         Tipo de transferência - XX,XX BRL de tarifa<br />
                                                         Método de Pagamento
@@ -118,11 +118,13 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="input-group mb-3">
-                                            <div class="border">
-                                                <select id="coin" class="form-select campo-esquerdo">
-                                                    <option selected>USD - Dólar Americano</option>
-                                                </select>
-                                                <input type="number" class="form-control placeholder-translate campo-direito" id="nome" placeholder="Enviar">
+                                            <div class="float-end input-coin">
+                                                <div class="border">
+                                                    <select id="coin" class="form-select campo-esquerdo">
+                                                        <option selected>USD - Dólar Americano</option>
+                                                    </select>
+                                                    <input type="number" class="form-control placeholder-translate campo-direito" id="nome" placeholder="Enviar">
+                                                </div>
                                             </div>
                                         </div>
                                         <p style="line-height: 0; margin: 0;">1 CNY = X,XXXXXX BRL - Câmbio Efetivo</p>

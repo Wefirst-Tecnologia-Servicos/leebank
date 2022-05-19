@@ -63,12 +63,8 @@ hr {
     display: flex;
 }
 
-    .navbar-right .navbar-nav {
-        margin: 0 10%;
-    }
-
 .navbar-dark .navbar-brand {
-    margin-right: 15%;
+    margin-right: 40%;
 }
 
 .dropdown-item {
@@ -417,14 +413,14 @@ body.loading {
         display: block;
     }
 
-    .footer{
+    .footer {
         padding: 30px !important
     }
 
-    .footer .float-end {
-        float: none !important;
-        padding-top: 15px;
-    }
+        .footer .float-end {
+            float: none !important;
+            padding-top: 15px;
+        }
 
     .footer {
         padding: 15px;
@@ -566,7 +562,59 @@ body.loading {
         width: 60%;
     }
 
-    .footer .col-md-6{
+    .footer .col-md-6 {
         padding: 20px 10px !important;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    p, .otc-page a {
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h1, h2, h3, h4 {
+        line-height: 70px;
+    }
+
+    .footer p {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .form-index form{
+        margin: 0 35%;
+    }
+
+    .form-index .form-label {
+        font-size: 1.7rem;
+    }
+
+    .form-control {
+        font-size: 1.7rem;
+    }
+
+    .form-index .btn {
+        font-size: 1.7rem !important;
+    }
+
+    .navbar-right {
+        width: 80%;
+    }
+
+    .navbar-nav {
+        font-size: 1.7rem;
+    }
+
+    .navbar-right .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar-dark .navbar-brand {
+        margin-right: 40%;
     }
 }
