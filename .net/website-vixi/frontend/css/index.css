@@ -8,6 +8,10 @@ body {
     background-color: #111111;
 }
 
+.otc-body {
+    background-color: #191919;
+}
+
 .row {
     margin-right: 0;
     min-height: inherit;
@@ -381,6 +385,56 @@ body.loading {
     display: none !important;
 }
 
+.nav-link-tab {
+    background-color: transparent !important;
+    padding: 2% 0%;
+    box-shadow: none !important;
+    color: #495057;
+    font-weight: 100;
+    font-size: 30px !important;
+    border-bottom: 2px solid white !important;
+    border-radius: 0 !important;
+    width: 50%;
+}
+
+    .nav-link-tab:active, .nav-link-tab:focus, .nav-link-tab:hover {
+        color: #C567A5 !important;
+        border-bottom: 5px solid #C567A5 !important;
+    }
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.tab-content .tab-content {
+    margin: 5%;
+}
+
+table {
+    color: white;
+}
+
+.compliance-title {
+    padding: 7%;
+}
+
+.nav-item-tab {
+    width: 100%;
+    margin: 3% 0 0 5%;
+}
+
+    .nav-item-tab button {
+        display: contents;
+        font-size: 16px !important;
+        font-weight: normal;
+    }
+
+.compliance-security-text {
+    overflow: auto;
+    height: 1000px;
+    padding: 2%;
+    background-color: rgb(25, 24, 24, 0.9);
+}
 
 @media only screen and (max-device-width: 767px) {
     /* celulares */
@@ -586,7 +640,7 @@ body.loading {
         line-height: 45px;
     }
 
-    .form-index form{
+    .form-index form {
         margin: 0 35%;
     }
 
