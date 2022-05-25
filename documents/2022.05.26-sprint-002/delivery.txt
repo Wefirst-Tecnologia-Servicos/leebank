@@ -1,2 +1,3 @@
 -------- VIXI -------
 24/05 - 8 horas - Daniel - Codificada e estilizada a pagina compliance segurança.
+25/05 - 6 horas - Igor - Efetuado correções leebank de acordo com o pdf "Apresentação problemas do site lee bank"

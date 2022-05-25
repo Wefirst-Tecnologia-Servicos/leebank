@@ -122,6 +122,7 @@ img {
     .second-row p {
         font-size: 15px;
         line-height: 20px;
+        margin-top: 0px !important; 
     }
 
 button {

@@ -311,3 +311,39 @@ INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) V
 INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(35, 20, 'PT', null, 'setLanguage', 33, 'VIXI');
 INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(36, 30, 'ZH', null, 'setLanguage', 33, 'VIXI');
 INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(37, 60, 'vixiMenusign', null, '#', null, 'VIXI');
+
+UPDATE dictionary SET pt = 'Fale Conosco.', en ='Contact us.', zh ='请联系我们。' WHERE dictionaryid = 'contactUs';
+UPDATE dictionary SET pt = 'Soluções de cash-in e cash-out.', en ='Cash-in and cash-out solutions.', zh ='存款和取款解决方案。' WHERE dictionaryid = 'cashIn';
+UPDATE dictionary SET pt = 'acha num clique.', en ='find in a click.', zh ='点击即可找到。' WHERE dictionaryid = 'findInAClick';
+UPDATE dictionary SET pt = 'Acesse o nosso App para cadastrar-se.', en ='Access our APP to sign up.', zh ='进入我们的应用程序进行注册。' WHERE dictionaryid = 'acessOurAppToSignUp';
+UPDATE dictionary SET pt = 'Certificação.', en ='Certification.', zh ='认证。' WHERE dictionaryid = 'certification';
+UPDATE dictionary SET pt = 'Esquema de criptografia mais avançado.', en ='More advanced encryption scheme.', zh ='更高级的加密方案。' WHERE dictionaryid = 'encryption';
+UPDATE dictionary SET pt = 'Quantidade ilimitado de caracteres da chave de segurança.', en ='Unlimited security key size.', zh ='安全密钥中的字符数不限。' WHERE dictionaryid = 'unlimitedSecurity';
+UPDATE dictionary SET pt = 'NFC, carteira-eletrônica, além de EMV Chip&PIN, tarja magnética e contactless.', en ='NFC, e-wallet, plus EMV Chip&PIN, magnetic stripe and contactless.', zh ='NFC、电子钱包、EMV Chip&PIN、磁条和非接触式。' WHERE dictionaryid = 'paymentOptions';
+UPDATE dictionary SET pt = 'Uso em ambientes fechados e ao ar livre.', en ='Use indoors and outdoors.', zh ='在室内和室外使用。' WHERE dictionaryid = 'batteryUse';
+UPDATE dictionary SET pt = 'Leitura de cartões e rápido fluxo de transações.', en ='Card reading and fast transaction flow.', zh ='读卡和快速交易流程。' WHERE dictionaryid = 'transactionFlow';
+UPDATE dictionary SET pt = 'Protege a privacidade de transação enquanto promove o acesso ao aplicativos de pagamento.', en ='Protects transaction privacy while promoting access to payment apps.', zh ='保护交易隐私，同时促进对支付应用程序的访问。' WHERE dictionaryid = 'protectTransation';
+UPDATE dictionary SET pt = 'Política de concepção de produtos ecológica-proativa.', en ='Eco-Proactive Product Design Policy.', zh ='环保产品设计政策。' WHERE dictionaryid = 'designPolicy';
+UPDATE dictionary SET pt = 'Permite pagamentos com sistema mais seguro.', zh ='允许使用更安全的系统进行支付。' WHERE dictionaryid = 'allowsPayments';
+UPDATE dictionary SET pt = 'CI PTS 5.x, EMV L1/L2/CL1.', en ='CI PTS 5.x, EMV L1/L2/CL1.', zh ='CI PTS 5.x，EMV L1/L2/CL1。' WHERE dictionaryid = 'certifications';
+UPDATE dictionary SET pt = 'PayPass, PayWave, Expresspay.', en ='PayPass, PayWave, Expresspay.', zh ='PayPass, PayWave, Expresspay。' WHERE dictionaryid = 'payCertification';
+UPDATE dictionary SET pt = 'Plataforma de aplicativo mobile mais utilizada do mercado.', zh ='市场上最常用的移动应用平台。' WHERE dictionaryid = 'makingApplications';
+UPDATE dictionary SET pt = '4G, Wi-Fi e Bluetooth.', en ='4G, Wi-Fi e Bluetooth.', zh ='4G、WiFi 和蓝牙。' WHERE dictionaryid = 'conections';
+
+
+UPDATE dictionary SET pt = 'Cadastre-se' WHERE dictionaryid = 'signUp';
+UPDATE dictionary SET pt = 'O primeiro banco personalizado para' WHERE dictionaryid = 'theFirstBank';
+UPDATE dictionary SET pt = 'Processos de pagamento simples e móvel' WHERE dictionaryid = 'paymentProcess';
+UPDATE dictionary SET pt = 'Ferramentas para gestão de negócios' WHERE dictionaryid = 'tools';
+UPDATE dictionary SET pt = 'Sistema de scanner' WHERE dictionaryid = 'scanner';
+UPDATE dictionary SET pt = 'Segurança absoluta' WHERE dictionaryid = 'absoluteSecurity';
+UPDATE dictionary SET pt = 'Todas as opções de pagamento' WHERE dictionaryid = 'payment';
+UPDATE dictionary SET pt = 'Experiência simples e segura' WHERE dictionaryid = 'experience';
+UPDATE dictionary SET pt = 'Melhores mecanismos de segurança' WHERE dictionaryid = 'secutiryMechanics';
+
+
+UPDATE dictionary SET pt = '© Lee Bank Instituição de Pagamento LTDA, 2022. Todos os direitos reservados' WHERE dictionaryid = 'righsReserved';
+
+UPDATE dictionary SET pt = 'encontre num clique.' WHERE dictionaryid = 'findInAClick';
+
+UPDATE dictionary SET pt = 'Políticas de Privacidade', en ='Privacy Policies' WHERE dictionaryid = 'policies';
