@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="config.json" />
+    <Content Include="frontend\compliance-segurance.html" />
     <Content Include="frontend\css\index.css" />
     <Content Include="frontend\download\LeeBank_Politicas_de_Privacidade.pdf" />
     <Content Include="frontend\download\LeeBank_Termos_de_Uso_de_Consetimentos_de_Dados.pdf" />
@@ -47,6 +48,7 @@
     <Content Include="frontend\img\cash.jpg" />
     <Content Include="frontend\img\cellphone.png" />
     <Content Include="frontend\img\chat-icon.png" />
+    <Content Include="frontend\img\compliance-security-title-div.png" />
     <Content Include="frontend\img\credit-card.png" />
     <Content Include="frontend\img\div1.jpg" />
     <Content Include="frontend\img\div2.jpg" />
@@ -89,6 +91,8 @@
     <Content Include="frontend\img\placeHolderIcon.png" />
     <Content Include="frontend\img\Página 5.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
+    <Content Include="frontend\img\xNotSelected.png" />
+    <Content Include="frontend\img\xSelected.png" />
     <Content Include="frontend\index.html" />
     <Content Include="frontend\js\app\app.js" />
     <Content Include="frontend\js\app\dictionary.js" />
@@ -99,6 +103,9 @@
     <Content Include="frontend\js\component\template\footer.html" />
     <Content Include="frontend\js\component\template\menu.html" />
     <Content Include="frontend\js\controller\body.js" />
+    <Content Include="frontend\js\global.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="frontend\otc.html" />
     <Content Include="frontend\plugin\angularjs\angular.min.js" />
     <Content Include="frontend\plugin\bootstrap-5.1.3-dist\css\bootstrap-grid.css" />
