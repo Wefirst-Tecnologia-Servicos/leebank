@@ -40,6 +40,7 @@
     <Content Include="frontend\download\LeeBank_Termos_de_Uso_de_Consetimentos_de_Dados.pdf" />
     <Content Include="frontend\exchange-legal-person.html" />
     <Content Include="frontend\exchange-natural-person.html" />
+    <Content Include="frontend\img\2D52728C.png" />
     <Content Include="frontend\img\82524c39e454d9a2a5bb3da3364665fe.jfif" />
     <Content Include="frontend\img\AdobeStock_286076203.jpeg" />
     <Content Include="frontend\img\apple-store-icon.png" />
@@ -69,9 +70,11 @@
     <Content Include="frontend\img\insurance.jpg" />
     <Content Include="frontend\img\intagram-icon.png" />
     <Content Include="frontend\img\linkedin-icon.png" />
+    <Content Include="frontend\img\logo.svg" />
     <Content Include="frontend\img\logo1.png" />
     <Content Include="frontend\img\logo1.svg" />
     <Content Include="frontend\img\logo2.png" />
+    <Content Include="frontend\img\logo2.svg" />
     <Content Include="frontend\img\machine1.jpg" />
     <Content Include="frontend\img\machine1.png" />
     <Content Include="frontend\img\machine2.png" />

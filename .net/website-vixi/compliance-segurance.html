@@ -7,7 +7,6 @@
     <meta name="author" content="WeFirst">
 
     <link href="plugin/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
 
@@ -19,8 +18,6 @@
 
     <script src="js/component/menu.js"></script>
     <script src="js/component/footer.js"></script>
-
-    <script src="js/global.js"></script>
 
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
@@ -39,10 +36,10 @@
 
     <div ng-controller="BodyController">
 
-        <div class="container-fluid background-image compliance-security-body" style="background-image: url(img/compliance-security.png); background-size: contain;">
+        <div class="container-fluid background-image" style="background-image: url(img/compliance-security.png);">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row compliance-title background-image-compliance-title">
+                    <div class="row compliance-title">
                         <div class="col-md-12">
                             <h1>Compliance <br /> Segurança</h1>
                             <h2>Políticas adotadas pela empresa.</h2>
@@ -53,8 +50,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link nav-link-tab active" id="compliance" data-bs-toggle="tab" data-bs-target="#tab-compliance" type="button" role="tab" aria-controls="nav-home" aria-selected="true" onclick="selectTabButton(this);">Compliance</button>
-                                        <button class="nav-link nav-link-tab" id="procedures" data-bs-toggle="tab" data-bs-target="#tab-procedures" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="selectTabButton(this);">Procedimentos</button>
+                                        <button class="nav-link nav-link-tab active" id="compliance" data-bs-toggle="tab" data-bs-target="#tab-compliance" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Compliance</button>
+                                        <button class="nav-link nav-link-tab" id="procedures" data-bs-toggle="tab" data-bs-target="#tab-procedures" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Procedimentos</button>
                                     </div>
                                 </div>
                             </div>
@@ -64,36 +61,35 @@
                         <div class="tab-pane fade active" id="tab-compliance" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="selectTabListItem(this);">POLÍTICA PARA GESTÃO DE RISCOS</button>
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">POLÍTICA PARA GESTÃO DE RISCOS</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE PREVENÇÃO À LAVAGEM DE DINHEIRO E COMBATE AO FINANCIAMENTO DO TERRORISMO</button>
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">POLÍTICA DE PREVENÇÃO À LAVAGEM DE DINHEIRO E COMBATE AO FINANCIAMENTO DO TERRORISMO</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE SEGURANÇA DA INFORMAÇÃO E CIBERNÉTICA</button>
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POLÍTICA DE SEGURANÇA DA INFORMAÇÃO E CIBERNÉTICA</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE COMPLIANCE</button>
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POLÍTICA DE COMPLIANCE</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active compliance-security-text" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
                             </div>
                         </div>
                         
                         <div class="tab-pane fade show" id="tab-procedures" role="tabpanel" aria-labelledby="nav-home-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select" ></div><button class="nav-link nav-link-button active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR TRANSACTION - KYT</button>
+                                    <button class="nav-link active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button">PROCEDIMENTO KNOW YOUR TRANSACTION - KYT</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR CUSTOMER - KYC</button>
+                                    <button class="nav-link" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button">PROCEDIMENTO KNOW YOUR CUSTOMER - KYC</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR PARTNER - KYP</button>
+                                    <button class="nav-link" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button">PROCEDIMENTO KNOW YOUR PARTNER - KYP</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
