@@ -440,10 +440,23 @@ table {
 
 .compliance-security-text {
     overflow: auto;
-    height: 1000px;
+    height: 1500px;
     padding: 2%;
-    background-color: rgb(25, 24, 24, 0.9);
+    background-color: rgb(13, 13, 13, 0.9);
 }
+
+    .compliance-security-text h1, .compliance-security-text h2{
+        color: #ffffff;
+    }
+
+    .compliance-security-text h3 {
+        color: #A9FDF7;
+    }
+
+    .compliance-security-text b {
+        color: #63D7D0;
+        font-weight: normal;
+    }
 
     .compliance-security-text::-webkit-scrollbar {
         width: 20px;
@@ -475,9 +488,17 @@ table {
     background-position: 70% 10%;
 }
 
-@media only screen and (max-device-width: 767px) {
-    /* celulares */
-    p {
+.back-to-homepage {
+    margin: -4% 0 7% 0%;
+    text-decoration: underline;
+}
+    .back-to-homepage a:hover{
+        color: #ffffff;
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        /* celulares */
+        p {
         font-size: 16px;
         margin-top: 5px;
     }
@@ -668,21 +689,39 @@ table {
         font-size: 14px !important;
     }
 
-    .compliance-security-body h2 {
+
+    .compliance-security-text h2 {
         font-size: 17px;
     }
-
-    .compliance-security-text h2{
-        font-size:1px
-    }
     .compliance-security-text h3 {
-        font-size: 1px
+        font-size: 15px;
     }
     .compliance-security-text p {
-        font-size: 1px
+        font-size: 16px;
     }
     .compliance-security-text h1 {
-        font-size: 1px
+        font-size: 20px
+    }
+
+    .background-image-compliance-title h2 {
+        font-size: 18px;
+    }
+
+    .nav-link-button {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        text-align: inherit;
+        width: 85%;
+        display:inline !important;
+        border-bottom: none;
+    }
+
+    .background-image-select {
+        padding-top: 10px;
+    }
+
+    .back-to-homepage {
+        margin: 10% 0 15% 10%;
     }
 }
 
@@ -736,4 +775,28 @@ table {
     .navbar-dark .navbar-brand {
         margin-right: 40%;
     }
-}
+
+    .compliance-security-body {
+        background-position: center 35%;
+    }
+
+    .compliance-security-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .background-image-select {
+        background-size: 150%;
+    }
+
+    .nav-item-tab button {
+        font-size: 25px !important;
+    }
+
+    .nav-link-tab {
+        font-size: 35px !important;
+    }
+
+        .nav-link-tab:active, .nav-link-tab:focus, .nav-link-tab:hover {
+            color: #C567A5 !important;
+            border-bottom: 5px solid #C567A5 !important;
+        }

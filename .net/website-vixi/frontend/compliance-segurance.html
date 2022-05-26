@@ -25,7 +25,7 @@
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
             setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("min-height", window.innerHeight + "px");
+                $("div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-tabs), div.carousel-item").css("min-height", window.innerHeight + "px");
                 $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
             }, 500);
         });
@@ -48,8 +48,9 @@
                             <h2>Políticas adotadas pela empresa.</h2>
                         </div>
                     </div>
+
                     <nav>
-                        <div class="container">
+                        <div class="container-fluid compliance-security-tabs">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -60,40 +61,42 @@
                             </div>
                         </div>
                     </nav>
+
                     <div class="tab-content" id="nav-tabContent">
+
                         <div class="tab-pane fade active" id="tab-compliance" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="selectTabListItem(this);">POLÍTICA PARA GESTÃO DE RISCOS</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="riskiness-tab" data-bs-toggle="tab" data-bs-target="#riskiness" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA PARA GESTÃO DE RISCOS</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE PREVENÇÃO À LAVAGEM DE DINHEIRO E COMBATE AO FINANCIAMENTO DO TERRORISMO</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="prevention-tab" data-bs-toggle="tab" data-bs-target="#prevention" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE PREVENÇÃO À LAVAGEM DE DINHEIRO E COMBATE AO FINANCIAMENTO DO TERRORISMO</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE SEGURANÇA DA INFORMAÇÃO E CIBERNÉTICA</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE SEGURANÇA DA INFORMAÇÃO E CIBERNÉTICA</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);">POLÍTICA DE COMPLIANCE</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="policyCompliance-tab" data-bs-toggle="tab" data-bs-target="#policyCompliance" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE COMPLIANCE</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active compliance-security-text" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-                                <div class="tab-pane fade compliance-security-text" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                                <div class="tab-pane fade show active compliance-security-text" id="riskiness" role="tabpanel" aria-labelledby="home-tab"></div>
+                                <div class="tab-pane fade compliance-security-text" id="prevention" role="tabpanel" aria-labelledby="profile-tab"></div>
+                                <div class="tab-pane fade compliance-security-text" id="security" role="tabpanel" aria-labelledby="contact-tab"></div>
+                                <div class="tab-pane fade compliance-security-text" id="policyCompliance" role="tabpanel" aria-labelledby="contact-tab"></div>
                             </div>
                         </div>
-                        
+
                         <div class="tab-pane fade show" id="tab-procedures" role="tabpanel" aria-labelledby="nav-home-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select" ></div><button class="nav-link nav-link-button active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR TRANSACTION - KYT</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR TRANSACTION - KYT</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR CUSTOMER - KYC</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR CUSTOMER - KYC</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button" onclick="selectTabListItem(this);">PROCEDIMENTO KNOW YOUR PARTNER - KYP</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR PARTNER - KYP</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
@@ -115,14 +118,14 @@
                                                 <b>CNPJ: </b>Cadastro Nacional de Pessoas Jurídicas;
                                             </p>
                                         </li>
-                                        <li>                                           
+                                        <li>
                                             <p>
                                                 <b>COAF: </b>Conselho de Controle de Atividades Financeiras;
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                <b>Colaborador(es):</b>todos os funcionários e empregados da Vixi Exchange, bem como todos
+                                                <b>Colaborador(es):</b> todos os funcionários e empregados da Vixi Exchange, bem como todos
                                                 que possuam cargo, função, posição, ou relação societária, empregatícia, comercial,
                                                 profissional, contratual ou de confiança com a Vixi Exchange, assim como os estagiários e
                                                 trainees;
@@ -1088,6 +1091,14 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 back-to-homepage">
+                                <a href="index.html"><b>< {{dictionary.vixiHomepage}}</b></a>
                             </div>
                         </div>
                     </div>
