@@ -347,3 +347,14 @@ UPDATE dictionary SET pt = '© Lee Bank Instituição de Pagamento LTDA, 2022. T
 UPDATE dictionary SET pt = 'encontre num clique.' WHERE dictionaryid = 'findInAClick';
 
 UPDATE dictionary SET pt = 'Políticas de Privacidade', en ='Privacy Policies' WHERE dictionaryid = 'policies';
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('backHome', 'Voltar para Homepage', 'Back to Homepage', '??', 'LEE-MARKETING'); 
+
+UPDATE dictionary SET pt ='Tel', en ='Phone', zh ='电话' WHERE dictionaryid = 'vixiTel';
+UPDATE dictionary SET pt ='Endereço da Empresa', en ='Company Address', zh ='公司地址' WHERE dictionaryid = 'vixiAddress';
+UPDATE dictionary SET pt ='Política de Privacidade', en ='Privacy Policy', zh ='隐私权政策' WHERE dictionaryid = 'vixiPrivacyPolice';
+UPDATE dictionary SET pt ='Termos de uso', en ='Terms of Use', zh ='使用条款' WHERE dictionaryid = 'vixiTerms';
+UPDATE dictionary SET pt ='Central de Ajuda', en ='Help Center', zh ='帮助中心' WHERE dictionaryid = 'vixiHelp';
+UPDATE dictionary SET pt ='© Razão Social da VIXI, 2022. Todos os direitos reservados', en ='© VIXI Corporate Name, 2022. All rights reserved', zh ='© VIXI 公司名称，2022。版权所有' WHERE dictionaryid = 'vixiAllRights';
+
+
