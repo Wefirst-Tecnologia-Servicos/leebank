@@ -33,8 +33,15 @@
                 <p>{{dictionary.sleepSoundly}}</p>
                 <p>{{dictionary.seeBelow}}</p>
                 <button ng-click="redirectTo('about-insurance.html')" class="button-page" type="button">{{dictionary.ourInsurance}}</button>
-                <a href="index.html?lang={{currentLanguage}}"><p><b><u>< {{dictionary.backHome}}   </u></b></p></a>
+                <div class="col-md-12">
+                    <a href="index.html?lang={{currentLanguage}}">
+                        <p style="text-align:right;">
+                            <b><u>< {{dictionary.backHome}}</u></b>
+                        </p>
+                    </a>
+                </div>
             </div>
+            
         </div>
     </div>
 
