@@ -2,3 +2,9 @@
 24/05 - 8 horas - Daniel - Codificada e estilizada a pagina compliance segurança.
 25/05 - 6 horas - Igor - Efetuado correções leebank de acordo com o pdf "Apresentação problemas do site lee bank"
 25/05 - 8 horas - Daniel - Codificado seleção de tabs, imagem de background e responsivo mobile
+26/05 - 4 horas - Igor - Atualizações gerais pdf
+26/05 - 30 min - Igor - Reunião
+26/05 - 30 min - Vitor - reunião
+26/05 - 30 min - Vitor - Sprint retrospective
+26/05 - 30 min - Daniel - Reunião
+26/05 - 6:30 horas - Daniel - Finalização do responsivo da pagina compliense segurança
