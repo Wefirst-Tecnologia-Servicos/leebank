@@ -6,3 +6,4 @@
 25/05 - 3 horas - Victor - Infraestrutura
 27/05 - 4 horas - Victor - Infraestrutura
 27/05 - 7 horas - Daniel - Ajustes no menu, responsivo e configuração do sendgrid
+27/05 - 30 min  - Victor - Reunião
