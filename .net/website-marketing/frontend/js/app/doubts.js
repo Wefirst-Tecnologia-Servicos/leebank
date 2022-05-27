@@ -7,7 +7,7 @@
 angular
     .module("leebank")
     .service("DoubtsService", function ($http) {
-        var apiBasePath = "http://201.30.147.96:3001/";
+        var apiBasePath = "http://201.30.147.96:3101/";
         return {
             send: function (doubtsData) {
                 return $http.post(`${apiBasePath}doubts`, doubtsData);

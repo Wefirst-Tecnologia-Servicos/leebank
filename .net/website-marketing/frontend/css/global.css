@@ -122,7 +122,7 @@ img {
     .second-row p {
         font-size: 15px;
         line-height: 20px;
-        margin-top: 0px !important; 
+        margin-top: 0px !important;
     }
 
 button {
@@ -173,8 +173,10 @@ button {
 
 .form-exchange {
     padding: 0px 100px;
-    margin: 40px 0 40px 0;
 }
+    .form-exchange p{
+        margin-top: 0px;
+    }
 
     .form-exchange form {
         background-color: rgb(0,0,0, 0.6);
@@ -187,7 +189,7 @@ button {
         box-shadow: none !important;
         padding: 0;
         border-radius: 20px !important;
-        width: 30%;
+        width: 20%;
         margin: 0 40px;
     }
 
@@ -251,6 +253,10 @@ button {
         text-align: center;
         margin: 0;
         font-size: 18px;
+    }
+
+    .form-exchange .input-group {
+        display: grid;
     }
 
 .navbar-right {
@@ -328,6 +334,44 @@ body.loading {
     padding-top: 30%;
 }
 
+.text-about {
+    padding: 100px;
+}
+
+.payment-gateway-image .space {
+    width: 47%;
+}
+
+.payment-gateway-image .text-position-right {
+    width: 53%;
+}
+
+.navbar, .navbar-right {
+    padding: 0 !important;
+}
+
+    .navbar .container-fluid, .navbar-collapse, .navbar-right {
+        height: 77px !important;
+    }
+
+    .navbar .container-fluid {
+        padding-right: 0 !important;
+    }
+
+.signUp {
+    background-color: #7798be;
+    padding: 0% 0%;
+}
+
+    .signUp span {
+        color: #513278;
+    }
+
+.navbar li {
+    align-items: center;
+    display: flex;
+}
+
 
 @media only screen and (max-device-width: 767px) {
     /* celulares */
@@ -342,7 +386,7 @@ body.loading {
 
     .navbar-right {
         background-color: #6f42c1;
-        margin: 0px -12px;
+        margin: 0px -12px !important;
         padding: 0 10px;
         display: block;
     }
@@ -458,25 +502,33 @@ body.loading {
     .space {
         display: none;
     }
+
+    .navbar-brand {
+        display: contents
+    }
+
+    .navbar .container-fluid, .navbar-collapse, .navbar-right {
+        height: auto !important;
+    }
 }
 
-@media only screen and (min-width: 1920px) {
-    p {
-        font-size: 40px;
+@media only screen and (min-device-width: 1920px) {
+    p, .text-about p {
+        font-size: 23px;
         line-height: 45px;
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 45px;
         line-height: 60px;
     }
 
     a, li {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 70px;
         line-height: 90px;
     }
 
@@ -484,9 +536,13 @@ body.loading {
         font-size: 35px;
     }
 
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-left: 2.5rem;
+    }
+
     .second-row h1 {
-        font-size: 130px;
-        line-height: 140px;
+        font-size: 120px;
+        line-height: 120px;
     }
 
     .second-row p {
@@ -496,6 +552,7 @@ body.loading {
 
     .second-row .qrcode {
         width: 80% !important;
+        margin: 0% 12%;
     }
 
     .sign-up {
@@ -503,7 +560,7 @@ body.loading {
     }
 
         .sign-up img {
-            width: 80%;
+            width: 40%;
         }
 
     .navbar {
@@ -511,13 +568,12 @@ body.loading {
     }
 
     button {
-        font-size: 40px !important;
+        font-size: 25px !important;
         width: 80%;
     }
 
     .footer p {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 18px;
     }
 
     .carrouselText {
@@ -525,82 +581,102 @@ body.loading {
     }
 
     .form input, .form textarea {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .form h3 {
-        font-size: 60px;
-        margin-bottom: 40px;
+        font-size: 45px;
     }
 
     .form label {
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 20px;
     }
 
     .form textarea {
-        height: 300px !important;
+        height: 270px !important;
     }
 
     .indexImageDiv9 .row {
-        padding: 100px 0 100px 0 !important;
+        padding: 81px 0 81px 0 !important;
     }
 
     .form {
-        padding: 100px 50px 100px 100px;
+        padding: 35px 35px 35px 50px;
     }
 
         .form button {
             margin-top: 15px;
         }
 
-    .text-about p {
-        font-size: 35px;
-    }
-
     .text-about {
-        padding: 100px 100px !important;
+        padding: 170px 100px !important;
     }
 
     embed {
         width: 20%;
     }
 
-    .form-exchange form {
-        height: 100%;
+    .indexImageDiv6 .col-md-5 {
+        width: 39.666667%;
     }
 
-    .form-exchange p, .form-exchange .text-bottom {
-        font-size: 25px;
-        line-height: 35px;
+    .indexImageDiv8 .col-md-5 {
+        width: 44.666667%;
     }
 
-    .form-exchange .campo-esquerdo {
-        font-size: 30px;
+    .exchange-legal-person-image .text-position-right {
+        padding-right: 16%;
+    }
+
+        .exchange-legal-person-image .text-position-right .button-page {
+            width: 62%;
+        }
+
+    .insurance-image .col-md-6 {
+        width: 47%;
+    }
+
+    .payment-gateway-image .space {
+        width: 60%;
+    }
+
+    .payment-gateway-image .text-position-right {
         width: 40%;
     }
 
-    .form-exchange .campo-direito {
-        font-size: 30px;
-        width: 60%;
-        height: 127px;
+    .cash-image .text-position-left {
+        padding-left: 191px;
     }
 
-    .form-exchange .input-coin {
-        width: 1030px;
+    .navbar, .navbar-right {
+        padding: 0 !important;
     }
 
-    .form-exchange .d-grid, .form-exchange .input-coin{
-        margin-top: 40px;
+        .navbar .container-fluid, .navbar-collapse, .navbar-right {
+            height: 100% !important;
+        }
+
+        .navbar .container-fluid {
+            padding-right: 0 !important;
+        }
+
+    .signUp {
+        background-color: #7798be;
+        padding: 0% 0%;
     }
 
-    .form-exchange .select-transfer {
-        font-size: 25px;
-        height: 70px;
+        .signUp span {
+            color: #513278;
+        }
+
+    .navbar li {
+        align-items: center;
+        display: flex;
     }
 
-    .form-exchange .mb-3 {
-        margin-bottom: 2rem !important;
+    .exchange-natural-person-image .col-md-6 {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
-
 }

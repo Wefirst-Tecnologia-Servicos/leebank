@@ -16,6 +16,11 @@
 
 - **website-vixi References:** https://bullish.com/ 
 
+## Technical Pendencies
+
+- Remove sendgrid API;
+- Include SSL certificate;
+
 ## Support
 - **WeFirst**: Rodrigo Zagnole +55 11 99525-3003
 

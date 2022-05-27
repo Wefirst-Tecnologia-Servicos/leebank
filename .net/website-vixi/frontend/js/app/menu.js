@@ -7,7 +7,7 @@
 angular
     .module("leebank")
     .service("MenuService", function ($http) {
-        var apiBasePath = "http://201.30.147.96:3001/";
+        var apiBasePath = "http://201.30.147.96:3101/";
         return {
             getMenuTree: languageID => {
                 return $http.post(`${apiBasePath}menu/`, {
