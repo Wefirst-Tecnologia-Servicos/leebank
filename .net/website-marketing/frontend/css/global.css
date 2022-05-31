@@ -84,7 +84,7 @@ img {
 .background-image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
 }
 
 
