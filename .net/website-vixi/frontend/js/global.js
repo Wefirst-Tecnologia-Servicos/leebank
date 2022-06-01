@@ -15,10 +15,10 @@ function selectTabListItem($button) {
 
     $ul.find("li").removeClass("selected");
     $li.addClass("selected");
-    /*
-    var $tab = $ul.parent();
-    var tabId = $tab.attr("id");
-
-    selectTabButton($("button[data-bs-target='#" + tabId + "']"));
-    */
 }
+
+// -------------------- PAGE_LOAD --------------------- //
+
+$(document).ready(() => {
+    $("#procedures").click(); $("#compliance").click();
+});
