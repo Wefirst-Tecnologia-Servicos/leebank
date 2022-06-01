@@ -36,6 +36,9 @@
     <Content Include="doubts-service.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="exchange-service.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="menu-service.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />

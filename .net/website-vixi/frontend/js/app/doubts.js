@@ -10,6 +10,7 @@ angular
         var apiBasePath = "http://201.30.147.96:3101/";
         return {
             send: doubtsData => {
+                doubtsData.WebSite = "VIXI";
                 return $http.post(`${apiBasePath}doubts`, doubtsData);
             }
         }

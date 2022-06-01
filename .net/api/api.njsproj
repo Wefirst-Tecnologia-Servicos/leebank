@@ -41,6 +41,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="routes\dictionary.js" />
+    <Content Include="routes\exchange.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\menu.js">
       <SubType>Code</SubType>
     </Content>

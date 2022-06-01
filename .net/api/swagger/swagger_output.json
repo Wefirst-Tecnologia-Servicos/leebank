@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "3.0.0",
-    "title": "LeeBank REST API",
-    "description": "API for Lee Bank remote applications"
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
   },
   "host": "localhost:3000",
   "basePath": "/",
@@ -111,6 +111,9 @@
             "schema": {
               "type": "object",
               "properties": {
+                "WebSite": {
+                  "example": "any"
+                },
                 "SenderName": {
                   "example": "any"
                 },
@@ -122,6 +125,30 @@
                 }
               }
             }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/exchange/rates/{baseCurrency}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "baseCurrency",
+            "in": "path",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {

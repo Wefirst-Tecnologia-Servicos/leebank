@@ -6,9 +6,9 @@ const email = require('../common/email-helper');
 module.exports = {
     send: doubtsModel => {
 
-        var subject = config.doubsEMail.template.subject;
-        var text = config.doubsEMail.template.text;
-        var html = config.doubsEMail.template.html;
+        var subject = config.doubsEMail[doubtsModel.WebSite].template.subject;
+        var text = config.doubsEMail[doubtsModel.WebSite].template.text;
+        var html = config.doubsEMail[doubtsModel.WebSite].template.html;
 
         // binds the model data into the template e-mail data
         for (var k in doubtsModel) {
@@ -25,9 +25,9 @@ module.exports = {
 
         // sends the e-mail
         return email.send(
-            config.doubsEMail.sendGrid.apiKey,
-            config.doubsEMail.sendGrid.sender,
-            config.doubsEMail.sendGrid.recipient,
+            config.doubsEMail[doubtsModel.WebSite].sendGrid.apiKey,
+            config.doubsEMail[doubtsModel.WebSite].sendGrid.sender,
+            config.doubsEMail[doubtsModel.WebSite].sendGrid.recipient,
             subject, text, html);
     }
 };
