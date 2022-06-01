@@ -445,7 +445,7 @@ table {
     background-color: rgb(13, 13, 13, 0.9);
 }
 
-    .compliance-security-text h1, .compliance-security-text h2{
+    .compliance-security-text h1, .compliance-security-text h2 {
         color: #ffffff;
     }
 
@@ -492,13 +492,14 @@ table {
     margin: -4% 0 7% 0%;
     text-decoration: underline;
 }
-    .back-to-homepage a:hover{
+
+    .back-to-homepage a:hover {
         color: #ffffff;
     }
 
-    @media only screen and (max-device-width: 767px) {
-        /* celulares */
-        p {
+@media only screen and (max-device-width: 767px) {
+    /* celulares */
+    p {
         font-size: 16px;
         margin-top: 5px;
     }
@@ -516,8 +517,14 @@ table {
     }
 
     .navbar button {
-        width: 15%;
-        background-color: #563596 !important;
+        width: 17%;
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+
+    nav-link:hover, nav-link:focus, nav-link:active {
+        color: #b25c9f !important;
+        background-color: #C9C9C9 !important;
     }
 
     .navbar-right {
@@ -685,7 +692,7 @@ table {
         font-size: 20px !important;
     }
 
-    .compliance-security-body .nav-link-button{
+    .compliance-security-body .nav-link-button {
         font-size: 14px !important;
     }
 
@@ -693,12 +700,15 @@ table {
     .compliance-security-text h2 {
         font-size: 17px;
     }
+
     .compliance-security-text h3 {
         font-size: 15px;
     }
+
     .compliance-security-text p {
         font-size: 16px;
     }
+
     .compliance-security-text h1 {
         font-size: 20px
     }
@@ -712,7 +722,7 @@ table {
         box-shadow: none !important;
         text-align: inherit;
         width: 85%;
-        display:inline !important;
+        display: inline !important;
         border-bottom: none;
     }
 

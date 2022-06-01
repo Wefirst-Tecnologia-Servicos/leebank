@@ -1,8 +1,12 @@
 -------- VIXI -------
-
+01/06 - 6 horas - Victor - API: Adequação do envio de e-mails
+01/06 - 8 horas - Daniel - Tradução.
+01/06 - 8 horas - Igor - Tradução.
+01/09 - 1 hora  - Victor - Bugfix tabfolder
 
 -------- LEE --------
 
 27/05 - 5 horas - Victor - Infraestrutura (subir site para servidor wefirst)
 27/05 - 7 horas - Daniel - Ajustes no menu, responsivo e configuração do sendgrid.
 27/05 - 30 min  - Victor - Reunião
+01/06 - 6 horas - Victor - API: Exchange
