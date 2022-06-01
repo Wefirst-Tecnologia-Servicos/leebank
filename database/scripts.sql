@@ -732,4 +732,4 @@ UPDATE dictionary SET dictionaryid = 'vixiCsRisk49' where dictionaryid = 'vixiCs
 UPDATE dictionary SET dictionaryid = 'vixiCsRisk5' where dictionaryid = 'vixiCsRisk5';
 UPDATE dictionary SET dictionaryid = 'vixiCsRisk51' where dictionaryid = 'vixiCsRisk5.1';
 
-UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' where dictionaryid = 'vixiCsKytDate';
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' where dictionaryid = 'vixiCSRiskDate';
