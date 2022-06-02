@@ -37,6 +37,6 @@ $(document).ready(() => {
         selectTabButton($("#procedures").click());
         setTimeout(() => {
             selectTabButton($("#compliance").click());
-        }, 100);
+        }, 250);
     }
 });
