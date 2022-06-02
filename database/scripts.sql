@@ -1187,3 +1187,5 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsCompli
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsSeguranca','Segurança', 'Security', '??', 'VIXI');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsPoliticas','Políticas adotadas pela empresa.', 'Policies adopted by the company.', '??', 'VIXI');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsProcedimentos','Procedimentos', 'Procedures', '??', 'VIXI');
+
+UPDATE menu SET link = 'index.html#compliance-security' WHERE menuid = 23;

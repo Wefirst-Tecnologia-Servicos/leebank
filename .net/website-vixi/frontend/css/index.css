@@ -8,7 +8,7 @@ body {
     background-color: #111111;
 }
 
-.otc-body {
+.otc-body, .compliance-security-body-up {
     background-color: #191919;
 }
 
@@ -522,7 +522,7 @@ table {
         background-color: transparent !important;
     }
 
-    nav-link:hover, nav-link:focus, nav-link:active {
+    .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
         color: #b25c9f !important;
         background-color: #C9C9C9 !important;
     }
@@ -676,7 +676,7 @@ table {
 
     .index-div-1 {
         background-size: 350%;
-        background-position: 65% 310%;
+        background-position: 65% 195%;
     }
 
     .footer img {

@@ -15,18 +15,10 @@
     <script src="js/app/dictionary.js"></script>
     <script src="js/app/doubts.js"></script>
     <script src="js/app/menu.js"></script>
+    <script src="js/global.js"></script>
 
     <script src="js/component/menu.js"></script>
     <script src="js/component/footer.js"></script>
-
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function () {
-            setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("min-height", window.innerHeight + "px");
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
-            }, 500);
-        });
-    </script>
 
 </head>
 
@@ -83,7 +75,7 @@
             </div>
         </div>
 
-        <div id="exchange" class="container-fluid background-image index-div-4" style="">
+        <div id="compliance-security" class="container-fluid background-image index-div-4" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
                     <h1>{{dictionary.vixiCompliance}}<br />{{dictionary.vixiSecurity}}</h1>

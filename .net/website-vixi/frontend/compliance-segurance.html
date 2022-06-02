@@ -19,21 +19,11 @@
 
     <script src="js/component/menu.js"></script>
     <script src="js/component/footer.js"></script>
-
     <script src="js/global.js"></script>
-
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function () {
-            setInterval(function () {
-                $("div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-tabs), div.carousel-item").css("min-height", window.innerHeight + "px");
-                $("div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item").css("max-width", window.innerWidth + "px");
-            }, 500);
-        });
-    </script>
 
 </head>
 
-<body class="otc-body" ng-app="leebank">
+<body class="compliance-security-body-up" ng-app="leebank">
 
     <menu-component></menu-component>
 
