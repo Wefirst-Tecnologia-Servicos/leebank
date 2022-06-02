@@ -44,8 +44,10 @@
                 <div class="col-md-12">
                     <div class="row compliance-title background-image-compliance-title">
                         <div class="col-md-12">
-                            <h1>Compliance <br /> Segurança</h1>
-                            <h2>Políticas adotadas pela empresa.</h2>
+                            <h1>
+                                {{dictionary.vixiCsCompliance}}<br>{{dictionary.vixiCsSeguranca}}
+                            </h1>
+                            <h2>{{dictionary.vixiCsPoliticas}}</h2>
                         </div>
                     </div>
 
@@ -54,8 +56,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link nav-link-tab active" id="compliance" data-bs-toggle="tab" data-bs-target="#tab-compliance" type="button" role="tab" aria-controls="nav-home" aria-selected="true" onclick="selectTabButton(this);">Compliance</button>
-                                        <button class="nav-link nav-link-tab" id="procedures" data-bs-toggle="tab" data-bs-target="#tab-procedures" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="selectTabButton(this);">Procedimentos</button>
+                                        <button class="nav-link nav-link-tab active" id="compliance" data-bs-toggle="tab" data-bs-target="#tab-compliance" type="button" role="tab" aria-controls="nav-home" aria-selected="true" onclick="selectTabButton(this);">{{dictionary.vixiCsCompliance}}</button>
+                                        <button class="nav-link nav-link-tab" id="procedures" data-bs-toggle="tab" data-bs-target="#tab-procedures" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="selectTabButton(this);">{{dictionary.vixiCsProcedimentos}}</button>
                                     </div>
                                 </div>
                             </div>
@@ -67,16 +69,16 @@
                         <div class="tab-pane fade active" id="tab-compliance" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="riskiness-tab" data-bs-toggle="tab" data-bs-target="#riskiness" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA PARA GESTÃO DE RISCOS</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="riskiness-tab" data-bs-toggle="tab" data-bs-target="#riskiness" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsRiskTitle}}</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="prevention-tab" data-bs-toggle="tab" data-bs-target="#prevention" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE PREVENÇÃO À LAVAGEM DE DINHEIRO E COMBATE AO FINANCIAMENTO DO TERRORISMO</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="prevention-tab" data-bs-toggle="tab" data-bs-target="#prevention" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsPldTile}}</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE SEGURANÇA DA INFORMAÇÃO E CIBERNÉTICA</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsSeg}}</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="policyCompliance-tab" data-bs-toggle="tab" data-bs-target="#policyCompliance" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">POLÍTICA DE COMPLIANCE</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="policyCompliance-tab" data-bs-toggle="tab" data-bs-target="#policyCompliance" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsComp}}</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
@@ -1334,13 +1336,13 @@
                         <div class="tab-pane fade show" id="tab-procedures" role="tabpanel" aria-labelledby="nav-home-tab">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR TRANSACTION - KYT</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button active" id="kyt-button" data-bs-toggle="tab" data-bs-target="#kyt" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsKytTitle}}</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR CUSTOMER - KYC</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyc-button" data-bs-toggle="tab" data-bs-target="#kyc" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsKycTitle}}</button>
                                 </li>
                                 <li class="nav-item nav-item-tab" role="presentation">
-                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">PROCEDIMENTO KNOW YOUR PARTNER - KYP</button>
+                                    <div class="background-image-select"></div><button class="nav-link nav-link-button" id="kyp-button" data-bs-toggle="tab" data-bs-target="#kyp" type="button" onclick="selectTabListItem(this);" style="border-bottom: none !important;">{{dictionary.vixiCsKypTitle}}</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
