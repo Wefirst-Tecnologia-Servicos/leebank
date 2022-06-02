@@ -33,9 +33,10 @@ $(document).ready(() => {
         }, 1000)
     }
 
-    $("#procedures").click();
-    $("#compliance").click();
-    setTimeout(() => {
-        selectTabButton("#compliance");
-    }, 100);
+    if ($("#procedures, #compliance").length == 2) {
+        selectTabButton($("#procedures").click());
+        setTimeout(() => {
+            selectTabButton($("#compliance").click());
+        }, 100);
+    }
 });
