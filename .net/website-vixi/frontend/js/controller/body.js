@@ -18,16 +18,25 @@
         $scope.doubts = {
             SenderName: "",
             SenderEMail: "",
-            Description: "",
+            Phone: "",
+            Cpf: "",
+            Cnpj: ""
         }
 
         $scope.sendDoubts = () => {
+
             document.getElementsByTagName("body")[0].classList.add("loading");
-            DoubtsService.send($scope.doubts).then(() => {
+            DoubtsService.send({
+                SenderName: $scope.doubts.SenderName,
+                SenderEMail: $scope.doubts.SenderEMail,
+                Description: `Telefone: ${$scope.doubts.Phone}\nCPF: ${$scope.doubts.Cpf}\nCNPJ: ${$scope.doubts.Cnpj}`
+            }).then(() => {
                 $scope.doubts = {
                     SenderName: "",
                     SenderEMail: "",
-                    Description: "",
+                    Phone: "",
+                    Cpf: "",
+                    Cnpj: ""
                 };
                 document.getElementsByTagName("body")[0].classList.remove("loading");
             });
