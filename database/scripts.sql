@@ -1179,3 +1179,11 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES('vixiCsPld174'
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES('vixiCsPld178','17.8 Os sistemas de informação da Vixi Exchange serão submetidos a testes periódicos para verificação de sua adequação às diretrizes da presente Política.','17.8 The information systems of Vixi Exchange will be submitted to periodic tests to verify their adequacy to the guidelines of this Policy.','??', 'VIXI');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES('vixiCsPld18','18. APROVAÇÃO','18. APPROVAL','??', 'VIXI');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES('vixiCsPld18Text1','A presente Política foi aprovada pela Diretoria da Vixi Exchange.','This Policy has been approved by the Board of Directors of Vixi Exchange.','??', 'VIXI');
+
+
+UPDATE dictionary SET en='PROCEDURE KNOW YOUR PARTNER - KYP' WHERE dictionaryid = 'vixiCsKypTitle';
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsCompliance','Compliance', 'Compliance', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsSeguranca','Segurança', 'Security', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsPoliticas','Políticas adotadas pela empresa.', 'Policies adopted by the company.', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsProcedimentos','Procedimentos', 'Procedures', '??', 'VIXI');
