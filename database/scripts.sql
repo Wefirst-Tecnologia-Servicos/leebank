@@ -1192,3 +1192,6 @@ UPDATE menu SET link = 'index.html#compliance-security' WHERE menuid = 23;
 
 INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(38, 70, 'cash', NULL, 'index.html#cash', 1, 'LEE-MARKETING');
 
+UPDATE dictionary SET pt = 'Me chame de simplicidade.', en ='Call me simplicity.' WHERE dictionaryid = 'callMe';
+UPDATE dictionary SET pt = 'Alcançando novos horizontes.', en ='Reaching new horizons.' WHERE dictionaryid = 'reachingHorizons';
+UPDATE dictionary SET pt = 'Serviço completo, confiança total.', en ='Complete service, total trust.' WHERE dictionaryid = 'completeService';
