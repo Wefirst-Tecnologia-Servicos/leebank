@@ -29,7 +29,7 @@
     <div class="container-fluid" ng-controller="BodyController">
         <div class="row text-about">
             <h2>
-                {{dictionary.insurance}}
+                {{dictionary.ourInsurance}}
             </h2>
             <div class="col-md-6" style="padding-right: 50px;">
                 <p>
@@ -44,7 +44,15 @@
                     <b>{{dictionary.theft}}</b><br />
                     {{dictionary.theftInsurance}}
                 </p>
+                <div class="col-md-12">
+                    <a href="index.html?lang={{currentLanguage}}">
+                        <p style="text-align:left;">
+                            <b><u>< {{dictionary.backHome}}</u></b>
+                        </p>
+                    </a>
+                </div>
             </div>
+
             <div class="col-md-6">
                 <p>
                     <b>{{dictionary.residential}}</b><br />
@@ -55,6 +63,7 @@
                     {{dictionary.purseInsurance}}
                 </p>
             </div>
+
         </div>
     </div>
 

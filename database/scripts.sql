@@ -1191,3 +1191,4 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiCsProced
 UPDATE menu SET link = 'index.html#compliance-security' WHERE menuid = 23;
 
 INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) VALUES(38, 70, 'cash', NULL, 'index.html#cash', 1, 'LEE-MARKETING');
+
