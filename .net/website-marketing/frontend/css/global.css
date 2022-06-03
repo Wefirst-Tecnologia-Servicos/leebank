@@ -111,7 +111,7 @@ img {
 }
 
 .carousel-item {
-    padding: 260px 0 260px 0;
+    padding: 22% 0; 
 }
 
 .second-row {
@@ -588,10 +588,6 @@ body.loading {
 
     .footer p {
         font-size: 18px;
-    }
-
-    .carrouselText {
-        margin-top: 10%;
     }
 
     .form input, .form textarea {
