@@ -33,7 +33,7 @@ img {
 
 .navbar {
     background-image: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
-    position: absolute;
+    position: fixed;
 }
 
     .navbar a {
@@ -63,7 +63,8 @@ img {
     left: auto;
     right: 0;
     padding: 10% 0px;
-    margin-right: -9px;
+    margin-right: 8px;
+    margin-top: -0.875rem;
     padding-top: 9px;
     border: none;
 }
@@ -358,6 +359,12 @@ body.loading {
         padding-right: 0 !important;
     }
 
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+
 .signUp {
     background-color: #7798be;
     padding: 0% 0%;
@@ -365,6 +372,7 @@ body.loading {
 
     .signUp span {
         color: #513278;
+        font-weight: bold;
     }
 
 .navbar li {
