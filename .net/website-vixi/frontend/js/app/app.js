@@ -3,10 +3,15 @@
  * @description
  * This module provides an AngularJS LeeBank services
  */
+/**
+ * @license WeFirst
+ * @description
+ * This module provides an AngularJS LeeBank services
+ */
 angular
     .module("leebank", [])
     .constant("MODULE_VERSION", "2.0.0")
-    .config(function ($httpProvider) {
+    .config($httpProvider => {
         $httpProvider.defaults.transformRequest.push((data, headersGetter) => {
             $("body").addClass("loading");
             return data;
@@ -16,11 +21,11 @@ angular
             setTimeout(() => { $("body").removeClass("loading"); }, 50);
             return data;
         });
-        
+
     })
     .service("GlobalService", function ($http) {
         return {
-            getQueryStringParam: paramName => {
+            getQueryStringParam: function (paramName) {
                 var result = null;
                 if (window.location.href.indexOf("?") > -1) {
                     result = "&" + window.location.href.split("?")[1].replace("#", "&");
@@ -46,4 +51,4 @@ angular
                 }
             }
         }
-    });;
+    });

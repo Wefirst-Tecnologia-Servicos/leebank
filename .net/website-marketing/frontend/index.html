@@ -27,28 +27,42 @@
 
             // ---------- Animation ---------- //
 
-            if (window.location.href.indexOf("lang=") > -1) {
-                $("#divAnimation").remove();
-            } else {
-                $("body").css({ overflow: "hidden" });
-                $("menu-component").hide();
-                setTimeout(function () {
-                    $("#divAnimation h1").fadeToggle("slow");
-                    setTimeout(function () {
-                        $("#divAnimation").fadeOut("slow", function () {
-                            $("menu-component").show();
-                            $("#divAnimation").remove();
-                            $("body").css({ overflow: "scroll" });
+            var animationSpeed = 1000;
+            var animationDelay = 2000;
+
+            $("body").css({ overflow: "hidden" });
+            $("menu-component").hide();
+
+            var startEvent = setInterval(() => {
+                if (!$("body").is(".firstLoad")) {
+                    if (window.location.href.indexOf("lang=") > -1) {
+                        $("#divAnimation").remove();
+                    } else {
+                        $("#divAnimation h1:first").fadeIn(animationSpeed, () => {
+                            setTimeout(function () {
+                                $("#divAnimation h1:first").fadeOut(animationSpeed, () => {
+                                    $("#divAnimation h1:last").fadeIn(animationSpeed, () => {
+                                        setTimeout(() => {
+                                            $("#divAnimation").fadeOut(animationSpeed, function () {
+                                                $("menu-component").show();
+                                                $("#divAnimation").remove();
+                                                $("body").css({ overflow: "scroll" });
+                                            });
+                                        }, animationDelay)
+                                    });
+                                });
+                            }, animationDelay);
                         });
-                    }, 2000);
-                }, 2000);
-            }
+                    }
+                    clearInterval(startEvent);
+                }
+            }, 500);
         });
     </script>
 
 </head>
 
-<body ng-app="leebank" class="loading">
+<body ng-app="leebank" class="firstLoad">
 
     <menu-component></menu-component>
 
@@ -56,7 +70,7 @@
 
         <div id="divAnimation" class="background-image" style="background-image: url(/img/header-banner1.jpg);">
             <div class="container-fluid d-flex h-100 align-items-center justify-content-center carrouselText">
-                <h1>{{dictionary.helloWeAreLeeBank}}</h1>
+                <h1 style="display:none; text-align:center;">{{dictionary.helloWeAreLeeBank}}</h1>
                 <h1 style="display:none; text-align:center;">{{dictionary.theFirstBank}} <br /> {{dictionary.theChineseCommunity}}</h1>
             </div>
         </div>
@@ -81,7 +95,7 @@
                             <h1 class="text-center">{{dictionary.digital}}</h1>
                             <h1 class="text-center">{{dictionary.intuitive}}</h1>
                             <h1 class="text-center">{{dictionary.efficient}}</h1>
-                            <p class="text-center" style="margin-top: 0; padding-top: 10px; font-size: 30px; line-height: 40px; ">{{dictionary.allYouNeed}}<br/> {{dictionary.findInAClick}}</p>
+                            <p class="text-center" style="margin-top: 0; padding-top: 10px; font-size: 30px; line-height: 40px; ">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
                         </div>
                         <div class="img-phone">
                             <img src="img/cellphone.png" style="max-width: 100%;" />
@@ -249,7 +263,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
-                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea />
+                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>

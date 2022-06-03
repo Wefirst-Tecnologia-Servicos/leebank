@@ -6,12 +6,9 @@
         DictionaryService.getDictionary($scope.currentLanguage).then(translations => {
             $scope.dictionary = translations.data;
 
-            var allElements = document.getElementsByTagName('*');
+            var allElements = $('*[ng-placeholder]');
             for (var i = 0, n = allElements.length; i < n; i++) {
-                var attr = allElements[i].getAttribute("ng-placeholder");
-                if (attr != null) {
-                    allElements[i].setAttribute("placeholder", $scope.dictionary[attr]);
-                }
+                $(allElements[i]).attr("placeholder", $scope.dictionary[$(allElements[i]).attr("ng-placeholder")]);
             }
 
             $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {

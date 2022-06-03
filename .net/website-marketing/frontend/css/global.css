@@ -324,7 +324,6 @@ div.loader-wrapper {
 body.loading {
     overflow: hidden !important;
 }
-
     body.loading div.loader-wrapper {
         width: 100%;
         height: 100%;
@@ -335,6 +334,14 @@ body.loading {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+body.firstLoad {
+    background: #563596;
+}
+
+    body.firstLoad * {
+        visibility:hidden;
     }
 
 .img-download {
