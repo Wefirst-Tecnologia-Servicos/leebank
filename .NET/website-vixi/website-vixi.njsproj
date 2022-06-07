@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="config.json" />
+    <Content Include="frontend\compliance-security.html" />
     <Content Include="frontend\compliance-segurance.html" />
     <Content Include="frontend\css\index.css" />
     <Content Include="frontend\download\LeeBank_Politicas_de_Privacidade.pdf" />
