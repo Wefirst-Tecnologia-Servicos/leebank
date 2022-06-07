@@ -1195,3 +1195,72 @@ INSERT INTO menu (menuid, sequence, text, header, link, fathermenuid, website) V
 UPDATE dictionary SET pt = 'Me chame de simplicidade.', en ='Call me simplicity.' WHERE dictionaryid = 'callMe';
 UPDATE dictionary SET pt = 'Alcançando novos horizontes.', en ='Reaching new horizons.' WHERE dictionaryid = 'reachingHorizons';
 UPDATE dictionary SET pt = 'Serviço completo, confiança total.', en ='Complete service, total trust.' WHERE dictionaryid = 'completeService';
+
+UPDATE menu SET link = 'index.html#vixi-exchange' WHERE menuid = 20;
+UPDATE dictionary SET en = 'Let us lead you' WHERE dictionaryid = 'vixiGuiding';
+UPDATE dictionary SET en = 'to your future' WHERE dictionaryid = 'vixiFuture';
+UPDATE dictionary SET pt = 'Viemos para inspirar as pessoas a irem mais longe e alcançarem seus sonhos através de uma parceria de confiança que cresce a cada dia.', en = 'We came to inspire people to go further and achieve their dreams through a trusted partnership that grows each day.' WHERE dictionaryid = 'vixiInspire';
+UPDATE dictionary SET pt = 'Queremos que nossos clientes tenham a sensação exata de que podem contar conosco e que nosso produto atenda suas expectativas e necessidades.' WHERE dictionaryid = 'vixiClient';
+UPDATE dictionary SET pt = 'OTC ou over-the-counter, faz referência à época em que os ativos eram negociados em balcões das corretoras. O processo oferece menos burocracia e permite negociações mais diretas entre compradores e vendedores, possibilitando o investidor à encontrar mais oportunidades na hora de comprar moedas.' WHERE dictionaryid = 'vixiRefference';
+UPDATE dictionary SET pt = 'Preencha os campos abaixo para a', en = 'Fill in the fields below to' WHERE dictionaryid = 'vixiFill';
+UPDATE dictionary SET pt = 'solicitação do cadastro.', en = 'request a registration.' WHERE dictionaryid = 'vixiSolicitation';
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiComplianceAnd', 'Compliance e', 'Compliance and','??', 'VIXI');
+UPDATE dictionary SET pt = 'e Segurança', en = 'and Security' WHERE dictionaryid = 'vixiComplianceAnd';
+UPDATE dictionary SET pt = ' quaisquer políticas, normas, procedimentos, atividades e mecanismos desenvolvidos para assegurar que os objetivos de negócios sejam atingidos e que eventos indesejáveis sejam prevenidos, detectados e remediados;', en = ' any policies, standards, procedures, activities, and mechanisms designed to ensure that business objectives are met and that undesirable events are prevented, detected, and remedied;' WHERE dictionaryid = 'vixiCsRiskDefConText';
+
+UPDATE dictionary SET en = 'Contributor(s): ' WHERE dictionaryid = 'vixiCsRiskDefCol'; 
+UPDATE dictionary SET pt = 'Política: ', en = 'Politics: ' WHERE dictionaryid = 'vixiCsRiskDefPol';
+UPDATE dictionary SET pt = 'Risco: ', en = 'Risk: ' WHERE dictionaryid = 'vixiCsRiskDefRis'; 
+UPDATE dictionary SET pt = ' Origem dos Eventos: ', en = ' Source of Events:' WHERE dictionaryid = 'vixiCsRiskTipText2Ori'; 
+UPDATE dictionary SET pt = ' Os riscos externos ' WHERE dictionaryid = 'vixiCsRiskTipText2Ris'; 
+UPDATE dictionary SET pt = ' Os riscos internos ' WHERE dictionaryid = 'vixiCsRiskTipText2Ris2'; 
+UPDATE dictionary SET pt = ' Natureza dos Riscos: ', en = ' Nature of Risks: ' WHERE dictionaryid = 'vixiCsRiskTipText3Nat'; 
+UPDATE dictionary SET pt = 'Riscos Estratégicos: ' WHERE dictionaryid = 'vixiCsRiskTipText3Ris'; 
+UPDATE dictionary SET pt = 'Riscos Financeiros/Operacionais: ' WHERE dictionaryid = 'vixiCsRiskTipText3Fin'; 
+UPDATE dictionary SET pt = 'Riscos de Compliance: ' WHERE dictionaryid = 'vixiCsRiskTipText3Comp'; 
+UPDATE dictionary SET pt = 'Evitar: ' WHERE dictionaryid = 'vixiCsRiskResText3Evi'; 
+UPDATE dictionary SET pt = 'Reduzir: ' WHERE dictionaryid = 'vixiCsRiskResText3Red'; 
+UPDATE dictionary SET pt = 'Compartilhar: ' WHERE dictionaryid = 'vixiCsRiskResText3Comp'; 
+UPDATE dictionary SET pt = 'Aceitar: ' WHERE dictionaryid = 'vixiCsRiskResText3Ace'; 
+UPDATE dictionary SET pt = 'Primeira linha de defesa – Áreas Administrativas e de Negócios. ' WHERE dictionaryid = 'vixiCsRiskParTitle2'; 
+UPDATE dictionary SET pt = 'Segunda linha de defesa – Gestão de Riscos, Controles e Compliance. ' WHERE dictionaryid = 'vixiCsRiskParTitle3'; 
+UPDATE dictionary SET pt = 'Terceira linha de defesa – Auditoria Interna. ' WHERE dictionaryid = 'vixiCsRiskParTitle4'; 
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiDot', '.', '.', '。', 'VIXI');
+
+UPDATE dictionary SET en = ' (high or low).' WHERE dictionaryid = 'vixiCsPld161Text2';
+UPDATE dictionary SET pt = 'Colaborador(es): ', en = 'Contributor(s): ' WHERE dictionaryid = 'vixiCsSeg3BText1'; 
+UPDATE dictionary SET pt = 'Diretoria: ', en = 'Board of Directors: ' WHERE dictionaryid = 'vixiCsSeg3BText2'; 
+UPDATE dictionary SET pt = 'Lei de Sigilo Bancário: ', en = 'Banking Secrecy Law: ' WHERE dictionaryid = 'vixiCsSeg3BText3'; 
+UPDATE dictionary SET pt = 'LGPD: ', en = 'LGPD: ' WHERE dictionaryid = 'vixiCsSeg3BText4'; 
+UPDATE dictionary SET pt = 'Política: ', en = 'Politics: ' WHERE dictionaryid = 'vixiCsSeg3BText5'; 
+UPDATE dictionary SET pt = 'Terceiro(s): ', en = 'Third Party(ies): ' WHERE dictionaryid = 'vixiCsSeg3BText6'; 
+UPDATE dictionary SET pt = 'Integridade: ', en = 'Integrity: ' WHERE dictionaryid = 'vixiCsSeg425BText1'; 
+UPDATE dictionary SET pt = 'Confidencialidade e Sigilo: ', en = 'Confidentiality and Secrecy: ' WHERE dictionaryid = 'vixiCsSeg425BText2'; 
+UPDATE dictionary SET pt = 'Disponibilidade: ', en = 'Availability: ' WHERE dictionaryid = 'vixiCsSeg425BText3'; 
+UPDATE dictionary SET pt = 'Informação Pública: ', en = 'Public Information: ' WHERE dictionaryid = 'vixiCsSeg431BText1'; 
+UPDATE dictionary SET pt = 'Informação Interna: ', en = 'Internal Information: ' WHERE dictionaryid = 'vixiCsSeg431BText2'; 
+UPDATE dictionary SET pt = 'Informação Confidencial: ', en = 'Confidential Information: ' WHERE dictionaryid = 'vixiCsSeg431BText3'; 
+UPDATE dictionary SET pt = 'Alto (Impacto Grave): ', en = 'High (Severe Impact): ' WHERE dictionaryid = 'vixiCsSeg479BText1'; 
+UPDATE dictionary SET pt = 'Médio (Impacto Significativo): ', en = 'Medium (Significant Impact): ' WHERE dictionaryid = 'vixiCsSeg479BText2'; 
+UPDATE dictionary SET pt = 'Baixo (Impacto Mínimo): ', en = 'Low (Minimal Impact): ' WHERE dictionaryid = 'vixiCsSeg479BText3';
+
+UPDATE dictionary SET pt = 'Código de Ética e Conduta: ', en = 'Code of Ethics and Conduct: ' WHERE dictionaryid = 'vixiCsComp3BText1'; 
+UPDATE dictionary SET pt = 'Colaborador(es): ', en = 'Contributor(s): ' WHERE dictionaryid = 'vixiCsComp3BText2'; 
+UPDATE dictionary SET pt = 'Conformidade: ', en = 'Conformity: ' WHERE dictionaryid = 'vixiCsComp3BText3'; 
+UPDATE dictionary SET pt = 'Diretoria: ', en = 'Board of Directors: ' WHERE dictionaryid = 'vixiCsComp3BText4'; 
+UPDATE dictionary SET pt = 'Política: ', en = 'Politics: ' WHERE dictionaryid = 'vixiCsComp3BText5'; 
+UPDATE dictionary SET pt = 'Risco de Conformidade: ', en = 'Compliance Risk: ' WHERE dictionaryid = 'vixiCsComp3BText6'; 
+UPDATE dictionary SET pt = 'Terceiro(s): ', en = 'Third Party(ies): ' WHERE dictionaryid = 'vixiCsComp3BText7'; 
+
+UPDATE dictionary SET pt = ' Nos casos de parceiros internacionais, a documentação necessária poderá ser adaptada.', en = ' In the case of international partners, the required documentation can be adapted.' WHERE dictionaryid = 'vixiCsKypProcNotaText'; 
+
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'vixiCsRiskDateB'; 
+UPDATE dictionary SET pt = '03/06/2021', en = ' 06/03/2021' WHERE dictionaryid = 'vixiCsPld2B'; 
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'vixiCsSeg2Text1B'; 
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'vixiCsComp2Text1B'; 
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'VixiCsKytApTextDate'; 
+UPDATE dictionary SET pt = ' 03/06/2021', en = ' 06/03/2021' WHERE dictionaryid = 'vixiCsKycApDate'; 
+UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'vixiCsKypApTextDate'; 
+
+UPDATE dictionary SET pt = '©  VIXI Exchange Serviços Digitais LTDA, 2022. Todos os direitos reservados', en = '© VIXI Exchange Digital Services LTDA, 2022. All rights reserved' WHERE dictionaryid = 'vixiAllRights';

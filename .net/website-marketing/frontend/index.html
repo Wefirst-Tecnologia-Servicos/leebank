@@ -23,30 +23,37 @@
     <script src="js/global.js"></script>
 
     <script type="text/javascript" language="javascript">
+
+        function startNavigation() {
+            $("menu-component").show();
+            $("#divAnimation").remove();
+            $("body").css({ overflow: "scroll" });
+        }
+
         $(document).ready(function () {
+
+            $("body").css({ overflow: "hidden" });
+            $("menu-component").hide();
+
+            if (window.location.href.indexOf("lang=") > -1) {
+                startNavigation();
+            }
 
             // ---------- Animation ---------- //
 
             var animationSpeed = 1000;
             var animationDelay = 2000;
 
-            $("body").css({ overflow: "hidden" });
-            $("menu-component").hide();
-
             var startEvent = setInterval(() => {
                 if (!$("body").is(".firstLoad")) {
-                    if (window.location.href.indexOf("lang=") > -1) {
-                        $("#divAnimation").remove();
-                    } else {
+                    if (window.location.href.indexOf("lang=") < 0) {
                         $("#divAnimation h1:first").fadeIn(animationSpeed, () => {
                             setTimeout(function () {
                                 $("#divAnimation h1:first").fadeOut(animationSpeed, () => {
                                     $("#divAnimation h1:last").fadeIn(animationSpeed, () => {
                                         setTimeout(() => {
                                             $("#divAnimation").fadeOut(animationSpeed, function () {
-                                                $("menu-component").show();
-                                                $("#divAnimation").remove();
-                                                $("body").css({ overflow: "scroll" });
+                                                startNavigation();
                                             });
                                         }, animationDelay)
                                     });

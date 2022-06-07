@@ -42,13 +42,12 @@ img {
 
 hr {
     height: 3px !important;
-    background: linear-gradient(90deg, rgba(212, 106, 207, 1), rgba(169, 253, 247, 1));
+    background: linear-gradient(90deg, rgb(255 0 243), rgb(0 255 237));
 }
 
 .navbar {
     background: linear-gradient(180deg, #191818 14.18%, rgba(91, 81, 81, 0.64) 50.64%, #191818 86.02%);
-    box-shadow: 0px 18px 12px #191818;
-    position: relative;
+    box-shadow: -10px 10px 15px #191818;
 }
 
     .navbar a {
@@ -376,10 +375,11 @@ body.loading {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(76, 53, 118, 0.8);
+        background-color: rgba(54, 54, 54, 0.8);
         display: flex;
         justify-content: center;
         align-items: center;
+        position:fixed;
     }
 
 .display-none-desk {
@@ -490,13 +490,26 @@ table {
 }
 
 .back-to-homepage {
-    margin: -4% 0 7% 0%;
-    text-decoration: underline;
+    margin: 0% 5% 5% 4%;
 }
 
-    .back-to-homepage a:hover {
-        color: #ffffff;
+.redirect {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-decoration: underline;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+    .redirect:hover {
+        color: #35FFE7 !important;
     }
+
+.vixiMenusign a {
+    color: #b25c9f !important;
+}
 
 @media only screen and (max-device-width: 767px) {
     /* celulares */
@@ -523,6 +536,10 @@ table {
         background-color: transparent !important;
     }
 
+    .navbar .nav-link {
+        padding-left: 5%;
+    }
+
     .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
         color: #b25c9f !important;
         background-color: #C9C9C9 !important;
@@ -531,7 +548,6 @@ table {
     .navbar-right {
         background-color: #373737;
         margin: 0px -12px;
-        padding: 0 10px;
         display: block;
     }
 
@@ -547,24 +563,6 @@ table {
     .footer {
         padding: 15px;
     }
-
-    .second-row .img-phone {
-        display: flex;
-    }
-
-    .second-row .img-desktop {
-        display: none;
-    }
-
-    .second-row .img-download {
-        text-align: center;
-        padding-top: 0 !important;
-    }
-
-        .second-row .img-download img {
-            width: 60%;
-            padding: 10px 0px 0 0 !important;
-        }
 
     button {
         margin: 10px;
@@ -734,9 +732,11 @@ table {
     .back-to-homepage {
         margin: 10% 0 15% 10%;
     }
+
+    
 }
 
-@media only screen and (min-width: 1920px) {
+/*@media only screen and (min-width: 1920px) {
     p, .otc-page a {
         line-height: 50px;
         font-size: 35px;
@@ -811,3 +811,5 @@ table {
             color: #C567A5 !important;
             border-bottom: 5px solid #C567A5 !important;
         }
+}
+*/

@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="container-fluid background-image index-div-2" style="">
+        <div id="vixi-exchange" class="container-fluid background-image index-div-2" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
                     <h1>{{dictionary.vixiExhange}}</h1>
@@ -63,14 +63,14 @@
                     <p>{{dictionary.vixiDesk}}</p>
                     <p>{{dictionary.vixiProblems}}:</p>
                     <p>
-                        <b>{{dictionary.vixiSlippage}}</b><br />
+                        <b style="color: #63D7D0">{{dictionary.vixiSlippage}}</b><br />
                         {{dictionary.vixiDIfference}}
                     </p>
                     <p>
-                        <b>{{dictionary.vixiLimits}}</b><br />
+                        <b style="color: #63D7D0">{{dictionary.vixiLimits}}</b><br />
                         {{dictionary.vixiExchange}}
                     </p>
-                    <a href="otc.html"><p><b><u>{{dictionary.vixiKnow}}   ></u></b></p></a>
+                    <button class="redirect" ng-click="redirectTo('otc.html')" type="button">{{dictionary.vixiKnow}}   ></button>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
         <div id="compliance-security" class="container-fluid background-image index-div-4" style="">
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
-                    <h1>{{dictionary.vixiCompliance}}<br />{{dictionary.vixiSecurity}}</h1>
+                    <h1>{{dictionary.vixiCompliance}}<br />{{dictionary.vixiComplianceAnd}}</h1>
                     <hr />
                     <p>
                         {{dictionary.vixiRelation}}
@@ -86,7 +86,7 @@
                     <p>
                         {{dictionary.vixiPolicy}}
                     </p>
-                    <a href="compliance-segurance.html"><p><b><u>{{dictionary.vixiKnow}}   ></u></b></p></a>
+                    <button class="redirect" ng-click="redirectTo('compliance-security.html')" type="button">{{dictionary.vixiKnow}}   ></button>
                 </div>
                 <div class="col-md-6 d-flex align-items-center display-none-cel">
                     <img class="mx-auto d-block" src="img/indexDiv4.png" />
