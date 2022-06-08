@@ -87,6 +87,7 @@
     <Content Include="frontend\img\machine3.png" />
     <Content Include="frontend\img\machine4.png" />
     <Content Include="frontend\img\Mask group.png" />
+    <Content Include="frontend\img\menu-background.jpg" />
     <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\otcBody.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
