@@ -46,8 +46,14 @@ hr {
 }
 
 .navbar {
-    background: linear-gradient(180deg, #191818 14.18%, rgba(91, 81, 81, 0.64) 50.64%, #191818 86.02%);
-    box-shadow: -10px 10px 15px #191818;
+    background-image: url(../img/menu-background.jpg);
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.navbar #divMenuContainer {
+    padding: 0;
 }
 
     .navbar a {
@@ -66,8 +72,8 @@ hr {
     display: flex;
 }
 
-.navbar-dark .navbar-brand {
-    margin-right: 40%;
+.navbar-collapse {
+    justify-content: end;
 }
 
 .dropdown-item {
@@ -583,7 +589,7 @@ table {
     }
 
     .otc-page {
-        padding-bottom: 50%;
+        padding: 20% 0% 50% 0%;
         margin: 10% 0% 0% 0%;
     }
 
@@ -598,6 +604,10 @@ table {
         .otc-page .otc-text {
             margin-bottom: 35%;
         }
+
+    .compliance-security-body {
+        padding: 20% 0% 0% 0%;
+    }
 
     .footer p {
         font-size: 20px;
@@ -734,14 +744,22 @@ table {
 
 @media only screen and (min-width: 1200px){
     p {
-        font-size: 40px;
+        font-size: 25px;
         margin-top: 5px;
+    }
+
+    .navbar-nav {
+        padding: 0rem 1.5rem;
     }
 }
 
 @media only screen and (min-width: 1800px) {
     p {
-        font-size: 50px;
-        margin-top: 5px;
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    .navbar-nav {
+        padding: 0rem 1.5rem;
     }
 }
