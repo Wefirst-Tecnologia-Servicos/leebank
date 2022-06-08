@@ -775,6 +775,10 @@ table {
         font-size: 35px !important;
     }
 
+   .navbar a{
+       font-size: 35px;
+   }
+
     .navbar button {
         width: 17%;
         box-shadow: none !important;
@@ -783,6 +787,19 @@ table {
 
     .navbar .nav-link {
         padding-left: 5%;
+        font-size: 40px !important;
+        color: white !important;
+    }
+    .navbar .dropdown-menu {
+        background-color: #373737;
+        border-radius: 7px;
+        left: auto;
+        right: 0;
+        padding: 0% 26px;
+        margin-right: -9px;
+        padding-top: 9px;
+        border: none;
+        font-size: 41px;
     }
 
         .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
@@ -976,11 +993,11 @@ table {
 
     .compliance-security-body button {
         margin: 0px;
-        font-size: 45px !important;
+        font-size: 30px !important;
     }
 
     .compliance-security-body .nav-link-button {
-        font-size: 14px !important;
+        font-size: 25px !important;
     }
 
 
@@ -1018,7 +1035,7 @@ table {
     }
 
     .back-to-homepage {
-        margin: 10% 0 15% 10%;
+        margin: 10% 0 15% 4%;
     }
 }
 
