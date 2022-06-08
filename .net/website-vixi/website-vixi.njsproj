@@ -41,6 +41,7 @@
     <Content Include="frontend\fonts\DMSans-Medium.ttf" />
     <Content Include="frontend\fonts\DMSans-MediumItalic.ttf" />
     <Content Include="frontend\fonts\DMSans-Regular.ttf" />
+    <Content Include="frontend\fonts\Gilroy-Light.ttf" />
     <Content Include="frontend\fonts\OFL.txt" />
     <Content Include="frontend\img\AdobeStock_286076203.jpeg" />
     <Content Include="frontend\img\apple-store-icon.png" />
