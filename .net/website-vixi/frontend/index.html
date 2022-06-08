@@ -56,20 +56,17 @@
 
         <div id="otc" class="container-fluid background-image index-div-3" style="background-image: url(img/indexDiv3.png); background-position: 0% 0%; background-size: contain; ">
             <div class="row">
-                <div class="col-md-6"></div>
+                <div class="col-md-6 space"></div>
                 <div class="col-md-6 text-position-right" style="padding-top: 30%;">
                     <h1>{{dictionary.vixiOtc}}</h1>
                     <hr />
                     <p>{{dictionary.vixiDesk}}</p>
                     <p>{{dictionary.vixiProblems}}:</p>
-                    <p>
-                        <b style="color: #63D7D0">{{dictionary.vixiSlippage}}</b><br />
-                        {{dictionary.vixiDIfference}}
-                    </p>
-                    <p>
-                        <b style="color: #63D7D0">{{dictionary.vixiLimits}}</b><br />
-                        {{dictionary.vixiExchange}}
-                    </p>
+                    <p><b style="color: #63D7D0">{{dictionary.vixiSlippage}}</b></p>
+                    <P>{{dictionary.vixiDIfference}}</p>
+                    <p><b style="color: #63D7D0">{{dictionary.vixiLimits}}</b></p>
+                    <p>{{dictionary.vixiExchange}}</p>
+                    
                     <button class="redirect" ng-click="redirectTo('otc.html')" type="button">{{dictionary.vixiKnow}}   ></button>
                 </div>
             </div>
@@ -77,7 +74,7 @@
 
         <div id="compliance-security" class="container-fluid background-image index-div-4" style="">
             <div class="row">
-                <div class="col-md-6 text-position-left align-middle">
+                <div class="col-md-6 text-position-left">
                     <h1>{{dictionary.vixiCompliance}}<br />{{dictionary.vixiComplianceAnd}}</h1>
                     <hr />
                     <p>
@@ -98,7 +95,7 @@
             <div class="row" style="padding: 50px 0 50px 0;">
                 <div class="col-md-12 form-index">
                     <div class="row">
-                        <div class="col-md-6 text-position-left align-middle">
+                        <div class="col-md-6 text-position-left">
                             <h1>{{dictionary.vixiSign}}</h1>
                             <hr />
                         </div>
