@@ -1,6 +1,4 @@
 @font-face {
-    src: url(../fonts/DMSans-Regular.ttf);
-    font-family: DM Sans;
 
     src: url(../fonts/Gilroy-Light.ttf);
     font-family: Gilroy Light;
@@ -21,7 +19,6 @@ body {
 }
 
 p, h1, h2, h3, h4, ul, li, label, a {
-    font-family: 'DM Sans';
     font-style: normal;
     color: #ffffff;
     text-decoration-line: none;
