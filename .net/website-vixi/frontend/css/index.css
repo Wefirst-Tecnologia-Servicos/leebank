@@ -1064,13 +1064,14 @@ table {
 
 @media only screen and (min-width: 1800px) {
     p {
-        font-size: 28px;
+        font-size: 35px;
         margin-top: 25px;
+        line-height: 45px;
     }
 
     h1 {
-        font-size: 55px;
-        line-height: 50px;
+        font-size: 65px;
+        line-height: 60px;
     }
 
     .nav-link {
