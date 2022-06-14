@@ -402,18 +402,6 @@ body.firstLoad {
         padding: 25px !important;
     }
 
-    .navbar button {
-        width: 15%;
-        background-color: #563596 !important;
-    }
-
-    .navbar-right {
-        background-color: #6f42c1;
-        margin: 0px -12px !important;
-        padding: 0 10px;
-        display: block;
-    }
-
     .footer .float-end {
         float: none !important;
         padding-top: 15px;
@@ -573,180 +561,193 @@ body.firstLoad {
     .navbar .container-fluid, .navbar-collapse, .navbar-right {
         height: auto !important;
     }
+
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
+        height: 100vh !important;
+    }
 }
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
+        height: 100vh !important;
+    }
 }
 
 /* desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
+        height: 100vh !important;
+    }
 }
 
 /* large desktop */
 @media only screen and (min-device-width: 1400px) {
-    /* large desktop */
-    @media only screen and (min-width: 1400px) {
-        p, .text-about p {
-            font-size: 23px;
-            line-height: 45px;
-        }
 
-        h2 {
-            font-size: 45px;
-            line-height: 60px;
-        }
+    p, .text-about p {
+        font-size: 23px;
+        line-height: 45px;
+    }
 
-        a, li {
-            font-size: 20px;
-        }
+    h2 {
+        font-size: 45px;
+        line-height: 60px;
+    }
 
-        h1 {
-            font-size: 70px;
-            line-height: 90px;
-        }
+    a, li {
+        font-size: 20px;
+    }
 
-        h3 {
-            font-size: 35px;
-        }
+    h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
 
-        .navbar-expand-sm .navbar-nav .nav-link {
-            padding-left: 2.5rem;
-        }
+    h3 {
+        font-size: 35px;
+    }
 
-        .second-row h1 {
-            font-size: 120px;
-            line-height: 120px;
-        }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-left: 2.5rem;
+    }
 
-        .second-row p {
-            font-size: 25px;
-            line-height: 30px;
-        }
+    .second-row h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
 
-        .second-row .qrcode {
-            width: 80% !important;
-            margin: 0% 12%;
-        }
+    .second-row p {
+        font-size: 25px;
+        line-height: 30px;
+    }
 
-        .sign-up {
-            width: 430px !important;
-        }
+    .second-row .qrcode {
+        width: 80% !important;
+        margin: 0% 12%;
+    }
 
-            .sign-up img {
-                width: 40%;
-            }
+    .sign-up {
+        width: 430px !important;
+    }
 
-        .navbar {
-            height: 10%;
-        }
-
-        button {
-            font-size: 25px !important;
-            width: 80%;
-        }
-
-        .footer p {
-            font-size: 18px;
-        }
-
-        .form input, .form textarea {
-            font-size: 20px;
-        }
-
-        .form h3 {
-            font-size: 45px;
-        }
-
-        .form label {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .form textarea {
-            height: 270px !important;
-        }
-
-        .indexImageDiv9 .row {
-            padding: 81px 0 81px 0 !important;
-        }
-
-        .form {
-            padding: 35px 35px 35px 50px;
-        }
-
-            .form button {
-                margin-top: 15px;
-            }
-
-        .text-about {
-            padding: 170px 100px !important;
-        }
-
-        embed {
-            width: 20%;
-        }
-
-        .indexImageDiv6 .col-md-5 {
-            width: 39.666667%;
-        }
-
-        .indexImageDiv8 .col-md-5 {
-            width: 44.666667%;
-        }
-
-        .exchange-legal-person-image .text-position-right {
-            padding-right: 16%;
-        }
-
-            .exchange-legal-person-image .text-position-right .button-page {
-                width: 62%;
-            }
-
-        .insurance-image .col-md-6 {
-            width: 47%;
-        }
-
-        .payment-gateway-image .space {
-            width: 60%;
-        }
-
-        .payment-gateway-image .text-position-right {
+        .sign-up img {
             width: 40%;
         }
 
-        .cash-image .text-position-left {
-            padding-left: 191px;
-        }
-
-        .navbar, .navbar-right {
-            padding: 0 !important;
-        }
-
-            .navbar .container-fluid, .navbar-collapse, .navbar-right {
-                height: 100% !important;
-            }
-
-            .navbar .container-fluid {
-                padding-right: 0 !important;
-            }
-
-        .signUp {
-            background-color: #7798be;
-            padding: 0% 0%;
-        }
-
-            .signUp span {
-                color: #513278;
-            }
-
-        .navbar li {
-            align-items: center;
-            display: flex;
-        }
-
-        .exchange-natural-person-image .col-md-6 {
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
+    .navbar {
+        height: 10%;
     }
+
+    button {
+        font-size: 25px !important;
+        width: 80%;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .form input, .form textarea {
+        font-size: 20px;
+    }
+
+    .form h3 {
+        font-size: 45px;
+    }
+
+    .form label {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .form textarea {
+        height: 270px !important;
+    }
+
+    .indexImageDiv9 .row {
+        padding: 81px 0 81px 0 !important;
+    }
+
+    .form {
+        padding: 35px 35px 35px 50px;
+    }
+
+        .form button {
+            margin-top: 15px;
+        }
+
+    .text-about {
+        padding: 170px 100px !important;
+    }
+
+    embed {
+        width: 20%;
+    }
+
+    .indexImageDiv6 .col-md-5 {
+        width: 39.666667%;
+    }
+
+    .indexImageDiv8 .col-md-5 {
+        width: 44.666667%;
+    }
+
+    .exchange-legal-person-image .text-position-right {
+        padding-right: 16%;
+    }
+
+        .exchange-legal-person-image .text-position-right .button-page {
+            width: 62%;
+        }
+
+    .insurance-image .col-md-6 {
+        width: 47%;
+    }
+
+    .payment-gateway-image .space {
+        width: 60%;
+    }
+
+    .payment-gateway-image .text-position-right {
+        width: 40%;
+    }
+
+    .cash-image .text-position-left {
+        padding-left: 191px;
+    }
+
+    .navbar, .navbar-right {
+        padding: 0 !important;
+    }
+
+        .navbar .container-fluid, .navbar-collapse, .navbar-right {
+            height: 100% !important;
+        }
+
+        .navbar .container-fluid {
+            padding-right: 0 !important;
+        }
+
+    .signUp {
+        background-color: #7798be;
+        padding: 0% 0%;
+    }
+
+        .signUp span {
+            color: #513278;
+        }
+
+    .navbar li {
+        align-items: center;
+        display: flex;
+    }
+
+    .exchange-natural-person-image .col-md-6 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item{
+        height:100vh !important;
+    }
+}
