@@ -569,14 +569,14 @@ body.firstLoad {
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
         height: 100vh !important;
     }
 }
 
 /* desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
         height: 100vh !important;
     }
 }
@@ -747,8 +747,8 @@ body.firstLoad {
         padding-bottom: 5%;
     }
 
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item{
-        height:100vh !important;
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space{
+        height: 100vh !important;
     }
 }
  
