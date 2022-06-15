@@ -163,10 +163,32 @@ img {
     }
 
     .second-row p {
-        font-size: 15px;
+        font-size: 0.8rem;
         line-height: 20px;
         margin-top: 0px !important;
     }
+
+    .second-row .qrcode {
+        text-align: center;
+    }
+
+        .second-row .qrcode img {
+            width: 60%;
+        }
+
+.col.img-market img {
+    padding: 2%;
+}
+
+.second-row .img-download {
+    min-height: 41vh;
+    align-items: center;
+    place-content: flex-end;
+}
+
+.second-row .second-row-text {
+    padding-top: 4%;
+}
 
 button {
     border-radius: 5px !important;
@@ -495,12 +517,13 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     .second-row .img-download {
         padding-top: 0 !important;
-        min-height: 17vh;
+        min-height: 17vh !important;
         align-items: center;
         place-content: flex-end;
     }
 
         .second-row .img-download img {
+            width: 100%;
             padding: 10px 0px 0 0 !important;
         }
 
@@ -509,9 +532,10 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .card-image img {
+        width: 60%;
         position: absolute;
         margin-top: -50% !important;
-        margin-left: 15% !important;
+        margin-left: 20% !important;
     }
 
     .exchange-button{
@@ -633,22 +657,37 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     div.sub-pages, div.sub-pages .row-space {
         min-height: 85vh !important;
     }
+
+    .exchange-button {
+        margin-top: 0px;
+    }
+
+    .mobile-text .back-to-homepage p {
+        text-align: right !important;
+    }
+
+    .form-help-box {
+        padding: 0% !important;
+    }
+
+    .form-help-text {
+        padding: 7% !important;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    p, a {
-        font-size: 29px;
+    p {
+        font-size: 1.5rem;
         line-height: 45px;
         padding-top: inherit;
     }
 
-
     h2 {
         font-weight: bold !important;
         line-height: 65px !important;
-        font-size: 54px !important;
+        font-size: 55px !important;
     }
 
     .navbar .navbar-brand img {
@@ -679,7 +718,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         }
 
     .text-position-left {
-        padding: 60px 0px 0px 44px !important;
+        padding: 11% 0px 11% 10% !important;
         width: 65%;
     }
 
@@ -708,16 +747,21 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     .second-row .col-md-6 {
         padding: 10px !important;
+        width: 100%
+    }
+
+    .second-row .second-row-text, .second-row .img-phone {
+        padding-top: 10%;
     }
 
     .second-row h1 {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 5.5rem;
+        line-height: 76px;
     }
 
     .second-row p {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1.1rem;
+        line-height: 25px;
         margin-top: 0px !important;
     }
 
@@ -732,13 +776,13 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .second-row .img-text-download p {
         padding: 0px;
         margin: 0px;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 1.1rem;
+        line-height: 22px;
     }
 
     .second-row .img-download {
         padding-top: 0 !important;
-        min-height: 17vh;
+        min-height: 24vh;
         align-items: center;
         place-content: flex-end;
     }
@@ -747,14 +791,12 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             padding: 10px 0px 0 0 !important;
         }
 
-    .card-text {
-        z-index: 999;
-    }
-
     .card-image {
         width: 100%;
-        padding: 80px;
     }
+        .card-image img {
+            width: 80%;
+        }
 
     .exchange-button {
         margin-top: 80px;
@@ -768,17 +810,26 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         }
 
     .carousel-item {
-        padding: 12rem 0;
+        padding: 24rem 0;
+    }
+
+    .form-help-box{
+        padding: 0% !important;
+    }
+
+    .form-help-text {
+        padding: 7% !important;
     }
 
     .mobile-text {
-        text-align: end;
-        width: 85%;
-        margin-left: 15%;
+        text-align:left;
+        width: 75%;
+        margin-left: 0%;
+        padding-left: 5% !important;
     }
 
         .mobile-text .back-to-homepage p {
-            text-align: right !important;
+            text-align: left !important;
         }
 
     .payment-gateway-image .text-position-right {
@@ -866,15 +917,23 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         text-align: center !important;
     }
 
-    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space, .animation {
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
+        min-height: 80vh !important;
+    }
+
+    div.animation {
         min-height: 100vh !important;
     }
 
     div.sub-pages, div.sub-pages .row-space {
         min-height: 85vh !important;
     }
+
+    .indexImageDiv9 h2{
+        font-size: 2.5rem;
+    }
 }
-}
+
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -882,6 +941,14 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
 /* desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .second-row .qrcode {
+        width: 80% !important;
+    }
+
+    .card-image img {
+        width: 70%;
+        margin-top: 30%;
+    }
 }
 
 /* large desktop */
@@ -916,13 +983,12 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .second-row p {
-        font-size: 25px;
+        font-size: 1.4rem;
         line-height: 30px;
     }
 
     .second-row .qrcode {
         width: 80% !important;
-        margin: 0% 12%;
     }
 
     button {
@@ -1006,5 +1072,10 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .exchange-natural-person-image .col-md-6 {
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+
+    .card-image img {
+        width: 70%;
+        margin-top: 30%;
     }
 }
