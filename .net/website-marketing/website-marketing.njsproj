@@ -83,6 +83,7 @@
     <Content Include="frontend\img\machine3.png" />
     <Content Include="frontend\img\machine4.png" />
     <Content Include="frontend\img\machine5.png" />
+    <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
     <Content Include="frontend\img\qrcode.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />

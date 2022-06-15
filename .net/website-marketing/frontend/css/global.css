@@ -36,30 +36,41 @@ img {
     max-width: 100%;
 }
 
-.navbar {
-    background-image: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
-    position: fixed;
+.navbar-brand img {
+    width: 100%;
 }
 
-    .navbar a {
-        color: #ffffff;
-        text-shadow: none;
-        padding: 11px 15px;
+.navbar {
+    background: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
+}
+
+    .navbar, .navbar .container-fluid {
+        padding: 0;
     }
 
-        .navbar a:hover {
-            color: #ffffff;
-            text-shadow: none;
+        .navbar .navbar-collapse {
+            height: 5.6rem;
+            align-items: initial;
+            justify-content: end;
+        }
+
+        .navbar .navbar-nav {
+            align-items: center;
+            padding: 0 2.5rem;
+        }
+
+        .navbar .nav-link {
             color: #ffffff;
         }
 
-.dropdown-item {
-    cursor: pointer;
+.signUp {
+    background-color: #7798be;
+    padding: 0% 0%;
 }
 
-    .dropdown-item:hover {
-        color: #7FAAC3 !important;
-        background-color: #0c0c0c !important;
+    .signUp span {
+        color: #513278;
+        font-weight: bold;
     }
 
 .navbar .dropdown-menu {
@@ -68,8 +79,8 @@ img {
     left: auto;
     right: 0;
     padding: 10% 0px;
-    margin-right: 8px;
-    margin-top: -0.875rem;
+    margin-right: -6px;
+    margin-top: 0.125rem;
     padding-top: 9px;
     border: none;
 }
@@ -86,6 +97,32 @@ img {
         border-right: 20px solid transparent;
         border-bottom: 20px solid #373737;
     }
+
+.dropdown-item {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+}
+
+    .dropdown-item:hover {
+        color: #7FAAC3 !important;
+        background-color: #0c0c0c !important;
+    }
+
+.sign-up {
+    padding: 5% 10%;
+    width: 430px;
+}
+
+    .sign-up img {
+        width: 40%;
+    }
+
+.sign-up-title {
+    display: block;
+    border-bottom: 2px solid #7FAAC3;
+    font-size: 1.5em;
+}
 
 .background-image {
     background-size: cover;
@@ -111,7 +148,7 @@ img {
 }
 
 .carousel-item {
-    padding: 22% 0;
+    padding: 26rem 0;
 }
 
 .second-row {
@@ -267,11 +304,6 @@ button {
         display: grid;
     }
 
-.navbar-right {
-    display: flex;
-    margin-left: auto;
-}
-
 .bold-color {
     background: linear-gradient(89.38deg, #563596 0%, #7FAAC3 100%);
 }
@@ -362,70 +394,43 @@ body.firstLoad {
     width: 53%;
 }
 
-.navbar, .navbar-right {
-    padding: 0 !important;
-}
-
-    .navbar .container-fluid, .navbar-collapse, .navbar-right {
-        height: 77px !important;
-    }
-
-    .navbar .container-fluid {
-        padding-right: 0 !important;
-    }
-
-.navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
-}
-
-
-.signUp {
-    background-color: #7798be;
-    padding: 0% 0%;
-}
-
-    .signUp span {
-        color: #513278;
-        font-weight: bold;
-    }
-
-.navbar li {
-    align-items: center;
-    display: flex;
+div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
+    min-height: 100vh !important;
 }
 
 /* celulares */
 @media only screen and (max-width: 767px) {
-
-    .text-position-left, .col-md-6, .second-row {
-        padding: 25px !important;
+    p {
+        font-size: 1rem;
     }
 
-    .footer .float-end {
-        float: none !important;
-        padding-top: 15px;
+    .navbar .navbar-brand img {
+        width: 65%;
     }
 
-    .footer .col-md-6 {
-        text-align: center;
+    .navbar .navbar-collapse {
+        height: auto;
+        background-color: #373737;
     }
 
-    .footer {
-        padding: 15px;
+    .navbar .navbar-nav {
+        align-items: baseline;
+        padding: 0.5rem 1.5rem;
     }
 
-    .second-row .img-phone {
-        display: flex;
+    .navbar .navbar-toggler {
+        background-color: transparent !important;
+        box-shadow: none !important;
     }
 
-    .second-row .img-desktop {
+    .navbar .navbar-nav:hover, .navbar .navbar-nav:focus, .navbar .dropdown-menu{
+        background-color: #5F5F5F !important;
+    }
+
+    .navbar .dropdown-menu:after {
         display: none;
     }
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
     .text-position-left, .col-md-6, .second-row {
         padding: 25px !important;
     }
@@ -433,13 +438,6 @@ body.firstLoad {
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
-    }
-
-    .navbar-right {
-        background-color: #6f42c1;
-        margin: 0px -12px !important;
-        padding: 0 10px;
-        display: block;
     }
 
     .footer .float-end {
@@ -507,7 +505,7 @@ body.firstLoad {
     }
 
     .indexImageDiv1 {
-        background-position: 70%;
+        background-position: 57%;
     }
 
     .indexImageDiv2 {
@@ -554,31 +552,25 @@ body.firstLoad {
         display: none;
     }
 
-    .navbar-brand {
-        display: contents
+    .text-end {
+        text-align: center !important;
     }
 
-    .navbar .container-fluid, .navbar-collapse, .navbar-right {
-        height: auto !important;
+    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
+        min-height: 50vh !important;
     }
+}
 
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item {
-        height: 100vh !important;
-    }
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
-        height: 100vh !important;
-    }
 }
 
 /* desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
-        height: 100vh !important;
-    }
 }
 
 /* large desktop */
@@ -607,10 +599,6 @@ body.firstLoad {
         font-size: 35px;
     }
 
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-left: 2.5rem;
-    }
-
     .second-row h1 {
         font-size: 120px;
         line-height: 120px;
@@ -624,18 +612,6 @@ body.firstLoad {
     .second-row .qrcode {
         width: 80% !important;
         margin: 0% 12%;
-    }
-
-    .sign-up {
-        width: 430px !important;
-    }
-
-        .sign-up img {
-            width: 40%;
-        }
-
-    .navbar {
-        height: 10%;
     }
 
     button {
@@ -716,39 +692,8 @@ body.firstLoad {
         padding-left: 191px;
     }
 
-    .navbar, .navbar-right {
-        padding: 0 !important;
-    }
-
-        .navbar .container-fluid, .navbar-collapse, .navbar-right {
-            height: 100% !important;
-        }
-
-        .navbar .container-fluid {
-            padding-right: 0 !important;
-        }
-
-    .signUp {
-        background-color: #7798be;
-        padding: 0% 0%;
-    }
-
-        .signUp span {
-            color: #513278;
-        }
-
-    .navbar li {
-        align-items: center;
-        display: flex;
-    }
-
     .exchange-natural-person-image .col-md-6 {
         padding-top: 5%;
         padding-bottom: 5%;
     }
-
-    div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space{
-        height: 100vh !important;
-    }
 }
-  
