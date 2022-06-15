@@ -48,6 +48,7 @@
     <Content Include="frontend\img\cash.jpg" />
     <Content Include="frontend\img\Cellphone %282%29.png" />
     <Content Include="frontend\img\Cellphone2.png" />
+    <Content Include="frontend\img\cellphone3.png" />
     <Content Include="frontend\img\chat-icon.png" />
     <Content Include="frontend\img\credit-card.png" />
     <Content Include="frontend\img\div1.jpg" />

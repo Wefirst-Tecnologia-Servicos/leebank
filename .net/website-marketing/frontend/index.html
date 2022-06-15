@@ -98,26 +98,26 @@
             <div class="row wrapper row-space">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md" style="padding-top: 20px;">
+                        <div class="col second-row-text">
                             <h1 class="text-center">{{dictionary.digital}}</h1>
                             <h1 class="text-center">{{dictionary.intuitive}}</h1>
                             <h1 class="text-center">{{dictionary.efficient}}</h1>
-                            <p class="text-center" style="margin-top: 0; padding-top: 10px; font-size: 30px; line-height: 40px; ">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
+                            <p class="text-center">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
                         </div>
-                        <div class="img-phone">
-                            <img src="img/cellphone.png" style="max-width: 100%;" />
+                        <div class="col img-phone">
+                            <img src="img/cellphone3.png" />
                         </div>
                     </div>
                     <div class="row img-download">
-                        <div class="col-md-4">
-                            <img style="padding: 0px 0px 5px 20px;" src="img/google-play-icon.png" />
-                            <img style="padding: 5px 0px 5px 20px;" src="img/apple-store-icon.png" />
+                        <div class="col img-market">
+                            <img src="img/google-play-icon.png" />
+                            <img src="img/apple-store-icon.png" />
                         </div>
-                        <div class="col-md-3">
+                        <div class="col">
                             <img class="qrcode" src="img/LeeBank_QRCode_App.png" />
                         </div>
-                        <div class="col-md">
-                            <p style="margin-top:20px;">{{dictionary.pointYourCell}}</p>
+                        <div class="col img-text-download">
+                            <p>{{dictionary.pointYourCell}}</p>
                         </div>
                     </div>
                 </div>
@@ -129,12 +129,12 @@
 
         <div class="container-fluid background-image" style="background-image:url(img/div10.jpg)">
             <div class="row row-space">
-                <div class="col-md-5 text-position-left align-middle">
+                <div class="col-md-5 text-position-left align-middle card-text">
                     <h2>{{dictionary.completeBank}}</h2>
                     <p>{{dictionary.weAreComplete}}</p>
                     <p>{{dictionary.cashIn}}</p>
                 </div>
-                <div class="col-md-6" style="padding-top: 60px;">
+                <div class="col-md-6 card-image" style="padding-top: 60px;">
                     <img class="mx-auto d-block" style="width: 70%; margin-top: 20%;" src="/img/credit-card.png" />
                 </div>
             </div>
@@ -150,11 +150,11 @@
                     <p>
                         {{dictionary.weAlsoOffer}}
                     </p>
-                    <div class="row" style="margin-top: 80px;">
-                        <div class="col-md-5">
+                    <div class="row exchange-button">
+                        <div class="col-5">
                             <button ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-5">
                             <button ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
                         </div>
                     </div>

@@ -27,11 +27,11 @@
 
     <menu-component></menu-component>
 
-    <div class="container-fluid background-image investments-image" style="background-image: url(/img/investments.jpg);" ng-controller="BodyController">
+    <div class="container-fluid background-image investments-image sub-pages" style="background-image: url(/img/investments.jpg);" ng-controller="BodyController">
         <div class="row row-space">
-            <div class="col-md-6 text-position-left">
+            <div class="col-md-6 text-position-left mobile-text">
                 <h2>{{dictionary.investment}}</h2>
-                <a href="index.html?lang={{currentLanguage}}#investments"><p><b><u>< {{dictionary.backHome}}   </u></b></p></a>
+                <a class="back-to-homepage" href="index.html?lang={{currentLanguage}}#investments"><p><b><u>< {{dictionary.backHome}}   </u></b></p></a>
             </div>
         </div>
     </div>
