@@ -1,0 +1,1014 @@
+@font-face {
+    src: url(../fonts/ArdinaDisplay-Medium.otf);
+    font-family: Ardina Text;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+.row {
+    margin-right: 0;
+    min-height: inherit;
+}
+
+p, h1, h2, h3, h4, ul, li, label, a {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 2px 4px 5px #563596;
+    text-decoration-line: none;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    line-height: 42px;
+}
+
+p {
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
+}
+
+    .navbar, .navbar .container-fluid {
+        padding: 0;
+    }
+
+        .navbar .navbar-collapse {
+            height: 5.6rem;
+            align-items: initial;
+            justify-content: end;
+        }
+
+        .navbar .navbar-nav {
+            align-items: center;
+            padding: 0 2.5rem;
+        }
+
+        .navbar .nav-link {
+            color: #ffffff;
+        }
+
+.signUp {
+    background-color: #7798be;
+    padding: 0% 0%;
+}
+
+    .signUp span {
+        color: #513278;
+        font-weight: bold;
+    }
+
+.navbar .dropdown-menu {
+    background-color: #373737;
+    border-radius: 7px;
+    left: auto;
+    right: 0;
+    padding: 10% 0px;
+    margin-right: -6px;
+    margin-top: 0.125rem;
+    padding-top: 9px;
+    border: none;
+}
+
+    .navbar .dropdown-menu:after {
+        position: absolute;
+        right: 0;
+        margin-left: -20px;
+        top: -11px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #373737;
+    }
+
+.dropdown-item {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+}
+
+    .dropdown-item:hover {
+        color: #7FAAC3 !important;
+        background-color: #0c0c0c !important;
+    }
+
+.sign-up {
+    padding: 5% 10%;
+    width: 430px;
+}
+
+    .sign-up img {
+        width: 40%;
+    }
+
+.sign-up-title {
+    display: block;
+    border-bottom: 2px solid #7FAAC3;
+    font-size: 1.5em;
+}
+
+.background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.carrouselText {
+    color: #ffffff
+}
+
+.text-position-left {
+    padding-left: 112px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-position-right {
+    padding-right: 112px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-item {
+    padding: 26rem 0;
+}
+
+.second-row {
+    background-color: #000000;
+}
+
+    .second-row h1 {
+        font-family: Ardina Text;
+        font-size: 90px;
+        font-family: serif;
+        line-height: 90px;
+    }
+
+    .second-row p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 0px !important;
+    }
+
+button {
+    border-radius: 5px !important;
+    padding: 2px 10px 2px 10px;
+    color: #ffffff !important;
+    background-color: #2C32B5 !important;
+    border: none !important;
+    box-shadow: 2px 2px 8px black !important;
+    width: 175px;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+    button:hover {
+        background-color: #252bb3;
+    }
+
+.form {
+    background-color: rgb(0,0,0, 0.6);
+    border-radius: 15px;
+    padding: 50px 25px 50px 50px;
+}
+
+.footer {
+    padding: 20px 100px;
+    background-color: #563596;
+}
+
+    .footer p {
+        font-size: 15px;
+        margin: auto;
+        line-height: 30px;
+    }
+
+    .footer img {
+        width: 7%;
+        margin: 10px;
+    }
+
+    .footer .float-end {
+        padding-top: 42px;
+    }
+
+.text-about p {
+    font-size: 18px;
+}
+
+.form-exchange {
+    padding: 0px 100px;
+}
+
+    .form-exchange p {
+        margin-top: 0px;
+    }
+
+    .form-exchange form {
+        background-color: rgb(0,0,0, 0.6);
+        border-radius: 40px;
+        padding: 30px 25px;
+    }
+
+    .form-exchange button {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0;
+        border-radius: 20px !important;
+        width: 20%;
+        margin: 0 40px;
+    }
+
+        .form-exchange button:hover {
+            background-color: #ffffff !important;
+            color: #563596 !important;
+        }
+
+    .form-exchange nav.nav-tabs {
+        padding-bottom: 15px;
+        border: none;
+    }
+
+    .form-exchange div.nav-tabs {
+        padding-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-exchange .campo-direito {
+        border-radius: 0 5px 5px 0;
+        border: none;
+    }
+
+    .form-exchange .campo-esquerdo {
+        padding: 4%;
+        border-radius: 5px 0 0 5px;
+        background-color: #563596;
+        color: #ffffff;
+        border: none;
+    }
+
+    .form-exchange p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-shadow: none;
+    }
+
+    .form-exchange .border .form-select {
+        width: 50%;
+    }
+
+    .form-exchange .border {
+        display: flex;
+        border: 2px solid #563596 !important;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .form-exchange .send-button {
+        margin: 30px 0 10px 0;
+        background-color: #7FAAC3 !important;
+        width: 100%;
+        border-radius: 5px !important;
+        padding: 10px 0px;
+    }
+
+    .form-exchange .text-bottom {
+        line-height: 25px;
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .form-exchange .input-group {
+        display: grid;
+    }
+
+.bold-color {
+    background: linear-gradient(89.38deg, #563596 0%, #7FAAC3 100%);
+}
+
+.button-page {
+    padding: 7px 10px 7px 10px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.button-buy button {
+    width: 40%;
+    padding: 6px 0px;
+    color: #563596 !important;
+    background-color: #ffffff !important;
+}
+
+.second-row .img-phone {
+    display: none;
+}
+
+.second-row .img-desktop {
+    display: flex;
+}
+
+.container-fluid.background-image {
+    padding: 0px;
+}
+
+/*CSS Loader*/
+.loader {
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+svg path,
+svg rect {
+    fill: #FFFFFF;
+}
+
+div.loader-wrapper {
+    display: none;
+}
+
+body.loading {
+    overflow: hidden !important;
+}
+
+    body.loading div.loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(76, 53, 118, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+body.firstLoad {
+    background: #563596;
+}
+
+    body.firstLoad * {
+        visibility: hidden;
+    }
+
+.img-download {
+    padding-top: 7%;
+}
+
+.text-about {
+    padding: 100px;
+}
+
+.payment-gateway-image .space {
+    width: 47%;
+}
+
+.payment-gateway-image .text-position-right {
+    width: 53%;
+}
+
+div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
+    min-height: 100vh !important;
+}
+
+.exchange-button {
+    margin-top: 80px;
+}
+
+/* celulares */
+@media only screen and (max-width: 767px) {
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .navbar .navbar-brand img {
+        width: 65%;
+    }
+
+    .navbar .navbar-collapse {
+        height: auto;
+        background-color: #373737;
+    }
+
+    .navbar .navbar-nav {
+        align-items: baseline;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .navbar .navbar-toggler {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .navbar .navbar-nav:hover, .navbar .navbar-nav:focus, .navbar .dropdown-menu {
+        background-color: #5F5F5F !important;
+    }
+
+        .navbar .dropdown-menu:after {
+            display: none;
+        }
+
+    .text-position-left, .col-md-6 {
+        padding: 25px !important;
+    }
+
+    .navbar button {
+        width: 15%;
+        background-color: #563596 !important;
+    }
+
+    .footer .float-end {
+        float: none !important;
+        padding-top: 15px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .second-row .row-space {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+
+    .second-row .col-md-6 {
+        padding: 10px !important;
+    }
+
+    .second-row h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .second-row p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 0px !important;
+    }
+
+    .second-row .img-phone {
+        display: flex;
+    }
+
+    .second-row .img-desktop {
+        display: none;
+    }
+
+    .second-row .img-text-download p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .second-row .img-download {
+        padding-top: 0 !important;
+        min-height: 17vh;
+        align-items: center;
+        place-content: flex-end;
+    }
+
+        .second-row .img-download img {
+            padding: 10px 0px 0 0 !important;
+        }
+
+    .card-text {
+        z-index: 999;
+    }
+
+    .card-image img {
+        position: absolute;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+
+    .exchange-button{
+        margin-top: 0px;
+    }
+
+        .exchange-button button {
+            width: 120px;
+            font-size: 14px !important;
+        }
+
+    .carousel-item {
+        padding: 12rem 0;
+    }
+
+    .mobile-text {
+        text-align: end;
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    .mobile-text .back-to-homepage p{
+        text-align: right !important;
+    }
+
+    .payment-gateway-image .text-position-right {
+        width: 85%;
+    }
+
+    .button-page {
+        width: 70%;
+    }
+
+    .button-buy button {
+        width: 60%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .wrapper .col-md-6:first-child {
+            order: 1;
+        }
+
+    .row.text-about {
+        padding: 0 !important;
+    }
+
+    #contact .row {
+        padding: 0 !important;
+    }
+
+    #contact button {
+        width: 90% !important;
+    }
+
+    .indexImageDiv1 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv2 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv3 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv4 {
+        background-position: 20%;
+    }
+
+    .indexImageDiv5 {
+        background-position: 60%;
+    }
+
+    .indexImageDiv6 {
+        background-position: 45%;
+    }
+
+    .indexImageDiv7 {
+        background-position: 76%;
+    }
+
+    .payment-gateway-image {
+        background-position: 24%;
+    }
+
+    .insurance-image {
+        background-position: 64%;
+    }
+
+    .exchange-natural-person-image {
+        background-position: 40%;
+    }
+
+    .exchange-legal-person-image {
+        background-position: 22%;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
+        min-height: 50vh !important;
+    }
+
+    div.animation {
+        min-height: 100vh !important;
+    }
+
+    div.sub-pages, div.sub-pages .row-space {
+        min-height: 85vh !important;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    p {
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: inherit;
+    }
+
+    h2 {
+        font-weight: bold !important;
+        line-height: 65px !important;
+        font-size: 55px !important;
+    }
+
+    .navbar .navbar-brand img {
+        width: 65%;
+    }
+
+    .navbar .navbar-collapse {
+        height: auto;
+        background-color: #373737;
+    }
+
+    .navbar .navbar-nav {
+        align-items: baseline;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .navbar .navbar-toggler {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .navbar .navbar-nav:hover, .navbar .navbar-nav:focus, .navbar .dropdown-menu {
+        background-color: #5F5F5F !important;
+    }
+
+        .navbar .dropdown-menu:after {
+            display: none;
+        }
+
+    .text-position-left, .col-md-6 {
+        padding: 60px 0px 0px 75px !important;
+        width: 65%;
+    }
+
+    .navbar button {
+        width: 15%;
+        background-color: #563596 !important;
+    }
+
+    .footer .float-end {
+        float: none !important;
+        padding-top: 15px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .second-row .row-space {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+
+    .second-row .col-md-6 {
+        padding: 10px !important;
+    }
+
+    .second-row h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .second-row p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 0px !important;
+    }
+
+    .second-row .img-phone {
+        display: flex;
+    }
+
+    .second-row .img-desktop {
+        display: none;
+    }
+
+    .second-row .img-text-download p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .second-row .img-download {
+        padding-top: 0 !important;
+        min-height: 17vh;
+        align-items: center;
+        place-content: flex-end;
+    }
+
+        .second-row .img-download img {
+            padding: 10px 0px 0 0 !important;
+        }
+
+    .card-text {
+        z-index: 999;
+    }
+
+    .card-image img {
+        position: absolute;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+
+    .exchange-button {
+        margin-top: 80px;
+        margin-bottom: 160px;
+        min-height: auto;
+    }
+
+        .exchange-button button {
+            width: 245px;
+            font-size: 30px !important;
+        }
+
+    .carousel-item {
+        padding: 12rem 0;
+    }
+
+    .mobile-text {
+        text-align: end;
+        width: 85%;
+        margin-left: 15%;
+    }
+
+        .mobile-text .back-to-homepage p {
+            text-align: right !important;
+        }
+
+    .payment-gateway-image .text-position-right {
+        width: 85%;
+    }
+
+    .button-page {
+        width: 70%;
+    }
+
+    .button-buy button {
+        width: 60%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .wrapper .col-md-6:first-child {
+            order: 1;
+        }
+
+    .row.text-about {
+        padding: 0 !important;
+    }
+
+    #contact .row {
+        padding: 0 !important;
+    }
+
+    #contact button {
+        width: 90% !important;
+    }
+
+    .indexImageDiv1 {
+        background-position: 62%;
+    }
+
+    .indexImageDiv2 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv3 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv4 {
+        background-position: 20%;
+    }
+
+    .indexImageDiv5 {
+        background-position: 60%;
+    }
+
+    .indexImageDiv6 {
+        background-position: 45%;
+    }
+
+    .indexImageDiv7 {
+        background-position: 76%;
+    }
+
+    .payment-gateway-image {
+        background-position: 24%;
+    }
+
+    .insurance-image {
+        background-position: 64%;
+    }
+
+    .exchange-natural-person-image {
+        background-position: 40%;
+    }
+
+    .exchange-legal-person-image {
+        background-position: 22%;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
+        min-height: 80vh !important;
+    }
+
+    div.animation {
+        min-height: 100vh !important;
+    }
+
+    div.sub-pages, div.sub-pages .row-space {
+        min-height: 85vh !important;
+    }
+}
+}
+
+/* landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* large desktop */
+@media only screen and (min-device-width: 1400px) {
+
+    p, .text-about p {
+        font-size: 23px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    a, li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .second-row h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .second-row p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .second-row .qrcode {
+        width: 80% !important;
+        margin: 0% 12%;
+    }
+
+    button {
+        font-size: 25px !important;
+        width: 80%;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .form input, .form textarea {
+        font-size: 20px;
+    }
+
+    .form h3 {
+        font-size: 45px;
+    }
+
+    .form label {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .form textarea {
+        height: 270px !important;
+    }
+
+    .indexImageDiv9 .row {
+        padding: 81px 0 81px 0 !important;
+    }
+
+    .form {
+        padding: 35px 35px 35px 50px;
+    }
+
+        .form button {
+            margin-top: 15px;
+        }
+
+    .text-about {
+        padding: 170px 100px !important;
+    }
+
+    embed {
+        width: 20%;
+    }
+
+    .indexImageDiv6 .col-md-5 {
+        width: 39.666667%;
+    }
+
+    .indexImageDiv8 .col-md-5 {
+        width: 44.666667%;
+    }
+
+    .exchange-legal-person-image .text-position-right {
+        padding-right: 16%;
+    }
+
+        .exchange-legal-person-image .text-position-right .button-page {
+            width: 62%;
+        }
+
+    .insurance-image .col-md-6 {
+        width: 47%;
+    }
+
+    .payment-gateway-image .space {
+        width: 60%;
+    }
+
+    .payment-gateway-image .text-position-right {
+        width: 40%;
+    }
+
+    .cash-image .text-position-left {
+        padding-left: 191px;
+    }
+
+    .exchange-natural-person-image .col-md-6 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
