@@ -638,16 +638,17 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    p {
-        font-size: 30px;
+    p, a {
+        font-size: 29px;
         line-height: 45px;
         padding-top: inherit;
     }
 
+
     h2 {
         font-weight: bold !important;
         line-height: 65px !important;
-        font-size: 55px !important;
+        font-size: 54px !important;
     }
 
     .navbar .navbar-brand img {
@@ -677,8 +678,8 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             display: none;
         }
 
-    .text-position-left, .col-md-6 {
-        padding: 60px 0px 0px 75px !important;
+    .text-position-left {
+        padding: 60px 0px 0px 44px !important;
         width: 65%;
     }
 
@@ -750,10 +751,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         z-index: 999;
     }
 
-    .card-image img {
-        position: absolute;
-        margin-top: -50% !important;
-        margin-left: 15% !important;
+    .card-image {
+        width: 100%;
+        padding: 80px;
     }
 
     .exchange-button {
@@ -866,11 +866,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         text-align: center !important;
     }
 
-    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
-        min-height: 80vh !important;
-    }
-
-    div.animation {
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space, .animation {
         min-height: 100vh !important;
     }
 
