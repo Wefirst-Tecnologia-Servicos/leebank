@@ -637,6 +637,246 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    p {
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: inherit;
+    }
+
+    h2 {
+        font-weight: bold !important;
+        line-height: 65px !important;
+        font-size: 55px !important;
+    }
+
+    .navbar .navbar-brand img {
+        width: 65%;
+    }
+
+    .navbar .navbar-collapse {
+        height: auto;
+        background-color: #373737;
+    }
+
+    .navbar .navbar-nav {
+        align-items: baseline;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .navbar .navbar-toggler {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .navbar .navbar-nav:hover, .navbar .navbar-nav:focus, .navbar .dropdown-menu {
+        background-color: #5F5F5F !important;
+    }
+
+        .navbar .dropdown-menu:after {
+            display: none;
+        }
+
+    .text-position-left, .col-md-6 {
+        padding: 60px 0px 0px 75px !important;
+    }
+
+    .navbar button {
+        width: 15%;
+        background-color: #563596 !important;
+    }
+
+    .footer .float-end {
+        float: none !important;
+        padding-top: 15px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .second-row .row-space {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+
+    .second-row .col-md-6 {
+        padding: 10px !important;
+    }
+
+    .second-row h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .second-row p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 0px !important;
+    }
+
+    .second-row .img-phone {
+        display: flex;
+    }
+
+    .second-row .img-desktop {
+        display: none;
+    }
+
+    .second-row .img-text-download p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .second-row .img-download {
+        padding-top: 0 !important;
+        min-height: 17vh;
+        align-items: center;
+        place-content: flex-end;
+    }
+
+        .second-row .img-download img {
+            padding: 10px 0px 0 0 !important;
+        }
+
+    .card-text {
+        z-index: 999;
+    }
+
+    .card-image img {
+        position: absolute;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+
+    .exchange-button {
+        margin-top: 80px;
+        margin-bottom: 160px;
+        min-height: auto;
+    }
+
+        .exchange-button button {
+            width: 245px;
+            font-size: 30px !important;
+        }
+
+    .carousel-item {
+        padding: 12rem 0;
+    }
+
+    .mobile-text {
+        text-align: end;
+        width: 85%;
+        margin-left: 15%;
+    }
+
+        .mobile-text .back-to-homepage p {
+            text-align: right !important;
+        }
+
+    .payment-gateway-image .text-position-right {
+        width: 85%;
+    }
+
+    .button-page {
+        width: 70%;
+    }
+
+    .button-buy button {
+        width: 60%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .wrapper .col-md-6:first-child {
+            order: 1;
+        }
+
+    .row.text-about {
+        padding: 0 !important;
+    }
+
+    #contact .row {
+        padding: 0 !important;
+    }
+
+    #contact button {
+        width: 90% !important;
+    }
+
+    .indexImageDiv1 {
+        background-position: 62%;
+    }
+
+    .indexImageDiv2 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv3 {
+        background-position: 57%;
+    }
+
+    .indexImageDiv4 {
+        background-position: 20%;
+    }
+
+    .indexImageDiv5 {
+        background-position: 60%;
+    }
+
+    .indexImageDiv6 {
+        background-position: 45%;
+    }
+
+    .indexImageDiv7 {
+        background-position: 76%;
+    }
+
+    .payment-gateway-image {
+        background-position: 24%;
+    }
+
+    .insurance-image {
+        background-position: 64%;
+    }
+
+    .exchange-natural-person-image {
+        background-position: 40%;
+    }
+
+    .exchange-legal-person-image {
+        background-position: 22%;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
+        min-height: 80vh !important;
+    }
+
+    div.animation {
+        min-height: 100vh !important;
+    }
+
+    div.sub-pages, div.sub-pages .row-space {
+        min-height: 85vh !important;
+    }
+}
 }
 
 /* landscape */
