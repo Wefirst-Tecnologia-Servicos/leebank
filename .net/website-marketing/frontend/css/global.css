@@ -354,6 +354,10 @@ button {
     padding: 0px;
 }
 
+.footer .img-phone {
+    display: none;
+}
+
 /*CSS Loader*/
 .loader {
     margin: 0 0 2em;
@@ -480,6 +484,11 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 15px;
     }
 
+    .footer img {
+            width: 12% !important;
+            margin: 10px;
+    }
+
     .second-row .row-space {
         padding-top: 15px;
         padding-left: 10px;
@@ -538,7 +547,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         margin-left: 20% !important;
     }
 
-    .exchange-button{
+    .exchange-button {
         margin-top: 0px;
     }
 
@@ -557,9 +566,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         margin-left: 15%;
     }
 
-    .mobile-text .back-to-homepage p{
-        text-align: right !important;
-    }
+        .mobile-text .back-to-homepage p {
+            text-align: right !important;
+        }
 
     .payment-gateway-image .text-position-right {
         width: 85%;
@@ -673,6 +682,21 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .form-help-text {
         padding: 7% !important;
     }
+
+    .footer .img-phone {
+        display: inline;
+    }
+
+    .footer .img-desktop {
+        display: none;
+    }
+
+    .footer .float-end p, a .float-end{
+        font-size: 12px;
+        margin: auto;
+        line-height: 30px;
+        white-space: nowrap;
+    }
 }
 
 /* Tablet */
@@ -740,6 +764,11 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 15px;
     }
 
+    .footer img {
+        width: 12% !important;
+        margin: 10px;
+    }
+
     .second-row .row-space {
         padding-top: 15px;
         padding-left: 10px;
@@ -794,6 +823,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .card-image {
         width: 100%;
     }
+
         .card-image img {
             width: 80%;
         }
@@ -813,7 +843,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 24rem 0;
     }
 
-    .form-help-box{
+    .form-help-box {
         padding: 0% !important;
     }
 
@@ -822,7 +852,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .mobile-text {
-        text-align:left;
+        text-align: left;
         width: 75%;
         margin-left: 0%;
         padding-left: 5% !important;
@@ -929,7 +959,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         min-height: 85vh !important;
     }
 
-    .indexImageDiv9 h2{
+    .indexImageDiv9 h2 {
         font-size: 2.5rem;
     }
 }
