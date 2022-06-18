@@ -93,7 +93,10 @@
     <Content Include="frontend\investments.html" />
     <Content Include="frontend\js\app\app.js" />
     <Content Include="frontend\js\app\dictionary.js" />
-    <Content Include="frontend\js\app\doubts.js" />
+    <Content Include="frontend\js\app\email.js" />
+    <Content Include="frontend\js\app\exchange.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="frontend\js\app\menu.js" />
     <Content Include="frontend\js\component\footer.js" />
     <Content Include="frontend\js\component\menu.js" />
