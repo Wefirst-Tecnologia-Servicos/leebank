@@ -1,5 +1,7 @@
 ﻿angular.module('leebank')
-    .controller('BodyController', (GlobalService, DictionaryService, DoubtsService, $scope) => {
+    .controller('BodyController', (GlobalService, DictionaryService, EMailService, $scope) => {
+
+        // --------------- Translation Engine --------------- //
 
         $scope.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
 
@@ -12,6 +14,8 @@
             }
         });
 
+        // ------------------ Doubts Form ------------------- //
+
         $scope.doubts = {
             SenderName: "",
             SenderEMail: "",
@@ -21,7 +25,8 @@
         }
 
         $scope.sendDoubts = () => {
-            DoubtsService.send({
+            $scope.doubts.MailType = "doubts";
+            EMailService.send({
                 SenderName: $scope.doubts.SenderName,
                 SenderEMail: $scope.doubts.SenderEMail,
                 Description: `Telefone: ${$scope.doubts.Phone}\nCPF: ${$scope.doubts.Cpf}\nCNPJ: ${$scope.doubts.Cnpj}`
@@ -35,6 +40,8 @@
                 };
             });
         }
+
+        // ------------ Page Redirecting Engine ------------- //
 
         $scope.redirectTo = link => {
             var currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";

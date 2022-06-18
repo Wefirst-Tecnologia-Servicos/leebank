@@ -7,13 +7,12 @@
 angular
     .module("leebank")
     .service("DictionaryService", function ($http) {
-        var apiBasePath = "http://201.30.147.96:3101/";
         return {
             getLanguages: function (languageID) {
-                return $http.get(`${apiBasePath}dictionary/languages/${languageID}`);
+                return $http.get(`${angularConfig.apiBasePath}dictionary/languages/${languageID}`);
             },
             getDictionary: function (languageID) {
-                return $http.post(`${apiBasePath}dictionary`, {
+                return $http.post(`${angularConfig.apiBasePath}dictionary`, {
                     Website: "LEE-MARKETING",
                     LanguageID: languageID
                 });

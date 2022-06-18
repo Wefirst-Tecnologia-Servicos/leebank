@@ -31,7 +31,6 @@
   <ItemGroup>
     <Content Include="config.json" />
     <Content Include="frontend\compliance-security.html" />
-    <Content Include="frontend\compliance-segurance.html" />
     <Content Include="frontend\css\index.css" />
     <Content Include="frontend\download\LeeBank_Politicas_de_Privacidade.pdf" />
     <Content Include="frontend\download\LeeBank_Termos_de_Uso_de_Consetimentos_de_Dados.pdf" />
@@ -100,7 +99,7 @@
     <Content Include="frontend\index.html" />
     <Content Include="frontend\js\app\app.js" />
     <Content Include="frontend\js\app\dictionary.js" />
-    <Content Include="frontend\js\app\doubts.js" />
+    <Content Include="frontend\js\app\email.js" />
     <Content Include="frontend\js\app\menu.js" />
     <Content Include="frontend\js\component\footer.js" />
     <Content Include="frontend\js\component\menu.js" />

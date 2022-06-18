@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports = {
+const https = require('https');
 
-    getRates: baseCurrency => {
-        const https = require('https');
-        return new Promise((resolve, reject) => {
+function getRates(baseCurrency) {
+    return new Promise((resolve, reject) => {
+        try {
             https.get(`https://api.exchangerate.host/latest?base=${baseCurrency}`, res => {
                 let data = [];
                 res.on('data', chunk => {
@@ -18,6 +18,30 @@ module.exports = {
                     reject(err);
                 });
             });
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
+module.exports = {
+    convert: (value, fromCurrency, toCurrency) => {
+        return new Promise((resolve, reject) => {
+            getRates(fromCurrency).then(exchangeRates => {
+                try {
+                    resolve({
+                        FromCurrency: fromCurrency,
+                        FromValue: value,
+                        ToCurrency: toCurrency,
+                        ToValue: value * exchangeRates[toCurrency]
+                    });
+                } catch (err) {
+                    reject(err);
+                }
+            }).catch(err => {
+                reject(err);
+            });
         });
-    }
+    },
+    getRates: getRates
 }

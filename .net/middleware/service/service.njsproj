@@ -33,7 +33,7 @@
     <Content Include="config.json">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="doubts-service.js">
+    <Content Include="email-service.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="exchange-service.js">

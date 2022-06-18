@@ -3,9 +3,14 @@
  * @description
  * This module provides an AngularJS LeeBank services
  */
+
+const angularConfig = {
+    apiBasePath: "http://201.30.147.96:3101/"
+};
+
 angular
     .module("leebank", [])
-    .constant("MODULE_VERSION", "2.0.0")
+    .constant("MODULE_VERSION", "2.2.0")
     .config($httpProvider => {
         $httpProvider.defaults.transformRequest.push((data, headersGetter) => {
             $("body").addClass("loading");
@@ -16,11 +21,11 @@ angular
             setTimeout(() => { $("body").removeClass("loading"); }, 50);
             return data;
         });
-        
+
     })
     .service("GlobalService", function ($http) {
         return {
-            getQueryStringParam: function(paramName) {
+            getQueryStringParam: function (paramName) {
                 var result = null;
                 if (window.location.href.indexOf("?") > -1) {
                     result = "&" + window.location.href.split("?")[1].replace("#", "&");

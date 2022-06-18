@@ -8,9 +8,13 @@
  * @description
  * This module provides an AngularJS LeeBank services
  */
+const angularConfig = {
+    apiBasePath: "http://201.30.147.96:3101/"
+};
+
 angular
     .module("leebank", [])
-    .constant("MODULE_VERSION", "2.0.0")
+    .constant("MODULE_VERSION", "2.1.0")
     .config($httpProvider => {
         $httpProvider.defaults.transformRequest.push((data, headersGetter) => {
             $("body").addClass("loading");

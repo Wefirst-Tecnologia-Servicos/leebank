@@ -1,27 +1,33 @@
 {
-  "doubsEMail": {
-    "LEE-MARKETING": {
-      "template": {
-        "subject": "WebSite LeeBank: Tire suas duvidas",
-        "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
-        "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
-      },
-      "sendGrid": {
-        "sender": "noreply@leebank.cn",
-        "recipient": "contato@leebank.cn",
-        "apiKey": "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"
+  "LEE-MARKETING": {
+    "email": {
+      "doubts": {
+        "template": {
+          "subject": "WebSite LeeBank: Tire suas duvidas",
+          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
+          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
+        },
+        "sendGrid": {
+          "sender": "noreply@leebank.cn",
+          "recipient": "contato@leebank.cn",
+          "apiKey": "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"
+        }
       }
-    },
-    "VIXI": {
-      "template": {
-        "subject": "WebSite Vixi: Tire suas duvidas",
-        "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
-        "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
-      },
-      "sendGrid": {
-        "sender": "noreply@leebank.cn",
-        "recipient": "contato@leebank.cn",
-        "apiKey": "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"
+    }
+  },
+  "VIXI": {
+    "email": {
+      "doubts": {
+        "template": {
+          "subject": "WebSite Vixi: Tire suas duvidas",
+          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
+          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
+        },
+        "sendGrid": {
+          "sender": "noreply@leebank.cn",
+          "recipient": "contato@leebank.cn",
+          "apiKey": "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"
+        }
       }
     }
   }

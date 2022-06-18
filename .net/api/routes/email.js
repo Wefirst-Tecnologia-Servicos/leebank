@@ -1,21 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const service = require("../../middleware/service/doubts-service");
+const service = require("../../middleware/service/email-service");
 
-router.post("/doubts", (request, response) => {
+router.post("/email", (request, response) => {
     try {
 
-        const doubtsModel = {
+        const emailModel = {
             WebSite: request.body.WebSite,
-            SenderName: request.body.SenderName,
-            SenderEMail: request.body.SenderEMail,
-            Description: request.body.Description
+            MailType: request.body.MailType
         };
 
-        if (!doubtsModel.SenderName || !doubtsModel.SenderEMail || !doubtsModel.Description || !doubtsModel.WebSite) {
+        if (!emailModel.WebSite || !emailModel.MailType) {
             response.status(400).send('Incorrect Parameters');
         } else {
-            service.send(doubtsModel).then(() => {
+            service.send(emailModel).then(() => {
                 response.status(200).send('{ "status": "OK" }');
             }).catch(err => {
                 try {

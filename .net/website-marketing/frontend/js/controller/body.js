@@ -1,5 +1,7 @@
 ﻿angular.module('leebank')
-    .controller('BodyController', (GlobalService, DictionaryService, DoubtsService, $scope) => {
+    .controller('BodyController', (GlobalService, DictionaryService, EMailService, ExchangeService, $scope) => {
+
+        // --------------- Translation Engine --------------- //
 
         $scope.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
 
@@ -11,27 +13,28 @@
                 $(allElements[i]).attr("placeholder", $scope.dictionary[$(allElements[i]).attr("ng-placeholder")]);
             }
 
-            $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
-                $("body").removeClass("loading");
-            });
         });
+
+        // ------------------ Doubts Form ------------------- //
 
         $scope.doubts = {
             SenderName: "",
             SenderEMail: "",
             Description: "",
-        }
+        };
 
         $scope.sendDoubts = () => {
-            console.log($scope.doubts);
-            DoubtsService.send($scope.doubts).then(() => {
+            $scope.doubts.MailType = "doubts";
+            EMailService.send($scope.doubts).then(() => {
                 $scope.doubts = {
                     SenderName: "",
                     SenderEMail: "",
                     Description: "",
                 };
             });
-        }
+        };
+
+        // ------------ Page Redirecting Engine ------------- //
 
         $scope.redirectTo = link => {
             var currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
@@ -43,5 +46,28 @@
             }
             // redirect to the target link
             window.location.href = `${link}?lang=${currentLanguage}${anchor}`;
-        }
+        };
+
+        // -------------- Exchange Conversion --------------- //
+
+        $scope.exchangeConversion = {
+            SendingPage: {
+                FromCurrency: "BRL",
+                FromValue: 0.0,
+                ToCurrency: "USD",
+                ToValue: 0.0
+            },
+            ReceivingPage: {
+                FromCurrency: "USD",
+                FromValue: 0.0,
+                ToCurrency: "BRL",
+                ToValue: 0.0
+            }
+        };
+
+        $scope.convertCurrency = selectedPage => {
+            ExchangeService.convert($scope.exchangeConversion[selectedPage]).then(result => {
+                $scope.exchangeConversion[selectedPage] = result;
+            });
+        };
     });

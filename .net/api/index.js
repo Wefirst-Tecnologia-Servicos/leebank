@@ -16,7 +16,7 @@ const swaggerFile = require('./swagger/swagger_output.json');
 
 const menuRoutes = require('./routes/menu');
 const translationRoutes = require('./routes/dictionary');
-const doubtsRoutes = require('./routes/doubts');
+const emailRoutes = require('./routes/email');
 const exchangeRoutes = require('./routes/exchange');
 
 const app = express();
@@ -40,7 +40,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", menuRoutes);
 app.use("/", translationRoutes);
-app.use("/", doubtsRoutes);
+app.use("/", emailRoutes);
 app.use("/", exchangeRoutes);
 
 var httpServer = http.createServer(app);
