@@ -427,6 +427,10 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     margin-top: 80px;
 }
 
+.border h3, .border p {
+    margin: 0;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
