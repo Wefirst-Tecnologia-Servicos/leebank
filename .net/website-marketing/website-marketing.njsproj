@@ -44,12 +44,14 @@
     <Content Include="frontend\img\82524c39e454d9a2a5bb3da3364665fe.jfif" />
     <Content Include="frontend\img\AdobeStock_286076203.jpeg" />
     <Content Include="frontend\img\apple-store-icon.png" />
+    <Content Include="frontend\img\brasil-icon.png" />
     <Content Include="frontend\img\brazil-flag.png" />
     <Content Include="frontend\img\cash.jpg" />
     <Content Include="frontend\img\Cellphone %282%29.png" />
     <Content Include="frontend\img\Cellphone2.png" />
     <Content Include="frontend\img\cellphone3.png" />
     <Content Include="frontend\img\chat-icon.png" />
+    <Content Include="frontend\img\chine-icon.png" />
     <Content Include="frontend\img\credit-card.png" />
     <Content Include="frontend\img\div1.jpg" />
     <Content Include="frontend\img\div2.jpg" />
@@ -87,6 +89,7 @@
     <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
     <Content Include="frontend\img\qrcode.png" />
+    <Content Include="frontend\img\usa-icon.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
     <Content Include="frontend\index.html" />
     <Content Include="frontend\insurance.html" />
