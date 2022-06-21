@@ -89,6 +89,7 @@
     <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
     <Content Include="frontend\img\qrcode.png" />
+    <Content Include="frontend\img\usa-icon.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
     <Content Include="frontend\index.html" />
     <Content Include="frontend\insurance.html" />

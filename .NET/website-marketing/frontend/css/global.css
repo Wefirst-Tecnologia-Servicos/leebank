@@ -238,10 +238,16 @@ button {
 
 .form-exchange {
     padding: 0px 100px;
+    margin-bottom: auto;
+    margin-top: 4%;
 }
 
     .form-exchange p {
         margin-top: 0px;
+    }
+
+    .form-exchange h3 {
+        font-size: 24px;
     }
 
     .form-exchange form {
@@ -255,8 +261,8 @@ button {
         box-shadow: none !important;
         padding: 0;
         border-radius: 20px !important;
-        width: 20%;
-        margin: 0 40px;
+        width: 30%;
+        margin: 0px 25px;
     }
 
         .form-exchange button:hover {
@@ -281,11 +287,13 @@ button {
     }
 
     .form-exchange .campo-esquerdo {
-        padding: 4%;
+        padding: 3%;
         border-radius: 5px 0 0 5px;
+        color: #373737;
+        font-weight: bold;
         background-color: #563596;
-        color: #ffffff;
         border: none;
+        background-image: none;
     }
 
     .form-exchange p {
@@ -296,7 +304,7 @@ button {
     }
 
     .form-exchange .border .form-select {
-        width: 50%;
+        width: 45%;
     }
 
     .form-exchange .border {
@@ -304,13 +312,26 @@ button {
         border: 2px solid #563596 !important;
         box-sizing: border-box;
         border-radius: 10px;
+        background-color: #563596;
     }
+
+        .form-exchange .border img {
+            padding: 0 0 0 15px;
+            width: 64px;
+        }
+
+        .form-exchange .border .border-inside {
+            display: flex;
+            width: 345px;
+            text-align: center;
+            padding: 1%;
+        }
 
     .form-exchange .send-button {
         margin: 30px 0 10px 0;
-        background-color: #7FAAC3 !important;
+        background: linear-gradient(90.7deg, #81a8df 1.32%, #667bca 24.45%, #81a8df 52.71%, #667bca 73.79%, #81a8df 100%);
         width: 100%;
-        border-radius: 5px !important;
+        border-radius: 15px !important;
         padding: 10px 0px;
     }
 
@@ -701,6 +722,14 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         line-height: 30px;
         white-space: nowrap;
     }
+
+    .form-exchange .border .border-inside {
+        display: flex;
+        width: 270px;
+        text-align: center;
+        padding: 1%;
+    }
+    
 }
 
 /* Tablet */
@@ -965,6 +994,11 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     .indexImageDiv9 h2 {
         font-size: 2.5rem;
+    }
+
+    .form-exchange{
+        width: 100%;
+        padding-bottom: 10%;
     }
 }
 
