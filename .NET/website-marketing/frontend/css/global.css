@@ -509,10 +509,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 15px;
     }
 
-    .footer img {
+        .footer img {
             width: 12% !important;
-            margin: 10px;
-    }
+        }
 
     .second-row .row-space {
         padding-top: 15px;
@@ -709,18 +708,23 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .footer .img-phone {
-        display: inline;
+        display: flex;
+        justify-content: space-around;
     }
 
     .footer .img-desktop {
         display: none;
     }
 
-    .footer .float-end p, a .float-end{
-        font-size: 12px;
+    .footer .float-end p, a .float-end {
+        font-size: 16px;
         margin: auto;
         line-height: 30px;
         white-space: nowrap;
+    }
+
+    .footer .img-link {
+        width: 55px !important;
     }
 
     .form-exchange .border .border-inside {
@@ -729,7 +733,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         text-align: center;
         padding: 1%;
     }
-    
 }
 
 /* Tablet */
@@ -782,24 +785,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
-    }
-
-    .footer .float-end {
-        float: none !important;
-        padding-top: 15px;
-    }
-
-    .footer .col-md-6 {
-        text-align: center;
-    }
-
-    .footer {
-        padding: 15px;
-    }
-
-    .footer img {
-        width: 12% !important;
-        margin: 10px;
     }
 
     .second-row .row-space {
@@ -996,10 +981,53 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         font-size: 2.5rem;
     }
 
-    .form-exchange{
+    .form-exchange {
         width: 100%;
         padding-bottom: 10%;
     }
+
+    .footer .float-end {
+        float: none !important;
+        padding-top: 15px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer img {
+        width: 12% !important;
+    }
+
+    .footer .img-link {
+        width: 110px !important;
+    }
+
+    .footer .img-phone {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer .img-desktop {
+        display: none;
+    }
+
+    .footer .float-end p, a .float-end {
+        font-size: 31px;
+        margin: auto;
+        line-height: 55px;
+        white-space: nowrap;
+    }
+    .footer .text-end {
+        font-size: 31px;
+        line-height: 45px;
+        padding-top: 22px;
+    }
+
 }
 
 
