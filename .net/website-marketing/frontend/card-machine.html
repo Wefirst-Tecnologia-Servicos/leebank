@@ -27,12 +27,12 @@
 
     <menu-component></menu-component>
 
-    <div ng-controller="BodyController" style="padding-top: 100px;">
+    <div ng-controller="BodyController" class="leepay-tablet" style="padding-top: 100px;">
 
         <div class="container-fluid wrapper" style="padding-bottom:80px;">
             <div class="row row-space">
                 <div class="col-md-6 text-position-left">
-                    <h2>
+                    <h2 class="pay-desktop">
                         {{dictionary.leePay}}
                     </h2>
                     <p>
@@ -41,154 +41,175 @@
                     <p>
                         {{dictionary.allMachines}}
                     </p>
-                    <p>
+                    <p class="leepay-know">
                         <b>{{dictionary.discover}}</b>
                     </p>
                 </div>
-                <div class="col-md-6" style="padding-top: 96px;">
-                    <img class="mx-auto d-block" src="img/machine4.png" style="width: 85%;" />
+                <div class="pay-phone">
+                    <h2>
+                        {{dictionary.leePay}}
+                    </h2>
+                </div>
+                <div class="col-md-6 machine4" style="padding-top: 96px;">
+                    <img class="mx-auto d-block" src="img/machine4.png"/>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid button-buy" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="img/machine1.png" style="width: 45%;" />
+            <div class="row leepay">
+                <div class="col machine1" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="img/machine1.png"/>
                 </div>
-                <div class="col-md-6 text-position-right">
+                <div class="col text-position-right">
                     <h2>{{dictionary.essential}}</h2>
                     <p>
                         <b>{{dictionary.absoluteSecurity}}</b>
-                        <ul>
-                            <li>{{dictionary.certification}}</li>
-                            <li>{{dictionary.encryption}}</li>
-                            <li>{{dictionary.unlimitedSecurity}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.certification}}</li>
+                        <li>{{dictionary.encryption}}</li>
+                        <li>{{dictionary.unlimitedSecurity}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.payment}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentOptions}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.paymentOptions}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.battery}}</b>
-                        <ul>
-                            <li>{{dictionary.batteryUse}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.batteryUse}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.experience}}</b>
-                        <ul>
-                            <li>{{dictionary.transaction}}</li>
-                            <li>{{dictionary.transactionFlow}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.transaction}}</li>
+                        <li>{{dictionary.transactionFlow}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.secutiryMechanics}}</b>
-                        <ul>
-                            <li>{{dictionary.protectTransation}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.protectTransation}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.design}}</b>
-                        <ul>
-                            <li>{{dictionary.designPolicy}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.designPolicy}}</li>
+                    </ul>
+
                     <button type="button">{{dictionary.order}}</button>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid button-buy wrapper" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6 text-position-left">
+            <div class="row leepay">
+                <div class="col text-position-left space-col">
                     <h2>{{dictionary.smart}}</h2>
                     <p>
                         <b>{{dictionary.paymentProcess}}</b>
-                        <ul>
-                            <li>{{dictionary.acceptsPayments}}</li>
-                            <li>{{dictionary.operations}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.acceptsPayments}}</li>
+                        <li>{{dictionary.operations}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.tools}}</b>
-                        <ul>
-                            <li>{{dictionary.allowsPayments}}</li>
-                            <li>{{dictionary.benefits}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.allowsPayments}}</li>
+                        <li>{{dictionary.benefits}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.scanner}}</b>
-                        <ul>
-                            <li>{{dictionary.touchScreen}}</li>
-                            <li>{{dictionary.professionalService}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.touchScreen}}</li>
+                        <li>{{dictionary.professionalService}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.certification}}</b>
-                        <ul>
-                            <li>{{dictionary.certifications}}</li>
-                            <li>{{dictionary.payCertification}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.certifications}}</li>
+                        <li>{{dictionary.payCertification}}</li>
+                    </ul>
+
                     <button type="button">{{dictionary.order}}</button>
                 </div>
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="/img/machine2.png" style="width: 65%" />
+                <div class="col machine2" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="/img/machine2.png"/>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid button-buy" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="/img/machine3.png" style="width: 55%;" />
+            <div class="row leepay">
+                <div class="col machine3" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="/img/machine3.png"/>
                 </div>
-                <div class="col-md-6 text-position-right">
+                <div class="col text-position-right machine3text">
                     <h2>{{dictionary.leePay}}</h2>
                     <p>
                         <b>{{dictionary.android}}</b>
-                        <ul>
-                            <li>{{dictionary.makingApplications}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.makingApplications}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.marketplace}}</b>
-                        <ul>
-                            <li>{{dictionary.appStore}} </li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.appStore}} </li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.realTime}}</b>
-                        <ul>
-                            <li>{{dictionary.monitoring}} </li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.monitoring}} </li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.fullConnectivity}}</b>
-                        <ul>
-                            <li>{{dictionary.conections}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.conections}}</li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.typesPayments}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentOptions}} </li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.paymentOptions}} </li>
+                    </ul>
+
                     <p>
                         <b>{{dictionary.paymentSecutiry}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentIndustry}}</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>{{dictionary.paymentIndustry}}</li>
+                    </ul>
+
                     <button type="button">{{dictionary.order}}</button>
 
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-11 pay-home">
                     <a href="index.html?lang={{currentLanguage}}#cardMachine">
                         <p style="text-align:right;">
                             <b><u>< {{dictionary.backHome}}</u></b>
