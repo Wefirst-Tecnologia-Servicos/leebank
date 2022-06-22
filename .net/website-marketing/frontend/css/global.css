@@ -194,7 +194,7 @@ button {
     border-radius: 5px !important;
     padding: 2px 10px 2px 10px;
     color: #ffffff !important;
-    background: linear-gradient(90.7deg, #484fef 1.32%, #3837e1 24.45%, #484fef 52.71%, #3837e1 73.79%, #484fef 100%);
+    background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
     border: none !important;
     box-shadow: 2px 2px 8px black !important;
     width: 175px;
@@ -471,6 +471,87 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 .border h3, .border p {
     margin: 0;
 }
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 50%;
+}
+
+.open-popup {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+textarea#message {
+    min-height: 20vh !important;
+}
+
+.popup .form-label {
+    font-size: 1.2rem;
+    text-shadow: none;
+}
+
+.popup .form-control {
+    border-radius: initial;
+}
+
+.popup-header {
+    background-color: #373737;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+    .popup-header button {
+        background-color: transparent !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .popup-header h2 {
+        font-size: 1.4rem !important;
+        text-shadow: none;
+        margin-bottom: 0;
+        line-height: 30px !important;
+    }
+
+    .popup-header .col-10 {
+        background-color: rgba(55, 55, 55, 0.9);
+        border-radius: 0px 20px 0px 0px;
+        padding: 1%;
+    }
+
+.popup-form .col-10 {
+    background-color: rgba(55, 55, 55, 0.9);
+    padding: 5%;
+    border-radius: 0px 0px 20px 20px;
+    min-height: 85vh;
+}
+
+.popup-form .btn {
+    background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
+    padding: 2% 0%;
+}
+
+.button-cambio {
+    display: none;
+}
+
+.popup-btn {
+    display: none;
+    background: transparent;
+}
+
 
 /* celulares */
 @media only screen and (max-width: 767px) {
@@ -808,12 +889,110 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .pay-home {
         order: 3;
     }
+
+    .popup {
+        width: 100%;
+    }
+
+
+        .popup .form-control {
+            line-height: 0.5;
+        }
+
+        .popup .form-label {
+            font-size: 0.8rem;
+        }
+
+        .popup .col-10 {
+            width: 100%
+        }
+
+    .popup-header {
+        background-color: transparent;
+    }
+
+        .popup-header img {
+            width: 100% !important;
+        }
+
+        .popup-header .col-10 {
+            border-radius: 25px;
+            background-color: #373737;
+            z-index: 999;
+        }
+
+        .popup-header h2 {
+            font-size: 1rem !important;
+            margin-bottom: 0;
+            padding: 3%;
+            line-height: 5px !important;
+        }
+
+    .popup-form {
+        margin: 0;
+        margin-top: -20px;
+    }
+
+        .popup-form .form-control {
+            font-size: 0.8rem;
+        }
+
+        .popup-form .col-10 {
+            min-height: initial;
+            padding: 10% 5%;
+        }
+
+        .popup-form .col-md-6 {
+            padding: 3% !important;
+        }
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .mb-3 {
+            width: 48%;
+        }
+
+    .button-cambio {
+        display: initial;
+    }
+
+    .popup-exchange {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        width: 100%;
+    }
+
+    .open-popup {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .popup-exchange .popup-btn {
+        margin: 0 !important;
+        width: 14%;
+    }
+
+        .popup-exchange .popup-btn img {
+            width: 100% !important;
+        }
+
+    .popup-btn {
+        display: initial;
+    }
+
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    
+
     p {
         font-size: 1.5rem;
         line-height: 45px;
@@ -1142,7 +1321,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .machine1 img {
         width: 100%;
         margin: 0px !important;
-
     }
 
     .machine1 {
@@ -1168,7 +1346,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .machine3 {
         padding: 0px !important;
         order: 2;
-
     }
 
     .machine3text {
@@ -1195,7 +1372,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         width: 52% !important;
         margin-top: 20%;
     }
-    
+
 
     .leepay-know {
         width: 46%;
@@ -1205,7 +1382,92 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 25px;
     }
 
+    .popup {
+        width: 100%;
+    }
 
+        .popup .popup-form, .popup .popup-header {
+            padding: 0 !important;
+        }
+
+        .popup .form-control {
+            line-height: 2;
+        }
+
+        .popup .form-label {
+            font-size: 1.4rem;
+        }
+
+        .popup .col-10 {
+            width: 100%
+        }
+
+    .popup-header {
+        background-color: transparent;
+    }
+
+        .popup-header .col-10 {
+            border-radius: 25px;
+            background-color: #373737;
+            z-index: 999;
+        }
+
+        .popup-header h2 {
+            font-size: 2.5rem !important;
+            margin-bottom: 0;
+            padding: 1%;
+            line-height: 40px !important;
+        }
+
+    .popup-form {
+        margin: 0;
+        margin-top: -20px;
+    }
+
+        .popup-form .col-10 {
+            min-height: 66vh;
+        }
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .mb-3 {
+            width: 48%;
+        }
+
+    .button-cambio {
+        display: initial;
+    }
+
+    .popup-exchange {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        width: 100%;
+    }
+
+    .open-popup {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .popup-exchange .popup-btn {
+        margin: 0 !important;
+        width: 12%;
+    }
+
+        .popup-exchange .popup-btn img {
+            width: 100% !important;
+        }
+
+    .popup-btn {
+        display: initial;
+    }
 
 }
 
@@ -1352,5 +1614,22 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .card-image img {
         width: 70%;
         margin-top: 30%;
+    }
+
+    .popup-header h2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .popup .form-label {
+        font-size: 1.4rem;
+    }
+
+    .popup .form-control {
+        line-height: 2.5;
+    }
+
+    .popup-form .col-10 {
+        min-height: 80vh;
     }
 }
