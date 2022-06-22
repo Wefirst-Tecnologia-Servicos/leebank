@@ -194,7 +194,7 @@ button {
     border-radius: 5px !important;
     padding: 2px 10px 2px 10px;
     color: #ffffff !important;
-    background-color: #2C32B5 !important;
+    background: linear-gradient(90.7deg, #484fef 1.32%, #3837e1 24.45%, #484fef 52.71%, #3837e1 73.79%, #484fef 100%);
     border: none !important;
     box-shadow: 2px 2px 8px black !important;
     width: 175px;
@@ -228,9 +228,6 @@ button {
         margin: 10px;
     }
 
-    .footer .float-end {
-        padding-top: 42px;
-    }
 
 .text-about p {
     font-size: 18px;
@@ -358,9 +355,11 @@ button {
 
 .button-buy button {
     width: 40%;
-    padding: 6px 0px;
-    color: #563596 !important;
-    background-color: #ffffff !important;
+    background-image: url('../img/button-buy.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent !important;
 }
 
 .second-row .img-phone {
@@ -377,6 +376,27 @@ button {
 
 .footer .img-phone {
     display: none;
+}
+
+.pay-phone {
+    display: none;
+    padding-bottom: 25px;
+}
+
+.machine4 img {
+    width: 85%;
+}
+
+.machine1 img {
+    width: 45%;
+}
+
+.machine2 img {
+    width: 65%
+}
+
+.machine3 img {
+    width: 55%;
 }
 
 /*CSS Loader*/
@@ -487,13 +507,24 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             display: none;
         }
 
+    .text-position-right {
+        padding-right: 0px !important;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     .text-position-left, .col-md-6 {
-        padding: 25px !important;
+        padding: 0px 25px 0px 25px !important;
+    }
+
+    .space-col {
+        padding: 25px 5px 0px 0px !important;
     }
 
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
+        background: transparent;
     }
 
     .footer .float-end {
@@ -733,11 +764,56 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         text-align: center;
         padding: 1%;
     }
+
+    .pay-desktop {
+        display: none;
+    }
+
+    .pay-phone {
+        display: initial;
+    }
+
+    .machine4 img {
+        width: 85%;
+    }
+
+    .machine1 img {
+        width: 90%;
+    }
+
+    .machine1 {
+        order: 2;
+    }
+
+    .machine2 img {
+        width: 100%
+    }
+
+    .machine2 {
+        order: -1;
+    }
+
+    .machine3 img {
+        width: 100%;
+    }
+
+    .machine3 {
+        order: 2;
+    }
+
+    .machine3text {
+        order: 1;
+    }
+
+    .pay-home {
+        order: 3;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    
     p {
         font-size: 1.5rem;
         line-height: 45px;
@@ -777,14 +853,32 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             display: none;
         }
 
+
+    .text-position-right {
+        padding-right: 0px !important;
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 65%;
+    }
+
+    .text-position-left, .col-md-6 {
+        padding: 0px 25px 0px 25px !important;
+        width: 100%;
+    }
+
+    .space-col {
+        padding: 25px 5px 0px 0px !important;
+    }
+
+
     .text-position-left {
-        padding: 11% 0px 11% 10% !important;
-        width: 65%;
+        min-width: 55%;
     }
 
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
+        background: transparent;
     }
 
     .second-row .row-space {
@@ -899,6 +993,8 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
         .wrapper .col-md-6:first-child {
             order: 1;
+            padding: 0px 25px 0px 25px !important;
+            width: 100% !important;
         }
 
     .row.text-about {
@@ -999,34 +1095,117 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 15px;
     }
 
-    .footer img {
-        width: 12% !important;
-    }
+        .footer img {
+            width: 12% !important;
+        }
 
-    .footer .img-link {
-        width: 110px !important;
-    }
+        .footer .img-link {
+            width: 110px !important;
+        }
 
-    .footer .img-phone {
-        display: flex;
-        justify-content: space-around;
-    }
+        .footer .img-phone {
+            display: flex;
+            justify-content: space-around;
+        }
 
-    .footer .img-desktop {
+        .footer .img-desktop {
+            display: none;
+        }
+
+        .footer .float-end p, a .float-end {
+            font-size: 30px;
+            margin: auto;
+            line-height: 55px;
+            white-space: nowrap;
+        }
+
+        .footer .text-end {
+            font-size: 30px;
+            line-height: 45px;
+            padding-top: 22px;
+        }
+
+
+    .pay-desktop {
         display: none;
     }
 
-    .footer .float-end p, a .float-end {
-        font-size: 31px;
-        margin: auto;
-        line-height: 55px;
-        white-space: nowrap;
+    .pay-phone {
+        display: initial;
+        padding-left: 50px;
     }
-    .footer .text-end {
-        font-size: 31px;
+
+    .machine4 img {
+        width: 70%;
+    }
+
+    .machine1 img {
+        width: 100%;
+        margin: 0px !important;
+
+    }
+
+    .machine1 {
+        order: 2;
+        padding-top: 0px !important;
+        width: 35%;
+    }
+
+    .machine2 img {
+        width: 100%
+    }
+
+    .machine2 {
+        order: -1;
+        padding: 10px !important;
+        width: 35%;
+    }
+
+    .machine3 img {
+        width: 100%;
+    }
+
+    .machine3 {
+        padding: 0px !important;
+        order: 2;
+
+    }
+
+    .machine3text {
+        order: 1;
+    }
+
+    .pay-home {
+        order: 3;
+    }
+
+    .leepay-tablet p {
+        font-size: 30px;
         line-height: 45px;
-        padding-top: 22px;
+        padding-top: inherit;
     }
+
+    .leepay-tablet h2 {
+        font-weight: bold !important;
+        line-height: 65px !important;
+        font-size: 49px !important;
+    }
+
+    .leepay-tablet .col-md-11 {
+        width: 52% !important;
+        margin-top: 20%;
+    }
+    
+
+    .leepay-know {
+        width: 46%;
+    }
+
+    .row, leepay {
+        padding: 25px;
+    }
+
+
 
 }
 
