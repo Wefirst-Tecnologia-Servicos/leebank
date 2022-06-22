@@ -5,10 +5,16 @@ const service = require("../../middleware/service/email-service");
 router.post("/email", (request, response) => {
     try {
 
-        const emailModel = {
+        var emailModel = {
             WebSite: request.body.WebSite,
             MailType: request.body.MailType
         };
+
+        for (var k in request.body) {
+            if (k.substr(0, 1) != "_") {
+                emailModel[k] = request.body[k];
+            }
+        }
 
         if (!emailModel.WebSite || !emailModel.MailType) {
             response.status(400).send('Incorrect Parameters');

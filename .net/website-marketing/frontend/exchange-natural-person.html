@@ -34,6 +34,7 @@
                 <h3 class="bold-color" style="display:inline">{{dictionary.physicalPerson}}</h3>
                 <p>{{dictionary.remittances}} </p>
                 <p>{{dictionary.transaction}}</p>
+                <button class="button-page button-cambio" ng-click="openPopup();" type="button">Simular Câmbio</button>
                 <div class="col-md-12">
                     <a href="index.html?lang={{currentLanguage}}#exchange">
                         <p style="text-align:left;">
@@ -42,7 +43,10 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 form-exchange">
+            <div class="col-md-6 form-exchange popup-exchange" ng-class="PopupVisible ? 'open-popup' : ''">
+                <button class="popup-btn" ng-click="closePopup();">
+                    <img src="img/x-button.png" style="width: 58%;" />
+                </button>
                 <form>
                     <div class="row">
                         <div class="col">
@@ -64,9 +68,9 @@
                                             <div class="border">
                                                 <div class="border-inside">
                                                     <img src="img/brasil-icon.png" />
-                                                    <h3 id="coin" class="form-select campo-esquerdo campo"> BRL </h3>
+                                                    <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
                                                 </div>
-                                                <input type="number" class="form-control placeholder-translate campo-direito campo" placeholder="Enviar">
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPage.FromValue" ng-placeholder="{{dictionary.send}}">
                                             </div>
                                         </div>
                                     </div>
@@ -79,18 +83,18 @@
                                             <div class="border">
                                                 <div class="border-inside">
                                                     <img src="img/usa-icon.png" />
-                                                    <h3 id="coin" class="form-select campo-esquerdo"> USD </h3>
+                                                    <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
                                                 </div>
-                                                <p class="form-control placeholder-translate campo-direito">{{}}</p>
+                                                <p class="form-control placeholder-translate campo-direito">{{exchangeConversion.SendingPage.ToValue}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 USD = {{}} BRL - Câmbio Efetivo</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{}} {{exchangeConversion.SendingPage.FromCurrency}} - Câmbio Efetivo</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
+                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('SendingPage');">{{dictionary.send}}</button>
                                     <p class="text-bottom">
                                         O Dinheiro chegará em <br />
                                         até <b>X dias úteis</b>.
@@ -107,9 +111,9 @@
                                             <div class="border">
                                                 <div class="border-inside">
                                                     <img src="img/usa-icon.png" />
-                                                    <h3 id="coin" class="form-select campo-esquerdo campo"> USD </h3>
+                                                    <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
                                                 </div>
-                                                <input type="number" class="form-control placeholder-translate campo-direito campo" placeholder="Enviar">
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" placeholder="Receber" ng-model="exchangeConversion.ReceivingPage.FromValue">
                                             </div>
                                         </div>
                                     </div>
@@ -122,18 +126,18 @@
                                             <div class="border">
                                                 <div class="border-inside">
                                                     <img src="img/brasil-icon.png" />
-                                                    <h3 id="coin" class="form-select campo-esquerdo"> BRL </h3>
+                                                    <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
                                                 </div>
-                                                <p class="form-control placeholder-translate campo-direito">{{}}</p>
+                                                <p class="form-control placeholder-translate campo-direito">{{exchangeConversion.ReceivingPage.ToValue}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 BRL = {{}} USD - Câmbio Efetivo</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{}} {{exchangeConversion.ReceivingPage.FromCurrency}} - Câmbio Efetivo</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
+                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('ReceivingPage');">Receber</button>
                                     <p class="text-bottom">
                                         O Dinheiro chegará em <br />
                                         até <b>X dias úteis</b>.
@@ -151,6 +155,5 @@
 
     <script src="js/controller/body.js"></script>
     <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
