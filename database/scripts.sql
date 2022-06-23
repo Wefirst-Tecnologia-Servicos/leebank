@@ -1309,3 +1309,15 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText22
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText23','Aderente a todas as certificações de segurança da indústria de pagamentos.', 'Adherent to all payment industry security certifications.', '??', 'LEE-MARKETING');
 
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeBankDownMaq','Baixar especificidades da máquina', 'Download machine specifics', '??', 'LEE-MARKETING');
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegFill','Preencha os campos abaixo para', 'Fill in the fields below to', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegContact','entrar em contato conosco!', 'contact us!', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegName','Digite seu nome', 'Enter your name', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeCnpj','CNPJ:', 'CNPJ:', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegCnpj','Digite seu CNPJ', 'Enter your CNPJ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeEmail','E-mail: ', 'E-mail: ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegEmail','Digite seu e-mail', 'Enter your e-mail', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeCompany','Empresa:', 'Company:', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegCompany','Digite o nome da empresa', 'Enter the company name', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegMessage','Mensagem:', 'Message:', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegMessageText','Digite sua mensagem aqui', 'Type your message here', '??', 'LEE-MARKETING');
