@@ -354,12 +354,15 @@ button {
 }
 
 .button-buy button {
-    width: 40%;
-    background-image: url('../img/button-buy.png');
-    background-size: 110%;
-    background-repeat: no-repeat;
+    width: auto;
+    padding: 2% 2%;
+    background-image: url(../img/button-buy.png);
+    background-size: contain;
+    background-repeat: repeat-x;
     background-position: center;
     background-color: transparent !important;
+    white-space: nowrap;
+    color: #563596 !important;
 }
 
 .second-row .img-phone {
@@ -552,6 +555,9 @@ textarea#message {
     background: transparent;
 }
 
+.text-phone {
+    display: none;
+}
 
 /* celulares */
 @media only screen and (max-width: 767px) {
@@ -715,7 +721,10 @@ textarea#message {
     }
 
     .button-buy button {
-        width: 60%;
+        width: 100%;
+        white-space: initial;
+        background-size: cover;
+        font-size: 1rem !important;
     }
 
     .wrapper {
@@ -987,6 +996,13 @@ textarea#message {
         display: initial;
     }
 
+    .text-phone {
+        display: initial;
+    }
+
+    .text-desktop {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -1162,7 +1178,10 @@ textarea#message {
     }
 
     .button-buy button {
-        width: 60%;
+        width: 100%;
+        white-space: initial;
+        background-size: cover;
+        font-size: 1.5rem !important;
     }
 
     .wrapper {
@@ -1467,6 +1486,14 @@ textarea#message {
 
     .popup-btn {
         display: initial;
+    }
+
+    .text-phone {
+        display: initial;
+    }
+
+    .text-desktop {
+        display: none;
     }
 
 }
