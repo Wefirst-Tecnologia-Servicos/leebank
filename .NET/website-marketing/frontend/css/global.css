@@ -340,7 +340,7 @@ button {
     }
 
     .form-exchange .input-group {
-        display: grid;
+        display: block;
     }
 
 .bold-color {
@@ -557,6 +557,20 @@ textarea#message {
 
 .text-phone {
     display: none;
+}
+
+.to-value {
+    display: flex;
+    align-items: center;
+}
+
+    .to-value p {
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+input.form-control.campo-direito.campo {
+    font-size: 1.2rem;
 }
 
 /* celulares */
