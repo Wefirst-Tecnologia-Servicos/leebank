@@ -38,8 +38,8 @@
                         </button>
                     </div>
                     <div class="col-10">
-                        <h2>Preencha os campos abaixo para</h2>
-                        <h2>entrar em contato conosco!</h2>
+                        <h2>{{dictionary.leeLegFill}}</h2>
+                        <h2>{{dictionary.leeLegContact}}</h2>
                     </div>
                 </div>
                 <div class="row popup-form">
@@ -48,25 +48,25 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label">{{dictionary.name}}:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"  ng-model="legalPersonContact.SenderName">
+                                <input type="text" class="form-control" id="nome" ng-placeholder="leeLegName"  ng-model="legalPersonContact.SenderName">
                             </div>
                             <div class="divisao">
                                 <div class="mb-3">
-                                    <label for="cnpj" class="form-label">CNPJ:</label>
-                                    <input type="text" class="form-control" id="cnpj" placeholder="Digite seu CNPJ" ng-model="legalPersonContact.Cnpj">
+                                    <label for="cnpj" class="form-label">{{dictionary.leeCnpj}}</label>
+                                    <input type="text" class="form-control" id="cnpj" ng-placeholder="leeLegCnpj" ng-model="legalPersonContact.Cnpj">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">{{dictionary.email}}:</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail" ng-model="legalPersonContact.SenderEMail">
+                                    <label for="email" class="form-label">{{dictionary.leeEmail}}</label>
+                                    <input type="text" class="form-control" id="email" ng-placeholder="leeLegEmail" ng-model="legalPersonContact.SenderEMail">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="empresa" class="form-label">Empresa:</label>
-                                <input type="text" class="form-control" id="empresa" placeholder="Digite o nome da empresa" ng-model="legalPersonContact.Company">
+                                <label for="empresa" class="form-label">{{dictionary.leeCompany}}</label>
+                                <input type="text" class="form-control" id="empresa" ng-placeholder="leeLegCompany" ng-model="legalPersonContact.Company">
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label">{{dictionary.message}}:</label>
-                                <textarea class="form-control message"  id="message" placeholder="Digite sua mensagem aqui" rows="3" ng-model="legalPersonContact.Description"></textarea>
+                                <label for="message" class="form-label">{{dictionary.leeLegMessage}}</label>
+                                <textarea class="form-control message"  id="message" ng-placeholder="leeLegMessageText" rows="3" ng-model="legalPersonContact.Description"></textarea>
                             </div>
                             <div class="d-grid gap-2">
                                 <button class="btn btn-primary" type="button" style="width: 100%" ng-click="sendLegalPersonContact();">{{dictionary.send}}</button>

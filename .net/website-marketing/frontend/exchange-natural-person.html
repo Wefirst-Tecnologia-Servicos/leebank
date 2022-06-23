@@ -34,7 +34,7 @@
                 <h3 class="bold-color" style="display:inline">{{dictionary.physicalPerson}}</h3>
                 <p>{{dictionary.remittances}} </p>
                 <p>{{dictionary.transaction}}</p>
-                <button class="button-page button-cambio" ng-click="openPopup();" type="button">Simular Câmbio</button>
+                <button class="button-page button-cambio" ng-click="openPopup();" type="button">{{dictionary.leeNatSimular}}</button>
                 <div class="col-md-12">
                     <a href="index.html?lang={{currentLanguage}}#exchange">
                         <p style="text-align:left;">
@@ -52,8 +52,8 @@
                         <div class="col">
                             <nav class="nav nav-tabs" id="myTab" role="tablist">
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-enviar-tab" data-bs-toggle="tab" data-bs-target="#enviar" type="button" role="tab" aria-controls="nav-eviar" aria-selected="true">Enviar</button>
-                                    <button class="nav-link" id="nav-receber-tab" data-bs-toggle="tab" data-bs-target="#receber" type="button" role="tab" aria-controls="nav-receber" aria-selected="false">Receber</button>
+                                    <button class="nav-link active" id="nav-enviar-tab" data-bs-toggle="tab" data-bs-target="#enviar" type="button" role="tab" aria-controls="nav-eviar" aria-selected="true">{{dictionary.send}}</button>
+                                    <button class="nav-link" id="nav-receber-tab" data-bs-toggle="tab" data-bs-target="#receber" type="button" role="tab" aria-controls="nav-receber" aria-selected="false">{{dictionary.leeReceive}}</button>
                                 </div>
                             </nav>
                         </div>
@@ -89,15 +89,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{}} {{exchangeConversion.SendingPage.FromCurrency}} - Câmbio Efetivo</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{}} {{exchangeConversion.SendingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('SendingPage');">{{dictionary.send}}</button>
                                     <p class="text-bottom">
-                                        O Dinheiro chegará em <br />
-                                        até <b>X dias úteis</b>.
+                                        {{dictionary.leeNatmoney}} <br/>
+                                        <b>X {{dictionary.leeNatDays}}</b>.
                                     </p>
                                 </div>
                             </div>
@@ -132,15 +132,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{}} {{exchangeConversion.ReceivingPage.FromCurrency}} - Câmbio Efetivo</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('ReceivingPage');">Receber</button>
+                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('ReceivingPage');">{{dictionary.leeReceive}}</button>
                                     <p class="text-bottom">
-                                        O Dinheiro chegará em <br />
-                                        até <b>X dias úteis</b>.
+                                        {{dictionary.leeNatmoney}} <br />
+                                        <b>X {{dictionary.leeNatDays}}</b>.
                                     </p>
                                 </div>
                             </div>

@@ -1321,3 +1321,10 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeCompany',
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegCompany','Digite o nome da empresa', 'Enter the company name', '??', 'LEE-MARKETING');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegMessage','Mensagem:', 'Message:', '??', 'LEE-MARKETING');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeLegMessageText','Digite sua mensagem aqui', 'Type your message here', '??', 'LEE-MARKETING');
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatSimular','Simular Câmbio', 'Simulate Exchange', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeReceive','Receber', 'Receive', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatmoney','O Dinheiro chegará em ', 'Money will arrive in ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatDays',' dias úteis', ' business days', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatEffective',' Câmbio Efetivo', ' Effective Exchange Rate', '??', 'LEE-MARKETING');
+
