@@ -1339,12 +1339,10 @@ textarea#message {
 
     .machine1 img {
         width: 100%;
-        margin: 0px !important;
     }
 
     .machine1 {
         order: 2;
-        padding-top: 0px !important;
         width: 35%;
     }
 
@@ -1354,7 +1352,6 @@ textarea#message {
 
     .machine2 {
         order: -1;
-        padding: 10px !important;
         width: 35%;
     }
 
@@ -1363,7 +1360,6 @@ textarea#message {
     }
 
     .machine3 {
-        padding: 0px !important;
         order: 2;
     }
 
