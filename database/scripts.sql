@@ -1263,4 +1263,49 @@ UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 
 UPDATE dictionary SET pt = ' 03/06/2021', en = ' 06/03/2021' WHERE dictionaryid = 'vixiCsKycApDate'; 
 UPDATE dictionary SET pt = '03/06/2021', en = '06/03/2021' WHERE dictionaryid = 'vixiCsKypApTextDate'; 
 
-UPDATE dictionary SET pt = '©  VIXI Exchange Serviços Digitais LTDA, 2022. Todos os direitos reservados', en = '© VIXI Exchange Digital Services LTDA, 2022. All rights reserved' WHERE dictionaryid = 'vixiAllRights';
+UPDATE dictionary SET pt = '©  VIXI Exchange Seriços Digitais LTDA, 2022. Todos os direitos reservados', en = '© VIXI Exchange Digital Services LTDA, 2022. All rights reserved' WHERE dictionaryid = 'vixiAllRights';
+
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle1','Segurança absoluta.', 'Absolute safety.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle2','Todas as opções de pagamento.', 'All payment options.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle3','Bateria com grande autonomia.', 'Long battery life.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle4','Experiência simples e segura.', 'Simple and safe experience.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle5','Melhores mecanismos de segurança.', 'Better security mechanisms.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle6','Sustentabilidade X Design.', 'Sustainability X Design.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle7','Processos de pagamento simples e móvel.', 'Simple and mobile payment processes.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle8','Ferramentas para gestão de negócios.', 'Tools for business management.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle9','Sistema de scanner.', 'Scanner system.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle10','Certificação.', 'Certification.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle11','Sistema baseado em Android.', 'Android-based system.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle12','Marketplace para seu negócio.', 'Marketplace for your business.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle13','Controle e gestão em tempo real.', 'Control and management in real time.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle14','Conectividade total.', 'Full Connectivity.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle15','Diversos tipos de pagamento.', 'Several types of payment.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayTitle16','Segurança no pagamento.', 'Security in payment.', '??', 'LEE-MARKETING');
+
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText1',' Certificação PCI-PTS 4.x.', ' PCI-PTS 4.x certification.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText2',' Esquema de criptografia mais avançado.', ' More advanced encryption scheme.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText3',' Tamanho de chave de segurança ilimitado.', ' Unlimited security key size.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText4','NFC, carteira-eletrônica, além de EMV Chip&PIN, tarja magnética e contactless.', 'NFC, e-wallet, as well as EMV Chip&PIN, magnetic stripe, and contactless.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText5','Uso em ambientes fechados e ao ar livre.', 'Indoor and outdoor use.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText6','Volume de transações contactless.', 'Contactless transaction volume.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText7','Leitura de cartões e rápido fluxo de transações.', 'Card reading and fast transaction flow.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText8','Protege a privacidade de transação enquanto promove o acesso ao aplicativos de pagamento.', 'Protects transaction privacy while promoting access to payment applications.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText9','Política de concepção de produtos ecológica-proativa.', 'Eco-proactive product design policy.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText10','Aceita pagamentos de qualquer lugar e qualquer tipo de cartão (débito, chip, e PIN).', 'It accepts payments from anywhere and any type of card (debit, chip, and PIN).', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText11','Operações por: WiFi, Bluetooth e 4G.', 'Operations by: WiFi, Bluetooth, and 4G.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText12','Permite pagamentos com sistema mais seguro.', 'It allows payments with a more secure system.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText13','Benefícios aos tópicos como: Compras online, gestão de empresas e relatórios detalhados.', 'Benefits to topics such as: online purchasing, company management, and detailed reporting.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText14','Touch screen, leitor de QR Codes e câmeras (promoções e trackings de inventários).', 'Touch screen, QR Codes reader, and cameras (promotions and inventory tracking).', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText15','Ideal para serviços profissionais, lojas e departamentos, restaurantes e serviços de atendimento rápido.', 'Ideal for professional services, stores and departments, restaurants, and quick service.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText16','CI PTS 5.x, EMV L1/L2/CL1.', 'CI PTS 5.x, EMV L1/L2/CL1.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText17','PayPass, PayWave, Expresspay.', 'PayPass, PayWave, Expresspay.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText18','Facilidade para disponibilizar aplicativos na plataforma mobile mais utilizada do mercado. ', 'Ease of delivering applications on the most widely used mobile platform in the market. ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText19','Criação de sua própria loja de aplicativos de maneira fácil e intuitiva, para melhor atender os seus clientes. ', 'Create your own application store in an easy and intuitive way, to better serve your customers. ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText20','Monitoramento, gestão e atualização, permite mais produtividade e agilidade no uso dos terminais. ', 'Monitoring, management, and updating allow more productivity and agility in the use of the terminals. ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText21','4G, Wi-Fi e Bluetooth.', '4G, Wi-Fi and Bluetooth.', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText22','Cartão Chip, Contactless, Tarja magnética, QRCode. ', 'Chip card, Contactless, Magnetic stripe, QRCode. ', '??', 'LEE-MARKETING');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leePayText23','Aderente a todas as certificações de segurança da indústria de pagamentos.', 'Adherent to all payment industry security certifications.', '??', 'LEE-MARKETING');
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeBankDownMaq','Baixar especificidades da máquina', 'Download machine specifics', '??', 'LEE-MARKETING');
