@@ -153,10 +153,10 @@
                     </p>
                     <div class="row exchange-button">
                         <div class="col-6">
-                            <button ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
+                            <button class="round" ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
                         </div>
                         <div class="col-6">
-                            <button ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
+                            <button class="round" ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
                             <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
+                            <button class="btn btn-primary round" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
                         </div>
                     </form>
                 </div>

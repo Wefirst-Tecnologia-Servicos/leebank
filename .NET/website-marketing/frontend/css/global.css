@@ -192,7 +192,7 @@ img {
 
 button {
     border-radius: 5px !important;
-    padding: 2px 10px 2px 10px;
+    padding: 10px;
     color: #ffffff !important;
     background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
     border: none !important;
@@ -354,6 +354,7 @@ button {
 }
 
 .button-buy button {
+    border-radius: 30px !important;
     width: auto;
     padding: 2% 2%;
     background-image: url(../img/button-buy.png);
@@ -573,6 +574,10 @@ input.form-control.campo-direito.campo {
     font-size: 1.2rem;
 }
 
+.round {
+    border-radius: 100px !important;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
@@ -756,10 +761,6 @@ input.form-control.campo-direito.campo {
 
     #contact .row {
         padding: 0 !important;
-    }
-
-    #contact button {
-        width: 90% !important;
     }
 
     .indexImageDiv1 {
@@ -1014,6 +1015,10 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
+        .text-phone p {
+            text-align: left
+        }
+
     .text-desktop {
         display: none;
     }
@@ -1192,7 +1197,7 @@ input.form-control.campo-direito.campo {
     }
 
     .button-buy button {
-        width: 70%;
+        width: 60%;
         white-space: initial;
         background-size: cover;
         font-size: 1.5rem !important;
@@ -1215,10 +1220,6 @@ input.form-control.campo-direito.campo {
 
     #contact .row {
         padding: 0 !important;
-    }
-
-    #contact button {
-        width: 90% !important;
     }
 
     .indexImageDiv1 {
@@ -1325,7 +1326,7 @@ input.form-control.campo-direito.campo {
         }
 
         .footer .float-end p, a .float-end {
-            font-size: 28px; 
+            font-size: 28px;
             margin: auto;
             line-height: 55px;
             white-space: nowrap;
@@ -1502,10 +1503,13 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
+        .text-phone p {
+            text-align: left
+        }
+
     .text-desktop {
         display: none;
     }
-
 }
 
 
