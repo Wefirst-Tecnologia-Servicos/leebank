@@ -1178,7 +1178,7 @@ textarea#message {
     }
 
     .button-buy button {
-        width: 100%;
+        width: 70%;
         white-space: initial;
         background-size: cover;
         font-size: 1.5rem !important;
