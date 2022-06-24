@@ -1,12 +1,11 @@
 {
   "http": {
     "port": 3000,
-    "host": "localhost",
     "cors": {
-      "allowedOrigins": [ "*" ]
+      "allowedOrigins": [ "leebank.cn", "201.30.147.96", "localhost" ]
     }
   },
   "trace": {
-    "displayMessage": "LeeBank API listening on {host}:{port}..."
+    "displayMessage": "LeeBank API listening on port {port}..."
   }
 }

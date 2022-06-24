@@ -4,8 +4,8 @@
       "doubts": {
         "template": {
           "subject": "WebSite LeeBank: Tire suas duvidas",
-          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
-          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
+          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDuvidas: ${Description}",
+          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Duvidas: </strong>${Description}"
         },
         "sendGrid": {
           "sender": "noreply@leebank.cn",
@@ -20,8 +20,8 @@
       "doubts": {
         "template": {
           "subject": "WebSite Vixi: Tire suas duvidas",
-          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDúvidas: ${Description}",
-          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Dúvidas: </strong>${Description}"
+          "text": "Nome: ${SenderName}\nE-Mail: ${SenderEMail}\nDuvidas: ${Description}",
+          "html": "<strong>Nome: </strong>${SenderName}<br /><strong>E-Mail: </strong>${SenderEMail}<br /><strong>Duvidas: </strong>${Description}"
         },
         "sendGrid": {
           "sender": "noreply@leebank.cn",
