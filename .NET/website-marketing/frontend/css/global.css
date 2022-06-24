@@ -614,6 +614,10 @@ input.form-control.campo-direito.campo {
     display:none;
 }
 
+.back-nat {
+    text-align: left;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
@@ -1069,6 +1073,19 @@ input.form-control.campo-direito.campo {
     .ins-p {
         padding: 2%;
     }
+
+    .exchange-natural-person-image .col-md-6.text-position-left{
+        width: 90%;
+    }
+
+    .exchange-natural-person-image .row.row-space {
+        justify-content: end;
+        text-align: right;
+    }
+    .back-nat{
+        text-align:right;
+    }
+
 }
 
 /* Tablet */
