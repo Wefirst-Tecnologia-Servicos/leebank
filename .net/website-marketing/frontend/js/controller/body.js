@@ -34,6 +34,29 @@
             });
         };
 
+        // ---------- Exchange Legal Person Form ------------ //
+
+        $scope.legalPersonContact = {
+            SenderName: "",
+            Cnpj: "",
+            SenderEMail: "",
+            Company: "",
+            Description: "",
+        };
+
+        $scope.sendLegalPersonContact = () => {
+            $scope.legalPersonContact.MailType = "exchange-legalperson";
+            EMailService.send($scope.legalPersonContact).then(() => {
+                $scope.legalPersonContact = {
+                    SenderName: "",
+                    Cnpj: "",
+                    SenderEMail: "",
+                    Company: "",
+                    Description: "",
+                };
+            });
+        };
+
         // ------------ Page Redirecting Engine ------------- //
 
         $scope.redirectTo = link => {
@@ -67,7 +90,19 @@
 
         $scope.convertCurrency = selectedPage => {
             ExchangeService.convert($scope.exchangeConversion[selectedPage]).then(result => {
-                $scope.exchangeConversion[selectedPage] = result;
+                $scope.exchangeConversion[selectedPage] = result.data;
             });
+        };
+
+        // ---------------------- Popup --------------------- //
+
+        $scope.PopupVisible = false;
+
+        $scope.openPopup = () => {
+            $scope.PopupVisible = true;
+        };
+
+        $scope.closePopup = () => {
+            $scope.PopupVisible = false;
         };
     });

@@ -22,6 +22,7 @@
 
     <script src="js/global.js"></script>
 
+
 </head>
 <body ng-app="leebank" class="loading">
 
@@ -29,14 +30,60 @@
 
     <div class="container-fluid background-image exchange-legal-person-image sub-pages" style="background-image: url(/img/exchange-legal-person.jpg); padding-top: 100px;" ng-controller="BodyController">
         <div class="row row-space">
+            <div class="col popup" ng-class="PopupVisible ? 'open-popup' : ''">
+                <div class="row popup-header">
+                    <div class="col-2">
+                        <button ng-click="closePopup();">
+                            <img src="img/x-button.png" style="width: 58%;" />
+                        </button>
+                    </div>
+                    <div class="col-10">
+                        <h2>{{dictionary.leeLegFill}}</h2>
+                        <h2>{{dictionary.leeLegContact}}</h2>
+                    </div>
+                </div>
+                <div class="row popup-form">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">{{dictionary.name}}:</label>
+                                <input type="text" class="form-control" id="nome" ng-placeholder="leeLegName"  ng-model="legalPersonContact.SenderName">
+                            </div>
+                            <div class="divisao">
+                                <div class="mb-3">
+                                    <label for="cnpj" class="form-label">{{dictionary.leeCnpj}}</label>
+                                    <input type="text" class="form-control" id="cnpj" ng-placeholder="leeLegCnpj" ng-model="legalPersonContact.Cnpj">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">{{dictionary.leeEmail}}</label>
+                                    <input type="text" class="form-control" id="email" ng-placeholder="leeLegEmail" ng-model="legalPersonContact.SenderEMail">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="empresa" class="form-label">{{dictionary.leeCompany}}</label>
+                                <input type="text" class="form-control" id="empresa" ng-placeholder="leeLegCompany" ng-model="legalPersonContact.Company">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">{{dictionary.leeLegMessage}}</label>
+                                <textarea class="form-control message"  id="message" ng-placeholder="leeLegMessageText" rows="3" ng-model="legalPersonContact.Description"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" style="width: 100%" ng-click="sendLegalPersonContact();">{{dictionary.send}}</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6 space"></div>
             <div class="col-md-6 text-position-right mobile-text">
+
                 <h1>{{dictionary.exchange}}</h1>
                 <h3 class="bold-color" style="display:inline">{{dictionary.legalPerson}}</h3>
                 <p>{{dictionary.doBussines}}</p>
                 <p>{{dictionary.theService}}</p>
                 <p>{{dictionary.contacUsBussiness}}</p>
-                <button class="button-page" onclick="window.open('https://forms.gle/rpeh6iwT8RSELPYj9');" type="button">{{dictionary.contact}}</button>
+                <button class="button-page round" ng-click="openPopup();" type="button">{{dictionary.contact}}</button>
                 <div class="col-md-12">
                     <a href="index.html?lang={{currentLanguage}}#exchange">
                         <p style="text-align:right;">
@@ -46,13 +93,11 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer-component></footer-component>
 
     <script src="js/controller/body.js"></script>
     <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

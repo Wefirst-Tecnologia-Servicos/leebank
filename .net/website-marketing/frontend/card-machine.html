@@ -27,12 +27,12 @@
 
     <menu-component></menu-component>
 
-    <div ng-controller="BodyController" style="padding-top: 100px;">
+    <div ng-controller="BodyController" class="leepay-tablet" style="padding-top: 100px;">
 
         <div class="container-fluid wrapper" style="padding-bottom:80px;">
             <div class="row row-space">
                 <div class="col-md-6 text-position-left">
-                    <h2>
+                    <h2 class="pay-desktop">
                         {{dictionary.leePay}}
                     </h2>
                     <p>
@@ -41,154 +41,284 @@
                     <p>
                         {{dictionary.allMachines}}
                     </p>
-                    <p>
+                    <p class="leepay-know">
                         <b>{{dictionary.discover}}</b>
                     </p>
                 </div>
-                <div class="col-md-6" style="padding-top: 96px;">
-                    <img class="mx-auto d-block" src="img/machine4.png" style="width: 85%;" />
+                <div class="pay-phone">
+                    <h2>
+                        {{dictionary.leePay}}
+                    </h2>
+                </div>
+                <div class="col-md-6 machine4" style="padding-top: 96px;">
+                    <img class="mx-auto d-block" src="img/machine4.png"/>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid button-buy" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="img/machine1.png" style="width: 45%;" />
+            <div class="row leepay">
+                <div class="col machine1" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="img/machine1.png" />
                 </div>
-                <div class="col-md-6 text-position-right">
+                <div class="col text-position-right text-desktop">
                     <h2>{{dictionary.essential}}</h2>
                     <p>
-                        <b>{{dictionary.absoluteSecurity}}</b>
-                        <ul>
-                            <li>{{dictionary.certification}}</li>
-                            <li>{{dictionary.encryption}}</li>
-                            <li>{{dictionary.unlimitedSecurity}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle1}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText1}}</li>
+                        <li>{{dictionary.leePayText2}}</li>
+                        <li>{{dictionary.leePayText3}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.payment}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentOptions}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle2}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText4}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.battery}}</b>
-                        <ul>
-                            <li>{{dictionary.batteryUse}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle3}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText5}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.experience}}</b>
-                        <ul>
-                            <li>{{dictionary.transaction}}</li>
-                            <li>{{dictionary.transactionFlow}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle4}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText6}}</li>
+                        <li>{{dictionary.leePayText7}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.secutiryMechanics}}</b>
-                        <ul>
-                            <li>{{dictionary.protectTransation}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle5}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText8}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.design}}</b>
-                        <ul>
-                            <li>{{dictionary.designPolicy}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle6}}</b>
                     </p>
-                    <button type="button">{{dictionary.order}}</button>
+                    <ul>
+                        <li>{{dictionary.leePayText9}}</li>
+                    </ul>
+
+                    <button type="button">{{dictionary.leeBankDownMaq}}</button>
                 </div>
+
+                <div class="col text-position-right text-phone">
+                    <h2 class="ng-binding">Lee Pay Essencial</h2>
+                    <ul>
+                        <li>
+                            <p class="ng-binding">
+                                Segurança absoluta.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Todas as opções de pagamento.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Bateria com grande autonomia.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Experiência simples e segura.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Melhores mecanismos de segurança.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Sustentabilidade X Design.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="ng-binding">Baixar especificidades da máquina</button>
+                </div>
+
             </div>
         </div>
 
         <div class="container-fluid button-buy wrapper" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6 text-position-left">
+            <div class="row leepay">
+                <div class="col text-position-left space-col text-desktop">
                     <h2>{{dictionary.smart}}</h2>
                     <p>
-                        <b>{{dictionary.paymentProcess}}</b>
-                        <ul>
-                            <li>{{dictionary.acceptsPayments}}</li>
-                            <li>{{dictionary.operations}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle7}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText10}}</li>
+                        <li>{{dictionary.leePayText11}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.tools}}</b>
-                        <ul>
-                            <li>{{dictionary.allowsPayments}}</li>
-                            <li>{{dictionary.benefits}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle8}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText12}}</li>
+                        <li>{{dictionary.leePayText13}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.scanner}}</b>
-                        <ul>
-                            <li>{{dictionary.touchScreen}}</li>
-                            <li>{{dictionary.professionalService}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle9}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText14}}</li>
+                        <li>{{dictionary.leePayText15}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.certification}}</b>
-                        <ul>
-                            <li>{{dictionary.certifications}}</li>
-                            <li>{{dictionary.payCertification}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle10}}</b>
                     </p>
-                    <button type="button">{{dictionary.order}}</button>
+                    <ul>
+                        <li>{{dictionary.leePayText16}}</li>
+                        <li>{{dictionary.leePayText17}}</li>
+                    </ul>
+
+                    <button type="button">{{dictionary.leeBankDownMaq}}</button>
                 </div>
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="/img/machine2.png" style="width: 65%" />
+
+                <div class="col text-position-left space-col text-phone">
+                    <h2 class="ng-binding">Lee Pay Smart</h2>
+                    <ul>
+                        <li>
+                            <p class="ng-binding">
+                                Processos de pagamento simples e móvel.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Ferramentas para gestão de negócios.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Sistema de scanner.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ng-binding">
+                                Certificação.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="ng-binding">Baixar especificidades da máquina</button>
+                </div>
+
+                <div class="col machine2" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="/img/machine2.png" />
                 </div>
             </div>
         </div>
 
         <div class="container-fluid button-buy" style="padding-bottom:80px;">
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 165px;">
-                    <img class="mx-auto d-block" src="/img/machine3.png" style="width: 55%;" />
+            <div class="row leepay">
+                <div class="col machine3" style="padding-top: 165px;">
+                    <img class="mx-auto d-block" src="/img/machine3.png" />
                 </div>
-                <div class="col-md-6 text-position-right">
+                <div class="col text-position-right machine3text text-desktop">
                     <h2>{{dictionary.leePay}}</h2>
                     <p>
-                        <b>{{dictionary.android}}</b>
-                        <ul>
-                            <li>{{dictionary.makingApplications}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle11}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText18}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.marketplace}}</b>
-                        <ul>
-                            <li>{{dictionary.appStore}} </li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle12}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText19}} </li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.realTime}}</b>
-                        <ul>
-                            <li>{{dictionary.monitoring}} </li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle13}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText20}} </li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.fullConnectivity}}</b>
-                        <ul>
-                            <li>{{dictionary.conections}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle14}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText21}}</li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.typesPayments}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentOptions}} </li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle15}}</b>
                     </p>
+                    <ul>
+                        <li>{{dictionary.leePayText22}} </li>
+                    </ul>
+
                     <p>
-                        <b>{{dictionary.paymentSecutiry}}</b>
-                        <ul>
-                            <li>{{dictionary.paymentIndustry}}</li>
-                        </ul>
+                        <b>{{dictionary.leePayTitle16}}</b>
                     </p>
-                    <button type="button">{{dictionary.order}}</button>
+                    <ul>
+                        <li>{{dictionary.leePayText23}}</li>
+                    </ul>
+
+                    <button type="button">{{dictionary.leeBankDownMaq}}</button>
 
                 </div>
-                <div class="col-md-11">
+
+                <div class="col text-position-right machine3text text-phone">
+                    <div>
+                        <h2 class="ng-binding">Lee Pay</h2>
+                        <ul>
+                            <li>
+                                <p class="ng-binding">
+                                    Sistema baseado em Android.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="ng-binding">
+                                    Marketplace para seu negócio.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="ng-binding">
+                                    Controle e gestão em tempo real.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="ng-binding">
+                                    Conectividade total.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="ng-binding">
+                                    Diversos tipos de pagamento.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="ng-binding">
+                                    Segurança no pagamento.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="ng-binding">Baixar especificidades da máquina</button>
+
+                </div>
+
+                <div class="col-md-11 pay-home">
                     <a href="index.html?lang={{currentLanguage}}#cardMachine">
                         <p style="text-align:right;">
                             <b><u>< {{dictionary.backHome}}</u></b>

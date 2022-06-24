@@ -192,9 +192,9 @@ img {
 
 button {
     border-radius: 5px !important;
-    padding: 2px 10px 2px 10px;
+    padding: 10px;
     color: #ffffff !important;
-    background-color: #2C32B5 !important;
+    background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
     border: none !important;
     box-shadow: 2px 2px 8px black !important;
     width: 175px;
@@ -228,9 +228,6 @@ button {
         margin: 10px;
     }
 
-    .footer .float-end {
-        padding-top: 42px;
-    }
 
 .text-about p {
     font-size: 18px;
@@ -238,10 +235,16 @@ button {
 
 .form-exchange {
     padding: 0px 100px;
+    margin-bottom: auto;
+    margin-top: 4%;
 }
 
     .form-exchange p {
         margin-top: 0px;
+    }
+
+    .form-exchange h3 {
+        font-size: 24px;
     }
 
     .form-exchange form {
@@ -255,8 +258,8 @@ button {
         box-shadow: none !important;
         padding: 0;
         border-radius: 20px !important;
-        width: 20%;
-        margin: 0 40px;
+        width: 30%;
+        margin: 0px 25px;
     }
 
         .form-exchange button:hover {
@@ -281,11 +284,13 @@ button {
     }
 
     .form-exchange .campo-esquerdo {
-        padding: 4%;
+        padding: 3%;
         border-radius: 5px 0 0 5px;
+        color: #373737;
+        font-weight: bold;
         background-color: #563596;
-        color: #ffffff;
         border: none;
+        background-image: none;
     }
 
     .form-exchange p {
@@ -296,7 +301,7 @@ button {
     }
 
     .form-exchange .border .form-select {
-        width: 50%;
+        width: 45%;
     }
 
     .form-exchange .border {
@@ -304,13 +309,26 @@ button {
         border: 2px solid #563596 !important;
         box-sizing: border-box;
         border-radius: 10px;
+        background-color: #563596;
     }
+
+        .form-exchange .border img {
+            padding: 0 0 0 15px;
+            width: 64px;
+        }
+
+        .form-exchange .border .border-inside {
+            display: flex;
+            width: 345px;
+            text-align: center;
+            padding: 1%;
+        }
 
     .form-exchange .send-button {
         margin: 30px 0 10px 0;
-        background-color: #7FAAC3 !important;
+        background: linear-gradient(90.7deg, #81a8df 1.32%, #667bca 24.45%, #81a8df 52.71%, #667bca 73.79%, #81a8df 100%);
         width: 100%;
-        border-radius: 5px !important;
+        border-radius: 15px !important;
         padding: 10px 0px;
     }
 
@@ -322,7 +340,7 @@ button {
     }
 
     .form-exchange .input-group {
-        display: grid;
+        display: block;
     }
 
 .bold-color {
@@ -336,10 +354,16 @@ button {
 }
 
 .button-buy button {
-    width: 40%;
-    padding: 6px 0px;
+    border-radius: 30px !important;
+    width: auto;
+    padding: 2% 2%;
+    background-image: url(../img/button-buy.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent !important;
+    white-space: nowrap;
     color: #563596 !important;
-    background-color: #ffffff !important;
 }
 
 .second-row .img-phone {
@@ -356,6 +380,27 @@ button {
 
 .footer .img-phone {
     display: none;
+}
+
+.pay-phone {
+    display: none;
+    padding-bottom: 25px;
+}
+
+.machine4 img {
+    width: 85%;
+}
+
+.machine1 img {
+    width: 45%;
+}
+
+.machine2 img {
+    width: 65%
+}
+
+.machine3 img {
+    width: 55%;
 }
 
 /*CSS Loader*/
@@ -427,6 +472,112 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     margin-top: 80px;
 }
 
+.border h3, .border p {
+    margin: 0;
+}
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 50%;
+}
+
+.open-popup {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+textarea#message {
+    min-height: 20vh !important;
+}
+
+.popup .form-label {
+    font-size: 1.2rem;
+    text-shadow: none;
+}
+
+.popup .form-control {
+    border-radius: initial;
+}
+
+.popup-header {
+    background-color: #373737;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+    .popup-header button {
+        background-color: transparent !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .popup-header h2 {
+        font-size: 1.4rem !important;
+        text-shadow: none;
+        margin-bottom: 0;
+        line-height: 30px !important;
+    }
+
+    .popup-header .col-10 {
+        background-color: rgba(55, 55, 55, 0.9);
+        border-radius: 0px 20px 0px 0px;
+        padding: 1%;
+    }
+
+.popup-form .col-10 {
+    background-color: rgba(55, 55, 55, 0.9);
+    padding: 5%;
+    border-radius: 0px 0px 20px 20px;
+    min-height: 85vh;
+}
+
+.popup-form .btn {
+    background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
+    padding: 2% 0%;
+}
+
+.button-cambio {
+    display: none;
+}
+
+.popup-btn {
+    display: none;
+    background: transparent;
+}
+
+.text-phone {
+    display: none;
+}
+
+.to-value {
+    display: flex;
+    align-items: center;
+}
+
+    .to-value p {
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+input.form-control.campo-direito.campo {
+    font-size: 1.2rem;
+}
+
+.round {
+    border-radius: 100px !important;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
@@ -462,13 +613,24 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             display: none;
         }
 
+    .text-position-right {
+        padding-right: 0px !important;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     .text-position-left, .col-md-6 {
-        padding: 25px !important;
+        padding: 0px 25px 0px 25px !important;
+    }
+
+    .space-col {
+        padding: 25px 5px 0px 0px !important;
     }
 
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
+        background: transparent;
     }
 
     .footer .float-end {
@@ -484,10 +646,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         padding: 15px;
     }
 
-    .footer img {
+        .footer img {
             width: 12% !important;
-            margin: 10px;
-    }
+        }
 
     .second-row .row-space {
         padding-top: 15px;
@@ -579,7 +740,10 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .button-buy button {
-        width: 60%;
+        width: 100%;
+        white-space: initial;
+        background-size: cover;
+        font-size: 1rem !important;
     }
 
     .wrapper {
@@ -597,10 +761,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     #contact .row {
         padding: 0 !important;
-    }
-
-    #contact button {
-        width: 90% !important;
     }
 
     .indexImageDiv1 {
@@ -684,23 +844,189 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     }
 
     .footer .img-phone {
-        display: inline;
+        display: flex;
+        justify-content: space-around;
     }
 
     .footer .img-desktop {
         display: none;
     }
 
-    .footer .float-end p, a .float-end{
-        font-size: 12px;
+    .footer .float-end p, a .float-end {
+        font-size: 16px;
         margin: auto;
         line-height: 30px;
         white-space: nowrap;
+    }
+
+    .footer .img-link {
+        width: 55px !important;
+    }
+
+    .form-exchange .border .border-inside {
+        display: flex;
+        width: 270px;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .pay-desktop {
+        display: none;
+    }
+
+    .pay-phone {
+        display: initial;
+    }
+
+    .machine4 img {
+        width: 85%;
+    }
+
+    .machine1 img {
+        width: 90%;
+    }
+
+    .machine1 {
+        order: 2;
+    }
+
+    .machine2 img {
+        width: 100%
+    }
+
+    .machine2 {
+        order: -1;
+    }
+
+    .machine3 img {
+        width: 100%;
+    }
+
+    .machine3 {
+        order: 2;
+    }
+
+    .machine3text {
+        order: 1;
+    }
+
+    .pay-home {
+        order: 3;
+    }
+
+    .popup {
+        width: 100%;
+    }
+
+
+        .popup .form-control {
+            line-height: 0.5;
+        }
+
+        .popup .form-label {
+            font-size: 0.8rem;
+        }
+
+        .popup .col-10 {
+            width: 100%
+        }
+
+    .popup-header {
+        background-color: transparent;
+    }
+
+        .popup-header img {
+            width: 100% !important;
+        }
+
+        .popup-header .col-10 {
+            border-radius: 25px;
+            background-color: #373737;
+            z-index: 999;
+        }
+
+        .popup-header h2 {
+            font-size: 1rem !important;
+            margin-bottom: 0;
+            padding: 3%;
+            line-height: 5px !important;
+        }
+
+    .popup-form {
+        margin: 0;
+        margin-top: -20px;
+    }
+
+        .popup-form .form-control {
+            font-size: 0.8rem;
+        }
+
+        .popup-form .col-10 {
+            min-height: initial;
+            padding: 10% 5%;
+        }
+
+        .popup-form .col-md-6 {
+            padding: 3% !important;
+        }
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .mb-3 {
+            width: 48%;
+        }
+
+    .button-cambio {
+        display: initial;
+    }
+
+    .popup-exchange {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        width: 100%;
+    }
+
+    .open-popup {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .popup-exchange .popup-btn {
+        margin: 0 !important;
+        width: 14%;
+    }
+
+        .popup-exchange .popup-btn img {
+            width: 100% !important;
+        }
+
+    .popup-btn {
+        display: initial;
+    }
+
+    .text-phone {
+        display: initial;
+    }
+
+        .text-phone p {
+            text-align: left
+        }
+
+    .text-desktop {
+        display: none;
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
 
     p {
         font-size: 1.5rem;
@@ -741,32 +1067,32 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
             display: none;
         }
 
+
+    .text-position-right {
+        padding-right: 0px !important;
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 65%;
+    }
+
+    .text-position-left, .col-md-6 {
+        padding: 0px 25px 0px 25px !important;
+        width: 100%;
+    }
+
+    .space-col {
+        padding: 25px 5px 0px 0px !important;
+    }
+
+
     .text-position-left {
-        padding: 11% 0px 11% 10% !important;
-        width: 65%;
+        min-width: 55%;
     }
 
     .navbar button {
         width: 15%;
         background-color: #563596 !important;
-    }
-
-    .footer .float-end {
-        float: none !important;
-        padding-top: 15px;
-    }
-
-    .footer .col-md-6 {
-        text-align: center;
-    }
-
-    .footer {
-        padding: 15px;
-    }
-
-    .footer img {
-        width: 12% !important;
-        margin: 10px;
+        background: transparent;
     }
 
     .second-row .row-space {
@@ -872,6 +1198,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     .button-buy button {
         width: 60%;
+        white-space: initial;
+        background-size: cover;
+        font-size: 1.5rem !important;
     }
 
     .wrapper {
@@ -881,6 +1210,8 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
         .wrapper .col-md-6:first-child {
             order: 1;
+            padding: 0px 25px 0px 25px !important;
+            width: 100% !important;
         }
 
     .row.text-about {
@@ -889,10 +1220,6 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     #contact .row {
         padding: 0 !important;
-    }
-
-    #contact button {
-        width: 90% !important;
     }
 
     .indexImageDiv1 {
@@ -961,6 +1288,227 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
     .indexImageDiv9 h2 {
         font-size: 2.5rem;
+    }
+
+    .form-exchange {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .footer .float-end {
+        float: none !important;
+        padding-top: 15px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+        .footer img {
+            width: 12% !important;
+        }
+
+        .footer .img-link {
+            width: 110px !important;
+        }
+
+        .footer .img-phone {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer .img-desktop {
+            display: none;
+        }
+
+        .footer .float-end p, a .float-end {
+            font-size: 28px;
+            margin: auto;
+            line-height: 55px;
+            white-space: nowrap;
+        }
+
+        .footer .text-end {
+            font-size: 30px;
+            line-height: 45px;
+            padding-top: 22px;
+        }
+
+
+    .pay-desktop {
+        display: none;
+    }
+
+    .pay-phone {
+        display: initial;
+        padding-left: 50px;
+    }
+
+    .machine4 img {
+        width: 70%;
+    }
+
+    .machine1 img {
+        width: 100%;
+    }
+
+    .machine1 {
+        order: 2;
+        width: 35%;
+    }
+
+    .machine2 img {
+        width: 100%
+    }
+
+    .machine2 {
+        order: -1;
+        width: 35%;
+    }
+
+    .machine3 img {
+        width: 100%;
+    }
+
+    .machine3 {
+        order: 2;
+    }
+
+    .machine3text {
+        order: 1;
+    }
+
+    .pay-home {
+        order: 3;
+    }
+
+    .leepay-tablet p {
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: inherit;
+    }
+
+    .leepay-tablet h2 {
+        font-weight: bold !important;
+        line-height: 65px !important;
+        font-size: 49px !important;
+    }
+
+    .leepay-tablet .col-md-11 {
+        width: 52% !important;
+        margin-top: 20%;
+    }
+
+
+    .leepay-know {
+        width: 46%;
+    }
+
+    .row, leepay {
+        padding: 25px;
+    }
+
+    .popup {
+        width: 100%;
+    }
+
+        .popup .popup-form, .popup .popup-header {
+            padding: 0 !important;
+        }
+
+        .popup .form-control {
+            line-height: 2;
+        }
+
+        .popup .form-label {
+            font-size: 1.4rem;
+        }
+
+        .popup .col-10 {
+            width: 100%
+        }
+
+    .popup-header {
+        background-color: transparent;
+    }
+
+        .popup-header .col-10 {
+            border-radius: 25px;
+            background-color: #373737;
+            z-index: 999;
+        }
+
+        .popup-header h2 {
+            font-size: 2.5rem !important;
+            margin-bottom: 0;
+            padding: 1%;
+            line-height: 40px !important;
+        }
+
+    .popup-form {
+        margin: 0;
+        margin-top: -20px;
+    }
+
+        .popup-form .col-10 {
+            min-height: 66vh;
+        }
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .mb-3 {
+            width: 48%;
+        }
+
+    .button-cambio {
+        display: initial;
+    }
+
+    .popup-exchange {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        width: 100%;
+    }
+
+    .open-popup {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .popup-exchange .popup-btn {
+        margin: 0 !important;
+        width: 12%;
+    }
+
+        .popup-exchange .popup-btn img {
+            width: 100% !important;
+        }
+
+    .popup-btn {
+        display: initial;
+    }
+
+    .text-phone {
+        display: initial;
+    }
+
+        .text-phone p {
+            text-align: left
+        }
+
+    .text-desktop {
+        display: none;
     }
 }
 
@@ -1107,5 +1655,22 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .card-image img {
         width: 70%;
         margin-top: 30%;
+    }
+
+    .popup-header h2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .popup .form-label {
+        font-size: 1.4rem;
+    }
+
+    .popup .form-control {
+        line-height: 2.5;
+    }
+
+    .popup-form .col-10 {
+        min-height: 80vh;
     }
 }
