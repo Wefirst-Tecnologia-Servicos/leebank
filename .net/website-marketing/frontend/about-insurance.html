@@ -28,7 +28,7 @@
     <menu-component></menu-component>
 
     <div class="container-fluid" ng-controller="BodyController">
-        <div class="row text-about row-space">
+        <div class="row text-about row-space text-desktop">
             <h2>
                 {{dictionary.ourInsurance}}
             </h2>
@@ -66,6 +66,59 @@
             </div>
 
         </div>
+
+
+        <div class="row text-about row-space ins-phone">
+            <div class="col-md-12" style="padding-top:25%; padding-bottom:20%;">
+                <h2>
+                    {{dictionary.ourInsurance}}
+                </h2>
+            </div>
+            <div style="margin-bottom: 5%; display: flex;">
+                <div class="col-4" style="">
+                    <img class="" src="img/seg1.svg" />
+                </div>
+                <div class="col-8">
+                    <ul><li><b>{{dictionary.accidents}}</b></li></ul>
+                    <p>{{dictionary.accidentInsurance}}</p>
+                </div>
+            </div>
+
+            <div class="col-8 text-position-right">
+                <ul><li><b>{{dictionary.debts}}</b></li></ul>
+                <p>{{dictionary.debtsInsurance}}</p>
+            </div>
+            <div class="col-4" style="">
+                <img class="mx-auto d-block" src="img/seg2.svg" />
+            </div>
+
+            <div class="col-4" style="">
+                <img class="mx-auto d-block" src="img/seg3.svg" />
+            </div>
+            <div class="col-8 text-position-right">
+                <ul><li><b>{{dictionary.theft}}</b></li></ul>
+                <p>{{dictionary.theftInsurance}}</p>
+            </div>
+
+            <div class="col-8 text-position-right">
+                <ul><li><b>{{dictionary.residential}}</b></li></ul>
+                <p>{{dictionary.residentialInsurance}}</p>
+            </div>
+            <div class="col-4" style="">
+                <img class="mx-auto d-block" src="img/seg4.svg" />
+            </div>
+
+            <div class="col-4" style="">
+                <img class="mx-auto d-block" src="img/seg3.svg" />
+            </div>
+            <div class="col-8 text-position-right">
+                <ul><li><b>{{dictionary.purse}}</b></li></ul>
+                <p>{{dictionary.purseInsurance}}</p>
+            </div>
+
+        </div>
+
+
     </div>
 
     <footer-component></footer-component>

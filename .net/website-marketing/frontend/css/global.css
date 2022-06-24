@@ -578,6 +578,18 @@ input.form-control.campo-direito.campo {
     border-radius: 100px !important;
 }
 
+.investments-image {
+    background-image: url('../img/investments.jpg');
+}
+
+.exchange-legal-person-image {
+    background-image: url('../img/exchange-legal-person.jpg');
+}
+
+.insurance-image {
+    background-image: url('../img/insurance.jpg');
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
@@ -807,6 +819,10 @@ input.form-control.campo-direito.campo {
         background-position: 22%;
     }
 
+    .investments-image {
+        background-image: url('../img/investments-mobile.jpg');
+    }
+
     .space {
         display: none;
     }
@@ -1015,13 +1031,14 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
-        .text-phone p {
+        .text-phone-p {
             text-align: left
         }
 
     .text-desktop {
         display: none;
     }
+
 }
 
 /* Tablet */
@@ -1255,7 +1272,8 @@ input.form-control.campo-direito.campo {
     }
 
     .insurance-image {
-        background-position: 64%;
+        background-image: url('../img/insurance-tablet.jpg');
+        background-position: 30%;
     }
 
     .exchange-natural-person-image {
@@ -1263,7 +1281,8 @@ input.form-control.campo-direito.campo {
     }
 
     .exchange-legal-person-image {
-        background-position: 22%;
+        background-image: url('../img/exchange-legal-person-tablet.jpg');
+        background-position: 70%;
     }
 
     .space {
@@ -1503,12 +1522,16 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
-        .text-phone p {
+        .text-phone-p {
             text-align: left
         }
 
     .text-desktop {
         display: none;
+    }
+
+    .ins-phone {
+        display: flex;
     }
 }
 
