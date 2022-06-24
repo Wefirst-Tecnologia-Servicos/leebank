@@ -1,13 +1,4 @@
 const config = require("./config.json");
-
-const fs = require('fs');
-const http = require('http');
-const https = require('https');
-const privateKey  = fs.readFileSync('sslcert/key.pem', 'utf8');
-const certificate = fs.readFileSync('sslcert/cert.pem', 'utf8');
-
-const credentials = {key: privateKey, cert: certificate, passphrase: "password"};
-
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -43,13 +34,6 @@ app.use("/", translationRoutes);
 app.use("/", emailRoutes);
 app.use("/", exchangeRoutes);
 
-var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
-
-httpsServer.listen(config.http.port, config.http.host, () => {
-    console.log("HTTPS: " + config.trace.displayMessage.replace("{host}", config.http.host).replace("{port}", config.http.port));
-});
-
-httpServer.listen(config.http.port + 100, config.http.host, () => {
-    console.log("HTTP: " + config.trace.displayMessage.replace("{host}", config.http.host).replace("{port}", config.http.port + 100));
+app.listen(config.http.port, config.http.host, () => {
+    console.log(config.trace.displayMessage.replace("{port}", config.http.port));
 });

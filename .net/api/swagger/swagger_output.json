@@ -1,14 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "version": "2.0.0",
+    "title": "WeFirst/LeeBank API",
+    "description": "RESTful API solutions for the LeeBank websites."
   },
-  "host": "localhost:3100",
+  "host": "leebank.wefirst.link",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/menu/": {
