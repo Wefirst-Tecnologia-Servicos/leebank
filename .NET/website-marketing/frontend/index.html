@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="WeFirst">
+
+    <link href="plugin/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
+
+    <link href="css/global.css" rel="stylesheet" />
+
+    <script src="js/app/app.js"></script>
+    <script src="js/app/dictionary.js"></script>
+    <script src="js/app/email.js"></script>
+    <script src="js/app/menu.js"></script>
+    <script src="js/app/exchange.js"></script>
+
+    <script src="js/component/menu.js"></script>
+    <script src="js/component/footer.js"></script>
+
+    <script src="js/global.js"></script>
+
+    <script type="text/javascript" language="javascript">
+
+        function startNavigation() {
+            $("menu-component").show();
+            $("#divAnimation").remove();
+            $("body").css({ overflow: "scroll" });
+        }
+
+        $(document).ready(function () {
+
+            $("body").css({ overflow: "hidden" });
+            $("menu-component").hide();
+
+            if (window.location.href.indexOf("lang=") > -1) {
+                startNavigation();
+            }
+
+            // ---------- Animation ---------- //
+
+            var animationSpeed = 1000;
+            var animationDelay = 2000;
+
+            var startEvent = setInterval(() => {
+                if (!$("body").is(".firstLoad")) {
+                    if (window.location.href.indexOf("lang=") < 0) {
+                        $("#divAnimation h1:first").fadeIn(animationSpeed, () => {
+                            setTimeout(function () {
+                                $("#divAnimation h1:first").fadeOut(animationSpeed, () => {
+                                    $("#divAnimation h1:last").fadeIn(animationSpeed, () => {
+                                        setTimeout(() => {
+                                            $("#divAnimation").fadeOut(animationSpeed, function () {
+                                                startNavigation();
+                                            });
+                                        }, animationDelay)
+                                    });
+                                });
+                            }, animationDelay);
+                        });
+                    }
+                    clearInterval(startEvent);
+                }
+            }, 500);
+        });
+    </script>
+
+</head>
+
+<body ng-app="leebank" class="firstLoad">
+
+    <menu-component></menu-component>
+
+    <div ng-controller="BodyController">
+
+        <div id="divAnimation" class="background-image animation" style="background-image: url(/img/header-banner1.jpg);">
+            <div class="container-fluid d-flex h-100 align-items-center justify-content-center carrouselText">
+                <h1 style="display:none; text-align:center;">{{dictionary.helloWeAreLeeBank}}</h1>
+                <h1 style="display:none; text-align:center;">{{dictionary.theFirstBank}} <br /> {{dictionary.theChineseCommunity}}</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid background-image animation" style="background-image: url(/img/header-banner2.jpg);"></div>
+
+        <div class="container-fluid background-image indexImageDiv1" id="our-future" style="background-image: url(/img/div1.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left">
+                    <h2>{{dictionary.ourFuture}} <br /> {{dictionary.startHere}}</h2>
+                    <p>{{dictionary.leeBankWasBorn}} <b class="bold-color">{{dictionary.agility}} {{dictionary.and}} {{dictionary.security}}</b> {{dictionary.toTheMorThan}}</p>
+                    <p>{{dictionary.weArePersonalized}} <b class="bold-color">{{dictionary.nativeLanguage}}</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid second-row ">
+            <div class="row wrapper row-space">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col second-row-text">
+                            <h1 class="text-center">{{dictionary.digital}}</h1>
+                            <h1 class="text-center">{{dictionary.intuitive}}</h1>
+                            <h1 class="text-center">{{dictionary.efficient}}</h1>
+                            <p class="text-center">{{dictionary.allYouNeed}}<br /> {{dictionary.findInAClick}}</p>
+                        </div>
+                        <div class="col img-phone img-jst">
+                            <img src="img/cellphone.png" />
+                        </div>
+                    </div>
+                    <div class="row img-download">
+                        <div class="col img-market">
+                            <img src="img/google-play-icon.png" />
+                            <img src="img/apple-store-icon.png" />
+                        </div>
+                        <div class="col qrcode">
+                            <img src="img/LeeBank_QRCode_App.png" />
+                        </div>
+                        <div class="col img-text-download">
+                            <p>{{dictionary.pointYourCell}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 img-desktop">
+                    <img src="img/cellphone.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid background-image" style="background-image:url(img/div10.jpg)">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle card-text">
+                    <h2>{{dictionary.completeBank}}</h2>
+                    <p>{{dictionary.weAreComplete}}</p>
+                    <p>{{dictionary.cashIn}}</p>
+                </div>
+                <div class="col-md-6 card-image">
+                    <img class="mx-auto d-block" src="/img/credit-card.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="exchange" class="container-fluid background-image indexImageDiv2" style="background-image: url(/img/div2.jpg);">
+            <div class="row row-space">
+                <div class="col-md-6 text-position-left align-middle">
+                    <h2>{{dictionary.exchange}}</h2>
+                    <p>
+                        {{dictionary.withOurExchange}}
+                    </p>
+                    <p>
+                        {{dictionary.weAlsoOffer}}
+                    </p>
+                    <div class="row exchange-button">
+                        <div class="col-6">
+                            <button class="round" ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="round" ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="insurance" class="container-fluid background-image indexImageDiv3" style="background-image: url(/img/div3.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>{{dictionary.insurance}}</h2>
+                    <p>{{dictionary.withLeeBank}}</p>
+                    <a href="insurance.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="investments" class="container-fluid background-image indexImageDiv4" style="background-image: url(/img/div4.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>{{dictionary.investment}}</h2>
+                    <p>{{dictionary.investSafely}}</p>
+                    <p>{{dictionary.makeYourMoney}}</p>
+                    <a href="investments.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardMachine" class="container-fluid background-image indexImageDiv5" style="background-image: url(/img/div5.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>{{dictionary.leePay}}</h2>
+                    <p>{{dictionary.leeBankMachine}}</p>
+                    <p>{{dictionary.clickToLearn}}</p>
+                    <a href="card-machine.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="paymentGateway" class="container-fluid background-image indexImageDiv6" style="background-image: url(/img/div6.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>{{dictionary.paymentGateway}}</h2>
+                    <p>{{dictionary.idealSolution}}</p>
+                    <a href="payment-gateway.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="giftCard" class="container-fluid background-image indexImageDiv7" style="background-image: url(/img/div8.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>
+                        {{dictionary.giftCard}}
+                    </h2>
+                    <p>{{dictionary.wantPracticality}}</p>
+                    <p>{{dictionary.logInto}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cash" class="container-fluid background-image indexImageDiv8" style="background-image: url(/img/div7.jpg);">
+            <div class="row row-space">
+                <div class="col-md-5 text-position-left align-middle">
+                    <h2>{{dictionary.cash}}</h2>
+                    <p>{{dictionary.greatestPracticality}}</p>
+                    <p>{{dictionary.awayFromHome}}</p>
+                    <a href="cash.html?lang={{currentLanguage}}"><p><b><u>{{dictionary.knowMore}}   ></u></b></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active background-image" style="background-image: url(/img/footer-banner1.jpg);">
+                    <div class="carrouselText text-center">
+                        <h1>{{dictionary.callMe}}</h1>
+                    </div>
+                </div>
+                <div class="carousel-item background-image" style="background-image: url(/img/footer-banner2.jpg);">
+                    <div class="carrouselText text-center">
+                        <h1>{{dictionary.reachingHorizons}}</h1>
+                    </div>
+                </div>
+                <div class="carousel-item background-image" style="background-image: url(/img/footer-banner3.jpg);">
+                    <div class="carrouselText text-center">
+                        <h1>{{dictionary.completeService}}</h1>
+                    </div>
+                </div>
+                <img src="img/logo.svg" style="max-width: 30%; position: absolute; right: 0px; bottom: 0px;" />
+            </div>
+        </div>
+
+        <div id="contact" class="container-fluid background-image indexImageDiv9" style="background-image: url(/img/div9.jpg);">
+            <div class="row row-space form-help-box" style="padding: 50px 0 50px 0;">
+                <div class="col-lg-6 form-help-text" style="padding: 125px 139px 0px 160px;">
+                    <h2>{{dictionary.anyQuestion}} <br /> {{dictionary.contactUs}}</h2>
+                    <p>{{dictionary.ourHelpCenter}}</p>
+                    <div class="d-grid gap-2" style="display:none !important;">
+                        <button class="btn btn-primary" type="button" style="width: 100%; padding: 15px 0 15px 0;">{{dictionary.helpCenter}}</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 form">
+                    <form>
+                        <h3>{{dictionary.yourDoubts}}</h3>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">{{dictionary.name}}:</label>
+                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">{{dictionary.email}}:</label>
+                            <input type="text" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
+                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary round" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+
+    <script src="js/controller/body.js"></script>
+    <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

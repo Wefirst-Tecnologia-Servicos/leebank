@@ -712,6 +712,7 @@ input.form-control.campo-direito.campo {
 
     .second-row .img-phone {
         display: flex;
+        align-items: center;
     }
 
     .second-row .img-desktop {
@@ -1186,6 +1187,7 @@ input.form-control.campo-direito.campo {
 
     .second-row .img-phone {
         display: flex;
+        align-items: center;
     }
 
     .second-row .img-desktop {
