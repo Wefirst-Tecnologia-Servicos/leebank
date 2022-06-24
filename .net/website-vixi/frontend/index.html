@@ -28,7 +28,10 @@
 
     <div ng-controller="BodyController">
 
-        <div class="container-fluid background-image index-div-1" style="background-image: url(img/indexDiv1.png);">
+        <div class="container-fluid background-image index-div-1">
+            <video class="background-video" autoplay muted poster="img/indexDiv1.png">
+                <source src="videos/bg1.mp4" type="video/mp4">
+            </video>
             <div class="row">
                 <div class="col-md-6 text-position-left">
                     <h1>{{dictionary.vixiGuiding}} <br /> {{dictionary.vixiFuture}}</h1>
