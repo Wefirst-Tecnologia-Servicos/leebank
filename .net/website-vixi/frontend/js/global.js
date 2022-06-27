@@ -22,10 +22,6 @@ function selectTabListItem($button) {
 // -------------------- PAGE_LOAD --------------------- //
 
 $(document).ready(() => {
-    setInterval(function () {
-        $("div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-body, div.compliance-security-tabs, div.back-to-homepage), div.carousel-item").css("min-height", window.innerHeight + "px");
-        $("div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-body, div.compliance-security-tabs, div.back-to-homepage), div.carousel-item").css("max-width", window.innerWidth + "px");
-    }, 500);
 
     if (window.location.href.indexOf("#") > -1) {
         setTimeout(() => {

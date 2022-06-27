@@ -160,10 +160,6 @@
     <Content Include="frontend\videos\bg2.mp4" />
     <Content Include="frontend\videos\bg3.mp4" />
     <Content Include="frontend\videos\bg4.mp4" />
-    <Content Include="frontend\videos\VIXI website - BG %28video-converter.com%29.mp4" />
-    <Content Include="frontend\videos\VIXI Website - BG - Compliance Segurança %28video-converter.com%29.mp4" />
-    <Content Include="frontend\videos\VIXI Website - BG OTC %28video-converter.com%29.mp4" />
-    <Content Include="frontend\videos\Vixi Website - VIXI Exchange %28video-converter.com%29.mp4" />
     <Content Include="libman.json" />
     <Content Include="server.js" />
     <Content Include="package.json" />

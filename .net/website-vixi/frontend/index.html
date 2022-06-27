@@ -29,7 +29,7 @@
     <div ng-controller="BodyController">
 
         <div class="container-fluid background-image index-div-1">
-            <video class="background-video" autoplay muted poster="img/indexDiv1.png">
+            <video class="background-video video-bg1" autoplay muted poster="img/indexDiv1.png">
                 <source src="videos/bg1.mp4" type="video/mp4">
             </video>
             <div class="row">
@@ -44,6 +44,9 @@
         </div>
 
         <div id="vixi-exchange" class="container-fluid background-image index-div-2" style="">
+            <video class="background-video video-bg2" autoplay muted poster="img/indexDiv2">
+                <source src="videos/bg2.mp4" type="video/mp4">
+            </video>
             <div class="row">
                 <div class="col-md-6 text-position-left align-middle">
                     <h1>{{dictionary.vixiExhange}}</h1>
@@ -52,12 +55,17 @@
                     <p>{{dictionary.vixiClient}}</p>
                 </div>
                 <div class="col-md-6 d-flex align-items-center display-none-cel">
-                    <img class="mx-auto d-block" src="img/indexDiv2.png" />
+                    <video class="background-video video-bg2" autoplay muted poster="img/indexDiv2">
+                        <source src="videos/bg2.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
 
-        <div id="otc" class="container-fluid background-image index-div-3" style="background-image: url(img/indexDiv3.png); background-position: 0% 0%; background-size: contain; ">
+        <div id="otc" class="container-fluid background-image index-div-3">
+            <video class="background-video video-bg3" autoplay muted poster="img/indexDiv2">
+                <source src="videos/bg3.mp4" type="video/mp4">
+            </video>
             <div class="row">
                 <div class="col-md-6 space"></div>
                 <div class="col-md-6 text-position-right" style="padding-top: 30%;">
@@ -66,10 +74,10 @@
                     <p>{{dictionary.vixiDesk}}</p>
                     <p>{{dictionary.vixiProblems}}:</p>
                     <p><b style="color: #63D7D0">{{dictionary.vixiSlippage}}</b></p>
-                    <P>{{dictionary.vixiDIfference}}</p>
+                    <P>{{dictionary.vixiDIfference}}</P>
                     <p><b style="color: #63D7D0">{{dictionary.vixiLimits}}</b></p>
                     <p>{{dictionary.vixiExchange}}</p>
-                    
+
                     <button class="redirect" ng-click="redirectTo('otc.html')" type="button">{{dictionary.vixiKnow}}   ></button>
                 </div>
             </div>
@@ -88,8 +96,10 @@
                     </p>
                     <button class="redirect" ng-click="redirectTo('compliance-security.html')" type="button">{{dictionary.vixiKnow}}   ></button>
                 </div>
-                <div class="col-md-6 d-flex align-items-center display-none-cel">
-                    <img class="mx-auto d-block" src="img/indexDiv4.png" />
+                <div class="col-md-6 d-flex align-items-center">
+                    <video class="background-video video-bg4" autoplay muted poster="img/indexDiv2">
+                        <source src="videos/bg4.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
