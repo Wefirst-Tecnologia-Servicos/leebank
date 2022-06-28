@@ -208,9 +208,29 @@ button {
 
 .form {
     background-color: rgb(0,0,0, 0.6);
-    border-radius: 15px;
+    border-radius: 35px;
     padding: 50px 25px 50px 50px;
 }
+
+    .form h3 {
+        text-shadow: none;
+    }
+
+    .form button {
+        border-radius: 15px !important;
+    }
+
+    .form .form-control {
+        background-color: #373737;
+        color: #ffffff;
+        border: none;
+    }
+
+    .form .border-control {
+        border-radius: 5px;
+        border: 3px solid transparent;
+        background: linear-gradient(90deg,#563596,#7FAAC3) border-box;
+    }
 
 .footer {
     padding: 20px 100px;
@@ -474,9 +494,9 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     min-height: auto !important;
 }
 
-.exchange-button .col-3 {
-    width: 25%;
-}
+    .exchange-button .col-3 {
+        width: 25%;
+    }
 
 .border h3, .border p {
     margin: 0;
@@ -602,22 +622,22 @@ input.form-control.campo-direito.campo {
     align-items: center;
 }
 
-.ins-align li, .ins-align ul {
-    font-size: 18px;
-    margin-bottom: 0;
-}
+    .ins-align li, .ins-align ul {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
 
-.ins-align p{
-    font-size: 16px;
-    margin-top: 0;
-}
+    .ins-align p {
+        font-size: 16px;
+        margin-top: 0;
+    }
 
 .ins-pe {
     padding-left: 10px;
 }
 
-.ins-phone{
-    display:none;
+.ins-phone {
+    display: none;
 }
 
 .back-nat {
@@ -758,6 +778,7 @@ input.form-control.campo-direito.campo {
     .exchange-button {
         margin-top: 0px;
     }
+
         .exchange-button .col-3 {
             width: 50%;
         }
@@ -1071,22 +1092,23 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
-        .text-phone-p {
-            text-align: left
-        }
+    .text-phone-p {
+        text-align: left
+    }
 
     .text-desktop {
         display: none;
     }
 
-    .ins-phone{
+    .ins-phone {
         display: flex;
     }
+
     .ins-p {
         padding: 2%;
     }
 
-    .exchange-natural-person-image .col-md-6.text-position-left{
+    .exchange-natural-person-image .col-md-6.text-position-left {
         width: 90%;
     }
 
@@ -1094,13 +1116,24 @@ input.form-control.campo-direito.campo {
         justify-content: end;
         text-align: right;
     }
-    .back-nat{
-        text-align:right;
+
+    .back-nat {
+        text-align: right;
     }
 
+    .form {
+        background-color: transparent;
+        padding: 25px;
+    }
+
+        .form form {
+            background-color: rgba(47, 47, 46, 0.7);
+            border-radius: 35px;
+            padding: 25px;
+        }
 }
 
-/* Tablet */ 
+/* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 
@@ -1232,7 +1265,7 @@ input.form-control.campo-direito.campo {
             width: 80%;
         }
 
-    .card-text{
+    .card-text {
         max-width: 80%;
     }
 
@@ -1243,10 +1276,10 @@ input.form-control.campo-direito.campo {
         min-height: auto;
     }
 
-    .exchange-button button {
+        .exchange-button button {
             width: 245px;
             font-size: 30px !important;
-    }
+        }
 
     .row.exchange-button.text-position-left.align-middle {
         max-width: inherit;
@@ -1593,9 +1626,9 @@ input.form-control.campo-direito.campo {
         display: initial;
     }
 
-        .text-phone-p {
-            text-align: left
-        }
+    .text-phone-p {
+        text-align: left
+    }
 
     .text-desktop {
         display: none;
@@ -1619,6 +1652,17 @@ input.form-control.campo-direito.campo {
     .ins-phone {
         display: flex;
     }
+
+    .form {
+        background-color: transparent;
+        padding: 25px;
+    }
+
+        .form form {
+            background-color: rgba(47, 47, 46, 0.7);
+            border-radius: 35px;
+            padding: 25px;
+        }
 }
 
 

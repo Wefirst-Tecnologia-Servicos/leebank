@@ -266,15 +266,21 @@
                         <h3>{{dictionary.yourDoubts}}</h3>
                         <div class="mb-3">
                             <label for="nome" class="form-label">{{dictionary.name}}:</label>
-                            <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName" />
+                            <div class="border-control">
+                                <input type="text" class="form-control" id="nome" ng-placeholder="typeName" ng-model="doubts.SenderName" />
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">{{dictionary.email}}:</label>
-                            <input type="text" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail" />
+                            <div class="border-control">
+                                <input type="text" class="form-control" id="email" ng-placeholder="typeEmail" ng-model="doubts.SenderEMail" />
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
-                            <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                            <div class="border-control">
+                                <textarea class="form-control" id="duvidas" ng-placeholder="typeDoubts" style="height:100px;" ng-model="doubts.Description"></textarea>
+                            </div>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary round" type="button" style="width: 100%; padding: 10px 0 10px 0;" ng-click="sendDoubts();">{{dictionary.send}}</button>
