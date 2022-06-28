@@ -136,7 +136,7 @@
                     <p>{{dictionary.cashIn}}</p>
                 </div>
                 <div class="col-md-6 card-image">
-                    <img class="mx-auto d-block" src="/img/credit-card.png"/>
+                    <img class="mx-auto d-block" src="/img/credit-card.png" />
                 </div>
             </div>
         </div>
@@ -151,14 +151,17 @@
                     <p>
                         {{dictionary.weAlsoOffer}}
                     </p>
-                    <div class="row exchange-button">
-                        <div class="col-6">
-                            <button class="round" ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
-                        </div>
-                        <div class="col-6">
-                            <button class="round" ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
-                        </div>
+
+                </div>
+
+                <div class="row exchange-button text-position-left align-middle">
+                    <div class="col-3">
+                        <button class="round" ng-click="redirectTo('exchange-natural-person.html')" type="button">{{dictionary.physicalPerson}}</button>
                     </div>
+                    <div class="col-3">
+                        <button class="round" ng-click="redirectTo('exchange-legal-person.html')" type="button">{{dictionary.legalPerson}}</button>
+                    </div>
+
                 </div>
             </div>
         </div>
