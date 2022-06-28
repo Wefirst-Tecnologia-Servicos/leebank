@@ -526,9 +526,10 @@ table {
 }
 
 .video-bg2 {
+    height: 80vh;
     object-fit: contain;
     left: 25vw;
-    top: 110vh;
+    top: 120vh;
 }
 
 .video-bg3 {
@@ -547,6 +548,11 @@ table {
 
 @media only screen and (max-width: 599px) {
     /* celulares */
+
+    body {
+        background-color: #19181a;
+    }
+
     p {
         font-size: 16px;
         margin-top: 5px;
@@ -786,15 +792,8 @@ table {
     }
 
     .video-bg3 {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: absolute;
-        left: 0;
-        right: 0;
+        object-fit: contain;
         top: 200vh;
-        bottom: 0;
-        z-index: -1;
     }
 
     .video-bg4 {
@@ -805,8 +804,13 @@ table {
         top: 335vh;
     }
 }
-
+/*Tablet*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    body {
+        background: #181817;
+    }
+
     p {
         font-size: 30px;
         margin-top: 50px;
@@ -1019,16 +1023,8 @@ table {
         display: flex !important;
     }
 
-    .index-div-2 {
-        background-image: url(../img/indexDiv2.png);
-        background-size: 50%;
-        background-position: 100% 60%;
-    }
-
-    .index-div-4 {
-        background-image: url(../img/indexDiv4.png);
-        background-size: 95%;
-        background-position: 230% 100%;
+    .display-none-tablet{
+        display: none;
     }
 
         .index-div-1 .col-md-6, .index-div-2 .col-md-6, .index-div-4 .col-md-6, .col-md-6.text-position-left.otc-div-1 {
@@ -1116,6 +1112,42 @@ table {
 
     .back-to-homepage {
         margin: 10% 0 15% 4%;
+    }
+
+    .background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .video-bg1 {
+        object-fit: contain;
+    }
+
+    .video-bg2 {
+        width: 40vw;
+        height: 40vh;
+        object-fit: contain;
+        left: 50vw;
+        top: 135vh;
+    }
+
+    .video-bg3 {
+        object-fit: contain;
+        top: 200vh;
+    }
+
+    .video-bg4 {
+        width: 135vw;
+        object-fit: contain;
+        left: -35vw;
+        top: 320vh;
     }
 }
 

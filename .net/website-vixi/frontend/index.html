@@ -29,7 +29,10 @@
     <div ng-controller="BodyController">
 
         <div class="container-fluid background-image index-div-1">
-            <video class="background-video video-bg1" autoplay muted poster="img/indexDiv1.png">
+            <video class="background-video video-bg1 display-none-desk display-none-cel" autoplay muted poster="img/indexDiv1.png">
+                <source src="videos/bg1_tablet.mp4" type="video/mp4">
+            </video>
+            <video class="background-video video-bg1 display-none-tablet" autoplay muted poster="img/indexDiv1.png">
                 <source src="videos/bg1.mp4" type="video/mp4">
             </video>
             <div class="row">
@@ -64,6 +67,9 @@
 
         <div id="otc" class="container-fluid background-image index-div-3">
             <video class="background-video video-bg3" autoplay muted poster="img/indexDiv2">
+                <source src="videos/bg3_mobile.mp4" type="video/mp4">
+            </video>
+            <video class="background-video video-bg3 display-none-cel" autoplay muted poster="img/indexDiv2">
                 <source src="videos/bg3.mp4" type="video/mp4">
             </video>
             <div class="row">
