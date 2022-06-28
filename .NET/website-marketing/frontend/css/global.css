@@ -137,7 +137,7 @@ img {
 
 .text-position-left {
     padding-left: 112px;
-    margin-top: auto;
+    margin-top: 10%;
     margin-bottom: auto;
 }
 
@@ -470,6 +470,12 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 
 .exchange-button {
     margin-top: 80px;
+    margin-bottom: 10%;
+    min-height: auto !important;
+}
+
+.exchange-button .col-3 {
+    width: 25%;
 }
 
 .border h3, .border p {
@@ -752,6 +758,9 @@ input.form-control.campo-direito.campo {
     .exchange-button {
         margin-top: 0px;
     }
+        .exchange-button .col-3 {
+            width: 50%;
+        }
 
         .exchange-button button {
             width: 120px;
@@ -874,6 +883,8 @@ input.form-control.campo-direito.campo {
 
     .exchange-button {
         margin-top: 0px;
+        margin-bottom: 10%;
+        min-height: auto !important;
     }
 
     .mobile-text .back-to-homepage p {
@@ -1089,12 +1100,12 @@ input.form-control.campo-direito.campo {
 
 }
 
-/* Tablet */
+/* Tablet */ 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 
     p {
-        font-size: 1.5rem;
+        font-size: 28px;
         line-height: 45px;
         padding-top: inherit;
     }
@@ -1102,7 +1113,7 @@ input.form-control.campo-direito.campo {
     h2 {
         font-weight: bold !important;
         line-height: 65px !important;
-        font-size: 55px !important;
+        font-size: 54px !important;
     }
 
     .navbar .navbar-brand img {
@@ -1152,6 +1163,7 @@ input.form-control.campo-direito.campo {
 
     .text-position-left {
         min-width: 55%;
+        max-width: 70%;
     }
 
     .navbar button {
@@ -1180,8 +1192,8 @@ input.form-control.campo-direito.campo {
     }
 
     .second-row p {
-        font-size: 1.1rem;
-        line-height: 25px;
+        font-size: 25px;
+        line-height: 35px;
         margin-top: 0px !important;
     }
 
@@ -1197,7 +1209,7 @@ input.form-control.campo-direito.campo {
     .second-row .img-text-download p {
         padding: 0px;
         margin: 0px;
-        font-size: 1.1rem;
+        font-size: 18px;
         line-height: 22px;
     }
 
@@ -1220,16 +1232,26 @@ input.form-control.campo-direito.campo {
             width: 80%;
         }
 
+    .card-text{
+        max-width: 80%;
+    }
+
+
     .exchange-button {
         margin-top: 80px;
         margin-bottom: 160px;
         min-height: auto;
     }
 
-        .exchange-button button {
+    .exchange-button button {
             width: 245px;
             font-size: 30px !important;
-        }
+    }
+
+    .row.exchange-button.text-position-left.align-middle {
+        max-width: inherit;
+        min-width: auto;
+    }
 
     .carousel-item {
         padding: 24rem 0;
