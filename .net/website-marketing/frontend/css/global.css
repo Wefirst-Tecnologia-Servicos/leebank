@@ -915,9 +915,10 @@ input.form-control.campo-direito.campo {
         text-align: center !important;
     }
 
-    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages), div.carousel-item, .row-space {
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages, div.intro), div.carousel-item, .row-space {
         min-height: 50vh !important;
     }
+
 
     div.animation {
         min-height: 100vh !important;
