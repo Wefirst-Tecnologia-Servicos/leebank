@@ -36,9 +36,14 @@ img {
     max-width: 100%;
 }
 
+.navbar-brand {
+    margin-right: 0;
+}
+
 .navbar-brand img {
     width: 100%;
 }
+
 
 .navbar {
     background: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
@@ -644,6 +649,18 @@ input.form-control.campo-direito.campo {
     text-align: left;
 }
 
+.navbar-brand {
+    width: 250px;
+}
+
+.form .duvidas {
+    height: 100px;
+}
+
+.ex-leg .backhome {
+    text-align: right;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
 
@@ -790,6 +807,7 @@ input.form-control.campo-direito.campo {
 
     .carousel-item {
         padding: 12rem 0;
+        max-height: 50vh;
     }
 
     .mobile-text {
@@ -860,6 +878,13 @@ input.form-control.campo-direito.campo {
 
     .indexImageDiv7 {
         background-position: 76%;
+    }
+
+    .indexImageDiv9 {
+        background-size: 120%;
+        background-position-x: 10%;
+        background-position-y: 100%;
+        background-color: #010300;
     }
 
     .payment-gateway-image {
@@ -1124,6 +1149,7 @@ input.form-control.campo-direito.campo {
     .form {
         background-color: transparent;
         padding: 25px;
+        margin-bottom: 30%;
     }
 
         .form form {
@@ -1150,7 +1176,7 @@ input.form-control.campo-direito.campo {
     }
 
     .navbar .navbar-brand img {
-        width: 65%;
+        width: 100%;
     }
 
     .navbar .navbar-collapse {
@@ -1196,7 +1222,42 @@ input.form-control.campo-direito.campo {
 
     .text-position-left {
         min-width: 55%;
-        max-width: 70%;
+        max-width: 85%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+
+    .ex-nat .text-position-left {
+        max-width: 80%;
+    }
+
+    .ex-nat h2{
+        font-size: 65px !important;
+    }
+    .ex-nat h3 {
+        font-size: 35px !important;
+    }
+
+    .ex-leg .text-position-right {
+        width: 90%;
+    }
+
+    .ex-leg h1 {
+        font-size: 65px !important;
+        margin-bottom: 10%;
+    }
+
+    .ex-leg h3 {
+        font-size: 35px !important;
+    }
+
+    .ex-leg .button-page {
+        font-size: 30px !important;
+        margin-bottom: 25%;
+    }
+
+    .text-position-left.col-div2{
+        margin-bottom: auto;
     }
 
     .navbar button {
@@ -1281,6 +1342,10 @@ input.form-control.campo-direito.campo {
             font-size: 30px !important;
         }
 
+        .exchange-button .col-3 {
+            width: 50%;
+        }
+
     .row.exchange-button.text-position-left.align-middle {
         max-width: inherit;
         min-width: auto;
@@ -1288,6 +1353,12 @@ input.form-control.campo-direito.campo {
 
     .carousel-item {
         padding: 24rem 0;
+        max-height: 100vh;
+    }
+
+    .carrouselText h1 {
+        line-height: 80px;
+        font-size: 60px;
     }
 
     .form-help-box {
@@ -1296,13 +1367,15 @@ input.form-control.campo-direito.campo {
 
     .form-help-text {
         padding: 7% !important;
+        margin-top: 10%;
     }
 
     .mobile-text {
         text-align: left;
-        width: 75%;
+        width: 90%;
         margin-left: 0%;
         padding-left: 5% !important;
+        max-width: 90% !important;
     }
 
         .mobile-text .back-to-homepage p {
@@ -1315,6 +1388,13 @@ input.form-control.campo-direito.campo {
 
     .button-page {
         width: 70%;
+    }
+
+    .mobile-text .btn-ins {
+        margin-top: 10%;
+        font-size: 30px !important;
+        width: 300px !important;
+
     }
 
     .button-buy button {
@@ -1356,7 +1436,7 @@ input.form-control.campo-direito.campo {
     }
 
     .indexImageDiv4 {
-        background-position: 20%;
+        background-position: 65%;
     }
 
     .indexImageDiv5 {
@@ -1369,6 +1449,13 @@ input.form-control.campo-direito.campo {
 
     .indexImageDiv7 {
         background-position: 76%;
+    }
+
+    .indexImageDiv9 {
+        background-size: 120%;
+        background-position-x: 10%;
+        background-position-y: 100%;
+        background-color: #010300;
     }
 
     .payment-gateway-image {
@@ -1510,7 +1597,7 @@ input.form-control.campo-direito.campo {
     }
 
     .leepay-tablet p {
-        font-size: 30px;
+        font-size: 27px;
         line-height: 45px;
         padding-top: inherit;
     }
@@ -1531,6 +1618,10 @@ input.form-control.campo-direito.campo {
         width: 46%;
     }
 
+    .leepay-tablet .text-position-left{
+        max-width: 100%;
+    }
+
     .row, leepay {
         padding: 25px;
     }
@@ -1545,16 +1636,21 @@ input.form-control.campo-direito.campo {
 
         .popup .form-control {
             line-height: 2;
+            font-size: 24px;
         }
 
         .popup .form-label {
-            font-size: 1.4rem;
+            font-size: 28px;
         }
 
         .popup .col-10 {
             width: 100%
         }
 
+
+    .popup-form .btn {
+        font-size: 28px !important;
+    }
     .popup-header {
         background-color: transparent;
     }
@@ -1592,6 +1688,15 @@ input.form-control.campo-direito.campo {
 
     .button-cambio {
         display: initial;
+        font-size: 28px !important;
+    }
+
+    .ex-nat .backhome {
+        margin-top: 25%;
+    }
+
+    .ex-leg .backhome {
+        text-align: left;
     }
 
     .popup-exchange {
@@ -1655,7 +1760,8 @@ input.form-control.campo-direito.campo {
 
     .form {
         background-color: transparent;
-        padding: 25px;
+        padding: 60px;
+        margin-bottom: 30%;
     }
 
         .form form {
@@ -1663,6 +1769,37 @@ input.form-control.campo-direito.campo {
             border-radius: 35px;
             padding: 25px;
         }
+
+    .form-help-text p {
+        font-size: 40px;
+    }
+    .form-help-box .form h3 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .form .duvidas {
+        height: 200px;
+    }
+
+    .form .form-label {
+        font-size: 30px;
+    }
+
+    .form .form-control {
+        font-size: 30px;
+    }
+
+    .form button {
+        border-radius: 100px !important;
+        font-size: 35px !important;
+    }
+
+    .text-about .back-to-homepage p{
+        font-size: 30px;
+        margin-bottom: 15%;
+    }
+
 }
 
 
