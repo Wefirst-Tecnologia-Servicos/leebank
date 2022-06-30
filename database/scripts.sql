@@ -1328,3 +1328,53 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatmoney'
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatDays',' dias úteis', ' business days', '??', 'LEE-MARKETING');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeNatEffective',' Câmbio Efetivo', ' Effective Exchange Rate', '??', 'LEE-MARKETING');
 
+UPDATE dictionary SET zh = '绝对安全。' WHERE dictionaryid = 'leePayTitle1';
+UPDATE dictionary SET zh = '所有付款方式。' WHERE dictionaryid = 'leePayTitle2';
+UPDATE dictionary SET zh = '具有极大自主权的电池。' WHERE dictionaryid = 'leePayTitle3';
+UPDATE dictionary SET zh = '简单安全的体验。' WHERE dictionaryid = 'leePayTitle4';
+UPDATE dictionary SET zh = '更好的安全机制。' WHERE dictionaryid = 'leePayTitle5';
+UPDATE dictionary SET zh = '可持续性 X 设计。' WHERE dictionaryid = 'leePayTitle6';
+UPDATE dictionary SET zh = '简单的移动支付流程。' WHERE dictionaryid = 'leePayTitle7';
+UPDATE dictionary SET zh = '业务管理工具。' WHERE dictionaryid = 'leePayTitle8';
+UPDATE dictionary SET zh = '扫描仪系统。' WHERE dictionaryid = 'leePayTitle9';
+UPDATE dictionary SET zh = '认证。' WHERE dictionaryid = 'leePayTitle10';
+UPDATE dictionary SET zh = '基于安卓的系统。' WHERE dictionaryid = 'leePayTitle11';
+UPDATE dictionary SET zh = '您的业​​务的市场。' WHERE dictionaryid = 'leePayTitle12';
+UPDATE dictionary SET zh = '实时控制和管理。' WHERE dictionaryid = 'leePayTitle13';
+UPDATE dictionary SET zh = '完全连通性。' WHERE dictionaryid = 'leePayTitle14';
+UPDATE dictionary SET zh = '各种支付方式。' WHERE dictionaryid = 'leePayTitle15';
+UPDATE dictionary SET zh = '付款安全。' WHERE dictionaryid = 'leePayTitle16';
+
+UPDATE dictionary SET zh = 'PCI-PTS 4.x 认证。' WHERE dictionaryid = 'leePayText1';
+UPDATE dictionary SET zh = '更高级的加密方案。' WHERE dictionaryid = 'leePayText2';
+UPDATE dictionary SET zh = '无限的安全密钥大小。' WHERE dictionaryid = 'leePayText3';
+UPDATE dictionary SET zh = 'NFC、电子钱包、EMV Chip&PIN、磁条和非接触式。' WHERE dictionaryid = 'leePayText4';
+UPDATE dictionary SET zh = '在室内和室外使用。' WHERE dictionaryid = 'leePayText5';
+UPDATE dictionary SET zh = '非接触式交易量。' WHERE dictionaryid = 'leePayText6';
+UPDATE dictionary SET zh = '读卡和快速交易流程。' WHERE dictionaryid = 'leePayText7';
+UPDATE dictionary SET zh = '保护交易隐私，同时促进对支付应用程序的访问。' WHERE dictionaryid = 'leePayText8';
+UPDATE dictionary SET zh = '环保产品设计政策。' WHERE dictionaryid = 'leePayText9';
+UPDATE dictionary SET zh = '接受来自任何地方和任何类型的卡（借记卡、芯片和 PIN）的付款。' WHERE dictionaryid = 'leePayText10';
+UPDATE dictionary SET zh = '操作方式：WiFi、蓝牙和 4G。' WHERE dictionaryid = 'leePayText11';
+UPDATE dictionary SET zh = '允许使用更安全的系统进行支付。' WHERE dictionaryid = 'leePayText12';
+UPDATE dictionary SET zh = '对以下主题的好处：在线购物、业务管理和详细报告。' WHERE dictionaryid = 'leePayText13';
+UPDATE dictionary SET zh = '触摸屏、二维码阅读器和摄像头（促销和库存跟踪）。' WHERE dictionaryid = 'leePayText14';
+UPDATE dictionary SET zh = '专业服务、商店和部门、餐厅和快速服务的理想选择。' WHERE dictionaryid = 'leePayText15';
+UPDATE dictionary SET zh = 'CI PTS 5.x, EMV L1/L2/CL1.' WHERE dictionaryid = 'leePayText16';
+UPDATE dictionary SET zh = 'PayPass、PayWave、Expresspay。' WHERE dictionaryid = 'leePayText17';
+UPDATE dictionary SET zh = '易于在市场上最常用的移动平台上提供应用程序。' WHERE dictionaryid = 'leePayText18';
+UPDATE dictionary SET zh = '以简单直观的方式创建您自己的应用商店，以更好地为您的客户服务。' WHERE dictionaryid = 'leePayText19';
+UPDATE dictionary SET zh = '监控、管理和更新，可以提高终端使用的生产力和灵活性。' WHERE dictionaryid = 'leePayText20';
+UPDATE dictionary SET zh = '4G、WiFi 和蓝牙。' WHERE dictionaryid = 'leePayText21';
+UPDATE dictionary SET zh = '芯片卡、非接触式、磁条、二维码。' WHERE dictionaryid = 'leePayText22';
+UPDATE dictionary SET zh = '遵守所有支付行业安全认证。' WHERE dictionaryid = 'leePayText23';
+
+UPDATE dictionary SET zh = '下载机器详细信息' WHERE dictionaryid = 'leeBankDownMaq';
+
+UPDATE dictionary SET zh = '模拟交换' WHERE dictionaryid = 'leeNatSimular';
+UPDATE dictionary SET zh = '收' WHERE dictionaryid = 'leeReceive';
+UPDATE dictionary SET zh = '钱会到账' WHERE dictionaryid = 'leeNatmoney';
+UPDATE dictionary SET zh = '工作日' WHERE dictionaryid = 'leeNatDays';
+UPDATE dictionary SET zh = '有效交换' WHERE dictionaryid = 'leeNatEffective';
+
+UPDATE dictionary SET zh = '填写以下字段以' WHERE dictionaryid = 'leeLegFill';
