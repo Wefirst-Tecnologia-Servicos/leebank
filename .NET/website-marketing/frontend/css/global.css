@@ -40,9 +40,9 @@ img {
     margin-right: 0;
 }
 
-.navbar-brand img {
-    width: 100%;
-}
+    .navbar-brand img {
+        width: 100%;
+    }
 
 
 .navbar {
@@ -152,8 +152,10 @@ img {
     margin-bottom: auto;
 }
 
-.carousel-item {
-    padding: 26rem 0;
+.carrouselText {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .second-row {
@@ -311,7 +313,7 @@ button {
     .form-exchange .campo-esquerdo {
         padding: 3%;
         border-radius: 5px 0 0 5px;
-        color: #373737;
+        color: #fff;
         font-weight: bold;
         background-color: #563596;
         border: none;
@@ -489,7 +491,7 @@ body.firstLoad {
     width: 53%;
 }
 
-div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space {
+div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-space, .carrouselText {
     min-height: 100vh !important;
 }
 
@@ -661,9 +663,30 @@ input.form-control.campo-direito.campo {
     text-align: right;
 }
 
+.link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.btn-ins {
+    margin-top: 10%;
+}
+
+.back-ex-leg {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
-
     p {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -806,7 +829,6 @@ input.form-control.campo-direito.campo {
         }
 
     .carousel-item {
-        padding: 12rem 0;
         max-height: 50vh;
     }
 
@@ -915,7 +937,7 @@ input.form-control.campo-direito.campo {
         text-align: center !important;
     }
 
-    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages, div.intro), div.carousel-item, .row-space {
+    div.container-fluid:not(#divMenuContainer, div.footer, div.sub-pages, div.intro), div.carousel-item, .row-space, .carrouselText {
         min-height: 50vh !important;
     }
 
@@ -968,7 +990,7 @@ input.form-control.campo-direito.campo {
 
     .form-exchange .border .border-inside {
         display: flex;
-        width: 270px;
+        width: 300px;
         text-align: center;
         padding: 1%;
     }
@@ -1158,6 +1180,15 @@ input.form-control.campo-direito.campo {
             border-radius: 35px;
             padding: 25px;
         }
+
+    .link {
+        justify-content: flex-start;
+    }
+
+    .form-exchange button {
+        width: 40%;
+        margin: 0px 5px;
+    }
 }
 
 /* Tablet */
@@ -1232,9 +1263,10 @@ input.form-control.campo-direito.campo {
         max-width: 80%;
     }
 
-    .ex-nat h2{
+    .ex-nat h2 {
         font-size: 65px !important;
     }
+
     .ex-nat h3 {
         font-size: 35px !important;
     }
@@ -1257,7 +1289,7 @@ input.form-control.campo-direito.campo {
         margin-bottom: 25%;
     }
 
-    .text-position-left.col-div2{
+    .text-position-left.col-div2 {
         margin-bottom: auto;
     }
 
@@ -1353,7 +1385,6 @@ input.form-control.campo-direito.campo {
     }
 
     .carousel-item {
-        padding: 24rem 0;
         max-height: 100vh;
     }
 
@@ -1395,11 +1426,10 @@ input.form-control.campo-direito.campo {
         margin-top: 10%;
         font-size: 30px !important;
         width: 300px !important;
-
     }
 
     .button-buy button {
-        width: 60%;
+        width: 55%;
         white-space: initial;
         background-size: cover;
         font-size: 1.5rem !important;
@@ -1619,11 +1649,15 @@ input.form-control.campo-direito.campo {
         width: 46%;
     }
 
-    .leepay-tablet .text-position-left{
+    .leepay-tablet .text-position-left {
         max-width: 100%;
     }
 
-    .row, leepay {
+    .leepay-right-button{
+        width: 65% !important;
+    }
+
+    .row:not(div.app), .leepay {
         padding: 25px;
     }
 
@@ -1652,6 +1686,7 @@ input.form-control.campo-direito.campo {
     .popup-form .btn {
         font-size: 28px !important;
     }
+
     .popup-header {
         background-color: transparent;
     }
@@ -1774,6 +1809,7 @@ input.form-control.campo-direito.campo {
     .form-help-text p {
         font-size: 40px;
     }
+
     .form-help-box .form h3 {
         text-align: center;
         font-size: 35px;
@@ -1796,11 +1832,14 @@ input.form-control.campo-direito.campo {
         font-size: 35px !important;
     }
 
-    .text-about .back-to-homepage p{
+    .text-about .back-to-homepage p {
         font-size: 30px;
         margin-bottom: 15%;
     }
 
+    .form-exchange .border img {
+        width: 80px;
+    }
 }
 
 
