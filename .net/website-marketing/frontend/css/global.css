@@ -690,6 +690,7 @@ input.form-control.campo-direito.campo {
     p {
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-top: 0px !important;
     }
 
     .navbar .navbar-brand img {
@@ -726,7 +727,7 @@ input.form-control.campo-direito.campo {
     }
 
     .text-position-left, .col-md-6 {
-        padding: 0px 25px 0px 25px !important;
+        padding: 0px 40px 0px 25px !important;
     }
 
     .space-col {
@@ -809,10 +810,14 @@ input.form-control.campo-direito.campo {
     }
 
     .card-image img {
-        width: 60%;
+        width: 85%;
         position: absolute;
-        margin-top: -50% !important;
-        margin-left: 20% !important;
+        margin-top: -65% !important;
+        margin-left: 10% !important;
+    }
+
+    .col-md-6.card-image {
+        margin-bottom: 20% !important;
     }
 
     .exchange-button {
@@ -838,16 +843,47 @@ input.form-control.campo-direito.campo {
         margin-left: 15%;
     }
 
-        .mobile-text .back-to-homepage p {
-            text-align: right !important;
+    .mobile-margin {
+        margin-top: 25%;
+        margin-bottom: 20%;
+    }
+
+        .mobile-margin.exchange {
+            margin-bottom: 0% !important;
         }
+
+    .text-position-left.space-right {
+        padding: 0px 91px 0px 25px !important;
+    }
+
+    .text-position-left.insurance {
+        padding: 0px 20px 0px 10px !important;
+    }
+
+    .mobile-text .back-to-homepage p {
+            text-align: right !important;
+    }
 
     .payment-gateway-image .text-position-right {
         width: 85%;
     }
 
+    .payment.text-position-right {
+        padding: 0px 20px 0px 10px !important;
+    }
+
+    .back-to-homepage{
+        margin-top:20%;
+    }
+
+    .cashin.text-position-left {
+        padding: 0px 20px 0px 10px !important;
+    }
+
     .button-page {
         width: 70%;
+        font-size: 15px !important;
+        margin-bottom: 15%;
     }
 
     .button-buy button {
@@ -952,7 +988,7 @@ input.form-control.campo-direito.campo {
 
     .exchange-button {
         margin-top: 0px;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         min-height: auto !important;
     }
 
@@ -1106,6 +1142,7 @@ input.form-control.campo-direito.campo {
 
     .button-cambio {
         display: initial;
+        margin-bottom: 30%;
     }
 
     .popup-exchange {
@@ -1189,6 +1226,12 @@ input.form-control.campo-direito.campo {
         width: 40%;
         margin: 0px 5px;
     }
+
+    .background-image.exchange-natural-person-image{
+        background-position: 46%;
+    }
+
+
 }
 
 /* Tablet */
