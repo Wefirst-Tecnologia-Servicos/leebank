@@ -56,6 +56,7 @@ hr {
 .navbar {
     background-image: url(../img/menu-background.jpg);
     background-size: auto;
+    background-size: contain;
     background-repeat: repeat-x;
     background-position: top;
 }
@@ -804,6 +805,7 @@ table {
         top: 335vh;
     }
 }
+
 /*Tablet*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
 
@@ -1023,168 +1025,216 @@ table {
         display: flex !important;
     }
 
-    .display-none-tablet{
-        display: none;
-    }
+    .display-none-tablet {
+        .display-none-tablet
 
-        .index-div-1 .col-md-6, .index-div-2 .col-md-6, .index-div-4 .col-md-6, .col-md-6.text-position-left.otc-div-1 {
-            padding: 0% 0% 0% 9% !important;
-        }
+{
+    display: none;
+}
 
-    .index-div-3 .col-md-6 {
-        padding: 0% 8% 0% 0% !important;
-    }
+.index-div-1 .col-md-6, .index-div-2 .col-md-6, .index-div-4 .col-md-6, .col-md-6.text-position-left.otc-div-1 {
+    padding: 0% 0% 0% 9% !important;
+}
 
-    .index-div-5 .col-md-6.text-position-left {
-        padding: 0% 9% !important;
-    }
+.index-div-3 .col-md-6 {
+    padding: 0% 8% 0% 0% !important;
+}
 
-    .index-div-3 {
-        background-position: 45% 0% !important;
-        background-size: 160% !important;
-    }
+.index-div-5 .col-md-6.text-position-left {
+    padding: 0% 9% !important;
+}
 
-    .index-div-1 {
-        background-size: 170%;
-        background-position: 80% 60%;
-    }
+.index-div-3 {
+    background-position: 45% 0% !important;
+    background-size: 160% !important;
+}
 
-    .footer img {
-        width: 100%;
-        padding: 40px 40px;
-    }
+.index-div-1 {
+    background-size: 170%;
+    background-position: 80% 60%;
+}
 
-    .footer .space {
-        font-size: 19px !important;
-    }
+.footer img {
+    width: 100%;
+    padding: 40px 40px;
+}
 
-    .footer .col-md-6 {
-        padding: 20px 10px !important;
-    }
+.footer .space {
+    font-size: 19px !important;
+}
 
-        .footer .col-md-6.links {
-            padding: 0px 0px 0px 70px !important;
-        }
+.footer .col-md-6 {
+    padding: 20px 10px !important;
+}
 
-
-    .compliance-security-body button {
-        margin: 0px;
-        font-size: 30px !important;
-    }
-
-    .compliance-security-body .nav-link-button {
-        font-size: 25px !important;
+    .footer .col-md-6.links {
+        padding: 0px 0px 0px 70px !important;
     }
 
 
-    .compliance-security-text h2 {
-        font-size: 17px;
-    }
+.compliance-security-body button {
+    margin: 0px;
+    font-size: 30px !important;
+}
 
-    .compliance-security-text h3 {
-        font-size: 15px;
-    }
+.compliance-security-body .nav-link-button {
+    font-size: 25px !important;
+}
 
-    .compliance-security-text p {
-        font-size: 16px;
-    }
 
-    .compliance-security-text h1 {
-        font-size: 20px
-    }
+.compliance-security-text h2 {
+    font-size: 17px;
+}
 
-    .background-image-compliance-title h2 {
-        font-size: 27px;
-    }
+.compliance-security-text h3 {
+    font-size: 15px;
+}
 
-    .nav-link-button {
-        background-color: transparent !important;
-        box-shadow: none !important;
-        text-align: inherit;
-        width: 85%;
-        display: inline !important;
-        border-bottom: none;
-    }
+.compliance-security-text p {
+    font-size: 16px;
+}
 
-    .background-image-select {
-        padding-top: 10px;
-    }
+.compliance-security-text h1 {
+    font-size: 20px
+}
 
-    .back-to-homepage {
-        margin: 10% 0 15% 4%;
-    }
+.background-image-compliance-title h2 {
+    font-size: 27px;
+}
 
-    .background-video {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-    }
+.nav-link-button {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-align: inherit;
+    width: 85%;
+    display: inline !important;
+    border-bottom: none;
+}
 
-    .video-bg1 {
-        object-fit: contain;
-    }
+.background-image-select {
+    padding-top: 10px;
+}
 
-    .video-bg2 {
-        width: 40vw;
-        height: 40vh;
-        object-fit: contain;
-        left: 50vw;
-        top: 135vh;
-    }
+.back-to-homepage {
+    margin: 10% 0 15% 4%;
+}
 
-    .video-bg3 {
-        object-fit: contain;
-        top: 200vh;
-    }
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
-    .video-bg4 {
-        width: 135vw;
-        object-fit: contain;
-        left: -35vw;
-        top: 320vh;
-    }
+.video-bg1 {
+    object-fit: contain;
+}
+
+.video-bg2 {
+    width: 40vw;
+    height: 40vh;
+    object-fit: contain;
+    left: 50vw;
+    top: 135vh;
+}
+
+.video-bg3 {
+    object-fit: contain;
+    top: 200vh;
+}
+
+.video-bg4 {
+    width: 135vw;
+    object-fit: contain;
+    left: -35vw;
+    top: 320vh;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
-    p {
-        font-size: 25px;
-        margin-top: 5px;
+    @media only screen and (min-width: 1024px) {
+        p {
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        .navbar-right {
+            background-color: transparent;
+            margin: 0px -12px;
+            display: flex;
+        }
+
+        .navbar-nav {
+            padding: 0rem 1.5rem;
+        }
     }
 
-    .navbar-right {
-        background-color: transparent;
-        margin: 0px -12px;
-        display: flex;
-    }
+    @media only screen and (min-width: 1800px) {
+        p {
+            font-size: 35px;
+            font-size: 3.5rem;
+            margin-top: 25px;
+            line-height: 45px;
+            line-height: 65px;
+        }
 
-    .navbar-nav {
-        padding: 0rem 1.5rem;
-    }
-}
+        h1 {
+            font-size: 65px;
+            line-height: 60px;
+            font-size: 7rem;
+            line-height: 100px;
+        }
 
-@media only screen and (min-width: 1800px) {
-    p {
-        font-size: 35px;
-        margin-top: 25px;
-        line-height: 45px;
-    }
+        .nav-link {
+            font-size: 1.5rem;
+            font-size: 2.5rem;
+        }
 
-    h1 {
-        font-size: 65px;
-        line-height: 60px;
-    }
+        .navbar-nav {
+            padding: 0rem 1.5rem;
+        }
 
-    .nav-link {
-        font-size: 1.5rem;
-    }
+        .navbar-brand img {
+            width: 200%;
+            max-width: 200%;
+        }
 
-    .navbar-nav {
-        padding: 0rem 1.5rem;
+        .navbar {
+            height: 150px;
+        }
+
+        button {
+            font-size: 3rem !important;
+        }
+
+        .parent-background-video {
+            position: relative
+        }
+
+        .video-bg4 {
+            width: 85vw;
+            height: 88vh;
+            object-fit: contain;
+            left: -30vw;
+            top: 18vh;
+        }
+
+        .footer p {
+            font-size: 2rem;
+            line-height: 60px;
+        }
+
+        .footer img {
+            width: 10%;
+        }
+
+        .footer .links p {
+            line-height: 60px;
+        }
     }
-}
