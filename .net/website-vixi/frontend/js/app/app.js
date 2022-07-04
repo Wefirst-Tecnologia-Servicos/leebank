@@ -11,6 +11,7 @@
 const angularConfig = {
     //apiBasePath: "https://leebank.wefirst.link/"
     apiBasePath: "http://18.206.228.123:3000/"
+    
 };
 
 angular
