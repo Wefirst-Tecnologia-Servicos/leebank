@@ -53,6 +53,14 @@ hr {
     background: linear-gradient(90deg, rgb(255 0 243), rgb(0 255 237));
 }
 
+.menu-mobile{
+    display: none;
+}
+
+.menu-desktop{
+    display: flex;
+}
+
 .navbar {
     background-image: url(../img/menu-background.jpg);
     background-size: auto;
@@ -571,6 +579,14 @@ table {
         padding: 25px !important;
     }
 
+    .menu-mobile {
+        display: flex;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
     .navbar button {
         width: 17%;
         box-shadow: none !important;
@@ -855,6 +871,14 @@ table {
         margin-top: 80px;
         text-align: left;
         font-size: 35px !important;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    .menu-desktop {
+        display: none;
     }
 
     .navbar a {

@@ -1,4 +1,4 @@
-﻿<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+﻿<nav class="navbar fixed-top navbar-expand-lg navbar-dark menu-desktop">
     <div class="container-fluid" id="divMenuContainer">
         <a class="navbar-brand active logo" aria-current="page" href="index.html?lang={{$ctrl.currentLanguage}}"><img src="../../../img/logo.png" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
@@ -20,6 +20,64 @@
                                     <a class="dropdown-item" style="white-space:normal;">{{child.translated_text}}</a>
                                 </div>
                             </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark menu-mobile">
+    <div class="container-fluid" id="divMenuContainer">
+        <a class="navbar-brand active logo" aria-current="page" href="index.html?lang={{$ctrl.currentLanguage}}"><img src="../../../img/logo.png" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenuLanguage">
+            {{$ctrl.translated_text}}
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
+            <img src="img/menu-icon.png" />
+        </button>
+
+        <div id="divMenu" class="collapse navbar-collapse">
+            <div class="navbar-right">
+                <ul class="navbar-nav me-auto" ng-repeat="item in $ctrl.menu">
+                    <li ng-show="item.text == 'vixiMenusign'" class="nav-item {{item.children.length > 0 ? 'dropdown' : ''}} {{item.text}}">
+                        <a class="nav-link {{item.children.length > 0 ? 'dropdown-toggle' : ''}}" ng-click="$ctrl.menuAction(item.link, item.text);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span ng-hide="item.text == '_currentLanguage'" style="white-space:nowrap;">{{item.translated_text}}</span>
+                            <span ng-show="item.text == '_currentLanguage'" style="white-space:nowrap;">{{$ctrl.currentLanguage == "ZH" ? "CN" : $ctrl.currentLanguage}}</span>
+                        </a>
+                        <ul class="dropdown-menu" ng-show="item.children.length > 0">
+                            <li ng-repeat="child in item.children"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav me-auto" ng-repeat="item in $ctrl.menu">
+                    <li ng-show="item.text != 'vixiMenusign' && item.text != '_currentLanguage'" class="nav-item {{item.children.length > 0 ? 'dropdown' : ''}} {{item.text}}">
+                        <a class="nav-link {{item.children.length > 0 ? 'dropdown-toggle' : ''}}" ng-click="$ctrl.menuAction(item.link, item.text);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span ng-hide="item.text == '_currentLanguage'" style="white-space:nowrap;">{{item.translated_text}}</span>
+                            <span ng-show="item.text == '_currentLanguage'" style="white-space:nowrap;">{{$ctrl.currentLanguage == "ZH" ? "CN" : $ctrl.currentLanguage}}</span>
+                        </a>
+                        <ul class="dropdown-menu" ng-show="item.children.length > 0">
+                            <li ng-repeat="child in item.children"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="divMenuLanguage" class="collapse navbar-collapse">
+            <div class="navbar-right">
+                <ul class="navbar-nav me-auto" ng-repeat="item in $ctrl.menu">
+                    <li ng-show="item.text == '_currentLanguage'" class="nav-item {{item.children.length > 0 ? 'dropdown' : ''}} {{item.text}}">
+                        <a class="nav-link {{item.children.length > 0 ? 'dropdown-toggle' : ''}}" ng-click="$ctrl.menuAction(item.link, item.text);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span ng-hide="item.text == '_currentLanguage'" style="white-space:nowrap;">{{item.translated_text}}</span>
+                            <span ng-show="item.text == '_currentLanguage'" style="white-space:nowrap;">{{$ctrl.currentLanguage == "ZH" ? "CN" : $ctrl.currentLanguage}}</span>
+                        </a>
+                        <ul class="dropdown-menu" ng-show="item.children.length > 0">
+                            <li ng-repeat="child in item.children"></li>
                         </ul>
                     </li>
                 </ul>
