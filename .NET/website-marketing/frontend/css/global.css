@@ -16,6 +16,7 @@ p, h1, h2, h3, h4, ul, li, label, a {
     font-family: Montserrat, sans-serif;
     font-style: normal;
     color: #ffffff;
+    text-shadow: 2px 4px 5px #563596;
     text-decoration-line: none;
 }
 
@@ -26,7 +27,7 @@ h1, h2, h3, h4 {
 
 p {
     text-align: justify;
-    line-height: 25px;
+    line-height: 30px;
     margin-top: 30px;
     font-size: 21px;
 }
@@ -380,17 +381,16 @@ button {
 }
 
 .button-buy button {
-    border-radius: 15px !important;
+    border-radius: 30px !important;
     width: auto;
-    padding: 2% 8%;
+    padding: 2% 2%;
     background-image: url(../img/button-buy.png);
-    background-size: auto;
+    background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
     background-color: transparent !important;
     white-space: nowrap;
     color: #563596 !important;
-    font-size: 15px !important;
 }
 
 .second-row .img-phone {
@@ -685,11 +685,6 @@ input.form-control.campo-direito.campo {
     align-items: center;
 }
 
-.col.back-to-homepage{
-    margin-top: 60%;
-}
-
-
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {
@@ -893,10 +888,9 @@ input.form-control.campo-direito.campo {
 
     .button-buy button {
         width: 100%;
-        border-radius: 30px !important;
         white-space: initial;
         background-size: cover;
-        font-size: 12px !important;
+        font-size: 1rem !important;
     }
 
     .wrapper {
@@ -1079,7 +1073,6 @@ input.form-control.campo-direito.campo {
 
     .pay-home {
         order: 3;
-        margin-top: 25%;
     }
 
     .popup {
@@ -1238,13 +1231,6 @@ input.form-control.campo-direito.campo {
         background-position: 46%;
     }
 
-    .col-md-6.text-position-left.mobile-text.investments {
-        margin-top: 68%;
-    }
-
-    .col.back-to-homepage{
-        margin-top: 125%
-    }
 
 }
 
@@ -1486,11 +1472,10 @@ input.form-control.campo-direito.campo {
     }
 
     .button-buy button {
-        width: 90%;
+        width: 55%;
         white-space: initial;
         background-size: cover;
         font-size: 1.5rem !important;
-        padding: 2% 17%;
     }
 
     .wrapper {
@@ -1711,9 +1696,8 @@ input.form-control.campo-direito.campo {
         max-width: 100%;
     }
 
-    .leepay-right-button {
-        padding: 2% 10% !important;
-        width: 90% !important;
+    .leepay-right-button{
+        width: 65% !important;
     }
 
     .row:not(div.app), .leepay {
@@ -1898,9 +1882,6 @@ input.form-control.campo-direito.campo {
 
     .form-exchange .border img {
         width: 80px;
-    }
-    .col.back-to-homepage {
-        margin-top: 100%;
     }
 }
 

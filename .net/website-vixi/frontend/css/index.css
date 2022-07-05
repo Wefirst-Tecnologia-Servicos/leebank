@@ -53,11 +53,11 @@ hr {
     background: linear-gradient(90deg, rgb(255 0 243), rgb(0 255 237));
 }
 
-.menu-mobile{
+.menu-mobile {
     display: none;
 }
 
-.menu-desktop{
+.menu-desktop {
     display: flex;
 }
 
@@ -594,7 +594,7 @@ table {
     }
 
     .navbar .nav-link {
-        padding-left: 5%;
+        padding: 4% 8%;
     }
 
         .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
@@ -606,6 +606,34 @@ table {
         background-color: #373737;
         margin: 0px -12px;
         display: block;
+    }
+
+    .menu-mobile .nav-link {
+        font-size: 1.5rem;
+    }
+
+    ._currentLanguage .nav-link:hover, ._currentLanguage .nav-link .nav-link:focus, ._currentLanguage .nav-link .nav-link:active, .dropdown-menu {
+        background-color: #262626 !important;
+        color: #6aacac !important;
+    }
+
+    .dropdown-menu {
+        margin-top: -1px !important;
+        padding: 0 !important;
+    }
+
+    .dropdown-item {
+        padding: 3% 19% !important;
+        font-size: 1.5rem;
+        color: #9f9f9f !important;
+    }
+
+    .vixiMenusign .nav-link {
+        background-color: #C9C9C9 !important;
+    }
+
+    .navbar .dropdown-menu:after{
+        display: none;
     }
 
     .footer {
@@ -1047,13 +1075,13 @@ table {
         display: flex !important;
     }
 
-    .display-none-tablet{
+    .display-none-tablet {
         display: none;
     }
 
-        .index-div-1 .col-md-6, .index-div-2 .col-md-6, .index-div-4 .col-md-6, .col-md-6.text-position-left.otc-div-1 {
-            padding: 0% 0% 0% 9% !important;
-        }
+    .index-div-1 .col-md-6, .index-div-2 .col-md-6, .index-div-4 .col-md-6, .col-md-6.text-position-left.otc-div-1 {
+        padding: 0% 0% 0% 9% !important;
+    }
 
     .index-div-3 .col-md-6 {
         padding: 0% 8% 0% 0% !important;

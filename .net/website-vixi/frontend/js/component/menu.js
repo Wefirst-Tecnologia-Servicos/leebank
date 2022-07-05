@@ -11,7 +11,7 @@ angular
         controller: function (MenuService, DictionaryService, GlobalService) {
 
             this.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
-
+            this.languages = {};
             this.menuAction = (link, value) => {
 
                 if (link == "setLanguage") {
@@ -35,12 +35,12 @@ angular
 
                 // translate the languages menu
                 DictionaryService.getLanguages(this.currentLanguage).then(languages => {
-                    languages = languages.data;
+                    this.languages = languages.data;
                     for (var i = 0; i < this.menu.length; i++) {
                         for (var j = 0; j < this.menu[i].children.length; j++) {
                             var child = this.menu[i].children[j];
-                            if (languages[child.text]) {
-                                child.translated_text = languages[child.text];
+                            if (this.languages[child.text]) {
+                                child.translated_text = this.languages[child.text];
                             }
                         }
                     }
