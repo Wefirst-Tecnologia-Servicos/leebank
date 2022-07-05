@@ -5,10 +5,10 @@
     "title": "WeFirst/LeeBank API",
     "description": "RESTful API solutions for the LeeBank websites."
   },
-  "host": "leebank.wefirst.link",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/menu/": {

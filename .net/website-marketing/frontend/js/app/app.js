@@ -10,7 +10,7 @@ const angularConfig = {
 };
 
 angular
-    .module("leebank", [])
+    .module("leebank", ['cur.$mask'])
     .constant("MODULE_VERSION", "2.2.0")
     .config($httpProvider => {
         $httpProvider.defaults.transformRequest.push((data, headersGetter) => {

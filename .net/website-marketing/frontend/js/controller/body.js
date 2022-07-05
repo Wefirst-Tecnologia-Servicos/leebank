@@ -1,5 +1,5 @@
 ﻿angular.module('leebank')
-    .controller('BodyController', (GlobalService, DictionaryService, EMailService, ExchangeService, $scope) => {
+    .controller('BodyController', (GlobalService, DictionaryService, EMailService, ExchangeService, $scope, $locale) => {
 
         // --------------- Translation Engine --------------- //
 
@@ -72,19 +72,41 @@
         };
 
         // -------------- Exchange Conversion --------------- //
+        
+        $scope.currency = {
+            PT: { symbol: '\u0024', name: 'PT', config: { group: '.', decimal: ',', indentation: ' ' } },
+            EN: { symbol: '\u0024', name: 'EN', config: { indentation: ' ' } },
+            ZH: { symbol: '\u0024', name: 'ZH', config: { indentation: ' ' } }
+        }[$scope.currentLanguage];
 
         $scope.exchangeConversion = {
             SendingPage: {
                 FromCurrency: "BRL",
-                FromValue: 0.0,
+                FromValue: 1.0,
                 ToCurrency: "USD",
                 ToValue: 0.0
             },
             ReceivingPage: {
                 FromCurrency: "USD",
-                FromValue: 0.0,
+                FromValue: 1.0,
                 ToCurrency: "BRL",
                 ToValue: 0.0
+            },
+            Factors: {
+                IOF: 0.38,
+                Spread: 0.03,
+                Costs: 0.05
+            },
+            SendingPageInput: 0.0,
+            ReceivingPageInput: 0.0
+        };
+
+        $scope.exchangeConvert = selectedPage => {
+            var convertedValue = $scope.exchangeConversion[`${selectedPage}Input`] * $scope.exchangeConversion[selectedPage].ToValue;
+            return {
+                Exchange: convertedValue,
+                Taxes: convertedValue * (1 + $scope.exchangeConversion.Factors.Spread + $scope.exchangeConversion.Factors.Costs + $scope.exchangeConversion.Factors.IOF),
+                Costs: convertedValue * $scope.exchangeConversion.Factors.Costs
             }
         };
 
@@ -93,6 +115,11 @@
                 $scope.exchangeConversion[selectedPage] = result.data;
             });
         };
+
+        if (window.location.href.indexOf("exchange-natural-person.html") > -1) {
+            $scope.convertCurrency("SendingPage");
+            $scope.convertCurrency("ReceivingPage");
+        }
 
         // ---------------------- Popup --------------------- //
 

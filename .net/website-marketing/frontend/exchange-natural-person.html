@@ -9,7 +9,7 @@
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular-locale_pt.js"></script>
-
+    <script type="text/javascript" src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
     <link href="css/global.css" rel="stylesheet" />
 
     <script src="js/app/app.js"></script>
@@ -29,6 +29,7 @@
     <menu-component></menu-component>
 
     <div class="container-fluid background-image exchange-natural-person-image sub-pages ex-nat" style="background-image: url(/img/exchange-natural-person.jpg); padding-top:100px;" ng-controller="BodyController">
+
         <div class="row row-space ex-nat">
             <div class="col-md-6 ex-nat text-position-left" style="margin-top: 45px;">
                 <h2>{{dictionary.exchange}}</h2>
@@ -59,7 +60,6 @@
                             </nav>
                         </div>
                     </div>
-
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="enviar" role="tabpanel" aria-labelledby="nav-enviar-tab">
                             <div class="row">
@@ -70,7 +70,7 @@
                                                 <img src="img/brasil-icon.png" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
                                             </div>
-                                            <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPage.FromValue" ng-placeholder="{{dictionary.send}}">
+                                            <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
                                         </div>
                                     </div>
                                 </div>
@@ -84,16 +84,22 @@
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
                                             </div>
                                             <div class="form-control placeholder-translate campo-direito to-value">
-                                                <p>{{exchangeConversion.SendingPage.ToValue | currency}}</p>
+                                                <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{}} {{exchangeConversion.SendingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="padding-top:30px;">
+                                    <p>TARIFA: {{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
+                                    <p>CUSTOS: {{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * exchangeConversion.Factors.Costs | currency}}</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('SendingPage');">{{dictionary.send}}</button>
+                                    <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
                                         <b>X {{dictionary.leeNatDays}}</b>.
@@ -111,7 +117,7 @@
                                                 <img src="img/usa-icon.png" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
                                             </div>
-                                            <input type="text" class="form-control placeholder-translate campo-direito campo" placeholder="Receber" ng-model="exchangeConversion.ReceivingPage.FromValue">
+                                            <input type="text" class="form-control placeholder-translate campo-direito campo" placeholder="Receber" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
                                         </div>
                                     </div>
                                 </div>
@@ -125,16 +131,22 @@
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
                                             </div>
                                             <div class="form-control placeholder-translate campo-direito to-value">
-                                                <p>{{exchangeConversion.ReceivingPage.ToValue | currency}}</p>
+                                                <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
+                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="padding-top:30px;">
+                                    <p>TARIFA: {{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
+                                    <p>CUSTOS: {{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * exchangeConversion.Factors.Costs | currency}}</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button" ng-click="convertCurrency('ReceivingPage');">{{dictionary.leeReceive}}</button>
+                                    <button class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
                                         <b>X {{dictionary.leeNatDays}}</b>.

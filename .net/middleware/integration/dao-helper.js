@@ -5,6 +5,7 @@ const mysql = require('mysql');
 
 module.exports = {
     getLoadedDataset: tableName => {
+        tableName = tableName.toLowerCase();
         return new Promise((resolve, reject) => {
             var client = mysql.createConnection(config.dbConnection.mySql);
             client.connect(err => {
