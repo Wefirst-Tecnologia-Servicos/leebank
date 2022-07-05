@@ -94,7 +94,6 @@
     <Content Include="frontend\img\placeHolderIcon.png" />
     <Content Include="frontend\img\Página 5.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
-    <Content Include="frontend\img\world.svg" />
     <Content Include="frontend\img\xNotSelected.png" />
     <Content Include="frontend\img\xSelected.png" />
     <Content Include="frontend\index.html" />
