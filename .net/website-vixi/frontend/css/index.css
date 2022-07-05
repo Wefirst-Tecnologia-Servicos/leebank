@@ -18,7 +18,6 @@ body {
 }
 
 .row {
-    margin-right: 0;
     min-height: inherit;
 }
 
@@ -554,6 +553,27 @@ table {
     top: 371vh;
 }
 
+.help-center-image {
+    background-position: center -80px;
+}
+
+.help-center-space {
+    padding: 250px 0 300px 0;
+}
+
+.form-help-center .duvidas {
+    min-height: 20vh;
+}
+
+.form-help-center form {
+    margin-top: 70px !important;
+    background-color: rgba(25, 24, 24, 0.7) !important
+}
+
+.help-center-space .text-position-left {
+    padding-top: 150px !important;
+}
+
 @media only screen and (max-width: 599px) {
     /* celulares */
 
@@ -632,7 +652,7 @@ table {
         background-color: #C9C9C9 !important;
     }
 
-    .navbar .dropdown-menu:after{
+    .navbar .dropdown-menu:after {
         display: none;
     }
 
@@ -846,6 +866,28 @@ table {
         object-fit: contain;
         left: -70vw;
         top: 335vh;
+    }
+
+    .help-center-space {
+        padding: 150px 0 150px 0 !important;
+    }
+
+        .help-center-space .text-position-left {
+            padding-top: 80px !important;
+        }
+
+    .form-help-center .title {
+        justify-content: space-around;
+        text-align: center
+    }
+
+    .form-help-center h1{
+        font-size: 40px;
+    }
+
+    .form-help-center hr {
+        width: 88%;
+        margin: auto
     }
 }
 /*Tablet*/
@@ -1200,6 +1242,41 @@ table {
         object-fit: contain;
         left: -35vw;
         top: 320vh;
+    }
+
+    .form-help-center form {
+        margin-top: 30px !important;
+        background-color: rgba(25, 24, 24, 0.7) !important
+    }
+
+    .help-center-space {
+        padding: 150px 0 150px 0 !important;
+    }
+
+        .help-center-space .text-position-left {
+            padding-top: 80px !important;
+        }
+
+    .form-help-center .col-md-6.text-position-left{
+        width: 80%;
+    }
+
+    .form-help-center .title {
+        justify-content: space-around;
+        text-align: center
+    }
+
+    .form-help-center h1 {
+        font-size: 70px;
+    }
+
+    .form-help-center hr {
+        width: 100%;
+        margin: auto
+    }
+
+    .form-help-center p {
+        line-height: 50px;
     }
 }
 

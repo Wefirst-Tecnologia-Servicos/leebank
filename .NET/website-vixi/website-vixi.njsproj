@@ -42,6 +42,7 @@
     <Content Include="frontend\fonts\DMSans-Regular.ttf" />
     <Content Include="frontend\fonts\Gilroy-Light.ttf" />
     <Content Include="frontend\fonts\OFL.txt" />
+    <Content Include="frontend\helpCenter.html" />
     <Content Include="frontend\img\AdobeStock_286076203.jpeg" />
     <Content Include="frontend\img\apple-store-icon.png" />
     <Content Include="frontend\img\artigosBody.png" />
