@@ -1378,3 +1378,5 @@ UPDATE dictionary SET zh = '工作日' WHERE dictionaryid = 'leeNatDays';
 UPDATE dictionary SET zh = '有效交换' WHERE dictionaryid = 'leeNatEffective';
 
 UPDATE dictionary SET zh = '填写以下字段以' WHERE dictionaryid = 'leeLegFill';
+
+UPDATE `leebank`.`menu` SET `link` = 'index.html#contact' WHERE (`menuid` = '12');
