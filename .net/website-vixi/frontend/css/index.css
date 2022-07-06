@@ -1307,17 +1307,6 @@ table {
     .navbar-nav {
         padding: 0rem 1.5rem;
     }
-
-    .otc-div-1 p {
-        font-size: 25px;
-        margin-top: 50px;
-
-    }
-
-    .compliance-security-body h3{
-        margin-top: 7%;
-    }
-
 }
 
 @media only screen and (min-width: 1800px) {
@@ -1333,7 +1322,7 @@ table {
     }
 
     .nav-link {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .navbar-nav {
