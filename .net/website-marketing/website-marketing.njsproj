@@ -98,6 +98,7 @@
     <Content Include="frontend\img\seg5.svg" />
     <Content Include="frontend\img\usa-icon.png" />
     <Content Include="frontend\img\whatsapp-icon.png" />
+    <Content Include="frontend\img\world.svg" />
     <Content Include="frontend\img\x-button.png" />
     <Content Include="frontend\index.html" />
     <Content Include="frontend\insurance.html" />
