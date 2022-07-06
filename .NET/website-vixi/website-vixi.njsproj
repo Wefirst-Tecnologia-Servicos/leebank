@@ -31,17 +31,15 @@
   <ItemGroup>
     <Content Include="config.json" />
     <Content Include="frontend\compliance-security.html" />
-    <Content Include="frontend\css\index.css" />
     <Content Include="frontend\download\LeeBank_Politicas_de_Privacidade.pdf" />
     <Content Include="frontend\download\LeeBank_Termos_de_Uso_de_Consetimentos_de_Dados.pdf" />
-    <Content Include="frontend\fonts\DMSans-Bold.ttf" />
-    <Content Include="frontend\fonts\DMSans-BoldItalic.ttf" />
-    <Content Include="frontend\fonts\DMSans-Italic.ttf" />
-    <Content Include="frontend\fonts\DMSans-Medium.ttf" />
-    <Content Include="frontend\fonts\DMSans-MediumItalic.ttf" />
-    <Content Include="frontend\fonts\DMSans-Regular.ttf" />
-    <Content Include="frontend\fonts\Gilroy-Light.ttf" />
-    <Content Include="frontend\fonts\OFL.txt" />
+    <Content Include="frontend\fonts\DMSans-Bold.woff" />
+    <Content Include="frontend\fonts\DMSans-BoldItalic.woff" />
+    <Content Include="frontend\fonts\DMSans-Italic.woff" />
+    <Content Include="frontend\fonts\DMSans-Medium.woff" />
+    <Content Include="frontend\fonts\DMSans-MediumItalic.woff" />
+    <Content Include="frontend\fonts\DMSans-Regular.woff" />
+    <Content Include="frontend\fonts\Gilroy-Light.woff" />
     <Content Include="frontend\helpCenter.html" />
     <Content Include="frontend\img\artigosBody.png" />
     <Content Include="frontend\img\compliance-security-title-div.png" />

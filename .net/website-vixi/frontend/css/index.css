@@ -1,6 +1,6 @@
 @font-face {
-    src: url(../fonts/Gilroy-Light.ttf);
     font-family: Gilroy Light;
+    src: url("../fonts/Gilroy-Light.woff") format('woff');
 }
 
 div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-body, div.compliance-security-tabs, div.back-to-homepage), div.carousel-item {
