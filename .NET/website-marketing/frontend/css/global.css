@@ -1417,6 +1417,7 @@ input.form-control.campo-direito.campo {
     .ex-leg .button-page {
         font-size: 30px !important;
         margin-bottom: 25%;
+        border-radius: 20px !important;
     }
 
     .text-position-left.col-div2 {
@@ -1979,7 +1980,23 @@ input.form-control.campo-direito.campo {
     .text-position-left.space-right{
         width: 75% !important;
     }
-}
+    .first-rowp{
+        margin-top: 20%;
+    }
+
+    .second-row .qrcode img {
+        width: 70%;
+    }
+
+    .back-ex-leg {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .payment .back-to-homepage {
+        margin-top: 30%;
+    }
  
 
 /* landscape */
