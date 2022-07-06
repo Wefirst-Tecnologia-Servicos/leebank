@@ -729,12 +729,28 @@ input.form-control.campo-direito.campo {
     margin-top:15%;
 }
 
+.menu-desktop{
+    display:flex;
+}
+
+.menu-mobile {
+    display: none;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {
         font-size: 1rem;
         line-height: 1.5rem;
         margin-top: 0px !important;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
     }
 
     .navbar .navbar-brand img {
@@ -748,7 +764,7 @@ input.form-control.campo-direito.campo {
 
     .navbar .navbar-nav {
         align-items: baseline;
-        padding: 0.5rem 1.5rem;
+        padding: 1rem 1.5rem
     }
 
     .navbar .navbar-toggler {
@@ -763,6 +779,15 @@ input.form-control.campo-direito.campo {
         .navbar .dropdown-menu:after {
             display: none;
         }
+
+    .navbar .nav-link span {
+        font-size: 1.3rem;
+    }
+
+    .signUp {
+        background: linear-gradient(109deg, #a1bbe8 2.29%, #525c97 49.75%, #a1bbe8 99.22%);
+        box-shadow: 0px 3px 5px black
+    }
 
     .text-position-right {
         padding-right: 0px !important;
@@ -1973,14 +1998,16 @@ input.form-control.campo-direito.campo {
     .form-exchange .border img {
         width: 80px;
     }
+
     .col.back-to-homepage {
         margin-top: 100%;
     }
 
-    .text-position-left.space-right{
+    .text-position-left.space-right {
         width: 75% !important;
     }
-    .first-rowp{
+
+    .first-rowp {
         margin-top: 20%;
     }
 
@@ -1997,7 +2024,15 @@ input.form-control.campo-direito.campo {
     .payment .back-to-homepage {
         margin-top: 30%;
     }
- 
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+}
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

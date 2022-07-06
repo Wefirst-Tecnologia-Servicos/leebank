@@ -11,6 +11,7 @@ angular
         controller: function (DictionaryService, GlobalService) {
 
             var ctrl = this;
+
             this.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
 
             DictionaryService.getDictionary(GlobalService.getQueryStringParam("lang") ?? "PT").then(function(translations) {
