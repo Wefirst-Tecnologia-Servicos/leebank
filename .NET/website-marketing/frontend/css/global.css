@@ -1975,8 +1975,12 @@ input.form-control.campo-direito.campo {
     .col.back-to-homepage {
         margin-top: 100%;
     }
-}
 
+    .text-position-left.space-right{
+        width: 75% !important;
+    }
+}
+ 
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
