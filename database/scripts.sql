@@ -2216,3 +2216,8 @@ UPDATE dictionary SET zh = '合规' WHERE dictionaryid = 'vixiCsCompliance';
 UPDATE dictionary SET zh = '安全' WHERE dictionaryid = 'vixiCsSeguranca';
 UPDATE dictionary SET zh = '公司采用的政策。' WHERE dictionaryid = 'vixiCsPoliticas';
 UPDATE dictionary SET zh = '流程' WHERE dictionaryid = 'vixiCsProcedimentos';
+
+UPDATE `leebank`.`menu` SET `link` = 'index.html#contact' WHERE (`menuid` = '37');
+UPDATE `leebank`.`menu` SET `text` = 'vixiMenuBlog' WHERE (`menuid` = '22');
+UPDATE `leebank`.`dictionary` SET `dictionaryid` = 'vixiMenuBlog', `pt` = 'Blog', `en` = 'Blog' WHERE (`dictionaryid` = 'vixiMenuArticle');
+
