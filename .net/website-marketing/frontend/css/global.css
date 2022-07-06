@@ -27,9 +27,9 @@ h1, h2, h3, h4 {
 
 p {
     text-align: justify;
-    line-height: 25px;
+    line-height: 30px;
     margin-top: 30px;
-    font-size: 21px;
+    font-size: 22px;
 }
 
 img {
@@ -173,7 +173,7 @@ img {
     }
 
     .second-row p {
-        font-size: 0.8rem;
+        font-size: 15px;
         line-height: 20px;
         margin-top: 0px !important;
     }
@@ -395,6 +395,7 @@ button {
     white-space: nowrap;
     color: #563596 !important;
     font-size: 15px !important;
+    margin-top: 5%;
 }
 
 .second-row .img-phone {
@@ -500,7 +501,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
 }
 
 .exchange-button {
-    margin-top: 80px;
+    margin-top: 15px;
     margin-bottom: 10%;
     min-height: auto !important;
 }
@@ -508,6 +509,10 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
     .exchange-button .col-3 {
         width: 25%;
     }
+
+.more-space{
+    margin-top: 15%;
+}
 
 .border h3, .border p {
     margin: 0;
@@ -653,6 +658,7 @@ input.form-control.campo-direito.campo {
 
 .back-nat {
     text-align: left;
+    margin-top: 25%;
 }
 
 .navbar-brand {
@@ -675,6 +681,8 @@ input.form-control.campo-direito.campo {
 
 .btn-ins {
     margin-top: 10%;
+    border-radius: 15px !important;
+    width: 55%;
 }
 
 .back-ex-leg {
@@ -693,6 +701,33 @@ input.form-control.campo-direito.campo {
     margin-top: 60%;
 }
 
+.indexImageDiv9 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.carrouselText h1{
+    font-size: 60px !important
+}
+
+.leepay-know {
+    width: 41%;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.leepay li {
+    font-size: 20px;
+}
+
+.payment .back-to-homepage{
+    margin-top:15%;
+}
+
+.cashin .back-to-homepage{
+    margin-top:15%;
+}
 
 /* celulares */
 @media only screen and (max-width: 767px) {
@@ -776,12 +811,12 @@ input.form-control.campo-direito.campo {
     }
 
     .second-row h1 {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 40px;
+        line-height: 37px;
     }
 
     .second-row p {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 20px;
         margin-top: 0px !important;
     }
@@ -798,7 +833,7 @@ input.form-control.campo-direito.campo {
     .second-row .img-text-download p {
         padding: 0px;
         margin: 0px;
-        font-size: 10px;
+        font-size: 8px;
         line-height: 14px;
     }
 
@@ -821,7 +856,7 @@ input.form-control.campo-direito.campo {
     .card-image img {
         width: 85%;
         position: absolute;
-        margin-top: -65% !important;
+        margin-top: -75% !important;
         margin-left: 10% !important;
     }
 
@@ -870,7 +905,7 @@ input.form-control.campo-direito.campo {
     }
 
     .mobile-text .back-to-homepage p {
-            text-align: right !important;
+        text-align: right !important;
     }
 
     .payment-gateway-image .text-position-right {
@@ -881,12 +916,13 @@ input.form-control.campo-direito.campo {
         padding: 0px 20px 0px 10px !important;
     }
 
-    .back-to-homepage{
-        margin-top:20%;
+    .back-to-homepage {
+        margin-top: 20%;
     }
 
     .cashin.text-position-left {
         padding: 0px 20px 0px 10px !important;
+        margin-top: 60%;
     }
 
     .button-page {
@@ -1238,7 +1274,7 @@ input.form-control.campo-direito.campo {
         margin: 0px 5px;
     }
 
-    .background-image.exchange-natural-person-image{
+    .background-image.exchange-natural-person-image {
         background-position: 46%;
     }
 
@@ -1246,12 +1282,45 @@ input.form-control.campo-direito.campo {
         margin-top: 68%;
     }
 
-    .col.back-to-homepage{
+    .col.back-to-homepage {
         margin-top: 125%
     }
 
-}
+    .more-space {
+        margin-top: 15% !important;
+    }
 
+    .carrouselText h1 {
+        font-size: 30px !important;
+    }
+
+    .back-ex-leg {
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
+    .btn-ins{
+        width: 75%;
+    }
+
+    .insurance .back-to-homepage{
+        margin-top: 0% !important;
+    }
+
+    .ins-phone .back-to-homepage{
+        margin-top: 0% !important;
+        margin-bottom: 10%;
+    }
+
+    .payment .back-to-homepage{
+        margin-top: 35%;
+    }
+
+    .cashin .back-to-homepage {
+        margin-top: 45%;
+    }
+
+}
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -2070,3 +2139,4 @@ input.form-control.campo-direito.campo {
         min-height: 80vh;
     }
 }
+
