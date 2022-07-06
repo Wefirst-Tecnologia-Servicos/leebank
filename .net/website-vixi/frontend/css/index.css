@@ -643,6 +643,15 @@ table {
         color: #6aacac !important;
     }
 
+    ._currentLanguage .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+        ._currentLanguage .nav-link span {
+            padding-left: 3%;
+        }
+
     .dropdown-menu {
         margin-top: -1px !important;
         padding: 0 !important;
@@ -957,10 +966,6 @@ table {
         display: none;
     }
 
-    .navbar a {
-        font-size: 35px;
-    }
-
     .navbar button {
         width: 17%;
         box-shadow: none !important;
@@ -968,32 +973,55 @@ table {
     }
 
     .navbar .nav-link {
-        padding-left: 5%;
-        font-size: 40px !important;
-        color: white !important;
+        padding: 4% 8%;
     }
 
-    .navbar .dropdown-menu {
-        background-color: #373737;
-        border-radius: 7px;
-        left: auto;
-        right: 0;
-        padding: 0% 26px;
-        margin-right: -9px;
-        padding-top: 9px;
-        border: none;
-        font-size: 41px;
-    }
-
-    .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
-        color: #b25c9f !important;
-        background-color: #C9C9C9 !important;
-    }
+        .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
+            color: #b25c9f !important;
+            background-color: #C9C9C9 !important;
+        }
 
     .navbar-right {
         background-color: #373737;
         margin: 0px -12px;
         display: block;
+    }
+
+    .menu-mobile .nav-link {
+        font-size: 1.7rem;
+    }
+
+    ._currentLanguage .nav-link:hover, ._currentLanguage .nav-link .nav-link:focus, ._currentLanguage .nav-link .nav-link:active, .dropdown-menu {
+        background-color: #262626 !important;
+        color: #6aacac !important;
+    }
+
+    ._currentLanguage .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+        ._currentLanguage .nav-link span {
+            padding-left: 3%;
+        }
+
+    .dropdown-menu {
+        margin-top: -1px !important;
+        padding: 0 !important;
+    }
+
+    .dropdown-item {
+        padding: 3% 15% !important;
+        font-size: 1.7rem;
+        color: #9f9f9f !important;
+    }
+
+    .vixiMenusign .nav-link {
+        background-color: #C9C9C9 !important;
+    }
+
+    .navbar .dropdown-menu:after {
+        display: none;
     }
 
     .footer {
@@ -1302,6 +1330,7 @@ table {
         background-color: transparent;
         margin: 0px -12px;
         display: flex;
+        align-items: center;
     }
 
     .navbar-nav {
