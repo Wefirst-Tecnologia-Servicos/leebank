@@ -1339,4 +1339,9 @@ table {
     .navbar-nav {
         padding: 0rem 1.5rem;
     }
+
+    .h1, h1 {
+        font-size: 99px !important;
+        line-height: 99px !important;
+    }
 }
