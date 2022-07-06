@@ -3,6 +3,11 @@
     src: url("../fonts/Gilroy-Light.woff") format('woff');
 }
 
+@font-face{
+    font-family: DM Sans;
+    src: url("../fonts/DMSans-Regular.woff") format('woff');
+}
+
 div.container-fluid:not(#divMenuContainer, div.footer, div.compliance-security-body, div.compliance-security-tabs, div.back-to-homepage), div.carousel-item {
     min-height: 100vh;
     max-width: 100vw;
@@ -22,7 +27,7 @@ body {
 }
 
 p, h1, h2, h3, h4, ul, li, label, a {
-    font-style: normal;
+    font-family: 'DM Sans';
     color: #ffffff;
     text-decoration-line: none;
 }
