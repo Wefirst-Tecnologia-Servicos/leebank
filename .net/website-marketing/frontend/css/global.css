@@ -7,9 +7,14 @@
     font-family: Montserrat;
 }
 
+@font-face {
+    src: url(../fonts/Montserrat-Bold.woff);
+    font-family: MontserratBold;
+}
+
 body {
     overflow-x: hidden !important;
-}se
+}
 
 .row {
     margin-right: 0;
@@ -26,6 +31,7 @@ p, h1, h2, h3, h4, ul, li, label, a {
 }
 
 h1, h2, h3, h4 {
+    font-family: MontserratBold;
     font-weight: bold;
     line-height: 42px;
 }
