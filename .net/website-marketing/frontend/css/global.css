@@ -60,7 +60,8 @@ img {
     background: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
 }
     .navbar a {
-        text-shadow:none !important;
+        text-shadow: none !important;
+        font-weight: bold;
     }
 
     .navbar, .navbar .container-fluid {
