@@ -785,7 +785,11 @@ input.form-control.campo-direito.campo {
 
     .navbar .navbar-nav {
         align-items: baseline;
-        padding: 1rem 1.5rem
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        padding: 1rem 1.5rem;
     }
 
     .navbar .navbar-toggler {
@@ -809,6 +813,31 @@ input.form-control.campo-direito.campo {
         background: linear-gradient(109deg, #a1bbe8 2.29%, #525c97 49.75%, #a1bbe8 99.22%);
         box-shadow: 0px 3px 5px black
     }
+
+    .products .dropdown-menu {
+        padding: 5% 0% !important;
+        font-size: 14px;
+    }
+
+    .products .products-menu-right {
+        border-left: 1px solid #ffffff;
+    }
+
+    .products .dropdown-item {
+        white-space: inherit;
+    }
+
+    .dropdown-menu {
+        width: 100vw;
+        border-radius: 0px !important;
+        padding: 0 !important;
+    }
+
+        .dropdown-menu .products-menu {
+            padding: 0;
+            width: 50%;
+            display: table-cell;
+        }
 
     .text-position-right {
         padding-right: 0px !important;
