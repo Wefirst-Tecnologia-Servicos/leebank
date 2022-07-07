@@ -2,6 +2,7 @@
     src: url(../fonts/ArdinaText-Bold.woff);
     font-family: Ardina Text;
 }
+
 @font-face {
     src: url(../fonts/Montserrat-VariableFont_wght.woff);
     font-family: Montserrat;
@@ -60,6 +61,7 @@ img {
 .navbar {
     background: linear-gradient(180deg, #563596 0%, rgba(86, 53, 150, 0) 132.21%);
 }
+
     .navbar a {
         text-shadow: none !important;
         font-weight: bold;
@@ -188,7 +190,6 @@ img {
     .second-row h1 {
         font-family: Ardina Text;
         font-size: 90px;
-
         line-height: 90px;
     }
 
@@ -320,18 +321,30 @@ button {
         margin: 20px 0;
     }
 
+    .form-exchange .form-exchange-div1, .form-exchange .form-exchange-div2, .form-exchange .taxes-div {
+        align-items: center;
+        text-align: left
+    }
+
+        .form-exchange .form-exchange-div1 p, .form-exchange .form-exchange-div2 p, .form-exchange .taxes-div p {
+            text-align: left
+        }
+
+        .form-exchange .taxes-div p {
+            margin-bottom: 0;
+            display: inline;
+        }
+
     .form-exchange button {
         background-color: transparent !important;
         box-shadow: none !important;
-        padding: 0;
-        border-radius: 20px !important;
-        width: 30%;
-        margin: 0px 25px;
+        padding: 1.5% 0%;
+        border-radius: 30px !important;
+        width: 50%;
     }
 
-        .form-exchange button:hover {
-            background-color: #ffffff !important;
-            color: #563596 !important;
+        .form-exchange button:hover, .form-exchange button[aria-selected='true'] {
+            background: linear-gradient(87.91deg, #6729C7 0%, #888888 100%);
         }
 
     .form-exchange nav.nav-tabs {
@@ -355,7 +368,7 @@ button {
         border-radius: 5px 0 0 5px;
         color: #fff;
         font-weight: bold;
-        background-color: #563596;
+        background-color: transparent;
         border: none;
         background-image: none;
     }
@@ -376,7 +389,7 @@ button {
         border: 2px solid #563596 !important;
         box-sizing: border-box;
         border-radius: 10px;
-        background-color: #563596;
+        background: linear-gradient(130deg, #b437cc 2.61%, #8225a4 12.65%, #b437cc 18.64%, #8225a4 26.17%, #b437cc 36.71%)
     }
 
         .form-exchange .border img {
@@ -393,7 +406,7 @@ button {
 
     .form-exchange .send-button {
         margin: 30px 0 10px 0;
-        background: linear-gradient(90.7deg, #81a8df 1.32%, #667bca 24.45%, #81a8df 52.71%, #667bca 73.79%, #81a8df 100%);
+        background: linear-gradient(90.7deg, #81a8df 1.32%, #667bca 24.45%, #81a8df 52.71%, #667bca 73.79%, #81a8df 100%) !important;
         width: 100%;
         border-radius: 15px !important;
         padding: 10px 0px;
@@ -409,6 +422,89 @@ button {
     .form-exchange .input-group {
         display: block;
     }
+
+    .form-exchange .taxes-div {
+        height: 10vh;
+        position: relative;
+    }
+
+    .form-exchange .dot-image {
+        position: absolute;
+        margin-left: 25px;
+        margin-bottom: 8px;
+    }
+
+    .form-exchange .dot-line:after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        bottom: 10px;
+        left: 50px;
+        border-left: 4px dotted #fff;
+    }
+
+.tooltip-wrap, .tooltip-wrap-country {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+    .tooltip-wrap .tooltip-content {
+        visibility: hidden;
+        width: 300px;
+        bottom: 165%;
+        left: 95%;
+        margin-left: -255px;
+        background-color: #6B667D;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+    }
+
+        .tooltip-wrap .tooltip-content:after {
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 70%;
+            margin-left: -5px;
+            border-width: 30px;
+            border-style: solid;
+            border-color: #6B667D transparent transparent transparent;
+        }
+
+        .tooltip-wrap:hover .tooltip-content, .tooltip-wrap-country:hover .tooltip-content-country {
+            visibility: visible;
+        }
+
+
+    .tooltip-wrap-country .tooltip-content-country {
+        visibility: hidden;
+        width: 400px;
+        bottom: 150%;
+        left: -50%;
+        margin-left: -255px;
+        background-color: #6B667D;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+    }
+
+        .tooltip-wrap-country .tooltip-content-country:after {
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 80%;
+            margin-left: -5px;
+            border-width: 30px;
+            border-style: solid;
+            border-color: #6B667D transparent transparent transparent;
+        }
 
 .bold-color {
     background: linear-gradient(89.38deg, #563596 0%, #7FAAC3 100%);
@@ -547,7 +643,7 @@ div.container-fluid:not(#divMenuContainer, div.footer), div.carousel-item, .row-
         width: 25%;
     }
 
-.more-space{
+.more-space {
     margin-top: 15%;
 }
 
@@ -734,7 +830,7 @@ input.form-control.campo-direito.campo {
     align-items: center;
 }
 
-.col.back-to-homepage{
+.col.back-to-homepage {
     margin-top: 60%;
 }
 
@@ -744,7 +840,7 @@ input.form-control.campo-direito.campo {
     background-position: bottom;
 }
 
-.carrouselText h1{
+.carrouselText h1 {
     font-size: 60px !important
 }
 
@@ -758,16 +854,16 @@ input.form-control.campo-direito.campo {
     font-size: 20px;
 }
 
-.payment .back-to-homepage{
-    margin-top:15%;
+.payment .back-to-homepage {
+    margin-top: 15%;
 }
 
-.cashin .back-to-homepage{
-    margin-top:15%;
+.cashin .back-to-homepage {
+    margin-top: 15%;
 }
 
-.menu-desktop{
-    display:flex;
+.menu-desktop {
+    display: flex;
 }
 
 .menu-mobile {
@@ -816,9 +912,9 @@ input.form-control.campo-direito.campo {
         width: 100vw;
     }
 
-    .navbar .nav-link img{
-        width: 80%;
-    }
+        .navbar .nav-link img {
+            width: 80%;
+        }
 
 
     .navbar .navbar-toggler {
@@ -1429,27 +1525,26 @@ input.form-control.campo-direito.campo {
         margin-top: 15%;
     }
 
-    .btn-ins{
+    .btn-ins {
         width: 75%;
     }
 
-    .insurance .back-to-homepage{
+    .insurance .back-to-homepage {
         margin-top: 0% !important;
     }
 
-    .ins-phone .back-to-homepage{
+    .ins-phone .back-to-homepage {
         margin-top: 0% !important;
         margin-bottom: 10%;
     }
 
-    .payment .back-to-homepage{
+    .payment .back-to-homepage {
         margin-top: 35%;
     }
 
     .cashin .back-to-homepage {
         margin-top: 45%;
     }
-
 }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2165,8 +2260,6 @@ input.form-control.campo-direito.campo {
         .divisao .direita {
             width: 57%;
         }
-
-
 }
 
 /* large desktop */
@@ -2322,6 +2415,4 @@ input.form-control.campo-direito.campo {
         .divisao .direita {
             width: 57%;
         }
-
 }
-

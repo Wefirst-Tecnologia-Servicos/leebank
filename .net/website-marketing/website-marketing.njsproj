@@ -137,6 +137,7 @@
     <Content Include="frontend\img\div7.jpg" />
     <Content Include="frontend\img\div8.jpg" />
     <Content Include="frontend\img\div9.jpg" />
+    <Content Include="frontend\img\dot.svg" />
     <Content Include="frontend\img\exchange-legal-person-tablet.jpg" />
     <Content Include="frontend\img\exchange-legal-person.jpg" />
     <Content Include="frontend\img\exchange-natural-person.jpg" />
@@ -167,6 +168,7 @@
     <Content Include="frontend\img\machine4.png" />
     <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
+    <Content Include="frontend\img\plus-button.svg" />
     <Content Include="frontend\img\seg1.svg" />
     <Content Include="frontend\img\seg2.svg" />
     <Content Include="frontend\img\seg3.svg" />
