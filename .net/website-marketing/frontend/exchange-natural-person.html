@@ -52,7 +52,7 @@
 
                 <div class="row form-exchange-div1">
                     <div class="col">
-                        <h4>Nosso horário de funcionamento: </h4>
+                        <h4 style="color: #D2B6FF;">Nosso horário de funcionamento: </h4>
                         <p><b>9:00hs a 16:00hs, </b></p>
                         <p>de segunda a sexta, com exceção de feriados.</p>
                     </div>
@@ -84,6 +84,61 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row taxes-div">
+                                <div class="col-2 dot-line"></div>
+                                <div class="col-2 dot-image">
+                                    <img src="img/dot.svg" />
+                                </div>
+                                <div class="col-8">
+                                    <div class="align">
+                                        <p>TARIFA:</p>
+                                        <div class="tooltip-wrap">
+                                            <img src="img/plus-button.svg" />
+                                            <div class="tooltip-content">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 01:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 02:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 03:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
@@ -101,17 +156,11 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col" style="padding-top:30px;">
-                                    <p>TARIFA: {{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
-                                    <p>CUSTOS: {{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * exchangeConversion.Factors.Costs | currency}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
-                                        <b>X {{dictionary.leeNatDays}}</b>
+                                        <b style="color:#D2B6FF;">{{dictionary.leeNatDays}}</b>
                                     </p>
                                 </div>
                             </div>
@@ -131,6 +180,61 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row taxes-div">
+                                <div class="col-2 dot-line"></div>
+                                <div class="col-2 dot-image">
+                                    <img src="img/dot.svg" />
+                                </div>
+                                <div class="col-8">
+                                    <div class="align">
+                                        <p>TARIFA:</p>
+                                        <div class="tooltip-wrap">
+                                            <img src="img/plus-button.svg" />
+                                            <div class="tooltip-content">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 01:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 02:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                Taxa 03:
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        R$ X,XX
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
@@ -148,17 +252,11 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col" style="padding-top:30px;">
-                                    <p>TARIFA: {{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
-                                    <p>CUSTOS: {{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * exchangeConversion.Factors.Costs | currency}}</p>
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
-                                        <b>X {{dictionary.leeNatDays}}</b>
+                                        <b style="color:#D2B6FF;">{{dictionary.leeNatDays}}</b>
                                     </p>
                                 </div>
                             </div>
@@ -168,13 +266,60 @@
 
                 <div class="row form-exchange-div2">
                     <div class="col-10">
-                        <h4>Países que não efetuamos a remessa:</h4>
+                        <h4 style="color:#D2B6FF;">Países que não efetuamos a remessa:</h4>
                     </div>
                     <div class="col-2">
-                        <img src="img/flag-button.svg"/>
+                        <div class="tooltip-wrap-country">
+                            <img src="img/flag-button.svg" />
+                            <div class="tooltip-content-country">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>País 01</li>
+                                            <li>País 02</li>
+                                            <li>País 03</li>
+                                            <li>País 04</li>
+                                            <li>País 05</li>
+                                            <li>País 06</li>
+                                            <li>País 07</li>
+                                            <li>País 08</li>
+                                            <li>País 09</li>
+                                            <li>País 10</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>País 11</li>
+                                            <li>País 12</li>
+                                            <li>País 13</li>
+                                            <li>País 14</li>
+                                            <li>País 15</li>
+                                            <li>País 16</li>
+                                            <li>País 17</li>
+                                            <li>País 18</li>
+                                            <li>País 19</li>
+                                            <li>País 20</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>País 21</li>
+                                            <li>País 22</li>
+                                            <li>País 23</li>
+                                            <li>País 24</li>
+                                            <li>País 25</li>
+                                            <li>País 26</li>
+                                            <li>País 27</li>
+                                            <li>País 28</li>
+                                            <li>País 29</li>
+                                            <li>País 30</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
