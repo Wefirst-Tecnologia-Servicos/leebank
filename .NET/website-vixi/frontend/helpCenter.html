@@ -34,29 +34,29 @@
                 <div class="col-md-12 form-index form-help-center">
                     <div class="row title">
                         <div class="col-md-6 text-position-left">
-                            <h1>Central de ajuda</h1>
+                            <h1>{{dictionary.vixiHelp}}</h1>
                             <hr />
                         </div>
                     </div>
                     <form>
-                        <p>Esclareça as suas dúvidas conosco por meio do formulário abaixo!</p>
+                        <p>{{dictionary.vixiHelpTitle}}</p>
                         <hr class="display-none-cel" />
                         <div class="mb-3">
                             <label for="nome" class="form-label">{{dictionary.vixiName}}:</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" ng-model="doubts.SenderName">
+                            <input type="text" class="form-control" id="nome" ng-placeholder="vixiHelpp1" ng-model="doubts.SenderName">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">{{dictionary.vixiEmail}}:</label>
-                            <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail" ng-model="doubts.SenderEMail">
+                            <input type="text" class="form-control" id="email" ng-placeholder="vixiHelpp2" ng-model="doubts.SenderEMail">
                         </div>
                         <div class="mb-3">
-                            <label for="duvidas" class="form-label">{{dictionary.doubts}}:</label>
+                            <label for="duvidas" class="form-label">{{dictionary.vixiDoubts}}:</label>
                             <div class="border-control">
-                                <textarea class="form-control duvidas" id="duvidas" placeholder="Digite suas dúvidas aqui!" ng-model="doubts.Description"></textarea>
+                                <textarea class="form-control duvidas" id="duvidas" ng-placeholder="vixiHelpp3" ng-model="doubts.Description"></textarea>
                             </div>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" ng-click="sendDoubts();">Enviar</button>
+                            <button class="btn btn-primary" type="button" ng-click="sendDoubts();">{{dictionary.vixiHelpSend}}</button>
                         </div>
                     </form>
                 </div>
