@@ -1,11 +1,15 @@
 @font-face {
-    src: url(../fonts/ArdinaTitle-Light.woff);
+    src: url(../fonts/ArdinaText-Bold.woff);
     font-family: Ardina Text;
+}
+@font-face {
+    src: url(../fonts/Montserrat-VariableFont_wght.woff);
+    font-family: Montserrat;
 }
 
 body {
     overflow-x: hidden !important;
-}
+}se
 
 .row {
     margin-right: 0;
@@ -17,7 +21,8 @@ p, h1, h2, h3, h4, ul, li, label, a {
     font-style: normal;
     color: #ffffff;
     text-decoration-line: none;
-    text-shadow: 2px 4px 5px #563596;
+    text-shadow: 2px 2px 3px #563596;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4 {
@@ -168,7 +173,7 @@ img {
     .second-row h1 {
         font-family: Ardina Text;
         font-size: 90px;
-        font-family: serif;
+
         line-height: 90px;
     }
 
@@ -176,6 +181,12 @@ img {
         font-size: 15px;
         line-height: 20px;
         margin-top: 0px !important;
+    }
+
+    .second-row .secondp {
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 35px !important;
     }
 
     .second-row .qrcode {
@@ -737,6 +748,10 @@ input.form-control.campo-direito.campo {
     display: none;
 }
 
+.animation h1 {
+    line-height: 70px;
+}
+
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {
@@ -844,6 +859,12 @@ input.form-control.campo-direito.campo {
         font-size: 13px;
         line-height: 20px;
         margin-top: 0px !important;
+    }
+
+    .second-row .secondp {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px !important;
     }
 
     .second-row .img-phone {
@@ -1477,6 +1498,12 @@ input.form-control.campo-direito.campo {
     .second-row p {
         font-size: 25px;
         line-height: 35px;
+        margin-top: 0px !important;
+    }
+
+    .second-row .secondp {
+        font-size: 27px;
+        line-height: 30px;
         margin-top: 0px !important;
     }
 
