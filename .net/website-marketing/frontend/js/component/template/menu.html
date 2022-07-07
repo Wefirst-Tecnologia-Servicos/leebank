@@ -76,15 +76,15 @@
                     </a>
 
                     <!-- Submenu para nao produtos  -->
-                    <div class="row dropdown-menu" ng-if="item.text == 'products'">
+                    <div class="dropdown-menu" ng-if="item.text == 'products'">
 
-                        <div class="col-md-6" ng-show="item.children.length > 0">
-                            <div ng-repeat="child in item.children">
-                                <a ng-if="$index < (item.children.length / 2)" ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item">{{child.translated_text}}</a>
+                        <div class="products-menu products-menu-left" ng-show="item.children.length > 0">
+                            <div  ng-repeat="child in item.children">
+                                <a ng-class="child.text" ng-if="$index < (item.children.length / 2)" ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item">{{child.text == 'leePayCardMachine' ? 'Lee Pay' : child.translated_text}}</a>
                             </div>
                         </div>
 
-                        <div class="col-md-6"" ng-show="item.children.length > 0">
+                        <div class="products-menu products-menu-right" ng-show="item.children.length > 0">
                             <div ng-repeat="child in item.children">
                                 <a ng-if="$index >= (item.children.length / 2)" ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item">{{child.translated_text}}</a>
                             </div>
