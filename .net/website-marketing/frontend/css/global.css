@@ -18,6 +18,7 @@ body {
 
 .row {
     margin-right: 0;
+    margin-left: 0;
     min-height: inherit;
 }
 
@@ -81,7 +82,14 @@ img {
 
         .navbar .nav-link {
             color: #ffffff;
+            display: flex;
+            align-items: center;
         }
+
+            .navbar .nav-link img {
+                width: 80%;
+            }
+
 
 .signUp {
     background-color: #7798be;
@@ -281,10 +289,14 @@ button {
     font-size: 18px;
 }
 
+.ex-nat {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
 .form-exchange {
     padding: 0px 100px;
-    margin-bottom: auto;
-    margin-top: 4%;
+    margin: 4% 0;
 }
 
     .form-exchange p {
@@ -296,9 +308,16 @@ button {
     }
 
     .form-exchange form {
-        background-color: rgb(0,0,0, 0.6);
+        background-color: rgb(0,0,0, 0.85);
         border-radius: 40px;
         padding: 30px 25px;
+    }
+
+    .form-exchange .form-exchange-div1, .form-exchange .form-exchange-div2 {
+        background-color: rgb(0,0,0, 0.85);
+        border-radius: 40px;
+        padding: 15px;
+        margin: 20px 0;
     }
 
     .form-exchange button {
@@ -343,7 +362,7 @@ button {
 
     .form-exchange p {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 17px;
         text-shadow: none;
     }
@@ -759,6 +778,7 @@ input.form-control.campo-direito.campo {
     line-height: 70px;
 }
 
+
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {
@@ -793,6 +813,7 @@ input.form-control.campo-direito.campo {
         padding: 1rem 1.5rem;
         display: flex;
         align-items: center;
+        width: 100vw;
     }
 
     .navbar .nav-link img{
@@ -866,6 +887,14 @@ input.form-control.campo-direito.campo {
             width: 50%;
             display: table-cell;
         }
+
+    .dropdown-toggle::after {
+        position: absolute;
+        right: 20px;
+        border-top: 0.5em solid;
+        border-right: 0.5em solid transparent;
+        border-left: 0.5em solid transparent;
+    }
 
     .text-position-right {
         padding-right: 0px !important;
@@ -1287,14 +1316,6 @@ input.form-control.campo-direito.campo {
             padding: 3% !important;
         }
 
-    .divisao {
-        display: flex;
-        justify-content: space-between;
-    }
-
-        .divisao .mb-3 {
-            width: 48%;
-        }
 
     .button-cambio {
         display: initial;
@@ -1961,14 +1982,6 @@ input.form-control.campo-direito.campo {
             min-height: 66vh;
         }
 
-    .divisao {
-        display: flex;
-        justify-content: space-between;
-    }
-
-        .divisao .mb-3 {
-            width: 48%;
-        }
 
     .button-cambio {
         display: initial;
@@ -2138,6 +2151,22 @@ input.form-control.campo-direito.campo {
         width: 70%;
         margin-top: 30%;
     }
+
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .esquerda {
+            width: 40%;
+        }
+
+        .divisao .direita {
+            width: 57%;
+        }
+
+
 }
 
 /* large desktop */
@@ -2258,11 +2287,6 @@ input.form-control.campo-direito.campo {
         padding-left: 191px;
     }
 
-    .exchange-natural-person-image .col-md-6 {
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
     .card-image img {
         width: 70%;
         margin-top: 30%;
@@ -2284,5 +2308,20 @@ input.form-control.campo-direito.campo {
     .popup-form .col-10 {
         min-height: 80vh;
     }
+
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .esquerda {
+            width: 40%;
+        }
+
+        .divisao .direita {
+            width: 57%;
+        }
+
 }
 
