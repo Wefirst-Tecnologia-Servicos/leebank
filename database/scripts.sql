@@ -2374,3 +2374,16 @@ UPDATE dictionary SET pt = 'Com os seguros Lee Bank, você protege o que conquis
 UPDATE dictionary SET pt = 'Com o nosso serviço de câmbio é possível fazer remessas para fora do país, de forma rápida e segura. Se você precisar enviar dinheiro para amigos e familiares no exterior, conte conosco.', en = 'With our exchange service it is possible to make remittances abroad, quickly and safely. If you need to send money to friends and family abroad, count on us.', zh = '通过我们的跨境汇款服务，可以快速安全地向国外汇款。如果您需要汇款给国外的朋友和家人，我们随时为您服务' WHERE dictionaryid = 'withOurExchange';
 UPDATE dictionary SET pt = 'Tire suas dúvidas conosco.', en = 'Take your doubts with us.', zh = '向我们提出您的疑问' WHERE dictionaryid = 'yourDoubts';
 UPDATE dictionary SET pt = 'Clique para saber mais sobre as vantagens da Lee Pay:', en = 'Click to learn more about Lee Pay benefits:', zh = '点击”查看更多“了解有关 Lee Pay 福利的更多信息：' WHERE dictionaryid = 'clickToLearn';
+
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelpSend','Enviar', 'Send', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelpTitle','Esclareça as suas dúvidas conosco por meio do formulário abaixo!', 'Clarify your doubts with us using the form below!', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiIFormP1','Digite seu nome', 'Enter your name', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiIFormP2','Digite seu e-mail', 'Enter your e-mail address', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiIFormP3','Digite seu telefone', 'Enter your phone', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiIFormP4','Digite seu CPF', 'Enter your CPF', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiIFormP5','Digite seu CNPJ', 'Enter your CNPJ', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelpp1','Digite seu nome', 'Enter your name', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelpp2','Digite seu e-mail', 'Enter your e-mail address', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiHelpp3','Digite suas dúvidas aqui!', 'Type your questions here!', '??', 'VIXI');
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('vixiDoubts','Dúvidas ou mensagem:', 'Questions or message:', '??', 'VIXI');
