@@ -31,7 +31,7 @@
     <div class="container-fluid background-image exchange-natural-person-image sub-pages ex-nat" style="background-image: url(/img/exchange-natural-person.jpg); padding-top:100px;" ng-controller="BodyController">
 
         <div class="row row-space ex-nat">
-            <div class="col-md-6 ex-nat text-position-left" style="margin-top: 45px;">
+            <div class="col-md-6 ex-nat text-position-left">
                 <h2>{{dictionary.exchange}}</h2>
                 <h3 class="bold-color" style="display:inline">{{dictionary.physicalPerson}}</h3>
                 <p>{{dictionary.remittances}} </p>
@@ -49,6 +49,15 @@
                 <button class="popup-btn" ng-click="closePopup();">
                     <img src="img/x-button.png" style="width: 58%;" />
                 </button>
+
+                <div class="row form-exchange-div1">
+                    <div class="col">
+                        <h4>Nosso horário de funcionamento: </h4>
+                        <p><b>9:00hs a 16:00hs, </b></p>
+                        <p>de segunda a sexta, com exceção de feriados.</p>
+                    </div>
+                </div>
+
                 <form>
                     <div class="row">
                         <div class="col">
@@ -67,7 +76,7 @@
                                     <div class="input-group mb-3">
                                         <div class="border">
                                             <div class="border-inside">
-                                                <img src="img/brasil-icon.png" />
+                                                <img src="img/brasil-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
                                             </div>
                                             <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
@@ -80,7 +89,7 @@
                                     <div class="input-group mb-3">
                                         <div class="border">
                                             <div class="border-inside">
-                                                <img src="img/usa-icon.png" />
+                                                <img src="img/usa-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
                                             </div>
                                             <div class="form-control placeholder-translate campo-direito to-value">
@@ -102,7 +111,7 @@
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
-                                        <b>X {{dictionary.leeNatDays}}</b>.
+                                        <b>X {{dictionary.leeNatDays}}</b>
                                     </p>
                                 </div>
                             </div>
@@ -114,7 +123,7 @@
                                     <div class="input-group mb-3">
                                         <div class="border">
                                             <div class="border-inside">
-                                                <img src="img/usa-icon.png" />
+                                                <img src="img/usa-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
                                             </div>
                                             <input type="text" class="form-control placeholder-translate campo-direito campo" placeholder="Receber" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
@@ -127,7 +136,7 @@
                                     <div class="input-group mb-3">
                                         <div class="border">
                                             <div class="border-inside">
-                                                <img src="img/brasil-icon.png" />
+                                                <img src="img/brasil-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
                                             </div>
                                             <div class="form-control placeholder-translate campo-direito to-value">
@@ -149,13 +158,23 @@
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
-                                        <b>X {{dictionary.leeNatDays}}</b>.
+                                        <b>X {{dictionary.leeNatDays}}</b>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
+
+                <div class="row form-exchange-div2">
+                    <div class="col-10">
+                        <h4>Países que não efetuamos a remessa:</h4>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/flag-button.svg"/>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
