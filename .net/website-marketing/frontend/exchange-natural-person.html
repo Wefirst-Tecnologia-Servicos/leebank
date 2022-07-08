@@ -79,7 +79,12 @@
                                                 <img src="img/brasil-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
                                             </div>
-                                            <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Enviar:
+                                                </div>
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +98,7 @@
                                     <div class="align">
                                         <p>TARIFA:</p>
                                         <div class="tooltip-wrap">
-                                            <img src="img/plus-button.svg" />
+                                            <img src="img/plus-button.svg" onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;"/>
                                             <div class="tooltip-content">
                                                 <div class="row">
                                                     <div class="col">
@@ -147,8 +152,13 @@
                                                 <img src="img/usa-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
                                             </div>
-                                            <div class="form-control placeholder-translate campo-direito to-value">
-                                                <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Beneficiário receberá:
+                                                </div>
+                                                <div class="form-control placeholder-translate campo-direito to-value">
+                                                    <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -175,7 +185,17 @@
                                                 <img src="img/usa-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
                                             </div>
-                                            <input type="text" class="form-control placeholder-translate campo-direito campo" placeholder="Receber" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Beneficiário receberá:
+                                                </div>
+                                                <div class="form-exchange-div-input">
+                                                    <div class="label">
+                                                        Enviar:
+                                                    </div>
+                                                    <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +209,7 @@
                                     <div class="align">
                                         <p>TARIFA:</p>
                                         <div class="tooltip-wrap">
-                                            <img src="img/plus-button.svg" />
+                                            <img src="img/plus-button.svg"  onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;" />
                                             <div class="tooltip-content">
                                                 <div class="row">
                                                     <div class="col">
@@ -243,8 +263,13 @@
                                                 <img src="img/brasil-icon.svg" />
                                                 <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
                                             </div>
-                                            <div class="form-control placeholder-translate campo-direito to-value">
-                                                <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Beneficiário receberá:
+                                                </div>
+                                                <div class="form-control placeholder-translate campo-direito to-value">
+                                                    <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -270,7 +295,7 @@
                     </div>
                     <div class="col-3">
                         <div class="tooltip-wrap-country">
-                            <img src="img/flag-button.svg" />
+                            <img src="img/flag-button.svg" onmouseover="this.src='img/flag-button-active.svg';" onmouseout="this.src='img/flag-button.svg';"/>
                             <div class="tooltip-content-country">
                                 <div class="row">
                                     <div class="col-4">

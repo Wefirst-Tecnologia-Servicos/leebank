@@ -117,6 +117,7 @@
     <Content Include="frontend\img\about-insurance.jpg" />
     <Content Include="frontend\img\AdobeStock_286076203.jpeg" />
     <Content Include="frontend\img\apple-store-icon.png" />
+    <Content Include="frontend\img\arrow.svg" />
     <Content Include="frontend\img\brasil-icon.svg" />
     <Content Include="frontend\img\brazil-flag.png" />
     <Content Include="frontend\img\button-buy.png" />
@@ -141,6 +142,7 @@
     <Content Include="frontend\img\exchange-legal-person-tablet.jpg" />
     <Content Include="frontend\img\exchange-legal-person.jpg" />
     <Content Include="frontend\img\exchange-natural-person.jpg" />
+    <Content Include="frontend\img\flag-button-active.svg" />
     <Content Include="frontend\img\flag-button.svg" />
     <Content Include="frontend\img\footer-banner1.jpg" />
     <Content Include="frontend\img\footer-banner2.jpg" />
@@ -168,6 +170,7 @@
     <Content Include="frontend\img\machine4.png" />
     <Content Include="frontend\img\menu-icon.png" />
     <Content Include="frontend\img\payment-gateway.jpg" />
+    <Content Include="frontend\img\plus-button-active.svg" />
     <Content Include="frontend\img\plus-button.svg" />
     <Content Include="frontend\img\seg1.svg" />
     <Content Include="frontend\img\seg2.svg" />

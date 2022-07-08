@@ -20,8 +20,8 @@
                         <li ng-repeat="child in item.children">
                             <a ng-show="child.text != 'acessOurAppToSignUp'" ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item">{{child.translated_text}}</a>
                             <div class="sign-up" ng-show="child.text == 'acessOurAppToSignUp'">
-                                <a class="sign-up-title">{{child.translated_header}}</a>
-                                <a class="sign-up-text">{{child.translated_text}}</a>
+                                <h4 class="sign-up-title">{{child.translated_header}}</h4>
+                                <p class="sign-up-text">{{child.translated_text}}</p>
                                 <div class="text-center">
                                     <img src="/img/LeeBank_QRCode_App.png" />
                                 </div>
@@ -83,10 +83,13 @@
                         </div>
 
                     </div>
+                    
                     <!-- demais submenus  -->
                     <ul class="dropdown-menu" ng-if="item.text != 'products'" ng-show="item.children.length > 0">
                         <li ng-repeat="child in item.children">
-                            <a ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item" aria-selected="false"> {{child.translated_text}}</a>
+                            <a ng-click="$ctrl.menuAction(child.link, child.text, child);" class="dropdown-item" ng-class="child.text + (child.selected ? ' selected' : '')">
+                                {{child.translated_text}}
+                            </a>
                         </li>
                     </ul>
                 </li>
