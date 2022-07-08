@@ -8,10 +8,18 @@ angular
     .module("leebank")
     .component("menuComponent", {
         templateUrl: "js/component/template/menu.html",
-        controller: function (MenuService, GlobalService) {
+        controller: function (MenuService, GlobalService, DictionaryService) {
             var ctrl = this;
 
+            // ---------- dictionary ---------- //
+
             this.currentLanguage = GlobalService.getQueryStringParam("lang") ?? "PT";
+            this.dictionary = {};
+            DictionaryService.getDictionary(this.currentLanguage).then(translations => {
+                this.dictionary = translations.data;
+            });
+
+            // --------- menu action ---------- //
 
             this.menuAction = (link, value) => {
 
@@ -31,8 +39,24 @@ angular
                 }
             };
 
+            // ---------- menu tree ---------- //
+
             MenuService.getMenuTree(this.currentLanguage).then(function (menuTree) {
                 ctrl.menu = menuTree.data.children;
             });
+
+            // ----------- Popup ------------ //
+
+            this.PopupVisible = false;
+
+            this.openPopup = () => {
+                this.PopupVisible = true;
+                $("button[data-bs-target='#divMenu']")[0].click();
+            };
+
+            this.closePopup = () => {
+                this.PopupVisible = false;
+            };
+
         }
     });
