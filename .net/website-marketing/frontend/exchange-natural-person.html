@@ -52,9 +52,9 @@
 
                 <div class="row form-exchange-div1">
                     <div class="col">
-                        <h4 style="color: #D2B6FF;">Nosso horário de funcionamento: </h4>
-                        <p><b>9:00hs a 16:00hs, </b></p>
-                        <p>de segunda a sexta, com exceção de feriados.</p>
+                        <h4 style="color: #D2B6FF;">{{dictionary.leeExchangeTitle1}} </h4>
+                        <p><b>{{dictionary.leeExchangeText1}} </b></p>
+                        <p>{{dictionary.leeExchangeText2}}</p>
                     </div>
                 </div>
 
@@ -152,7 +152,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
+                                    <p style="margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -248,7 +248,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="line-height: 0; margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
+                                    <p style="margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -265,10 +265,10 @@
                 </form>
 
                 <div class="row form-exchange-div2">
-                    <div class="col-10">
-                        <h4 style="color:#D2B6FF;">Países que não efetuamos a remessa:</h4>
+                    <div class="col-9">
+                        <h4 style="color:#D2B6FF;">{{dictionary.leeExchangeTitle2}}</h4>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="tooltip-wrap-country">
                             <img src="img/flag-button.svg" />
                             <div class="tooltip-content-country">
