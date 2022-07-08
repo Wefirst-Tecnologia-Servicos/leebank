@@ -40,7 +40,7 @@
 
         <a class="navbar-brand active" aria-current="page" href="index.html?lang={{$ctrl.currentLanguage}}"><img src="img/logo.svg" /></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu" id="btnMenuMobile">
             <img src="img/menu-icon.png" />
         </button>
 
@@ -50,7 +50,7 @@
             <!-- menu do cadastre-se -->
             <ul class="navbar-nav  {{item.text}}" ng-repeat="item in $ctrl.menu | filter:{ text: 'signUp' }">
                 <li class="nav-item">
-                    <a class="nav-link" ng-click="$ctrl.openPopup();" role="button">
+                    <a class="nav-link" onclick="openSignMenuPopup();" role="button">
                         <span>{{item.translated_text}}</span>
                     </a>
                 </li>
@@ -67,7 +67,7 @@
                         <span ng-show="item.text == '_currentLanguage'">{{$ctrl.currentLanguage == "ZH" ? "CN" : $ctrl.currentLanguage}}</span>
                     </a>
 
-                    <!-- Submenu para nao produtos  -->
+                    <!-- Submenu para produtos  -->
                     <div class="dropdown-menu" ng-if="item.text == 'products'">
 
                         <div class="products-menu products-menu-left" ng-show="item.children.length > 0">
@@ -86,20 +86,21 @@
                     <!-- demais submenus  -->
                     <ul class="dropdown-menu" ng-if="item.text != 'products'" ng-show="item.children.length > 0">
                         <li ng-repeat="child in item.children">
-                            <a ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item"> {{child.translated_text}}</a>
+                            <a ng-click="$ctrl.menuAction(child.link, child.text);" class="dropdown-item" aria-selected="false"> {{child.translated_text}}</a>
                         </li>
                     </ul>
-
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="sign-up popup" ng-class="$ctrl.PopupVisible ? 'open-popup' : ''">
-    <a class="sign-up-title">ESTE É UM TEXTO</a>
-    <a class="sign-up-text">ESTE É OUTRO TEXTO</a>
-    <div class="text-center">
-        <img src="/img/LeeBank_QRCode_App.png" />
+<div class="popup popup-behind" id="behindMenuSign" onclick="closeSignMenuPopup();">
+    <div class="sign-up popup-sign" id="popupMenuSign" onclick="closeSignMenuPopup();">
+        <p class="sign-up-title">{{$ctrl.dictionary.signUpForLeeBank}}</p>
+        <p class="sign-up-text">{{$ctrl.dictionary.acessOurAppToSignUp}}</p>
+        <div class="text-center">
+            <img src="/img/LeeBank_QRCode_App.png" />
+        </div>
     </div>
 </div>

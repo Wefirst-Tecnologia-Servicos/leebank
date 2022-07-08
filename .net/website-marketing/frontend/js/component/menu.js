@@ -4,6 +4,22 @@
  * Provides the AngularJS menu component
  */
 
+function closeSignMenuPopup() {
+    $("#popupMenuSign, #behindMenuSign").removeClass('open-popup');
+    $("body").css({
+        "overflow": "auto"
+    });
+}
+
+function openSignMenuPopup() {
+    window.scrollTo(0, 0);
+    $("body").css({
+        "overflow": "hidden"
+    });
+    $('#behindMenuSign').addClass('open-popup');
+    $('#btnMenuMobile')[0].click();
+}
+
 angular
     .module("leebank")
     .component("menuComponent", {
@@ -44,19 +60,6 @@ angular
             MenuService.getMenuTree(this.currentLanguage).then(function (menuTree) {
                 ctrl.menu = menuTree.data.children;
             });
-
-            // ----------- Popup ------------ //
-
-            this.PopupVisible = false;
-
-            this.openPopup = () => {
-                this.PopupVisible = true;
-                $("button[data-bs-target='#divMenu']")[0].click();
-            };
-
-            this.closePopup = () => {
-                this.PopupVisible = false;
-            };
 
         }
     });
