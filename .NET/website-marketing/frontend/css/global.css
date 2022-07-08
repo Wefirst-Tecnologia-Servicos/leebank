@@ -408,7 +408,7 @@ button {
         margin: 30px 0 10px 0;
         background: linear-gradient(90.7deg, #81a8df 1.32%, #667bca 24.45%, #81a8df 52.71%, #667bca 73.79%, #81a8df 100%) !important;
         width: 100%;
-        border-radius: 15px !important;
+        border-radius: 30px !important;
         padding: 10px 0px;
     }
 
@@ -475,9 +475,9 @@ button {
             border-color: #6B667D transparent transparent transparent;
         }
 
-        .tooltip-wrap:hover .tooltip-content, .tooltip-wrap-country:hover .tooltip-content-country {
-            visibility: visible;
-        }
+    .tooltip-wrap:hover .tooltip-content, .tooltip-wrap-country:hover .tooltip-content-country {
+        visibility: visible;
+    }
 
 
     .tooltip-wrap-country .tooltip-content-country {
@@ -1308,7 +1308,7 @@ input.form-control.campo-direito.campo {
         display: flex;
         width: 300px;
         text-align: center;
-        padding: 1%;
+        padding: 0px 0px 0px 5px;
     }
 
     .pay-desktop {
@@ -1498,6 +1498,7 @@ input.form-control.campo-direito.campo {
     .form-exchange button {
         width: 40%;
         margin: 0px 5px;
+        font-size: 22px !important;
     }
 
     .background-image.exchange-natural-person-image {
@@ -1545,6 +1546,91 @@ input.form-control.campo-direito.campo {
     .cashin .back-to-homepage {
         margin-top: 45%;
     }
+
+    .tooltip-wrap-country .tooltip-content-country {
+        width: 348px;
+        font-size: 14px;
+        left: 25%;
+    }
+
+    .tooltip-wrap-country .tooltip-content-country:after {
+        top: 99%;
+        left: 71%;
+    }
+
+    .form-exchange form {
+        padding: 30px 8px;
+    }
+
+    .form-exchange .border img {
+        padding: 0px;
+        width: 37px;
+    }
+
+    .form-exchange p {
+        line-height: 25px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .form-exchange-div1 h4 {
+        font-size: 14px;
+        margin-bottom: -4%;
+    }
+
+    .form-exchange .form-exchange-div1 {
+        padding: 13px;
+    }
+
+    .tooltip-content-country .col-4 {
+        margin-left: -4px;
+    }
+
+    .form-exchange .dot-line:after {
+        left: 35px;
+    }
+
+    .form-exchange .dot-image {
+        margin-left: 14px;
+    }
+
+    .tooltip-wrap {
+        width: 30px;
+    }
+
+    .form-exchange .taxes-div p {
+        font-weight: bold;
+    }
+
+    .tooltip-wrap .tooltip-content {
+        width: 283px;
+        margin-left: -149px;
+    }
+
+    .tooltip-wrap .tooltip-content:after {
+        left: 39%;
+        top: 99%;
+    }
+
+    .tab-content p{
+        font-weight: bold;
+    }
+
+    .form-exchange .send-button{
+        border-radius: 30px !important;
+    }
+    .form-exchange-div2 h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .tooltip-wrap-country img {
+        width: 129%;
+        max-width: 200%;
+    }
+
+ 
+
 }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2230,7 +2316,100 @@ input.form-control.campo-direito.campo {
     .menu-mobile {
         display: flex;
     }
-}
+
+    .tooltip-wrap-country .tooltip-content-country {
+        width: 466px;
+        font-size: 20px;
+        left: -33%;
+        bottom: 136%;
+    }
+
+        .tooltip-wrap-country .tooltip-content-country:after {
+            top: 99%;
+            left: 71%;
+        }
+
+    .form-exchange form {
+        padding: 30px 8px;
+    }
+
+    .form-exchange .border img {
+        padding: 0px;
+        width: 55px;
+    }
+
+    .form-exchange p {
+        line-height: 33px;
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .form-exchange-div1 h4 {
+        font-size: 25px;     
+    }
+
+    .form-exchange .form-exchange-div1 {
+        padding: 13px;
+    }
+
+    .tooltip-content-country .col-4 {
+        margin-left: -4px;
+    }
+
+    .form-exchange .dot-line:after {
+        left: 70px;
+        top: -29px;
+        bottom: -15px;
+    }
+
+    .form-exchange .dot-image {
+        margin-left: 20px;
+    }
+
+    .tooltip-wrap {
+        width: 45px;
+    }
+
+    .form-exchange .taxes-div p {
+        font-weight: bold;
+    }
+
+    .tooltip-wrap .tooltip-content {
+        width: 315px;
+        margin-left: -168px;
+    }
+
+        .tooltip-wrap .tooltip-content:after {
+            left: 39%;
+            top: 99%;
+        }
+
+    .tab-content p {
+        font-weight: bold;
+    }
+
+    .form-exchange .send-button {
+        border-radius: 30px !important;
+    }
+
+    .form-exchange-div2 h4 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .tooltip-wrap-country img {
+        width: 129%;
+        max-width: 200%;
+    }
+
+    .form-exchange button {
+        font-size: 35px !important;
+    }
+
+    .form-exchange .text-bottom {
+        font-size: 30px;
+        line-height: 45px;
+    }
 
 /* landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
