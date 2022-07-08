@@ -2427,3 +2427,5 @@ INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeExchangeT
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeExchangeTitle1','Nosso horário de funcionamento:','Our opening hours:','我们的营业时间：','LEE-MARKETING');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeExchangeTitle2','Países que não efetuamos a remessa:','Countries we do not send to:','我们不跨境汇款的国家：','LEE-MARKETING');
 INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('leeExchangeText2','de segunda a sexta, com exceção de feriados.','Monday to Friday, excluding holidays.','周一至周五，节假日除外。','LEE-MARKETING');
+
+INSERT INTO dictionary (dictionaryid, pt, en, zh, website) VALUES ('comingSoon','Em Breve.','Coming soon.','即将到来。','LEE-MARKETING');
