@@ -19,9 +19,112 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "service", "middleware\servi
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "common", "middleware\common\common.njsproj", "{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-marketing", "website-marketing\website-marketing.njsproj", "{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websites", "websites", "{603A4BC7-A2F5-4A6A-81C8-564F366CC838}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "website-vixi", "website-vixi\website-vixi.njsproj", "{F8C44AC8-5564-4574-8249-11148284D293}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "flush", "websites\flush\", "{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52899"
+		Debug.AspNetCompiler.PhysicalPath = "websites\flush\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52899\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52899"
+		Release.AspNetCompiler.PhysicalPath = "websites\flush\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52899\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52899"
+		SlnRelativePath = "websites\flush\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "leebank", "websites\leebank\", "{BD9B8E72-510A-4F18-B075-813D91E6E5CE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52903"
+		Debug.AspNetCompiler.PhysicalPath = "websites\leebank\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52903\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52903"
+		Release.AspNetCompiler.PhysicalPath = "websites\leebank\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52903\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52903"
+		SlnRelativePath = "websites\leebank\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "leetranding", "websites\leetranding\", "{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52904"
+		Debug.AspNetCompiler.PhysicalPath = "websites\leetranding\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52904\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52904"
+		Release.AspNetCompiler.PhysicalPath = "websites\leetranding\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52904\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52904"
+		SlnRelativePath = "websites\leetranding\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "urus", "websites\urus\", "{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52905"
+		Debug.AspNetCompiler.PhysicalPath = "websites\urus\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52905\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52905"
+		Release.AspNetCompiler.PhysicalPath = "websites\urus\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52905\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52905"
+		SlnRelativePath = "websites\urus\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vixi", "websites\vixi\", "{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52908"
+		Debug.AspNetCompiler.PhysicalPath = "websites\vixi\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52908\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52908"
+		Release.AspNetCompiler.PhysicalPath = "websites\vixi\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52908\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52908"
+		SlnRelativePath = "websites\vixi\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,14 +148,26 @@ Global
 		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA3DC0DE-929D-4814-8C5A-FFDC7E4649EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8C44AC8-5564-4574-8249-11148284D293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8C44AC8-5564-4574-8249-11148284D293}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8C44AC8-5564-4574-8249-11148284D293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{BD9B8E72-510A-4F18-B075-813D91E6E5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9B8E72-510A-4F18-B075-813D91E6E5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9B8E72-510A-4F18-B075-813D91E6E5CE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9B8E72-510A-4F18-B075-813D91E6E5CE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +176,11 @@ Global
 		{6CE97BDF-56F2-4B73-A62B-D510C0BD356C} = {74011CA2-F7C4-493D-B4AC-74222446C634}
 		{C5E58079-0AFD-4267-B110-DA5189B1CFC5} = {74011CA2-F7C4-493D-B4AC-74222446C634}
 		{ED0CBE72-CA52-4C79-9E9F-D90A37CB1B85} = {74011CA2-F7C4-493D-B4AC-74222446C634}
+		{F8ABE8A5-B6D8-42D2-AAE0-1545C4A54A67} = {603A4BC7-A2F5-4A6A-81C8-564F366CC838}
+		{BD9B8E72-510A-4F18-B075-813D91E6E5CE} = {603A4BC7-A2F5-4A6A-81C8-564F366CC838}
+		{6D29AC5C-4F03-42BD-908E-FE4BACA84DCD} = {603A4BC7-A2F5-4A6A-81C8-564F366CC838}
+		{17F2E9AA-22DA-4F5F-BC9D-0AB0715F1206} = {603A4BC7-A2F5-4A6A-81C8-564F366CC838}
+		{5966ED21-5A4C-4EC0-ACB3-D0A2BFCCC87C} = {603A4BC7-A2F5-4A6A-81C8-564F366CC838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1B50201-FF48-407B-9715-DE40B52678C1}
