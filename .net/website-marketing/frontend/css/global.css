@@ -933,6 +933,10 @@ input.form-control.campo-direito.campo {
     line-height: 70px;
 }
 
+img.appcellphone {
+    padding: 7% 9% 0% 7%;
+}
+
 
 
 
@@ -2734,15 +2738,15 @@ input.form-control.campo-direito.campo {
     }
 
     .btn-ins {
-        margin-top: 13%;
+        margin-top: 5%;
     }
 
     .col-md-6.text-position-left.mobile-text.insurance {
-        margin-top: 4% !important;
+        margin-top: -2% !important;
     }
 
     .text-about {
-        padding: 180px 35px 100px 35px;
+        padding: 105px 35px 100px 35px;
     }
 
     input.form-control.campo-direito.campo {
@@ -2814,6 +2818,23 @@ input.form-control.campo-direito.campo {
     .form-exchange .border .border-inside {
         width: 235px;
     }
+
+    .col-md-6.text-position-left.mobile-text.cashin {
+        margin-top: 0% !important;
+    }
+
+    .col-md-6.ex-nat.text-position-left {
+        margin-top: 4%;
+    }
+
+    .button-page{
+        margin-top: 0%;
+    }
+
+    .back-to-homepage.insurance{
+        margin-top: 12%;
+    }
+
 }
 
 
@@ -2983,4 +3004,21 @@ input.form-control.campo-direito.campo {
     .text-position-left {
         margin-top: 10%;
     }
+
+    .col-md-6.text-position-left.mobile-text.insurance {
+        margin-top: 3%;
+    }
+
+    .back-to-homepage.insurance {
+        margin-top: 18%;
+    }
+
+    .col-md-6.text-position-left.mobile-text.cashin {
+        margin-top: 4%;
+    }
+
+    .exchange-button{
+        margin-top: 0% !important;
+    }
+
 }
