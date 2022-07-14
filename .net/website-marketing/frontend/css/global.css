@@ -339,7 +339,7 @@ button {
     .form-exchange form {
         background-color: rgb(0,0,0, 0.85);
         border-radius: 40px;
-        padding: 30px 25px;
+        padding: 10px;
     }
 
     .form-exchange .form-exchange-div-input {
@@ -2628,6 +2628,15 @@ input.form-control.campo-direito.campo {
 
 /* desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    p {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .h2, h2 {
+        font-size: 30px;
+    }
+
     .second-row .qrcode {
         width: 80% !important;
     }
@@ -2636,9 +2645,13 @@ input.form-control.campo-direito.campo {
         font-size: 14px;
     }
 
+    .second-row .secondp {
+        margin-bottom: 0px;
+    }
+
     .card-image img {
-        width: 70%;
-        margin-top: 30%;
+        width: 80%;
+        margin-top: 20%;
     }
 
 
@@ -2654,246 +2667,320 @@ input.form-control.campo-direito.campo {
         .divisao .direita {
             width: 57%;
         }
-}
-
-.second-row .second-row-text {
-    padding-top: 13%;
-}
-
-.second-row .img-download {
-    min-height: 0vh;
-    align-items: center; 
-    place-content: flex-end; 
-}
-
-.col.img-text-download {
-    padding-top: 2%;
-}
-
-img.appcellphone {
-    padding: 13% 9% 9%;
-}
-
-.card-text h2{
-    width: 70%;
-}
-
-.col-md-5.text-position-left.space-right.align-middle.card-text.mobile-margin {
-    margin-top: 19%;
-}
-
-.exchange-button .round{
-    width: 85%;
-}
-
-.exchange-button{
-    margin-top: 15px !important;
-}
-
-.text-position-left {
-    margin-top: 15%;
-}
-
-.form .duvidas {
-    height: 140px;
-}
-
-button.btn.btn-primary.round.ng-binding {
-    padding: 15px 0 15px 0;
-    font-size: 30px !important;
-}
-
-img.img-footer-link {
-    width: 10%;
-}
-
-.footer img {
-    width: 8%;
-    margin: 10px;
-}
-
-.col-md-6.text-position-right.mobile-text.ex-leg {
-    margin-top: 2% !important;
-}
-
-.btn-ins{
-    margin-top: 13%;
-}
-
-.col-md-6.text-position-left.mobile-text.insurance {
-    margin-top: 4% !important;
-}
-
-.text-about {
-    padding: 180px 35px 100px 35px;
-}
 
 
+    .second-row .second-row-text {
+        padding-top: 5%;
+    }
 
-    /* large desktop */
-    @media only screen and (min-device-width: 1400px) {
+    .second-row .img-download {
+        min-height: 0vh;
+        align-items: center;
+        place-content: flex-end;
+    }
 
-        p, .text-about p {
-            font-size: 23px;
-            line-height: 45px;
+    .col.img-text-download {
+        padding-top: 2%;
+    }
+
+    img.appcellphone {
+        padding: 0% 10%;
+    }
+
+    .card-text h2 {
+        width: 70%;
+    }
+
+    .col-md-5.text-position-left.space-right.align-middle.card-text.mobile-margin {
+        margin-top: auto;
+    }
+
+    .exchange-button .round {
+        width: 85%;
+    }
+
+    .exchange-button {
+        margin-top: 15px !important;
+    }
+
+    .indexImageDiv2 .text-position-left {
+        margin-top: 7%;
+    }
+
+    .form .duvidas {
+        height: 160px;
+    }
+
+    button.btn.btn-primary.round.ng-binding {
+        padding: 10px 0px 10px 0;
+        font-size: 25px !important;
+    }
+
+    .form {
+        padding: 50px 50px 50px 50px;
+    }
+
+    img.img-footer-link {
+        width: 10%;
+    }
+
+    .footer img {
+        width: 8%;
+        margin: 10px;
+    }
+
+    .col-md-6.text-position-right.mobile-text.ex-leg {
+        margin-top: 2% !important;
+    }
+
+    .btn-ins {
+        margin-top: 13%;
+    }
+
+    .col-md-6.text-position-left.mobile-text.insurance {
+        margin-top: 4% !important;
+    }
+
+    .text-about {
+        padding: 180px 35px 100px 35px;
+    }
+
+    input.form-control.campo-direito.campo {
+        font-size: 18px;
+    }
+
+    .form-exchange {
+        padding: 0px 50px;
+    }
+
+        .form-exchange .campo-direito {
+            padding-top: 22px;
         }
 
-        h2 {
-            font-size: 45px;
-            line-height: 60px;
-        }
-
-        a, li {
-            font-size: 20px;
-        }
-
-        h1 {
-            font-size: 70px;
-            line-height: 90px;
-        }
-
-        h3 {
-            font-size: 35px;
-        }
-
-        .second-row h1 {
-            font-size: 120px;
-            line-height: 120px;
-        }
-
-        .second-row p {
-            font-size: 1.4rem;
-            line-height: 30px;
-        }
-
-        .second-row .qrcode {
-            width: 80% !important;
-        }
-
-        button {
-            font-size: 25px !important;
-            width: 80%;
-        }
-
-        .footer p {
+        .form-exchange .label {
             font-size: 18px;
         }
 
-        .form input, .form textarea {
-            font-size: 20px;
+        .form-exchange .border img {
+            width: 50px;
         }
 
-        .form h3 {
-            font-size: 45px;
-        }
-
-        .form label {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .form textarea {
-            height: 270px !important;
-        }
-
-        .indexImageDiv9 .row {
-            padding: 81px 0 81px 0 !important;
-        }
-
-        .form {
-            padding: 35px 35px 35px 50px;
-        }
-
-            .form button {
-                margin-top: 15px;
-            }
-
-        .text-about {
-            padding: 170px 100px !important;
-        }
-
-        embed {
-            width: 20%;
-        }
-
-        .indexImageDiv6 .col-md-5 {
-            width: 39.666667%;
-        }
-
-        .indexImageDiv8 .col-md-5 {
-            width: 44.666667%;
-        }
-
-        .exchange-legal-person-image .text-position-right {
-            padding-right: 16%;
-        }
-
-            .exchange-legal-person-image .text-position-right .button-page {
-                width: 62%;
-            }
-
-        .insurance-image .col-md-6 {
-            width: 47%;
-        }
-
-        .payment-gateway-image .space {
-            width: 60%;
-        }
-
-        .payment-gateway-image .text-position-right {
+        .form-exchange .border .form-select {
             width: 40%;
         }
 
-        .cash-image .text-position-left {
-            padding-left: 191px;
+        .form-exchange h3 {
+            font-size: 20px;
         }
 
-        .card-image img {
-            width: 70%;
-            margin-top: 30%;
-        }
-
-        .popup-header h2 {
-            font-size: 2rem;
-            line-height: 35px;
-        }
-
-        .popup .form-label {
-            font-size: 1.4rem;
-        }
-
-        .popup .form-control {
-            line-height: 2.5;
-        }
-
-        .popup-form .col-10 {
-            min-height: 80vh;
-        }
-
-
-        .divisao {
-            display: flex;
-            justify-content: space-between;
-        }
-
-            .divisao .esquerda {
-                width: 40%;
-            }
-
-            .divisao .direita {
-                width: 57%;
-            }
-
-        .card-text h2 {
-            width: 100%;
-        }
-
-        .col-md-5.text-position-left.space-right.align-middle.card-text.mobile-margin {
-            margin-top: 14%;
-        }
-
-        .text-position-left {
-            margin-top: 10%;
-        }
-
+    .border h3, .border p {
+        margin: 0;
     }
+
+    .form-exchange .dot-image {
+        margin-left: 29px;
+    }
+
+        .form-exchange .dot-image img {
+            width: 35%;
+        }
+
+    .tooltip-wrap img {
+        width: 70%;
+    }
+
+    .to-value {
+        padding-top: 35px !important;
+        padding-bottom: 13.6px;
+    }
+
+    .form-exchange .form-exchange-div1, .form-exchange .form-exchange-div2 {
+        margin: 10px 0;
+    }
+
+    .form-exchange p {
+        font-size: 17px;
+        line-height: 6px;
+    }
+
+    .form-exchange {
+        margin: 1% 0;
+    }
+
+    .form-exchange-div2 h4 {
+        line-height: 30px;
+    }
+
+    .form-exchange .border .border-inside {
+        width: 235px;
+    }
+}
+
+
+
+/* large desktop */
+@media only screen and (min-device-width: 1400px) {
+
+    p, .text-about p {
+        font-size: 23px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    a, li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .second-row h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .second-row p {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+
+    .second-row .qrcode {
+        width: 80% !important;
+    }
+
+    button {
+        font-size: 25px !important;
+        width: 80%;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .form input, .form textarea {
+        font-size: 20px;
+    }
+
+    .form h3 {
+        font-size: 45px;
+    }
+
+    .form label {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .form textarea {
+        height: 270px !important;
+    }
+
+    .indexImageDiv9 .row {
+        padding: 81px 0 81px 0 !important;
+    }
+
+    .form {
+        padding: 35px 35px 35px 50px;
+    }
+
+        .form button {
+            margin-top: 15px;
+        }
+
+    .text-about {
+        padding: 170px 100px !important;
+    }
+
+    embed {
+        width: 20%;
+    }
+
+    .indexImageDiv6 .col-md-5 {
+        width: 39.666667%;
+    }
+
+    .indexImageDiv8 .col-md-5 {
+        width: 44.666667%;
+    }
+
+    .exchange-legal-person-image .text-position-right {
+        padding-right: 16%;
+    }
+
+        .exchange-legal-person-image .text-position-right .button-page {
+            width: 62%;
+        }
+
+    .insurance-image .col-md-6 {
+        width: 47%;
+    }
+
+    .payment-gateway-image .space {
+        width: 60%;
+    }
+
+    .payment-gateway-image .text-position-right {
+        width: 40%;
+    }
+
+    .cash-image .text-position-left {
+        padding-left: 191px;
+    }
+
+    .card-image img {
+        width: 70%;
+        margin-top: 30%;
+    }
+
+    .popup-header h2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .popup .form-label {
+        font-size: 1.4rem;
+    }
+
+    .popup .form-control {
+        line-height: 2.5;
+    }
+
+    .popup-form .col-10 {
+        min-height: 80vh;
+    }
+
+
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divisao .esquerda {
+            width: 40%;
+        }
+
+        .divisao .direita {
+            width: 57%;
+        }
+
+    .card-text h2 {
+        width: 100%;
+    }
+
+    .col-md-5.text-position-left.space-right.align-middle.card-text.mobile-margin {
+        margin-top: 14%;
+    }
+
+    .text-position-left {
+        margin-top: 10%;
+    }
+}
