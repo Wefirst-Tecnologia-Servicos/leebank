@@ -221,9 +221,9 @@ img {
     }
 
     .second-row p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
-        margin-top: 0px !important;
+        margin-top: 16px !important;
     }
 
     .second-row .secondp {
@@ -247,11 +247,10 @@ img {
 .second-row .img-download {
     min-height: 41vh;
     align-items: center;
-    place-content: flex-end;
 }
 
 .second-row .second-row-text {
-    padding-top: 4%;
+    padding-top: 13%;
 }
 
 button {
@@ -261,7 +260,7 @@ button {
     background: linear-gradient(90.7deg, #5763fe 1.32%, #3838e2 24.45%, #5763fe 52.71%, #3838e2 73.79%, #5763fe 100%);
     border: none !important;
     box-shadow: 2px 2px 8px black !important;
-    width: 175px;
+    width: 250px;
     font-size: 20px !important;
     font-weight: bold;
 }
@@ -272,8 +271,9 @@ button {
 
 .form {
     background-color: rgb(0,0,0, 0.6);
-    border-radius: 35px;
-    padding: 50px 25px 50px 50px;
+    border-radius: 0px 35px;
+    padding: 105px 50px 50px 50px;
+    margin-left: auto;
 }
 
     .form h3 {
@@ -669,7 +669,7 @@ body.firstLoad {
     }
 
 .img-download {
-    padding-top: 7%;
+   padding: 0%;
 }
 
 .text-about {
@@ -857,7 +857,7 @@ input.form-control.campo-direito.campo {
 }
 
 .form .duvidas {
-    height: 100px;
+    height: 140px;
 }
 
 .ex-leg .backhome {
@@ -932,7 +932,18 @@ input.form-control.campo-direito.campo {
     line-height: 70px;
 }
 
+.appcellphone {
+    padding: 14% 5%;
+}
 
+.btn.btn-primary.round {
+    font-size: 30px !important;
+    margin-top: 5%;
+}
+
+.footer .img-footer-link {
+    width: 10%;
+}
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {
