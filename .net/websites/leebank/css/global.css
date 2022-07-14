@@ -937,9 +937,13 @@ img.appcellphone {
     padding: 7% 9% 0% 7%;
 }
 
+#inputToCurrency, #outputFromCurrency{
+    display: none;
+}
 
-
-
+#inputFromCurrency, #outputToCurrency {
+    display:flex;
+}
 /* celulares */
 @media only screen and (max-width: 767px) {
     p {

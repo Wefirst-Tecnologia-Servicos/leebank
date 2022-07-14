@@ -70,8 +70,12 @@
                         </div>
                     </div>
                     <div class="tab-content" id="myTabContent">
+
+                        <!-- Aba para enviar -->
                         <div class="tab-pane fade show active" id="enviar" role="tabpanel" aria-labelledby="nav-enviar-tab">
-                            <div class="row">
+
+                            <!-- Input do campo enviar -->
+                            <div class="row" id="inputFromCurrency">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -89,6 +93,29 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Output do campo enviar -->
+                            <div class="row" id="outputFromCurrency">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="border">
+                                            <div class="border-inside">
+                                                <img src="img/brasil-icon.svg" />
+                                                <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
+                                            </div>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Enviar:
+                                                </div>
+                                                <div class="form-control placeholder-translate campo-direito to-value">
+                                                    <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row taxes-div">
                                 <div class="col-2 dot-line"></div>
                                 <div class="col-2 dot-image">
@@ -98,7 +125,7 @@
                                     <div class="align">
                                         <p>TARIFA:</p>
                                         <div class="tooltip-wrap">
-                                            <img src="img/plus-button.svg" onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;"/>
+                                            <img src="img/plus-button.svg" onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;" />
                                             <div class="tooltip-content">
                                                 <div class="row">
                                                     <div class="col">
@@ -144,7 +171,9 @@
                                     <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
                                 </div>
                             </div>
-                            <div class="row">
+
+                            <!-- Output do campo beneficiário receberá -->
+                            <div class="row" id="outputToCurrency">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -165,6 +194,28 @@
                                     <p style="margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
+
+                            <!-- Input do campo beneficiário receberá -->
+                            <div class="row" id="inputToCurrency">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="border">
+                                            <div class="border-inside">
+                                                <img src="img/usa-icon.svg" />
+                                                <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
+                                            </div>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Beneficiário receberá:
+                                                </div>
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p style="margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
@@ -176,8 +227,11 @@
                             </div>
                         </div>
 
+                        <!-- Aba para receber -->
                         <div class="tab-pane fade" id="receber" role="tabpanel" aria-labelledby="nav-receber-tab">
-                            <div class="row">
+
+                            <!-- Input do campo enviar -->
+                            <div class="row" id="inputFromCurrency">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -187,19 +241,37 @@
                                             </div>
                                             <div class="form-exchange-div-input">
                                                 <div class="label">
-                                                    Beneficiário receberá:
+                                                    Enviar:
                                                 </div>
-                                                <div class="form-exchange-div-input">
-                                                    <div class="label">
-                                                        Enviar:
-                                                    </div>
-                                                    <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Output do campo enviar -->
+                            <div class="row" id="outputFromCurrency">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="border">
+                                            <div class="border-inside">
+                                                <img src="img/usa-icon.svg" />
+                                                <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
+                                            </div>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Enviar:
+                                                </div>
+                                                <div class="form-control placeholder-translate campo-direito to-value">
+                                                    <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row taxes-div">
                                 <div class="col-2 dot-line"></div>
                                 <div class="col-2 dot-image">
@@ -209,7 +281,7 @@
                                     <div class="align">
                                         <p>TARIFA:</p>
                                         <div class="tooltip-wrap">
-                                            <img src="img/plus-button.svg"  onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;" />
+                                            <img src="img/plus-button.svg" onmouseover="this.src='img/plus-button-active.svg';" onmouseout="this.src='img/plus-button.svg';" style="margin-bottom: 10px;" />
                                             <div class="tooltip-content">
                                                 <div class="row">
                                                     <div class="col">
@@ -255,7 +327,9 @@
                                     <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue * (1 + exchangeConversion.Factors.Spread + exchangeConversion.Factors.Costs + exchangeConversion.Factors.IOF) | currency}}</p>
                                 </div>
                             </div>
-                            <div class="row">
+
+                            <!-- Output do campo beneficiário receberá -->
+                            <div class="row" id="outputToCurrency">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -276,6 +350,28 @@
                                     <p style="margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
                                 </div>
                             </div>
+
+                            <!-- Input do campo beneficiário receberá  -->
+                            <div class="row" id="inputToCurrency">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="border">
+                                            <div class="border-inside">
+                                                <img src="img/brasil-icon.svg" />
+                                                <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
+                                            </div>
+                                            <div class="form-exchange-div-input">
+                                                <div class="label">
+                                                    Beneficiário receberá:
+                                                </div>
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p style="margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
@@ -295,7 +391,7 @@
                     </div>
                     <div class="col-3">
                         <div class="tooltip-wrap-country">
-                            <img src="img/flag-button.svg" onmouseover="this.src='img/flag-button-active.svg';" onmouseout="this.src='img/flag-button.svg';"/>
+                            <img src="img/flag-button.svg" onmouseover="this.src='img/flag-button-active.svg';" onmouseout="this.src='img/flag-button.svg';" />
                             <div class="tooltip-content-country">
                                 <div class="row">
                                     <div class="col-4">
