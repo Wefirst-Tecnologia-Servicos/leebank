@@ -100,7 +100,7 @@ img {
 
     .signUp span {
         color: #513278;
-        font-weight: bold;
+        font-family: 'MontserratBold';
     }
 
     .signUp .sign-up-text {
@@ -250,7 +250,7 @@ img {
 }
 
 .second-row .second-row-text {
-    padding-top: 13%;
+    padding: 20% 0% 0% 0%;
 }
 
 button {
@@ -933,7 +933,7 @@ input.form-control.campo-direito.campo {
 }
 
 .appcellphone {
-    padding: 14% 5%;
+    padding: 17% 5%;
 }
 
 .btn.btn-primary.round {
