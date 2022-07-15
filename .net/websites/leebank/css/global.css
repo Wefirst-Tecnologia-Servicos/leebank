@@ -32,6 +32,12 @@ p, h1, h2, h3, h4, ul, li, label, a {
     font-weight: bold;
 }
 
+    p.error { 
+        color:#f00;
+        font-size:10pt;
+        text-align:center;
+    }
+
 h1, h2, h3, h4 {
     font-family: MontserratBold;
     font-weight: bold;

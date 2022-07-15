@@ -61,13 +61,9 @@ angular
 
                 ctrl.menu = menuTree.data.children;
 
-                console.log(ctrl.currentLanguage);
-                console.log("--------------------")
-
                 for (var i = 0; i < ctrl.menu.length; i++) {
                     ctrl.menu[i].selected = ctrl.menu[i].text == ctrl.currentLanguage;
                     for (var j = 0; j < ctrl.menu[i].children.length; j++) {
-                        console.log(ctrl.menu[i].children[j].text);
                         ctrl.menu[i].children[j].selected = ctrl.menu[i].children[j].text == ctrl.currentLanguage;
                     }
                 }

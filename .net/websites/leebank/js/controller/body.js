@@ -98,16 +98,23 @@
                 Costs: 0.05
             },
             SendingPageInput: 0.0,
-            ReceivingPageInput: 0.0
+            SendingPageOutput: 0.0,
+            ReceivingPageInput: 0.0,
+            ReceivingPageOutput: 0.0
         };
 
-        $scope.exchangeConvert = selectedPage => {
-            var convertedValue = $scope.exchangeConversion[`${selectedPage}Input`] * $scope.exchangeConversion[selectedPage].ToValue;
-            return {
-                Exchange: convertedValue,
-                Taxes: convertedValue * (1 + $scope.exchangeConversion.Factors.Spread + $scope.exchangeConversion.Factors.Costs + $scope.exchangeConversion.Factors.IOF),
-                Costs: convertedValue * $scope.exchangeConversion.Factors.Costs
-            }
+        // calculate the exchange conversion between the inputs
+        $scope.exchangeCalculate = (selectedPage, selectedInput) => {
+            // get the typed value
+            var exchangeInput = $scope.exchangeConversion[`${selectedPage}${selectedInput}`];
+            // get the result field selector
+            var exchangeOutput = `${selectedPage}${(selectedInput == "Input" ? "Output" : "Input")}`;
+            // get the exchange conversion factor
+            var exchangeFactor = selectedInput == "Input" ? selectedPage : (selectedInput == "SendingPage" ? "ReceivingPage" : "SendingPage");
+            exchangeFactor = $scope.exchangeConversion[exchangeFactor].ToValue;
+            // calculates the result
+            var result = exchangeInput * exchangeFactor;
+            $scope.exchangeConversion[exchangeOutput] = result == undefined || isNaN(result) ? 0.0 : result;
         };
 
         $scope.convertCurrency = selectedPage => {

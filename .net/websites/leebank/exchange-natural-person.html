@@ -87,35 +87,14 @@
                                                 <div class="label">
                                                     Enviar:
                                                 </div>
-                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-change="exchangeCalculate('SendingPage', 'Input');" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Output do campo enviar -->
-                            <div class="row" id="outputFromCurrency">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="border">
-                                            <div class="border-inside">
-                                                <img src="img/brasil-icon.svg" />
-                                                <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.SendingPage.FromCurrency}} </h3>
-                                            </div>
-                                            <div class="form-exchange-div-input">
-                                                <div class="label">
-                                                    Enviar:
-                                                </div>
-                                                <div class="form-control placeholder-translate campo-direito to-value">
-                                                    <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <!-- Taxas -->
                             <div class="row taxes-div">
                                 <div class="col-2 dot-line"></div>
                                 <div class="col-2 dot-image">
@@ -172,8 +151,8 @@
                                 </div>
                             </div>
 
-                            <!-- Output do campo beneficiário receberá -->
-                            <div class="row" id="outputToCurrency">
+                            <!-- Intput do campo beneficiário receberá -->
+                            <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -185,9 +164,7 @@
                                                 <div class="label">
                                                     Beneficiário receberá:
                                                 </div>
-                                                <div class="form-control placeholder-translate campo-direito to-value">
-                                                    <p>{{exchangeConversion.SendingPageInput * exchangeConversion.SendingPage.ToValue | currency}}</p>
-                                                </div>
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageOutput" ng-change="exchangeCalculate('SendingPage', 'Output');" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
                                             </div>
                                         </div>
                                     </div>
@@ -195,30 +172,11 @@
                                 </div>
                             </div>
 
-                            <!-- Input do campo beneficiário receberá -->
-                            <div class="row" id="inputToCurrency">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="border">
-                                            <div class="border-inside">
-                                                <img src="img/usa-icon.svg" />
-                                                <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.SendingPage.ToCurrency}} </h3>
-                                            </div>
-                                            <div class="form-exchange-div-input">
-                                                <div class="label">
-                                                    Beneficiário receberá:
-                                                </div>
-                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.SendingPageInput" ng-placeholder="{{dictionary.send}}" mask-currency="''" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p style="margin: 0;">1 {{exchangeConversion.SendingPage.ToCurrency}} = {{exchangeConversion.ReceivingPage.ToValue | currency}} {{exchangeConversion.SendingPage.FromCurrency}} - {{dictionary.leeNatEffective}}</p>
-                                </div>
-                            </div>
-
+                            <!-- botão 'Enviar' -->
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
+                                    <p ng-show="exchangeConversion.SendingPageInput < 100 || exchangeConversion.SendingPageInput > 1000000000" class="error">Valor fora dos limites para a operação.</p>
+                                    <button ng-disabled="exchangeConversion.SendingPageInput < 100 || exchangeConversion.SendingPageInput > 1000000000" class="btn btn-primary send-button" type="button">{{dictionary.send}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
                                         <b style="color:#D2B6FF;">{{dictionary.leeNatDays}}</b>
@@ -243,35 +201,14 @@
                                                 <div class="label">
                                                     Enviar:
                                                 </div>
-                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" ng-change="exchangeCalculate('ReceivingPage', 'Input');"  mask-currency="''" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Output do campo enviar -->
-                            <div class="row" id="outputFromCurrency">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="border">
-                                            <div class="border-inside">
-                                                <img src="img/usa-icon.svg" />
-                                                <h3 id="coin" class="form-select campo-esquerdo"> {{exchangeConversion.ReceivingPage.ToCurrency}} </h3>
-                                            </div>
-                                            <div class="form-exchange-div-input">
-                                                <div class="label">
-                                                    Enviar:
-                                                </div>
-                                                <div class="form-control placeholder-translate campo-direito to-value">
-                                                    <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <!-- Taxas -->
                             <div class="row taxes-div">
                                 <div class="col-2 dot-line"></div>
                                 <div class="col-2 dot-image">
@@ -328,8 +265,8 @@
                                 </div>
                             </div>
 
-                            <!-- Output do campo beneficiário receberá -->
-                            <div class="row" id="outputToCurrency">
+                            <!-- Input do campo beneficiário receberá -->
+                            <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="border">
@@ -341,9 +278,7 @@
                                                 <div class="label">
                                                     Beneficiário receberá:
                                                 </div>
-                                                <div class="form-control placeholder-translate campo-direito to-value">
-                                                    <p>{{exchangeConversion.ReceivingPageInput * exchangeConversion.ReceivingPage.ToValue | currency}}</p>
-                                                </div>
+                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageOutput" ng-change="exchangeCalculate('ReceivingPage', 'Output');" mask-currency="''" />
                                             </div>
                                         </div>
                                     </div>
@@ -351,30 +286,11 @@
                                 </div>
                             </div>
 
-                            <!-- Input do campo beneficiário receberá  -->
-                            <div class="row" id="inputToCurrency">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="border">
-                                            <div class="border-inside">
-                                                <img src="img/brasil-icon.svg" />
-                                                <h3 id="coin" class="form-select campo-esquerdo campo"> {{exchangeConversion.ReceivingPage.FromCurrency}} </h3>
-                                            </div>
-                                            <div class="form-exchange-div-input">
-                                                <div class="label">
-                                                    Beneficiário receberá:
-                                                </div>
-                                                <input type="text" class="form-control placeholder-translate campo-direito campo" ng-model="exchangeConversion.ReceivingPageInput" mask-currency="''" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p style="margin: 0;">1 {{exchangeConversion.ReceivingPage.ToCurrency}} = {{exchangeConversion.SendingPage.ToValue | currency}} {{exchangeConversion.ReceivingPage.FromCurrency}} -{{dictionary.leeNatEffective}}</p>
-                                </div>
-                            </div>
-
+                            <!-- botão 'Receber' -->
                             <div class="row">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
+                                    <p ng-show="exchangeConversion.ReceivingPageOutput < 100 || exchangeConversion.ReceivingPageOutput > 1000000000" class="error">Valor fora dos limites para a operação.</p>
+                                    <button ng-disabled="exchangeConversion.ReceivingPageOutput < 100 || exchangeConversion.ReceivingPageOutput > 1000000000" class="btn btn-primary send-button" type="button">{{dictionary.leeReceive}}</button>
                                     <p class="text-bottom">
                                         {{dictionary.leeNatmoney}} <br />
                                         <b style="color:#D2B6FF;">{{dictionary.leeNatDays}}</b>
