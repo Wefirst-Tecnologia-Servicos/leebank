@@ -1,0 +1,93 @@
+@font-face {
+    src: url(../fonts/Montserrat.woff);
+    font-family: Montserrat;
+}
+
+@font-face {
+    src: url(../fonts/Montserrat-Bold.woff);
+    font-family: MontserratBold;
+}
+
+b{
+    font-family: 'MontserratBold';
+}
+
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: justify;
+    color: #FFFFFF;
+    font-weight: 100
+}
+
+.container-body{
+    height: 85vh;
+}
+
+    .container-body .col-12, .container-body .col-9 {
+        padding-top: 10rem;
+        padding-left: 4rem;
+    }
+
+.container-footer {
+    height: 15vh;
+}
+
+    .container-footer .col-12 {
+        padding-top: 1.5rem;
+        padding-left: 4rem;
+    }
+
+    .container-footer .col-12 p{
+        display: inline
+    }
+        .container-footer .col-12 .email {
+            padding-left: 1.5rem;
+        }
+
+.background-image-body, .background-image-footer {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-body {
+    background-image: url(../image/leeTradingBackground.jpg)
+}
+
+.background-image-footer {
+    background-image: url(../image/leeTradingFooter.png)
+}
+
+.logo {
+    width: 30%;
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+}
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+}
+
+/* large desktop */
+@media only screen and (min-device-width: 1600px) {
+}
