@@ -32,10 +32,10 @@ p, h1, h2, h3, h4, ul, li, label, a {
     font-weight: bold;
 }
 
-    p.error { 
-        color:#f00;
-        font-size:10pt;
-        text-align:center;
+    p.error {
+        color: #f00;
+        font-size: 10pt;
+        text-align: center;
     }
 
 h1, h2, h3, h4 {
@@ -460,6 +460,16 @@ button {
         position: absolute;
         right: 5%;
         top: 35%;
+    }
+
+    .form-exchange .d-grid.gap-2 {
+        position: relative;
+        justify-items: center
+    }
+
+    .form-exchange .error {
+        position: absolute;
+        top: 0.8rem;
     }
 
     .form-exchange .send-button {
@@ -943,12 +953,12 @@ img.appcellphone {
     padding: 7% 9% 0% 7%;
 }
 
-#inputToCurrency, #outputFromCurrency{
+#inputToCurrency, #outputFromCurrency {
     display: none;
 }
 
 #inputFromCurrency, #outputToCurrency {
-    display:flex;
+    display: flex;
 }
 /* celulares */
 @media only screen and (max-width: 767px) {
@@ -1651,6 +1661,10 @@ img.appcellphone {
         line-height: 25px;
         font-size: 15px;
         margin: 0;
+    }
+
+    .form-exchange .error {
+        top: 0rem;
     }
 
     .form-exchange-div1 h4 {
@@ -2474,6 +2488,10 @@ img.appcellphone {
         width: 80px;
     }
 
+    .form-exchange .error {
+        top: -1rem;
+    }
+
     .col.back-to-homepage {
         margin-top: 100%;
     }
@@ -2837,16 +2855,14 @@ img.appcellphone {
         margin-top: 4%;
     }
 
-    .button-page{
+    .button-page {
         margin-top: 0%;
     }
 
-    .back-to-homepage.insurance{
+    .back-to-homepage.insurance {
         margin-top: 12%;
     }
-
 }
-
 
 
 /* large desktop */
@@ -3027,8 +3043,11 @@ img.appcellphone {
         margin-top: 4%;
     }
 
-    .exchange-button{
+    .exchange-button {
         margin-top: 0% !important;
     }
 
+    .form-exchange .error {
+        top: 0.4rem;
+    }
 }
