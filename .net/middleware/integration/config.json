@@ -1,9 +1,9 @@
 {
   "dbConnection": {
     "mySql": {
-      "host": "leebankdb.wefirst.link",
-      "user": "leebank",
-      "password": "WeFirst#LeeBank$2022",
+      "host": "201.30.147.96",
+      "user": "SDG",
+      "password": "SDG",
       "database": "leebank"
     }
   }

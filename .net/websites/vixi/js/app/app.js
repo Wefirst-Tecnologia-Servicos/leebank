@@ -9,8 +9,7 @@
  * This module provides an AngularJS LeeBank services
  */
 const angularConfig = {
-    //apiBasePath: "https://leebank.wefirst.link/"
-    apiBasePath: "http://18.206.228.123:3000/"
+    apiBasePath: "http://201.30.147.96:3000/"
     
 };
 

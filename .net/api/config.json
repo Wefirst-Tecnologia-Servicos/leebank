@@ -1,6 +1,7 @@
 {
   "http": {
     "port": 3000,
+    "host":  "localhost",
     "cors": {
       "allowedOrigins": [ "leebank.cn", "201.30.147.96", "localhost" ]
     }
