@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Apophis Tecnologia & Arte Ltda.">
-
-    <link href="plugin/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Lee Trading</title>
+    <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
-
-
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/banner.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/card.css" rel="stylesheet" />
+    <link href="css/partnership.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
 </head>
+
 <body>
 
-    <div class="container-fluid background-image-body container-body">
-        <div class="row">
-            <div class="col-12">
-                <img src="image/leeTradngLogo.svg" class="logo" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-9">
-                <p>
-                    Somos uma Trading Company fundada em 2013 com o objetivo de desenvolver e realizar projetos de importação e exportação com enfoque nos países leste-asiáticos. Trabalhamos para que empresas atuem no cenário internacional, gerando valor e criando novas oportunidades para os nossos clientes. A Lee Trading traz produtos exclusivos para que possam entrar no mercado nacional.
-                </p>
-            </div>
-        </div>
-    </div>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="#aboutUs">Sobre nós</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#partnership">Parcerias</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <footer>
-        <div class="container-fluid background-image-footer container-footer">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Contatos:</h2>
-                    <p>
-                        <b>E-mail:</b>
-                    </p>
-                    <p class="email">
-                        contato@leetrading.com.br
-                    </p>
+    <section class="banner">
+        <div class="banner__div">
+            <img class="banner__logo" src="image/leeTradngLogo.svg" />
+        </div>
+    </section>
+
+    <section class="about" id="aboutUs">
+        <div class="about__text">
+            <h1 class="about__title">Sobre nós</h1>
+            <p class="about__paragraph">Somos uma Trading Company fundada em 2013 com o objetivo de desenvolver e
+                realizar projetos de importação
+                e exportação com enfoque nos países leste-asiáticos.</p>
+        </div>
+        <div class="about__image">
+            <img src="image/placeholder.png">
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card__div">
+            <img class="card__image" src="image/icon/placeholder.webp" alt="">
+            <p class="card__paragraph">Atuação das empresas no cenário internacional.</p>
+        </div>
+        <div class="card__div">
+            <img class="card__image" src="image/icon/placeholder.webp" alt="">
+            <p class="card__paragraph">Valor e novas oportunidades para nossos clientes.</p>
+        </div>
+        <div class="card__div">
+            <img class="card__image" src="image/icon/placeholder.webp" alt="">
+            <p class="card__paragraph">Importação de produtos exclusivos para o mercado nacional.</p>
+        </div>
+    </section>
+
+    <section class="partnership" id="partnership">
+        <div class="partnership__title">
+            <h1>Nossos parceiros</h1>
+        </div>
+        <div class="partnership__row">
+            <div class="partnership__column"><a href="klasme.html"><img class="partnership__image" src="image/logo/klasme.png" alt=""></a>
+            </div>
+            <div class="partnership__column"><a href="miya.html"><img class="partnership__image" src="image/logo/miya.png" alt=""></a>
+            </div>
+            <div class="partnership__column"><a href="starlit.html"><img class="partnership__image" src="image/logo/starlit.png" alt=""></a>
+            </div>
+        </div>
+        <div class="partnership__row">
+            <div class="partnership__column"><a href="hickman.html"><img class="partnership__image" src="image/logo/hickman.png" alt=""></a>
+            </div>
+            <div class="partnership__column"><a href="tecno.html"><img class="partnership__image" src="image/logo/tecno.png" alt=""></a>
+            </div>
+            <div class="partnership__column"><a href="oclean.html"><img class="partnership__image" src="image/logo/oclean.png" alt=""></a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__contact">
+                <div class="footer__email">
+                    <p>contato@leetrading.com.br</p>
+                </div>
+                <div class="footer__politics">
+                    <div class="footer__documents footer__documents--terms"><a class="footer__link" href="">Termos de
+                            Uso</a></div>
+                    <div class="footer__documents"><a class="footer__link" href="">Política de Privacidade</a></div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer__copy">
+                <p>&copy; Lee Trading Importação e Exportação Eireli, 2022. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </section>
 
 </body>
+
 </html>

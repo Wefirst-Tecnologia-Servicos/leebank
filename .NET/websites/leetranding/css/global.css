@@ -1,219 +1,36 @@
 @font-face {
-    src: url(../fonts/Montserrat.woff);
-    font-family: Montserrat;
+    font-family: ArdinaDisplay;
+    src: url(../fonts/ArdinaDisplay-Medium.otf);
 }
 
 @font-face {
-    src: url(../fonts/Montserrat-Bold.woff);
-    font-family: MontserratBold;
+    font-family: ArdinaText;
+    src: url(../fonts/ArdinaText-Medium.otf);
 }
 
-.background-image-body {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@font-face {
+    font-family: ArdinaTitle;
+    src: url(../fonts/ArdinaTitle-Medium.otf);
 }
 
-.background-image-footer {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 101%;
+html{
+    scroll-behavior: smooth;
 }
 
-.background-image-body {
-    background-image: url(../image/leeTradingBackground.jpg)
+p, a{
+    font-family: montserrat, sans-serif;
 }
 
-.background-image-footer {
-    background-image: url(../image/leeTradingFooter.png)
+h1, h2{
+    font-family: ArdinaTitle, serif;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px #563596;
 }
 
-
-b {
-    font-family: 'MontserratBold';
+img{
+    width: 100%;
 }
 
-p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    text-align: justify;
-    color: #FFFFFF;
-}
-
-h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-align: justify;
-    color: #FFFFFF;
-    font-weight: 100
-}
-
-.logo {
-    width: 40%;
-}
-
-.container-body {
-    height: 85vh;
-}
-
-    .container-body .col-12 {
-        padding-top: 7rem;
-        padding-left: 4rem;
-    }
-
-    .container-body .col-9 {
-        padding-top: 15rem;
-        padding-left: 4rem;
-        width: 83.33333333%;
-    }
-
-.container-footer {
-    height: 15vh;
-}
-
-    .container-footer .col-12 {
-        padding-top: 1.5rem;
-        padding-left: 4rem;
-    }
-
-        .container-footer .col-12 p {
-            display: inline
-        }
-
-        .container-footer .col-12 .email {
-            padding-left: 1.5rem;
-        }
-
-
-/* mobile */
-@media only screen and (max-width: 767px) {
-    .background-image-body {
-        background-position: -27.6rem center;
-    }
-
-    .background-image-footer {
-        background-size: 100% 101%;
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .logo {
-        width: 80%;
-    }
-
-    .container-body {
-        height: 80vh;
-    }
-
-        .container-body .col-12 {
-            padding-top: 9rem;
-            padding-left: 1rem;
-        }
-
-        .container-body .col-9 {
-            padding-top: 12rem;
-            padding-left: 1rem;
-            width: 83.333333%;
-        }
-
-    .container-footer {
-        height: 20vh;
-    }
-
-        .container-footer .col-12 {
-            padding-left: 1rem;
-            padding-top: 2rem;
-        }
-
-        .container-footer p {
-            font-size: 1.1rem;
-        }
-}
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .background-image-body {
-        background-position: -29rem center;
-    }
-
-    .background-image-footer {
-        background-size: 100% 100%;
-    }
-
-    p {
-        font-size: 1.25rem;
-        line-height: 1.7rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .logo {
-        width: 80%;
-    }
-
-    .container-body .col-12 {
-        padding-top: 7rem;
-        padding-left: 2rem;
-    }
-
-    .container-body .col-9 {
-        padding-top: 24rem;
-        padding-left: 2rem;
-        width: 66.66666667%;
-    }
-
-    .container-footer .col-12 {
-        padding-left: 2rem;
-        padding-top: 2rem;
-    }
-
-        .container-footer .col-12 p {
-            font-size: 1.5rem;
-        }
-}
-
-/* landscape */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* desktop */
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
-    p {
-        font-size: 1.2rem;
-        line-height: 1.7rem;
-    }
-
-    h2 {
-        margin-bottom: 0.3rem;
-    }
-
-    .container-body .col-12 {
-        padding-top: 6rem;
-    }
-
-    .container-body .col-9 {
-        padding-top: 4rem;
-        width: 66.66666667%;
-    }
-
-    .container-footer .col-12 {
-        padding-top: 0.7rem;
-    }
-}
-
-/* large desktop */
-@media only screen and (min-device-width: 1600px) {
+a{
+    text-decoration:none
 }

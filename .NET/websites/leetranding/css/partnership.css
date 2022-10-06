@@ -1,0 +1,42 @@
+.partnership{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../image/background/Homepage\ BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.partnership__title{
+    color: #ffffff;
+    padding-left: 3rem;
+}
+
+.partnership__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.partnership__column{
+    text-align: center;
+}
+
+.partnership__image{
+    max-width: 40%;
+}
+
+@media screen and (min-width: 1366px) {
+    .partnership__title h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .partnership__title h1{
+        font-size: 5rem;
+    }
+}

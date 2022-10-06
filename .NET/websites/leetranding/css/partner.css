@@ -1,0 +1,136 @@
+.partner {
+    display: flex;
+    height: 100vh;
+}
+
+.partner--klasme {
+    background-image: url(../image/background/Lee\ Trading\ BG\ -\ Klasme.png);
+    color: #ffff;
+}
+
+.partner--miya {
+    background-image: url(../image/background/Lee\ Trading\ BG\ -\ Miya\ Kea.png);
+    color: #ffff;
+}
+
+.partner--hickman {
+    background-image: url(../image/background/Lee\ Trading\ BG\ -\ Anna\ Hickmann.png);
+    color: #000;
+}
+
+.partner--oclean {
+    background-image: url(../image/background/Lee\ Trading\ BG\ -\ OClean.png);
+    color: #000
+}
+
+.partner--starlit {
+    background-image: url(../image/background/starlit_bg.png);
+    color: #fff;
+}
+
+.partner--tecno {
+    background-image: url(../image/background/Lee\ Trading\ BG\ -\ Tecno.png);
+    color: #000;
+}
+
+.partner__column {
+    width: 50%;
+}
+
+.partner__column--text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5rem 0 2rem 0;
+    width: calc(50% - 10rem);
+    padding: 0 5rem;
+}
+
+.partner__column--background {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.partner__column--background-klasme {
+    background-image: url(../image/parceiros/klasme_bg.jpg);
+}
+
+.partner__column--background-miya {
+    background-image: url(../image/parceiros/_MG_852218263.jpg);
+}
+
+.partner__column--background-hickman {
+    background-image: url(../image/parceiros/Anna\ Hickmann.png);
+}
+
+.partner__column--background-oclean {
+    background-image: url(../image/parceiros/OClean\ .png);
+    background-position: right;
+}
+
+.partner__column--background-starlit {
+    background-image: url(../image/parceiros/Starlit\ BG.png);
+}
+
+.partner__column--background-tecno {
+    background-image: url(../image/parceiros/Tecno\ cellphone.png);
+    background-position: -25rem 0rem;
+}
+
+.partner__center {
+    text-align: center;
+}
+
+.partner__title {
+    align-self: flex-start;
+}
+
+.partner__text {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.partner__back {
+    font-family: ArdinaTitle, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px 3px #563596;
+}
+
+.partner__icon {
+    width: 10%;
+}
+
+.partner__bottom {
+    text-align: center;
+}
+
+@media screen and (min-width: 1366px) {
+    .partner__logo {
+        width: 27%;
+    }
+
+    .partner__title {
+        font-size: 2.5rem;
+    }
+
+    .partner__text {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .partner__logo {
+        width: 35%;
+    }
+
+    .partner__title {
+        font-size: 3rem;
+    }
+
+    .partner__text {
+        font-size: 2rem;
+    }
+}

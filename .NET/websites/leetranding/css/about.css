@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/background/Homepage\ BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__text{
+    width: calc(50% - 5rem);
+    color: #ffffff;
+    margin-left: 5rem;
+}
+
+.about{
+    height: 100vh;
+}
+
+.about__image{
+    width: calc(50% - 3rem);
+    padding: 3rem;
+}
+
+@media screen and (min-width: 1366px) {
+    .about__title{
+        font-size: 4rem;
+    }
+    
+    .about__paragraph{
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about__title{
+        font-size: 5rem;
+    }
+    
+    .about__paragraph{
+        font-size: 2rem
+    }
+}

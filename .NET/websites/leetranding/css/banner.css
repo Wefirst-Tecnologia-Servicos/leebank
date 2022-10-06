@@ -1,0 +1,27 @@
+﻿.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(../image/leeTradingBackground.jpg);
+    background-size: cover;
+    background-position: center -4rem;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.banner__logo {
+    width: 60%;
+}
+
+@media screen and (min-width: 1366px) {
+    .banner__div {
+        margin-left: 3rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .banner__div {
+        margin-left: 10rem;
+        margin-bottom: 15rem;
+    }
+}
