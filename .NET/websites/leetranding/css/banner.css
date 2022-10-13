@@ -3,7 +3,6 @@
     align-items: center;
     background-image: url(../image/leeTradingBackground.jpg);
     background-size: cover;
-    background-position: center -4rem;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -12,10 +11,30 @@
     width: 60%;
 }
 
+@media screen and (min-width: 834px) {
+    .banner{
+        background-position: -40rem center;
+    }
+
+    .banner__logo{
+        margin-left: 4rem;
+        margin-bottom: 20rem;
+    }
+}
+
 @media screen and (min-width: 1366px) {
+    .banner{
+        background-position: center -4rem;
+    }
+
     .banner__div {
         margin-left: 3rem;
         margin-bottom: 8rem;
+    }
+
+    .banner__logo{
+        margin-left: 0;
+        margin-bottom: 0;
     }
 }
 

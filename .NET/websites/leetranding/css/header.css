@@ -1,14 +1,10 @@
 ﻿.header {
-    display: flex;
     background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);
+    display: flex;
     padding: 1rem;
     position:fixed;
     width:100%;
     mix-blend-mode: normal;
-}
-
-.header__logo{
-    width: 15%;
 }
 
 .header__list {
@@ -16,12 +12,45 @@
     list-style-type: none;
 }
 
-.header__item{
-    margin-right: 2rem;
-}
-
 .header__link{
-    font-size: 1.5rem;
     color: #ffffff;
     text-decoration:none;
 }
+
+@media screen and (min-width: 834px){
+   
+    .header__link{
+        font-size: 1.25rem;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .header__item {
+        margin-right: 5rem;
+    }
+
+    .header__logo{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .header__link{
+        font-size: 1.5rem;
+    }
+
+    .header__logo{
+        width: 15%;
+    }
+
+    .header{
+        justify-content: normal;
+    }
+
+    .header__item {
+        margin-right: 2rem;
+    }
+}
+

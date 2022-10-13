@@ -29,9 +29,31 @@
     max-width: 40%;
 }
 
+@media screen and (min-width: 834px) {
+    .partnership__title h1{
+        font-size: 3rem;
+    }
+
+    .partnership__mobile{
+        display: initial;
+    }
+
+    .partnership__desktop{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1366px) {
     .partnership__title h1{
         font-size: 4rem;
+    }
+
+    .partnership__mobile{
+        display: none;
+    }
+
+    .partnership__desktop{
+        display: initial;
     }
 }
 

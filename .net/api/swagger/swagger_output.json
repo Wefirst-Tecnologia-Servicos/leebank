@@ -5,10 +5,10 @@
     "title": "WeFirst/LeeBank API",
     "description": "RESTful API solutions for the LeeBank websites."
   },
-  "host": "localhost:3000",
+  "host": "api.lobios.io:3000",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/menu/": {

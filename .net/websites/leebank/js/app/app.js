@@ -5,7 +5,7 @@
  */
 
 const angularConfig = {
-    apiBasePath: "http://201.30.147.96:3000/"
+    apiBasePath: "https://api.lobios.io:443/"
 };
 
 angular

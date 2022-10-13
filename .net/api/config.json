@@ -1,9 +1,9 @@
 {
   "http": {
     "port": 3000,
-    "host":  "localhost",
+    "host":  "0.0.0.0",
     "cors": {
-      "allowedOrigins": [ "leebank.cn", "201.30.147.96", "localhost" ]
+      "allowedOrigins": [ "leebank.cn", "201.30.147.96", "0.0.0.0" ]
     }
   },
   "trace": {

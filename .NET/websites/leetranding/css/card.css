@@ -1,6 +1,7 @@
 .card{
     background-image: url(../image/background/Lee\ Trading\ -\ BG\ -\ 01.png);
-    height: 100vh;
+    background-size: cover;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -16,21 +17,48 @@
     box-shadow: 1px 1px 10px #342929;
     padding: 1rem 2rem;
     height: calc(50% - 3rem);
-    width: calc(50% - 3rem);
-    margin: 3rem;
     border-image: linear-gradient(#ffffff, #7f3a8e) 30;
-    text-align: justify;
-}
-
-.card__image{
-    width: 50%;
 }
 
 .card__paragraph{
     color: #ffffff;
 }
 
+@media screen and (min-width: 834px) {
+    .card{
+        flex-wrap: wrap;
+    }
+
+    .card__div{
+        width: 100%;
+        margin: 1rem 2rem;
+        text-align: center;
+    }
+
+    .card__image{
+        width: 30%;
+    }
+
+    .card__paragraph{
+        font-size: 2.25rem;
+    }
+}
+
 @media screen and (min-width: 1366px) {
+    .card{
+        flex-wrap: nowrap;
+    }
+
+    .card__image{
+        width: 50%;
+    }
+
+    .card__div{
+        width: calc(50% - 3rem);
+        margin: 3rem;
+        text-align: justify;
+    }
+
     .card__paragraph{
         font-size: 1.5rem;
     }

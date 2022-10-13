@@ -1,6 +1,6 @@
 .partner {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .partner--klasme {
@@ -31,10 +31,6 @@
 .partner--tecno {
     background-image: url(../image/background/Lee\ Trading\ BG\ -\ Tecno.png);
     color: #000;
-}
-
-.partner__column {
-    width: 50%;
 }
 
 .partner__column--text {
@@ -79,10 +75,6 @@
     background-position: -25rem 0rem;
 }
 
-.partner__center {
-    text-align: center;
-}
-
 .partner__title {
     align-self: flex-start;
 }
@@ -107,7 +99,44 @@
     text-align: center;
 }
 
+@media screen and (min-width: 834px){
+   
+    .partner{
+        flex-wrap: wrap;
+    }
+
+    .partner__column{
+        width: 100%;
+    }
+
+    .partner__column--background{
+        order: -1;
+        min-height: 70vh;
+    }
+
+    .partner__logo{
+        width: 40%;
+    }
+
+    .partner__center{
+        text-align: start;
+    }
+}
+
 @media screen and (min-width: 1366px) {
+    .partner{
+        flex-wrap: nowrap;
+    }
+
+    .partner__column {
+        width: 50%;
+    }
+
+    .partner__column--background{
+        order: initial;
+        min-height: initial;
+    }
+
     .partner__logo {
         width: 27%;
     }
@@ -118,6 +147,10 @@
 
     .partner__text {
         font-size: 1.3rem;
+    }
+
+    .partner__center{
+        text-align: center;
     }
 }
 

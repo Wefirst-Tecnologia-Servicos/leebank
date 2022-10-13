@@ -1,17 +1,14 @@
 .footer {
     background-image: url(../image/background/Lee\ Trading\ -\ rodapé.png);
-    background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
     font-size: 1.25rem;
     color: #ffffff;
-    padding: 3rem 5rem 0.5rem 5rem;
 }
 
 .footer__contact {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -27,9 +24,58 @@
     margin-right: 10rem;
 }
 
+@media screen and (min-width: 834px){
+    .footer{
+        background-size: cover;
+        padding: 3rem 2rem 0.5rem 2rem;
+    }
+
+    .footer__contact{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .footer__email{
+        padding: 3rem 0 1rem 0;
+    }
+
+    .footer__politics{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer__copy{
+        text-align: center;
+        padding: 0 9rem;
+    }
+}
+
 @media screen and (min-width: 1366px) {
     .footer{
+        background-size: contain;
         margin-top: 5rem;
+        padding: 3rem 5rem 0.5rem 5rem;
+    }
+
+    .footer__contact{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    .footer__email{
+        padding: 0px;
+    }
+
+    .footer__politics{
+        width: initial;
+        justify-content: normal;
+    }
+
+    .footer__copy{
+        text-align: initial;
+        padding: 0px;
     }
 }
 

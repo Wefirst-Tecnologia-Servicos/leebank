@@ -1,0 +1,5 @@
+{
+	"domain": "api.lobios.io",
+	"certUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/030549a2016f64b0a513f7146e4f3bfdd166",
+	"certStableUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/030549a2016f64b0a513f7146e4f3bfdd166"
+}
