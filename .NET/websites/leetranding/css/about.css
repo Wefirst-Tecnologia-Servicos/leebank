@@ -10,21 +10,20 @@
 
 .about__text{
     color: #ffffff;
-    margin-left: 5rem;
 }
 
 .about{
     height: 100vh;
 }
 
-@media screen and (min-width: 834px){
+@media screen and (min-width:0px) {
     .about{
         flex-wrap: wrap;
         align-content: center;
     }
 
     .about__title{
-        font-size: 4rem;
+        font-size: 2.75rem;
     }
 
     .about__text{
@@ -32,13 +31,24 @@
     }
 
     .about__paragraph{
-        font-size: 2.25rem;
+        font-size: 1.25rem;
+        text-align: justify;
     }
 
     .about__image{
         order: -1;
         width: 100%;
         padding: 0px;
+    }
+}
+
+@media screen and (min-width: 834px){
+    .about__title{
+        font-size: 4rem;
+    }
+
+    .about__paragraph{
+        font-size: 2.25rem;
     }
 }
 
@@ -50,6 +60,7 @@
 
     .about__text{
         width: calc(50% - 5rem);
+        margin-left: 5rem;
     }
     
     .about__paragraph{

@@ -7,18 +7,30 @@
     height: 100vh;
 }
 
-.banner__logo {
-    width: 60%;
-}
-
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 0px){
     .banner{
         background-position: -40rem center;
     }
 
     .banner__logo{
+        margin-left: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .banner__logo {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 834px) {
+
+    .banner__logo{
         margin-left: 4rem;
         margin-bottom: 20rem;
+    }
+
+    .banner__logo {
+        width: 60%;
     }
 }
 

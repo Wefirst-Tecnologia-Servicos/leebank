@@ -17,10 +17,9 @@
     text-decoration:none;
 }
 
-@media screen and (min-width: 834px){
-   
+@media screen and (min-width: 0px){
     .header__link{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .header{
@@ -34,6 +33,14 @@
     .header__logo{
         width: 35%;
     }
+}
+
+@media screen and (min-width: 834px){
+   
+    .header__link{
+        font-size: 1.25rem;
+    }
+
 }
 
 @media screen and (min-width: 1366px) {
