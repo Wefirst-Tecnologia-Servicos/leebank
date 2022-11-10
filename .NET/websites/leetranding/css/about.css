@@ -37,7 +37,7 @@
 
     .about__image{
         order: -1;
-        width: 100%;
+        width: 85%;
         padding: 0px;
     }
 }
@@ -60,7 +60,6 @@
 
     .about__text{
         width: calc(50% - 5rem);
-        margin-left: 5rem;
     }
     
     .about__paragraph{
@@ -69,7 +68,6 @@
 
     .about__image{
         order: initial;
-        width: calc(50% - 3rem);
         padding: 3rem;
     }
 }

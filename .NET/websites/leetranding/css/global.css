@@ -13,12 +13,17 @@
     src: url(../fonts/ArdinaTitle-Medium.otf);
 }
 
+@font-face {
+    font-family: MontserratParagraph;
+    src: url(../fonts/Cópia\ de\ Montserrat-Light.ttf);
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 p, a{
-    font-family: montserrat, sans-serif;
+    font-family: MontserratParagraph, sans-serif;
 }
 
 h1, h2{

@@ -1,0 +1,23 @@
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    width: 50%;
+}
+
+.fade {
+    animation: fade 5s linear;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
