@@ -49,21 +49,43 @@
         margin-bottom: 0;
     }
 
-    .banner__logo--transition {
-        animation: growAndShrink .5s linear;
+    .banner__logo--transitionShrink {
+        animation: shrink .3s linear;
         animation-fill-mode: forwards;
     }
 
-    @keyframes growAndShrink {
+    .banner__logo--transitionGrow {
+        animation: grow .3s linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes shrink {
+        0% {
+            opacity: 1;
+            transform: scale(1) ;
+            transform-origin: top left;
+        }
+
+        50%{
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(0.6) translateX(-15rem);
+            transform-origin: top left;
+        }
+    }
+
+    @keyframes grow {
         from {
-            transform: scale(1);
+            transform: scale(0.6) translateX(-15rem);
             transform-origin: top left;
         }
 
         to {
-            transform: scale(0.4);
+            transform: scale(1) translateX(0);
             transform-origin: top left;
-            display: none;
         }
     }
 }
