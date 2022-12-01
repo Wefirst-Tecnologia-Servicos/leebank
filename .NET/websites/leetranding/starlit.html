@@ -14,14 +14,17 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header--partner">
         <a class="header__logo--partners" href="index.html"><img src="image/leeTradngLogo.svg" alt=""></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
+        <nav class="header__nav" id="nav">
+            <button class="header__button" id="btn-mobile" onclick="dropdownMenu()">
+                <img src="image/icon/menu-icon.png" alt="botão do menu">
+            </button>
+            <ul class="header__list--partner" id="menu">
+                <li class="header__item--partner">
                     <a class="header__link" href="index.html#aboutUs">Sobre nós</a>
                 </li>
-                <li class="header__item">
+                <li class="header__item--partner">
                     <a class="header__link" href="index.html#partnership">Parcerias</a>
                 </li>
             </ul>
@@ -34,16 +37,17 @@
             <h1 class="partner__title partner__title--desktop">Nossos parceiros</h1>
             <div class="partner__center">
                 <img class="partner__logo" src="image/logo/starlit.png" alt="">
-                <p class="partner__text"><b>Starlit</b> é a marca de iluminação em LED para eventos. Seus produtos
-                    consistem em sinalizadores digitais, hologramas, painéis de Led, projetores e LED transparente.</p>
+                <p class="partner__text"><b>Starlit</b> é a marca de iluminação em LED para eventos. Seus produtos consistem em
+                    sinalizadores digitais, hologramas, painéis de LED, projetores e LED transparente.</p>
             </div>
             <div class="partner__bottom">
-                <a href="index.html"><img class="partner__icon" src="image/icon/placeholder.png" alt=""></a>
-                <p class="partner__back">Voltar</p>
+                <a href="index.html"><img class="partner__icon" src="image/icon/back-icon.svg" alt=""></a>
             </div>
         </div>
         <div class="partner__column partner__column--background partner__column--background-starlit"></div>
     </section>
+
+    <script src="js/dropdownMenu.js"></script>
 </body>
 
 </html>

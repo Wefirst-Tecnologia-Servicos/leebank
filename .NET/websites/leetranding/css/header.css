@@ -1,9 +1,9 @@
-﻿.header {
+﻿.header,
+.header--partner {
     background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);
     display: flex;
     padding: 1rem;
-    position:fixed;
-    width:100%;
+    position: fixed;
     mix-blend-mode: normal;
 }
 
@@ -12,79 +12,169 @@
     list-style-type: none;
 }
 
-.header__link{
+.header__link {
     color: #ffffff;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-@media screen and (min-width: 0px){
-    .header__link{
-        font-size: 1rem;
+@media screen and (min-width: 0px) {
+    .header--partner{
+        background-color: #431359;
+    }
+
+    .header--partner {
+        justify-content: space-between;
+        width: fit-content;
     }
 
     .header{
-        justify-content: space-between;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .header__logo--partners {
+        width: 50%;
+    }
+
+    .header__list--partner {
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        height: 0px;
+        transition: .6s;
+        margin: 0rem 0;
+        display: block;
+        list-style-type: none;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%)
+    }
+
+    .header__nav.active .header__list--partner {
+        height: 12vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .header__item--partner {
+        margin: 1rem 0;
+    }
+
+    .header__link {
+        font-size: 1.25rem;
     }
 
     .header__item {
-        margin-right: 5rem;
+        margin-right: 3rem;
     }
 
-    .header__logo{
+    .header__logo {
         width: 35%;
     }
+
+    .header__logo--home {
+        display: none;
+    }
+
+    .header__button {
+        width: 80%;
+    }
+
 }
 
-@media screen and (min-width: 834px){
-   
-    .header__link{
-        font-size: 1.25rem;
+@media screen and (min-width: 834px) {
+    .header--partner{
+        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);;
+    }
+
+    .header {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .header--partner{
+        justify-content: space-between;
+    }
+
+    .header__item--partner {
+        margin: 1rem 2rem;
+      }
+
+    .header__list--partner {
+        display: flex;
+        list-style-type: none;
+        position: initial;
+        visibility: visible;
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__link {
+        font-size: 1.5rem;
+    }
+
+    .header__logo--partners {
+        width: 35%;
     }
 
 }
 
 @media screen and (min-width: 1366px) {
-    .header__link{
+    .header--partner {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .header__link {
         font-size: 1.5rem;
     }
 
-    .header__logo{
+    .header__logo--home {
+        display: initial;
+    }
+
+    .header__logo {
         width: 0%;
         opacity: 0;
     }
 
-    .header__logo--partners{
+    .header__logo--partners {
         width: 15%;
     }
 
-    .header{
+    .header {
         justify-content: normal;
     }
 
     .header__item {
-        margin-right: 2rem;
+        margin-right: 3rem;
     }
 
 
-    .header__logo--transitionAppears{
+    .header__logo--transitionAppears {
         animation: appears .2s linear;
         animation-fill-mode: forwards;
     }
 
-    .header__logo--transitionDesappears{
+    .header__logo--transitionDesappears {
         animation: desappears .2s linear;
         animation-fill-mode: forwards;
     }
 
     @keyframes appears {
-        from{
+        from {
             width: 0%;
             opacity: 0;
             transform: scale(2);
             transform-origin: top left;
         }
 
-        to{
+        to {
             width: 15%;
             opacity: 1;
             transform: scale(1);
@@ -93,18 +183,18 @@
     }
 
     @keyframes desappears {
-        0%{
+        0% {
             width: 15%;
             opacity: 1;
             transform: scale(1);
             transform-origin: top left;
         }
 
-        25%{
+        25% {
             opacity: 0;
         }
 
-        100%{
+        100% {
             width: 0%;
             opacity: 0;
             transform: scale(1.5);
@@ -112,4 +202,3 @@
         }
     }
 }
-

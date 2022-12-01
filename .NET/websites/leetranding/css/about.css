@@ -1,4 +1,4 @@
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,76 +8,87 @@
     background-size: cover;
 }
 
-.about__text{
+.about__text {
     color: #ffffff;
 }
 
-.about{
+.about {
     height: 100vh;
 }
 
 @media screen and (min-width:0px) {
-    .about{
+    .about {
         flex-wrap: wrap;
         align-content: center;
     }
 
-    .about__title{
+    .about__title {
         font-size: 2.75rem;
     }
 
-    .about__text{
+    .about__text {
         width: calc(100% - 5rem);
     }
 
-    .about__paragraph{
+    .about__paragraph {
         font-size: 1.25rem;
         text-align: justify;
     }
 
-    .about__image{
+    .about__image {
         order: -1;
-        width: 85%;
+        width: 100%;
         padding: 0px;
+    }
+
+    .slideshow-container {
+        width: 100% !important;
+        order: -1;
     }
 }
 
-@media screen and (min-width: 834px){
-    .about__title{
+@media screen and (min-width: 834px) {
+    .about__title {
         font-size: 4rem;
     }
 
-    .about__paragraph{
+    .about__paragraph {
         font-size: 2.25rem;
     }
 }
 
 @media screen and (min-width: 1366px) {
-    .about{
+    .about {
         flex-wrap: nowrap;
         align-content: normal;
     }
 
-    .about__text{
+    .about__text {
         width: calc(50% - 5rem);
     }
-    
-    .about__paragraph{
+
+    .about__paragraph {
         font-size: 1.5rem
     }
 
-    .about__image{
+    .about__image {
         order: initial;
         padding: 3rem;
+        width: 85%;
+    }
+
+    .slideshow-container {
+        width: 50% !important;
+        order: 0;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .about__title{
+    .about__title {
         font-size: 5rem;
     }
-    
-    .about__paragraph{
+
+    .about__paragraph {
         font-size: 2rem
     }
 }
