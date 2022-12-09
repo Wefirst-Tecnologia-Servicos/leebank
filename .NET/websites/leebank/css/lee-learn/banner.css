@@ -1,0 +1,14 @@
+﻿.banner {
+    height: 70vh;
+}
+
+.banner__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.banner__info {
+    display: flex;
+}

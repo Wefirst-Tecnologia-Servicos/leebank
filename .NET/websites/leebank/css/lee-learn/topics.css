@@ -1,0 +1,28 @@
+﻿.topics {
+    padding: 0 8rem;
+}
+
+.topics__itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topics__item {
+    padding: 3rem 8rem;
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+    .topics__item p {
+        text-shadow: 0px 4px 6px #000;
+        margin: 0;
+    }
+
+.topics__title {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+}

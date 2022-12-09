@@ -39,7 +39,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5rem 0 2rem 0;
+    margin: 4rem 0 2rem 0;
     width: calc(50% - 10rem);
 }
 
@@ -91,13 +91,10 @@
     text-shadow: 2px 2px 3px #563596;
 }
 
-.partner__icon {
-    width: 10%;
-}
-
 .partner__bottom {
     text-align: center;
     animation: fadeInOpacity 2s ease-in normal;
+    width: 100%;
 }
 
 .partner__logo{
@@ -144,6 +141,11 @@
     .partner__title--desktop{
         display:none
     }
+
+    .partner__icon {
+        width: 20%;
+    }
+    
 }
 
 @media screen and (min-width: 834px){
@@ -171,7 +173,7 @@
     }
 
     .partner__title--mobile{
-        font-size: 1.75rem;
+        font-size: 2rem;
         padding: 6rem 0 1rem 1rem;
     }
 }
@@ -232,6 +234,10 @@
 
     .partner__title--desktop{
         display:initial;
+    }
+
+    .partner__icon {
+        width: 12%;
     }
 
 }

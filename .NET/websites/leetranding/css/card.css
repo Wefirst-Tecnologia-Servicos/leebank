@@ -72,6 +72,7 @@
         width: calc(50% - 3rem);
         margin: 3rem;
         text-align: justify;
+        min-height: 310px;
     }
 
     .card__paragraph{

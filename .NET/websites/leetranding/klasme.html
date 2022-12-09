@@ -14,14 +14,17 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header--partner">
         <a class="header__logo--partners" href="index.html"><img src="image/leeTradngLogo.svg" alt=""></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
+        <nav class="header__nav" id="nav">
+            <button class="header__button" id="btn-mobile" onclick="dropdownMenu()">
+                <img src="image/icon/menu-icon.png" alt="botão do menu">
+            </button>
+            <ul class="header__list--partner" id="menu">
+                <li class="header__item--partner">
                     <a class="header__link" href="index.html#aboutUs">Sobre nós</a>
                 </li>
-                <li class="header__item">
+                <li class="header__item--partner">
                     <a class="header__link" href="index.html#partnership">Parcerias</a>
                 </li>
             </ul>
@@ -40,12 +43,13 @@
                     lugares icônicos do mundo beatuê, como NY, Paris, Londes e Seoul.</p>
             </div>
             <div class="partner__bottom">
-                <img class="partner__icon" src="image/icon/placeholder.png" alt="">
-                <p class="partner__back">Voltar</p>
+                <img class="partner__icon" src="image/icon/back-icon.svg" alt="">
             </div>
         </div>
         <div class="partner__column partner__column--background partner__column--background-klasme"></div>
     </section>
+
+    <script src="js/dropdownMenu.js"></script>
 </body>
 
 </html>
