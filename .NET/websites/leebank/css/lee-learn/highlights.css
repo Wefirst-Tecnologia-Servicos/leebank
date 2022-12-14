@@ -1,0 +1,54 @@
+.highlights {
+    margin: 5rem 10rem;
+}
+
+.highlights__title {
+    margin: 3rem 0rem;
+}
+
+.highlights__image {
+    background-image: url(img/destaques.jpg);
+    height: 40vh;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.highlights__info {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.highlights__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.highlights__card {
+    width: calc(50% - 3rem);
+    background-color: #252525;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.highlights__card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.highlights__card-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.highlights__card-text {
+    padding: 1rem 1.25rem;
+}
+
+.highlights__link {
+    text-align: end;
+  }
