@@ -14,11 +14,13 @@
         src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
 
     <link href="css/lee-learn/global.css" rel="stylesheet" />
+    <link href="css/lee-learn/menu.css" rel="stylesheet" />
     <link href="css/lee-learn/topics.css" rel="stylesheet" />
     <link href="css/lee-learn/banner.css" rel="stylesheet" />
     <link href="css/lee-learn/highlights.css" rel="stylesheet" />
     <link href="css/lee-learn/recent.css" rel="stylesheet" />
     <link href="css/lee-learn/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lee-learn/slideshow.css">
 
     <script src="js/app/app.js"></script>
     <script src="js/app/dictionary.js"></script>
@@ -37,20 +39,68 @@
 
     <!--<menu-component></menu-component>-->
 
-    <div ng-controller="BodyController" class="" style="padding-top: 100px;">
-        <div class="banner">
-            <div class="banner__image" style="background-image: url(img/banner-blog.png)">
-                <div class="banner__info">
-                    <p><b>TEMA</b></p>
-                    <p>dd/mm/yy</p>
-                </div>
-                <div class="banner__title">
-                    <h1>Lorem Ipsum Dolor sit amed</h1>
-                </div>
-                <div class="banner__link">
-                    <a>Continue lendo <img src="img/Arrow 2.svg" /></a>
+    <div class="menu">
+        <div class="menu__logo"><img src="img/logo.svg" alt=""></div>
+        <div>
+            <ul class="menu__list">
+                <li class="menu__items"><a class="menu__link">Destaques</a></li>
+                <li class="menu__items"><a class="menu__link">Mais Recentes</a></li>
+                <li class="menu__items"><a class="menu__link">Categorias</a></li>
+                <li class="menu__items"><a class="menu__link">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div ng-controller="BodyController" class="" style="padding-top: 75px;">
+        <div class="slideshow">
+            <div class="slideshow__slide slideshow__fade">
+                <div class="slideshow__image" style="background-image: url(img/banner-blog.png)">
+                    <div class="slideshow__info">
+                        <p><b>TEMA</b></p>
+                        <p>dd/mm/yy</p>
+                    </div>
+                    <div class="slideshow__title">
+                        <h1>Lorem Ipsum Dolor sit amed</h1>
+                    </div>
+                    <div class="slideshow__link">
+                        <a>Continue lendo <img src="img/Arrow 2.svg" /></a>
+                    </div>
                 </div>
             </div>
+            <div class="slideshow__slide slideshow__fade">
+                <div class="slideshow__image" style="background-image: url(img/banner-blog.png)">
+                    <div class="slideshow__info">
+                        <p><b>TEMA</b></p>
+                        <p>dd/mm/yy</p>
+                    </div>
+                    <div class="slideshow__title">
+                        <h1>Lorem Ipsum Dolor sit amed</h1>
+                    </div>
+                    <div class="slideshow__link">
+                        <a>Continue lendo <img src="img/Arrow 2.svg" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slideshow__slide slideshow__fade">
+                <div class="slideshow__image" style="background-image: url(img/banner-blog.png)">
+                    <div class="slideshow__info">
+                        <p><b>TEMA</b></p>
+                        <p>dd/mm/yy</p>
+                    </div>
+                    <div class="slideshow__title">
+                        <h1>Lorem Ipsum Dolor sit amed</h1>
+                    </div>
+                    <div class="slideshow__link">
+                        <a>Continue lendo <img src="img/Arrow 2.svg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow__dots">
+            <span class="slideshow__dot" onclick="currentSlide(1)"></span> 
+            <span class="slideshow__dot" onclick="currentSlide(2)"></span> 
+            <span class="slideshow__dot" onclick="currentSlide(3)"></span> 
         </div>
 
         <div class="topics">
@@ -226,6 +276,7 @@
 
     <script src="js/controller/body.js"></script>
     <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideshow.js"></script>
 
 </body>
 

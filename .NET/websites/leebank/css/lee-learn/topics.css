@@ -1,5 +1,6 @@
 ﻿.topics {
     padding: 0 8rem;
+    margin-top: 5rem;
 }
 
 .topics__itens {
@@ -24,5 +25,4 @@
 .topics__title {
     padding-left: 2rem;
     padding-bottom: 2rem;
-}
 }
