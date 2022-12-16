@@ -1,0 +1,47 @@
+.related{
+    margin: 0rem 10rem;
+}
+
+.related__cards{
+    display: flex;
+}
+
+.related__big-card{
+    width: calc(50% - 3rem);
+padding: 1rem 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 30vh;
+}
+
+.related__big-info{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.related__tiny-card{
+    width: calc(50% - 3rem);
+    padding: 0 1.5rem;    
+}
+
+.related__tiny-cards{
+    min-height: 15vh;
+    background-color: #373737;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 2rem;   
+}
+
+.related__tiny-cards:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.related__tiny-info{
+    display: flex;
+}
+
+.related__tiny-info p{
+    margin-bottom: 0;
+    margin-right: 1rem;
+}

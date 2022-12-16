@@ -15,6 +15,8 @@
 
     <link href="css/lee-learn/global.css" rel="stylesheet" />
     <link href="css/lee-learn/footer.css" rel="stylesheet" />
+    <link href="css/lee-learn/article.css" rel="stylesheet" />
+    <link href="css/lee-learn/related.css" rel="stylesheet" />
 
     <script src="js/app/app.js"></script>
     <script src="js/app/dictionary.js"></script>
@@ -33,92 +35,108 @@
 
     <!--<menu-component></menu-component>-->
 
-    <div>
-        <p>Leitura em <b>minutos</b>.</p>
-    </div>
-    <div>
-        <p>Tema</p>
-        <ul>
-            <li>
-                <p>dd/mm/aaaa</p>
-            </li>
-            <li>
-                <p>Atualizado em dd/mm/aaaa</p>
-            </li>
-        </ul>
-    </div>
+    <div class="article">
+        <div class="article__time">
+            <p>Leitura em <b>minutos</b>.</p>
+        </div>
+        <div class="article__info">
+            <p>Tema</p>
+            <ul class="article__list">
+                <li class="article__item">
+                    <p>dd/mm/aaaa</p>
+                </li>
+                <li class="article__item">
+                    <p>Atualizado em dd/mm/aaaa</p>
+                </li>
+            </ul>
+        </div>
 
-    <div>
-        <p>Loremipsumdolor sit amet.</p>
-    </div>
+        <div class="article__image" style="background-image: url(img/image-article.png);">
+            <p>Loremipsumdolor sit amet.</p>
+        </div>
 
-    <div>
-        <p>De Nome do autor.</p>
-    </div>
+        <div class="article__author">
+            <p>De Nome do autor.</p>
+        </div>
 
-    <div>
-        <div>
-            <p>Commodo ullamcorper a lacus vestibulum sed. Interdum velit laoreet id donec ultrices tincidunt arcu non.
-            </p>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Mi bibendum
-                neque egestas congue quisque egestas. Ultrices neque ornare aenean euismod elementum. Facilisis leo vel
-                fringilla est ullamcorper.</p>
-            <p>Condimentum lacinia quis vel eros donec. Lobortis feugiat vivamus at augue eget arcu. Egestas purus
-                viverra accumsan in nisl nisi scelerisque. Dolor sit amet consectetur adipiscing. Vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate.</p>
-            <p>Cursus mattis molestie a iaculis at erat. Lacus sed viverra tellus in hac habitasse platea dictumst. In
-                est ante in nibh mauris cursus mattis molestie. Feugiat nibh sed pulvinar proin gravida hendrerit
-                lectus.</p>
-        </div>
-        <div>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Quis auctor elit sed vulputate. Quis auctor elit sed vulputate mi sit amet mauris commodo. Magna etiam
-                tempor orci eu lobortis elementum nibh tellus. Nisi quis eleifend quam adipiscing. Est ultricies integer
-                quis auctor elit. Mauris ultrices eros in cursus turpis massa tincidunt dui. Nulla facilisi etiam
-                dignissim diam quis enim lobortis. Magna sit amet purus gravida quis blandit turpis cursus in.</p>
-            <p>Cras semper auctor neque vitae tempus quam pellentesque nec. Sapien pellentesque habitant morbi tristique
-                senectus et. Enim diam vulputate ut pharetra sit amet aliquam id. Dolor magna eget est lorem ipsum dolor
-                sit. Vel pretium lectus quam id. Eros in cursus turpis massa. Id volutpat lacus laoreet non. Non diam
-                phasellus vestibulum lorem sed risus ultricies.</p>
-            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Suspendisse ultrices gravida
-                dictum fusce. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Mollis nunc sed id semper.</p>
-        </div>
-        <div>
-            <p>Egestas purus viverra accumsan in nisl nisi scelerisque. Dolor sit amet consectetur adipiscing. Vel
-                turpis nunc eget lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate.</p>
-        </div>
-        <div>
-            <h3>Euismod nisi porta lorem mollis.</h3>
-            <p>Dui vivamus arcu felis bibendum ut tristique. Condimentum lacinia quis vel eros donec ac odio. Dignissim
-                enim sit amet venenatis. Consectetur a erat nam at. Odio pellentesque diam volutpat commodo. Et egestas
-                quis ipsum suspendisse ultrices gravida dictum fusce ut. Adipiscing elit duis tristique sollicitudin
-                nibh. Vitae turpis massa sed elementum tempus egestas sed sed. Tortor posuere ac ut consequat semper.
-                Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
-            </p>
-        </div>
-        <div>
-            <div>
-                <p>TAG 01</p>
+        <div class="article__text">
+            <div class="article__first-title">
+                <h4>Commodo ullamcorper a lacus vestibulum sed. Interdum velit laoreet id donec ultrices tincidunt arcu
+                    non.
+                </h4>
             </div>
-            <div>
-                <p>TAG 02</p>
+            <div class="article__paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Mi
+                    bibendum
+                    neque egestas congue quisque egestas. Ultrices neque ornare aenean euismod elementum. Facilisis leo
+                    vel
+                    fringilla est ullamcorper.</p>
+                <p>Condimentum lacinia quis vel eros donec. Lobortis feugiat vivamus at augue eget arcu. Egestas purus
+                    viverra accumsan in nisl nisi scelerisque. Dolor sit amet consectetur adipiscing. Vel turpis nunc
+                    eget
+                    lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate.</p>
+                <p>Cursus mattis molestie a iaculis at erat. Lacus sed viverra tellus in hac habitasse platea dictumst.
+                    In
+                    est ante in nibh mauris cursus mattis molestie. Feugiat nibh sed pulvinar proin gravida hendrerit
+                    lectus.</p>
             </div>
-            <div>
-                <p>TAG 03</p>
+            <div class="article__paragraph">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Quis auctor elit sed vulputate. Quis auctor elit sed vulputate mi sit amet mauris commodo. Magna
+                    etiam
+                    tempor orci eu lobortis elementum nibh tellus. Nisi quis eleifend quam adipiscing. Est ultricies
+                    integer
+                    quis auctor elit. Mauris ultrices eros in cursus turpis massa tincidunt dui. Nulla facilisi etiam
+                    dignissim diam quis enim lobortis. Magna sit amet purus gravida quis blandit turpis cursus in.</p>
+                <p>Cras semper auctor neque vitae tempus quam pellentesque nec. Sapien pellentesque habitant morbi
+                    tristique
+                    senectus et. Enim diam vulputate ut pharetra sit amet aliquam id. Dolor magna eget est lorem ipsum
+                    dolor
+                    sit. Vel pretium lectus quam id. Eros in cursus turpis massa. Id volutpat lacus laoreet non. Non
+                    diam
+                    phasellus vestibulum lorem sed risus ultricies.</p>
+                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Suspendisse ultrices gravida
+                    dictum fusce. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Mollis nunc sed id semper.</p>
+            </div>
+            <div class="article__apostrophe">
+                <h5>Egestas purus viverra accumsan in nisl nisi scelerisque. Dolor sit amet consectetur adipiscing. Vel
+                    turpis nunc eget lorem dolor sed viverra ipsum nunc. Sed risus pretium quam vulputate.</h5>
+            </div>
+            <div class="article__paragraph article__paragraph--last">
+                <h3>Euismod nisi porta lorem mollis.</h3>
+                <p>Dui vivamus arcu felis bibendum ut tristique. Condimentum lacinia quis vel eros donec ac odio.
+                    Dignissim
+                    enim sit amet venenatis. Consectetur a erat nam at. Odio pellentesque diam volutpat commodo. Et
+                    egestas
+                    quis ipsum suspendisse ultrices gravida dictum fusce ut. Adipiscing elit duis tristique sollicitudin
+                    nibh. Vitae turpis massa sed elementum tempus egestas sed sed. Tortor posuere ac ut consequat
+                    semper.
+                    Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                </p>
+            </div>
+            <div class="article__tags">
+                <div class="article__tag">
+                    <p>TAG 01</p>
+                </div>
+                <div class="article__tag">
+                    <p>TAG 02</p>
+                </div>
+                <div class="article__tag">
+                    <p>TAG 03</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div>
+    <div class="related">
         <div>
             <h1>Artigos relacionados</h1>
         </div>
-        <div>
-            <div>
-                <div>
+        <div class="related__cards">
+            <div class="related__big-card" style="background-image: url(img/related-article-card.jpg);">
+                <div class="related__big-info">
                     <p>Tema</p>
                     <p>dd/mm/aaaa</p>
                 </div>
@@ -126,18 +144,19 @@
                     <h2>Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
+            <div class="related__tiny-card">
+                <div class="related__tiny-cards">
+                    <div class="related__tiny-info">
                         <p>Tema</p>
                         <img src="img/Line 8.svg" alt="">
                     </div>
                     <div>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="related__tiny-cards">
+                    <div class="related__tiny-info">
                         <p>Tema</p>
                         <img src="img/Line 8.svg" alt="">
                     </div>
