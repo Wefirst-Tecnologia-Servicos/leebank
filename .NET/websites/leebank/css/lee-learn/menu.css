@@ -1,0 +1,35 @@
+.menu{
+    display: flex;
+    background: linear-gradient(180deg, #401056 0%, rgba(146, 74, 181, 0) 100%);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0.5rem 3rem;    
+}
+
+.menu__logo{
+    width: 15%;    
+}
+
+.menu__list{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0;
+    align-items: center;
+    padding-bottom: 1rem;    
+}
+
+.menu__items{
+    margin-left: 5rem;    
+}
+
+.menu__items:last-child{
+    margin-left: 8rem;    
+}
+
+.menu__link{
+    color: #ffff;
+    text-decoration: none;
+}

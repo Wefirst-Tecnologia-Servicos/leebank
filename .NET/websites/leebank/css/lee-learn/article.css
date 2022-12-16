@@ -1,3 +1,7 @@
+.article{
+    margin-top: 10rem;
+}
+
 .article__time {
     margin: 0rem 10rem;
 }
@@ -11,6 +15,10 @@
     margin: 0rem 10rem;
 }
 
+.article__info p, .article__info ul{
+    margin-bottom: 0.25rem;
+}
+
 .article__list {
     display: flex;
 }
@@ -20,11 +28,21 @@
 }
 
 .article__image{
-    min-height: 50vh;    
+    display: flex;
+    align-items: flex-end;
+    min-height: 50vh;
+    background-position: bottom;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 10rem;
+}
+
+.article__image h1{
+    width: 20%;
 }
 
 .article__author {
-    margin: 0rem 10rem;
+    margin: 1rem 10rem;
 }
 
 .article__text {
