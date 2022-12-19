@@ -4,7 +4,7 @@ var articleid;
 var topics = [];
 
 if(urlGetArticle.searchParams.get("articleid")){
-    articleid = url.searchParams.get("articleid");
+    articleid = urlGetArticle.searchParams.get("articleid");
 }else{
     alert("Não foi possível achar o ID de nenhum artigo")
 }

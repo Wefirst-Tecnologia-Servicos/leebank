@@ -1,4 +1,6 @@
 function setArticleData(data){
+    topics = data.topic;
+
     document.getElementById('article-theme').innerHTML = data.theme;
     data.articleDate = new Date(data.articleDate);
     document.getElementById('article-date').innerHTML = data.articleDate.getDate() + "/" + data.articleDate.getMonth() + "/" + data.articleDate.getFullYear();
@@ -22,9 +24,12 @@ function setArticleData(data){
     document.getElementById('article-author').innerHTML = data.author
     document.getElementById('article-subtitle').innerHTML = data.subtitle
 
-    data.topic.forEach(element => {
+    document.getElementById('article-text-append').innerHTML = data.content
 
-        var fatherAppend = document.getElementById('article-topics');
+    var topicArea = document.createElement('div')
+    topicArea.setAttribute("class","article__tags")
+
+    data.topic.forEach(element => {
 
         var tagDiv = document.createElement('div');
         tagDiv.setAttribute("class","article__tag");
@@ -32,10 +37,9 @@ function setArticleData(data){
         var content = document.createElement('p');
         content.innerHTML = element;
 
-        tagDiv.appendChild(content)
-        fatherAppend.appendChild(tagDiv)
+        tagDiv.appendChild(content);
+        topicArea.appendChild(tagDiv);
     });
-    
-    
-    console.log(data);
+
+    document.getElementById('article-text-append').appendChild(topicArea);
 }
