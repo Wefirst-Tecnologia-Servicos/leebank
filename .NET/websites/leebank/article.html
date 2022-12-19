@@ -53,28 +53,30 @@
             <p>Leitura em <b>minutos</b>.</p>
         </div>
         <div class="article__info">
-            <p>Tema</p>
-            <ul class="article__list">
+            <p id="article-theme">Tema</p>
+            <ul class="article__list" id="article-date-area">
                 <li class="article__item">
-                    <p>dd/mm/aaaa</p>
+                    <p id="article-date">dd/mm/aaaa</p>
                 </li>
+                <!--
                 <li class="article__item">
-                    <p>Atualizado em dd/mm/aaaa</p>
+                    <p id="article-updateDate">Atualizado em dd/mm/aaaa</p>
                 </li>
+                -->
             </ul>
         </div>
 
-        <div class="article__image" style="background-image: url(img/image-article.png);">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="article__image" id="article-image" style="background-image: url(img/image-article.png);">
+            <h1 id="article-title">Lorem ipsum dolor sit amet.</h1>
         </div>
 
-        <div class="article__author">
+        <div class="article__author" id="article-author">
             <p>De Nome do autor.</p>
         </div>
 
         <div class="article__text">
             <div class="article__first-title">
-                <h4>Commodo ullamcorper a lacus vestibulum sed. Interdum velit laoreet id donec ultrices tincidunt arcu
+                <h4 id="article-subtitle">Commodo ullamcorper a lacus vestibulum sed. Interdum velit laoreet id donec ultrices tincidunt arcu
                     non.
                 </h4>
             </div>
@@ -129,7 +131,8 @@
                     Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
                 </p>
             </div>
-            <div class="article__tags">
+            <div class="article__tags" id="article-topics">
+                <!--
                 <div class="article__tag">
                     <p>TAG 01</p>
                 </div>
@@ -139,6 +142,7 @@
                 <div class="article__tag">
                     <p>TAG 03</p>
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -147,7 +151,8 @@
         <div>
             <h1>Artigos relacionados</h1>
         </div>
-        <div class="related__cards">
+        <div class="related__cards" id="append-relatedArticles">
+            <!--
             <div class="related__big-card" style="background-image: url(img/related-article-card.jpg);">
                 <div class="related__big-info">
                     <p>Tema</p>
@@ -157,7 +162,7 @@
                     <h2>Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
-            <div class="related__tiny-card">
+            <div class="related__tiny-card" id="append-relatedArticles-tiny">
                 <div class="related__tiny-cards">
                     <div class="related__tiny-info">
                         <p>Tema</p>
@@ -178,6 +183,7 @@
                     </div>
                 </div>
             </div>
+            -->
         </div>
         <div class="related__link"><a>Mais artigos<img src="img/Arrow 2.svg" alt=""></a></div>
     </div>
@@ -207,6 +213,12 @@
 
     <script src="js/controller/body.js"></script>
     <script src="plugin/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/custom/jquery-3.6.2.min.js"></script>
+    <script src="js/custom/getArticle.js"></script>
+    <script src="js/custom/setArticleData.js"></script>
+    <script src="js/custom/getArticles.js"></script>
+    <script src="js/custom/articlePage-setArticlesData.js"></script>
 
 </body>
 
