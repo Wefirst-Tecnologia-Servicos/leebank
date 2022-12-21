@@ -32,6 +32,7 @@
     background-color: #373737;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     padding: 0.5rem 2rem;
+    cursor: pointer;
 }
 
 .related__tiny-cards:first-child {
