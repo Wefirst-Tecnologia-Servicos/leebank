@@ -7,17 +7,15 @@ function setArticlesData(data){
             element.articleDate = new Date(element.articleDate);
             element.topic.forEach((item,index)=>{
                 if(topics.includes(item) && maxArticles > appendedArticles && appendedArticlesId.includes(element.articleid) == false){
-                    console.log(element);
 
                     var fatherAppend = document.getElementById('append-relatedArticles');
 
                     if(appendedArticles == 0){
-                        var link = document.createElement('a');
-                        link.setAttribute("href","article.html?articleid=" + element.articleid);
 
                         var container = document.createElement('div');
                         container.setAttribute("class","related__big-card");
                         container.setAttribute("style","background-image: url(img/related-article-card.jpg);");
+                        container.setAttribute("onclick","window.location.href = 'article.html?articleid="+element.articleid+"'");
 
                         var innerContent = document.createElement('div');
                         innerContent.setAttribute("class","related__big-info");
@@ -51,11 +49,9 @@ function setArticlesData(data){
                             fatherAppend.appendChild(tinyArticlesAppender);
                         }
 
-                        var link = document.createElement('a');
-                        link.setAttribute("href","article.html?articleid=" + element.articleid);
-
                         var container = document.createElement('div');
                         container.setAttribute("class","related__tiny-cards");
+                        container.setAttribute("onclick","window.location.href = 'article.html?articleid="+element.articleid+"'");
 
                         var headerCard = document.createElement('div');
                         headerCard.setAttribute("class","related__tiny-info");

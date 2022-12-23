@@ -25,5 +25,6 @@ $.ajax(settingsGetArticle).done(function (data) {
         setArticleData(data[0]);
     }else{
         alert("Não foi possível encontrar o artigo");
+        window.location.href = "index.html"
     }    
 });
