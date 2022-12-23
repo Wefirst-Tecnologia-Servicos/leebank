@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 0px) {
-    .header--partner{
+    .header--partner {
         background-color: #431359;
     }
 
@@ -27,7 +27,7 @@
         width: fit-content;
     }
 
-    .header{
+    .header {
         width: 100%;
         justify-content: flex-end;
     }
@@ -48,7 +48,7 @@
         list-style-type: none;
         visibility: hidden;
         overflow-y: hidden;
-        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%)
+        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);
     }
 
     .header__nav.active .header__list--partner {
@@ -77,15 +77,21 @@
         display: none;
     }
 
+    .header__nav {
+        width: 15%;
+    }
+
     .header__button {
-        width: 80%;
+        background: transparent;
+        border: none;
     }
 
 }
 
 @media screen and (min-width: 834px) {
-    .header--partner{
-        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);;
+    .header--partner {
+        background: linear-gradient(180deg, #431359 57.46%, rgba(146, 74, 181, 0) 99.45%);
+        ;
     }
 
     .header {
@@ -93,13 +99,13 @@
         width: 100%;
     }
 
-    .header--partner{
+    .header--partner {
         justify-content: space-between;
     }
 
     .header__item--partner {
         margin: 1rem 2rem;
-      }
+    }
 
     .header__list--partner {
         display: flex;
@@ -108,6 +114,7 @@
         visibility: visible;
         overflow-y: auto;
         height: auto;
+        background: transparent;
     }
 
     .header__button {
@@ -121,6 +128,10 @@
     .header__logo--partners {
         width: 35%;
     }
+
+    .header__nav {
+        width: auto;
+      }
 
 }
 
