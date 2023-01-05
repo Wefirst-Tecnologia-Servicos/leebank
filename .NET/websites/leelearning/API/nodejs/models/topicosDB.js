@@ -5,7 +5,7 @@ function Topico(conexao){
 
 //Seleciona todos os Topicos
 Topico.prototype.getTopicos = function(callback){
-    this._con.query('select * from topic order by articleid asc',callback);
+    this._con.query('select * from topic order by topic asc',callback);
 }
 
 //Realiza o insert

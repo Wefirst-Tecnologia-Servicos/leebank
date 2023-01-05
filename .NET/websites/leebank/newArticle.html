@@ -55,7 +55,7 @@
 
         <div class="pins">
             <div>
-                <input class="pins__input" type="text" placeholder="Categoria do artigo">
+                <input class="pins__input" type="text" placeholder="Categoria do artigo" id="article-theme">
             </div>
             <div>
                 <div>
@@ -75,7 +75,7 @@
         </div>
 
         <div class="input">
-            <div><input class="input__title" type="text" placeholder="Título de artigo"></div>
+            <div><input class="input__title" type="text" placeholder="Título de artigo" id="article-title"></div>
             <div class="input__buttons">
                 <button class="input__button"><img src="img/B.svg" alt=""></button>
                 <button class="input__button"><img src="img/I.svg" alt=""></button>
@@ -91,7 +91,7 @@
                 <button class="input__button"><img src="img/image.svg" alt=""></button>
             </div>
             <div>
-                <textarea class="input__text" rows="25" placeholder="Escreva o conteúdo do seu artigo aqui!"></textarea>
+                <textarea class="input__text" rows="25" placeholder="Escreva o conteúdo do seu artigo aqui!" id="article-content"></textarea>
             </div>
         </div>
 
@@ -121,5 +121,9 @@
             <img src="img/Group 16.svg" />
         </div>
     </div>
-
 </body>
+
+<script src="js/custom/getTopics.js"></script>
+<script src="js/custom/newArticlePage-setTopics.js"></script>
+<script src="js/custom/getArticles.js"></script>
+<script src="js/custom/insertArticle.js"></script>

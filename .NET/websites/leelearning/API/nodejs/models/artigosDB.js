@@ -26,7 +26,7 @@ Artigo.prototype.insertArtigo = function(artigo, callback){
 }
 //Realiza o insert
 Artigo.prototype.insertArtigoFull = function(artigo, callback){
-    this._con.query("insert into article set ?; insert into articletopic set ?;",[artigo.artigo,artigo.topico],callback);
+    this._con.query("insert into article set ?; insert into articletopic (`articleid`, `topic`, `createdby`, `cratedon`, `modifiedby`, `modifiedon`) VALUES ?;",[artigo.artigo,artigo.topico],callback);
 }
 
 //Realiza o update
