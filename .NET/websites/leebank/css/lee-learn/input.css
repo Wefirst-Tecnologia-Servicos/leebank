@@ -1,0 +1,48 @@
+.input {
+    padding: 2rem 10rem;
+}
+
+.input__title {
+    background: #242424;
+    border: 1px solid #9440D6;
+    border-radius: 40px;
+    color: #626163;
+    font-size: 1rem;
+    padding: .3rem .3rem .3rem 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input__buttons {
+    background: #373737;
+    border: 1px solid #302637;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: .3rem 1rem;
+    display: flex;
+}
+
+.input__buttons p {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+}
+
+.input__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 .2rem;
+}
+
+.input__button img{
+    width: 80%;
+}
+
+.input__text {
+    background: #242424;
+    border: 1px solid #9440D6;
+    border-radius: 20px;
+    color: #626163;
+    font-size: 1rem;
+    padding: .3rem .3rem .3rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}

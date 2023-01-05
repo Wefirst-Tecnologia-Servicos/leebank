@@ -1,0 +1,48 @@
+.pins {
+    display: flex;
+    padding: 1rem 10rem 4rem 10rem;
+    background: #373737;
+    border: 1px solid #302637;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pins__input {
+    background: #242424;
+    border: 1px solid #9440D6;
+    border-radius: 40px;
+    color: #626163;
+    font-size: 1rem;
+    padding: .3rem .3rem .3rem 1rem;
+    margin-right: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.pins__tags {
+    display: flex;
+    border-top: 1px solid #9440D6;
+    padding-top: 1rem;
+}
+
+.pins__tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 7vw;
+    background: #191818;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 5vh;
+    padding: 0.15rem 0.75rem;
+    font-size: .80rem;
+}
+
+.pins__tag:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.pins__tag img{
+    width: 20%;
+}
+
+.pins__tag p{
+    margin-bottom: 0;
+}

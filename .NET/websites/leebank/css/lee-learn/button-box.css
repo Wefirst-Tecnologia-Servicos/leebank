@@ -1,0 +1,14 @@
+.button-box {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.button-box__button {
+    background: #9440D6;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    padding: .5rem 5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
