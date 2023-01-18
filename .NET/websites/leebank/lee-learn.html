@@ -40,12 +40,12 @@
     <!--<menu-component></menu-component>-->
 
     <div class="menu">
-        <div class="menu__logo"><img src="img/logo.svg" alt=""></div>
+        <div class="menu__logo"><a href="lee-learn.html"><img src="img/logo.svg" alt=""></a></div>
         <div>
             <ul class="menu__list">
-                <li class="menu__items"><a class="menu__link">Destaques</a></li>
-                <li class="menu__items"><a class="menu__link">Mais Recentes</a></li>
-                <li class="menu__items"><a class="menu__link">Categorias</a></li>
+                <li class="menu__items"><a href="lee-learn.html#highlithgs" class="menu__link">Destaques</a></li>
+                <li class="menu__items"><a href="lee-learn.html#recent" class="menu__link">Mais Recentes</a></li>
+                <li class="menu__items"><a href="lee-learn.html#topics" class="menu__link">Categorias</a></li>
                 <li class="menu__items"><a class="menu__link">Login</a></li>
             </ul>
         </div>
@@ -98,42 +98,54 @@
         </div>
 
         <div class="slideshow__dots">
-            <span class="slideshow__dot" onclick="currentSlide(1)"></span> 
-            <span class="slideshow__dot" onclick="currentSlide(2)"></span> 
-            <span class="slideshow__dot" onclick="currentSlide(3)"></span> 
+            <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+            <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+            <span class="slideshow__dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <div class="topics">
+        <div class="topics" id="topics">
             <div class="topics__title">
                 <h2>Veja os artigos por tópicos</h2>
             </div>
             <div>
                 <div class="topics__itens">
-                    <div class="topics__item" style="background-image: url(img/topico1.png)">
-                        <p>Tópico 01</p>
-                    </div>
-                    <div class="topics__item" style="background-image: url(img/topico2.png)">
-                        <p>Tópico 02</p>
-                    </div>
-                    <div class="topics__item" style="background-image: url(img/topico3.png)">
-                        <p>Tópico 03</p>
-                    </div>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico1.png)">
+                            <p>Tópico 01</p>
+                        </div>
+                    </a>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico2.png)">
+                            <p>Tópico 02</p>
+                        </div>
+                    </a>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico3.png)">
+                            <p>Tópico 03</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="topics__itens">
-                    <div class="topics__item" style="background-image: url(img/topico4.png)">
-                        <p>Tópico 04</p>
-                    </div>
-                    <div class="topics__item" style="background-image: url(img/topico5.png)">
-                        <p>Tópico 05</p>
-                    </div>
-                    <div class="topics__item" style="background-image: url(img/topico6.png)">
-                        <p>Tópico 06</p>
-                    </div>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico4.png)">
+                            <p>Tópico 04</p>
+                        </div>
+                    </a>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico5.png)">
+                            <p>Tópico 05</p>
+                        </div>
+                    </a>
+                    <a href="topics.html">
+                        <div class="topics__item" style="background-image: url(img/topico6.png)">
+                            <p>Tópico 06</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="highlights">
+        <div class="highlights" id="highlithgs">
             <div class="highlights__title">
                 <h2>Destaques</h2>
             </div>
@@ -184,7 +196,7 @@
             </div>
         </div>
 
-        <div class="recent">
+        <div class="recent" id="recent">
             <div class="recent__text">
                 <h2>Mais Recentes</h2>
             </div>

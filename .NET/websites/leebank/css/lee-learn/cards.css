@@ -1,0 +1,44 @@
+.cards {
+    margin-top: 7rem;
+}
+
+.cards__row {
+    display: flex;
+    padding: 0 10rem;
+}
+
+.cards__box {
+    background-color: rgba(55, 55, 55, 0.3);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    margin-right: 2rem;
+    width: 25vw;
+}
+
+.cards__image {
+    display: flex;
+    font-weight: bold;
+    height: 30vh;
+}
+
+.cards__info {
+    padding: 0.5rem 1rem;
+}
+
+.cards__text {
+    padding: 1.25rem;
+}
+
+.cards__button-box {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.cards__button {
+    background: #000000;
+    border-radius: 40px;
+    color: #ffff;
+    font-weight: bold;
+    border:none;
+    padding: .4rem 4rem;
+    filter: drop-shadow(4px 4px 13px rgba(0, 0, 0, 0.5));
+}

@@ -38,10 +38,10 @@
     <!--<menu-component></menu-component>-->
 
     <div class="menu">
-        <div class="menu__logo"><img src="img/logo.svg" alt=""></div>
+        <div class="menu__logo"><a href="lee-learn.html"><img src="img/logo.svg" alt=""></a></div>
         <div>
             <ul class="menu__list">
-                <li class="menu__items"><a class="menu__link">Destaques</a></li>
+                <li class="menu__items"><a  class="menu__link">Destaques</a></li>
                 <li class="menu__items"><a class="menu__link">Mais Recentes</a></li>
                 <li class="menu__items"><a class="menu__link">Categorias</a></li>
                 <li class="menu__items"><a class="menu__link">Login</a></li>
@@ -59,7 +59,9 @@
             </div>
             <div>
                 <div>
-                    <input class="pins__input" type="text" placeholder="Tags">
+                    <select class="pins__input" id="tags" style="width: 100%;">
+                        <option value="" disabled selected hidden>Tags</option>
+                    </select>
                 </div>
                 <div class="pins__tags">
                     <div class="pins__tag">
@@ -91,7 +93,8 @@
                 <button class="input__button"><img src="img/image.svg" alt=""></button>
             </div>
             <div>
-                <textarea class="input__text" rows="25" placeholder="Escreva o conteúdo do seu artigo aqui!" id="article-content"></textarea>
+                <textarea class="input__text" rows="25" placeholder="Escreva o conteúdo do seu artigo aqui!"
+                    id="article-content"></textarea>
             </div>
         </div>
 
