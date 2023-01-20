@@ -1,9 +1,8 @@
-var CurrentArticleid = 1;
+var currentArticleid = 1;
 
 function setArticlesData(data){
+    console.log(data)
     if(data.length > 0){
-        var lastArticle = data.slice(-1);
-        CurrentArticleid = lastArticle.articleid + 1;
+        currentArticleid = data[data.length-1].articleid + 1;
     }
-    
 }

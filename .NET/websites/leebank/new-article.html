@@ -10,7 +10,8 @@
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular-locale_pt.js"></script>
-    <script type="text/javascript" src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
+    <script type="text/javascript"
+        src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
     <script src="plugin/tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 
     <link href="css/lee-learn/global.css" rel="stylesheet" />
@@ -41,7 +42,7 @@
         <div class="menu__logo"><a href="lee-learn.html"><img src="img/logo.svg" alt=""></a></div>
         <div>
             <ul class="menu__list">
-                <li class="menu__items"><a  class="menu__link">Destaques</a></li>
+                <li class="menu__items"><a class="menu__link">Destaques</a></li>
                 <li class="menu__items"><a class="menu__link">Mais Recentes</a></li>
                 <li class="menu__items"><a class="menu__link">Categorias</a></li>
                 <li class="menu__items"><a class="menu__link">Login</a></li>
@@ -53,26 +54,32 @@
             <h3> Criar Artigo</h3>
         </div>
 
-        <div class="pins">
+        <div class="pins" style="display: flex;flex-wrap: wrap;justify-content: space-around;">
+            <div>
+                <input class="pins__input" type="text" placeholder="Título" id="article-title">
+            </div>
+            <div>
+                <input class="pins__input" type="text" placeholder="Sub título" id="article-subtitle">
+            </div>
             <div>
                 <input class="pins__input" type="text" placeholder="Categoria do artigo" id="article-theme">
             </div>
             <div>
+                <input class="pins__input" type="text" placeholder="Autor do artigo" id="article-author">
+            </div>
+            <div>
                 <div>
-                    <select class="pins__input" id="tags" style="width: 100%;">
-                        <option value="" disabled selected hidden>Tags</option>
+                    <select class="pins__input" id="tags" style="width: 100%;" onchange="criarTag()">
+                        <option value="" disabled selected hidden>Escolha...</option>
                     </select>
                 </div>
-                <div class="pins__tags">
-                    <div class="pins__tag">
-                        <p><b>Tag</b></p>
-                        <img src="img/x-button.svg" alt="">
-                    </div>
-                    <div class="pins__tag">
-                        <p><b>Tag</b></p>
-                        <img src="img/x-button.svg" alt="">
-                    </div>
+                
+                <div class="pins__tags" id="tags-results">
+
                 </div>
+            </div>
+            <div>
+                <input class="pins__input" type="date" id="article-date">
             </div>
         </div>
 
@@ -108,20 +115,62 @@
     </div>
 </body>
 
-<script src="js/custom/topics/getTopics.js"></script>
+
 <script src="js/custom/topics/newArticlePage-setTopics.js"></script>
+<script src="js/custom/articles/newArticlePage-setArticlesData.js"></script>
+<script src="js/custom/topics/getTopics.js"></script>
 <script src="js/custom/articles/getArticles.js"></script>
 <script src="js/custom/articles/insertArticle.js"></script>
 <script>
-        tinymce.init({
-          selector: 'textarea',
-          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
-          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-          tinycomments_mode: 'embedded',
-          tinycomments_author: 'Author name',
-          mergetags_list: [
+    var tags = []
+
+    function criarTag(){
+        var selectedTag = document.getElementById('tags').value
+
+        if(!tags.includes(selectedTag)){
+            tags.push(selectedTag)
+
+            var fatherAppends = document.getElementById('tags-results')
+
+            var resultBox = document.createElement('div')
+            resultBox.setAttribute("class","pins__tag")
+            resultBox.setAttribute("id","tag-selected-"+selectedTag.replace(/ /g,''))
+
+            var resultBoxtext = document.createElement('p')
+            resultBoxtext.innerHTML="<b>"+ selectedTag +"</b>"
+
+            var resultBoxImage = document.createElement('img')
+            resultBoxImage.setAttribute("src","img/x-button.svg")
+            resultBoxImage.setAttribute("onclick","removeTag('"+selectedTag+"')")
+
+            resultBox.appendChild(resultBoxtext)
+            resultBox.appendChild(resultBoxImage)
+
+            fatherAppends.appendChild(resultBox)
+        }
+
+        document.getElementById('tags').value=""
+    }
+
+    function removeTag(tagName){
+        if(tags.includes(tagName)){
+            var index = tags.indexOf(tagName)
+            tags.splice(index, 1);
+            $('#tag-selected-' + tagName.replace(/ /g,'')).remove();
+        }
+    }
+</script>
+
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
             { value: 'First.Name', title: 'First Name' },
             { value: 'Email', title: 'Email' },
-          ]
-        });
-      </script>
+        ]
+    });
+</script>
