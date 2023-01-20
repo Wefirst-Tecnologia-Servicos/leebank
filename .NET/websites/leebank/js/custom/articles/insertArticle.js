@@ -44,21 +44,19 @@ function getFormData() {
             "subtitle": document.getElementById('article-subtitle').value,
             "theme": document.getElementById('article-theme').value,
             "content": tinymce.activeEditor.getContent(),
-            "image": document.getElementById('no-picture.jpg').value,
+            "image": "no-picture.jpg",
             "author": document.getElementById('article-author').value,
             "articleDate": document.getElementById('article-date').value,
-            "createdby": document.getElementById('sistema').value,
+            "createdby": "sistema",
         },
         topico: []
     }
 
-    tags.forEach(element => {
-        dados.topico.push([currentArticleid,element,"sistema",null,null,null])
-    });
+    
 
     if(tags.length>0){
-        tags.forEach((item) => {
-            dados.topico.push([CurrentArticleid,item,"","",null,null]);
+        tags.forEach(element => {
+            dados.topico.push([currentArticleid,element,"sistema",null,null,null])
         });
     }    
 

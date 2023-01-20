@@ -3,6 +3,7 @@ function setArticlesData(data){
     var appendedArticles = 0;
     var appendedArticlesId = [];
     data.forEach(element => {
+        console.log(element)
         if(element.articleid != articleid){
             element.articleDate = new Date(element.articleDate);
             element.topic.forEach((item,index)=>{
