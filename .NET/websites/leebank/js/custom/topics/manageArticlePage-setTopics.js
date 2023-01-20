@@ -1,5 +1,4 @@
 function setTopicsData(data){
-    console.log(data)
     var fatherAppends = document.getElementById('tag-filter')
     if(data.length>0){
         data.forEach(element => {

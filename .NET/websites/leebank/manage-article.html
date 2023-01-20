@@ -66,7 +66,7 @@
             <div class="filter__selectors">
                 <div class="filter__box">
                     <p class="filter__text">Categoria</p>
-                    <input type="text" class="filter__selector">
+                    <input type="text" class="filter__selector" id="categoria-filtro">
                 </div>
                 <div class="filter__box">
                     <p class="filter__text">Tag</p>
@@ -76,25 +76,14 @@
                 </div>
                 <div class="filter__box">
                     <p class="filter__text">Data</p>
-                    <input class="filter__selector" type="date">
+                    <input class="filter__selector" type="date" id="date-filter">
                 </div>
             </div>
             <div class="result" id="tags-results">
-                <div class="result__box">
-                    <p class="result__text"><b>Filtro</b></p>
-                    <img class="result__img" src="img/x-button.svg" alt="">
-                </div>
-                <div class="result__box">
-                    <p class="result__text"><b>Filtro</b></p>
-                    <img class="result__img" src="img/x-button.svg" alt="">
-                </div>
-                <div class="result__box">
-                    <p class="result__text"><b>Filtro</b></p>
-                    <img class="result__img" src="img/x-button.svg" alt="">
-                </div>
+                
             </div>
             <div class="filter__button-box">
-                <button class="filter__button">Filtrar</button>
+                <button class="filter__button" onclick="filtrarArtigos()">Filtrar</button>
             </div>
         </div>
 
@@ -103,7 +92,7 @@
             <div><button class="search__button" onclick="window.location.href='new-article.html'">Criar Artigo</button></div>
         </div>
 
-        <div class="table" id="table-append">
+        <div class="table">
             <div class="table__header">
                 <div class="table__title">
                     <p>Título</p>
@@ -124,6 +113,10 @@
                     
                 </div>
             </div>
+            <div id="table-append">
+
+            </div>
+            <!--
             <div class="table__linha">
                 <div class="table__title">
                     <p><b>Lorem ipsum dolor sit amet</b></p>
@@ -145,7 +138,7 @@
                     <button class="table__button">Deletar</button>
                 </div>
             </div>
-
+            -->
         </div>
 
         <div class="footer">
@@ -170,10 +163,12 @@
         </div>
 </body>
 
+<script src="js/custom/articles/manageArticlePage-removeArticle.js"></script>
 <script src="js/custom/topics/manageArticlePage-setTopics.js"></script>
 <script src="js/custom/articles/manageArticlePage-setArticleData.js"></script>
 <script src="js/custom/topics/getTopics.js"></script>
 <script src="js/custom/articles/getArticles.js"></script>
+<script src="js/custom/articles/filtrarArticles.js"></script>
 
 <script>
     var tags = []
@@ -188,7 +183,7 @@
 
             var resultBox = document.createElement('div')
             resultBox.setAttribute("class","result__box")
-            resultBox.setAttribute("id","tag-selected-"+selectedTag)
+            resultBox.setAttribute("id","tag-selected-"+selectedTag.replace(/ /g,''))
 
             var resultBoxtext = document.createElement('p')
             resultBoxtext.setAttribute("class","result__text")
@@ -204,11 +199,15 @@
 
             fatherAppends.appendChild(resultBox)
         }
+
+        document.getElementById('tag-filter').value=""
     }
 
     function removeTag(tagName){
-        if(tags.includes(selectedTag)){
-            tags.splice(tags.indexOf(5), 1);
+        if(tags.includes(tagName)){
+            var index = tags.indexOf(tagName)
+            tags.splice(index, 1);
+            $('#tag-selected-' + tagName.replace(/ /g,'')).remove();
         }
     }
 

@@ -1,10 +1,9 @@
 
 function setArticlesData(data){
-    if(data.length > 0){
-        console.log(data)
+    var fatherAppends = document.getElementById('table-append')
+    fatherAppends.innerHTML = ""
 
-        var fatherAppends = document.getElementById('table-append')
-
+    if(data.length > 0){        
         data.forEach(element => {
             var articleLinha = document.createElement('div');
             articleLinha.setAttribute("class","table__linha")
@@ -48,9 +47,13 @@ function setArticlesData(data){
 
             var articleUpdate = document.createElement('p');
             if(element.modifiedon != null){
-                articleUpdate.innerHTML = element.modifiedon
+                element.modifiedon = new Date(element.modifiedon)
+                element.modifiedon.setDate(element.modifiedon.getDate() + 1);
+                articleUpdate.innerHTML = element.modifiedon.toLocaleDateString('pt-BR');
             }else{
-                articleUpdate.innerHTML = "Sem atualização"
+                element.articleDate = new Date(element.articleDate)
+                element.articleDate.setDate(element.articleDate.getDate() + 1);
+                articleUpdate.innerHTML = element.articleDate.toLocaleDateString('pt-BR');
             }            
 
             articleUpdateWrapper.appendChild(articleUpdate)
@@ -90,9 +93,9 @@ function setArticlesData(data){
         });
     }else{
         var result = document.createElement('div')
-        result.setAttribute("style","width: 100%;")
+        result.setAttribute("style","width: 100%; text-align: center;")
         result.setAttribute("class","table__title")
-        result.innerHTML = "<p><b>Não foi possível encontrar nenhum artigo</b></p>"
+        result.innerHTML = "<h1><b>Não foi possível encontrar nenhum artigo</b></h1>"
 
         fatherAppends.appendChild(result)        
     }

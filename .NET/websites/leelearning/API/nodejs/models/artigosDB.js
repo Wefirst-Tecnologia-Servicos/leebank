@@ -13,11 +13,15 @@ Artigo.prototype.getArtigo = function(artigo,callback){
 }
 //Seleciona todos os Artigos
 Artigo.prototype.getArtigosFull = function(callback){
-    this._con.query('select a.articleid, a.title, a.subtitle, a.theme, a.content, a.image, a.articleDate, a.author, a.modifiedon, b.topic from article as a LEFT JOIN articletopic as b on a.articleid = b.articleid order by articleid asc',callback);
+    this._con.query('select a.articleid, a.title, a.subtitle, a.theme, a.content, a.image, a.articleDate, a.author, a.createdon, a.modifiedon, b.topic from article as a LEFT JOIN articletopic as b on a.articleid = b.articleid order by articleid asc',callback);
 }
 //Seleciona um Artigo específico
 Artigo.prototype.getArtigoFull = function(artigo,callback){
-    this._con.query("select a.articleid, a.title, a.subtitle, a.theme, a.content, a.image, a.articleDate, a.author, a.modifiedon, b.topic from article as a LEFT JOIN articletopic as b on a.articleid = b.articleid where a.articleid = '" + artigo + "'",callback);
+    this._con.query("select a.articleid, a.title, a.subtitle, a.theme, a.content, a.image, a.articleDate, a.author, a.createdon, a.modifiedon, b.topic from article as a LEFT JOIN articletopic as b on a.articleid = b.articleid where a.articleid = '" + artigo + "'",callback);
+}
+//Seleciona um Artigo específico
+Artigo.prototype.filterArtigoFull = function(filtro,callback){
+    this._con.query("select a.articleid, a.title, a.subtitle, a.theme, a.content, a.image, a.articleDate, a.author, a.createdon, a.modifiedon, b.topic from article as a LEFT JOIN articletopic as b on a.articleid = b.articleid " + filtro + " order by a.articleid asc", callback);
 }
 
 //Realiza o insert
