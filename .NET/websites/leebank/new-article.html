@@ -10,8 +10,8 @@
     <script type="text/javascript" src="plugin/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="plugin/angularjs/angular-locale_pt.js"></script>
-    <script type="text/javascript"
-        src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
+    <script type="text/javascript" src="plugin/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
+    <script src="plugin/tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 
     <link href="css/lee-learn/global.css" rel="stylesheet" />
     <link href="css/lee-learn/footer.css" rel="stylesheet" />
@@ -76,27 +76,9 @@
             </div>
         </div>
 
-        <div class="input">
-            <div><input class="input__title" type="text" placeholder="Título de artigo" id="article-title"></div>
-            <div class="input__buttons">
-                <button class="input__button"><img src="img/B.svg" alt=""></button>
-                <button class="input__button"><img src="img/I.svg" alt=""></button>
-                <button class="input__button"><img src="img/U.svg" alt=""></button>
-                <p>|</p>
-                <button class="input__button"><img src="img/align-left.svg" alt=""></button>
-                <button class="input__button"><img src="img/align-center.svg" alt=""></button>
-                <button class="input__button"><img src="img/align-right.svg" alt=""></button>
-                <p>|</p>
-                <button class="input__button"><img src="img/highlight.svg" alt=""></button>
-                <button class="input__button"><img src="img/italic.svg" alt=""></button>
-                <p>|</p>
-                <button class="input__button"><img src="img/image.svg" alt=""></button>
-            </div>
-            <div>
-                <textarea class="input__text" rows="25" placeholder="Escreva o conteúdo do seu artigo aqui!"
-                    id="article-content"></textarea>
-            </div>
-        </div>
+        <textarea id="input">
+            Welcome to TinyMCE!
+         </textarea>
 
         <div class="button-box">
             <button class="button-box__button">Enviar Artigo</button>
@@ -130,3 +112,16 @@
 <script src="js/custom/topics/newArticlePage-setTopics.js"></script>
 <script src="js/custom/articles/getArticles.js"></script>
 <script src="js/custom/articles/insertArticle.js"></script>
+<script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+          mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+          ]
+        });
+      </script>
