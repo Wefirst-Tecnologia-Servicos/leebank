@@ -126,7 +126,61 @@
     </div>
 </body>
 
+<script src="js/custom/topics/editArticlePage-setTopics.js"></script>
+<script src="js/custom/articles/editArticlePage-setArticleData.js"></script>
 <script src="js/custom/topics/getTopics.js"></script>
-<script src="js/custom/topics/newArticlePage-setTopics.js"></script>
-<script src="js/custom/articles/getArticles.js"></script>
-<script src="js/custom/articles/insertArticle.js"></script>
+<script src="js/custom/articles/getArticle.js"></script>
+<script src="js/custom/articles/editArticle.js"></script>
+<script>
+    var tags = []
+
+    function criarTag(){
+        var selectedTag = document.getElementById('tags').value
+
+        if(!tags.includes(selectedTag)){
+            tags.push(selectedTag)
+
+            var fatherAppends = document.getElementById('tags-results')
+
+            var resultBox = document.createElement('div')
+            resultBox.setAttribute("class","pins__tag")
+            resultBox.setAttribute("id","tag-selected-"+selectedTag.replace(/ /g,''))
+
+            var resultBoxtext = document.createElement('p')
+            resultBoxtext.innerHTML="<b>"+ selectedTag +"</b>"
+
+            var resultBoxImage = document.createElement('img')
+            resultBoxImage.setAttribute("src","img/x-button.svg")
+            resultBoxImage.setAttribute("onclick","removeTag('"+selectedTag+"')")
+
+            resultBox.appendChild(resultBoxtext)
+            resultBox.appendChild(resultBoxImage)
+
+            fatherAppends.appendChild(resultBox)
+        }
+
+        document.getElementById('tags').value=""
+    }
+
+    function removeTag(tagName){
+        if(tags.includes(tagName)){
+            var index = tags.indexOf(tagName)
+            tags.splice(index, 1);
+            $('#tag-selected-' + tagName.replace(/ /g,'')).remove();
+        }
+    }
+</script>
+
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ]
+    });
+</script>
