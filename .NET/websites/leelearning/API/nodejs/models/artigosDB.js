@@ -39,7 +39,7 @@ Artigo.prototype.updateArtigo = function(artigo,callback){
 }
 //Realiza o update da senha
 Artigo.prototype.updateArtigoTopico = function(artigo,callback){
-    this._con.query("delete from articletopic  where articleid = '" + artigo.articleid + "'; insert into articletopic (`articleid`, `topic`, `createdby`, `cratedon`, `modifiedby`, `modifiedon`) VALUES ?;", [artigo.topicos],callback);
+    this._con.query("delete from articletopic  where articleid = '" + artigo.articleid + "'; insert into articletopic (`articleid`, `topic`, `createdby`, `cratedon`, `modifiedby`, `modifiedon`) VALUES ?;", [artigo.topico],callback);
 }
 
 
