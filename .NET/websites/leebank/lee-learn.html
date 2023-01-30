@@ -108,39 +108,8 @@
                 <h2>Veja os artigos por tópicos</h2>
             </div>
             <div>
-                <div class="topics__itens">
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico1.png)">
-                            <p>Tópico 01</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico2.png)">
-                            <p>Tópico 02</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico3.png)">
-                            <p>Tópico 03</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="topics__itens">
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico4.png)">
-                            <p>Tópico 04</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico5.png)">
-                            <p>Tópico 05</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico6.png)">
-                            <p>Tópico 06</p>
-                        </div>
-                    </a>
+                <div class="topics__itens" id="pesquisa-por-topicos">
+                
                 </div>
             </div>
         </div>
@@ -200,64 +169,9 @@
             <div class="recent__text">
                 <h2>Mais Recentes</h2>
             </div>
-            <div class="recent__box">
-                <div class="recent__cards">
-                    <div class="recent__big-card" style="background-image: url(img/recent-img.jpg) ;">
-                        <div>
-                            <div class="recent__big-info">
-                                <p><b>TEMA</b></p>
-                                <p>dd/mm/yy</p>
-                            </div>
-                            <div>
-                                <h2><b>Dolor purus non enim praesent elementum facilisis leo.</b></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="recent__cards">
-                    <div class="recent__tiny-card">
-                        <div class="recent__tiny-info">
-                            <p><b>Tema</b></p> <img src="img/Line 8.svg" />
-                        </div>
-                        <div>
-                            <p>
-                                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="recent__tiny-card">
-                        <div class="recent__tiny-info">
-                            <p><b>Tema</b></p> <img src="img/Line 8.svg" />
-                        </div>
-                        <div>
-                            <p>
-                                Aliquet risus feugiat in ante.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="recent__tiny-card">
-                        <div class="recent__tiny-info">
-                            <p><b>Tema</b></p> <img src="img/Line 8.svg" />
-                        </div>
-                        <div>
-                            <p>
-                                Massa tincidunt nunc pulvinar sapien.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="recent__tiny-card">
-                        <div class="recent__tiny-info">
-                            <p><b>Tema</b></p> <img src="img/Line 8.svg" />
-                        </div>
-                        <div>
-                            <p>
-                                Ultricies mi quis hendrerit dolor magna eget est lorem ipsum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="recent__box" id="append-recentArticles">
+
+            </div>                
             <div class="recent__link">
                 <a href="article.html?articleid=2">Mais artigos <img src="img/Arrow 2.svg" /> </a>
             </div>
@@ -291,5 +205,10 @@
     <script src="js/slideshow.js"></script>
 
 </body>
+
+<script src="js/custom/topics/homePage-setTopics.js"></script>
+<script src="js/custom/articles/homePage-setArticlesData.js"></script>
+<script src="js/custom/topics/getTopics.js"></script>
+<script src="js/custom/articles/getArticles.js"></script>
 
 </html>

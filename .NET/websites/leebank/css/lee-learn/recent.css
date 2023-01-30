@@ -13,6 +13,7 @@
 }
 
 .recent__big-card {
+    cursor: pointer;
     height: 100%;
     display: flex;
     align-items: end;
@@ -36,6 +37,7 @@
 }
 
 .recent__tiny-card {
+    cursor: pointer;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     background-color: #252525;
     padding: 1rem 1rem;

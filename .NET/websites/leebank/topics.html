@@ -56,46 +56,8 @@
         </div>
 
         <div class="cards">
-            <div class="cards__row">
-                <div class="cards__box">
-                    <div class="cards__image" style="background-image: url(img/topics-block1.png);">
-                        <div class="cards__info">
-                            <p>Tema</p>
-                        </div>
-                        <div class="cards__info">
-                            <p>dd/mm/aaaa</p>
-                        </div>
-                    </div>
-                    <div class="cards__text">
-                        <p>Risus commodo viverra maecenas accumsan lacus.</p>
-                    </div>
-                </div>
-                <div class="cards__box">
-                    <div class="cards__image" style="background-image: url(img/topics-block2.png);">
-                        <div class="cards__info">
-                            <p>Tema</p>
-                        </div>
-                        <div class="cards__info">
-                            <p>dd/mm/aaaa</p>
-                        </div>
-                    </div>
-                    <div class="cards__text">
-                        <p>Aliquam eleifend mi in nulla posuere sollicitudin aliquam.</p>
-                    </div>
-                </div>
-                <div class="cards__box">
-                    <div class="cards__image" style="background-image: url(img/topics-block3.png);">
-                        <div class="cards__info">
-                            <p>Tema</p>
-                        </div>
-                        <div class="cards__info">
-                            <p>dd/mm/aaaa</p>
-                        </div>
-                    </div>
-                    <div class="cards__text">
-                        <p>Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam.</p>
-                    </div>
-                </div>
+            <div class="cards__row" id="article-appender">
+                
             </div>
             <div class="cards__button-box">
                 <button class="cards__button">Ver mais artigos</button>
@@ -107,39 +69,8 @@
                 <h2>Veja os artigos por tópicos</h2>
             </div>
             <div>
-                <div class="topics__itens">
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico1.png)">
-                            <p>Tópico 01</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico2.png)">
-                            <p>Tópico 02</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico3.png)">
-                            <p>Tópico 03</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="topics__itens">
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico4.png)">
-                            <p>Tópico 04</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico5.png)">
-                            <p>Tópico 05</p>
-                        </div>
-                    </a>
-                    <a href="topics.html">
-                        <div class="topics__item" style="background-image: url(img/topico6.png)">
-                            <p>Tópico 06</p>
-                        </div>
-                    </a>
+                <div class="topics__itens" id="pesquisa-por-topicos">
+                    
                 </div>
             </div>
         </div>
@@ -172,5 +103,11 @@
     <script src="js/slideshow.js"></script>
 
 </body>
+
+<script src="js/custom/articles/topicsPage-setArticlesData.js"></script>
+<script src="js/custom/articles/topicsPage-getArticles.js"></script>
+
+<script src="js/custom/topics/homePage-setTopics.js"></script>
+<script src="js/custom/topics/getTopics.js"></script>
 
 </html>
