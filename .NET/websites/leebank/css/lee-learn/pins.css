@@ -4,6 +4,7 @@
     background: #373737;
     border: 1px solid #302637;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
 }
 
 .pins__input {
@@ -45,4 +46,40 @@
 
 .pins__tag p{
     margin-bottom: 0;
+}
+
+.pin__author, .pin__author .pins__input, .pin__date, .pin__category .pins__input, .tag__box, .tag__box .pins__input{
+    width: 100%;
+}
+
+.pin__date .pins__input, .pin__category{
+    width: 40%;
+}
+
+.pin__tag-box{
+    width: 55%;
+    margin: auto;
+}
+
+.pins__article{
+    margin-top: 3rem;
+    padding: 0rem 10rem;
+}
+
+.pins__article, .pin__title .pins__input, .pin__subtitle .pins__input{
+    width: 100%;
+}
+
+.pin__image .pins__input{
+    border: 2px dashed #9440D6;
+    background: #353535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.pin__image .pins__input p{
+    margin-bottom: 0
 }
