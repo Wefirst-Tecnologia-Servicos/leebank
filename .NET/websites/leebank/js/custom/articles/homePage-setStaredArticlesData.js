@@ -16,6 +16,7 @@ function setStaredArticlesData(data) {
 
                 var container = document.createElement('div')
                 container.setAttribute("class","highlights__first")
+                container.setAttribute("onclick","window.location.href='article.html?articleid="+element.articleid+"'")
 
                 var containerImage = document.createElement('div')
                 containerImage.setAttribute("class","highlights__image")
@@ -72,6 +73,7 @@ function setStaredArticlesData(data) {
 
                 var container = document.createElement('div')
                 container.setAttribute("class","highlights__card")
+                container.setAttribute("onclick","window.location.href='article.html?articleid="+element.articleid+"'")
 
                 var containerImage = document.createElement('div')
                 containerImage.setAttribute("class","highlights__card-image")

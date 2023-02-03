@@ -14,7 +14,7 @@ function setArticlesData(data){
 
                         var container = document.createElement('div');
                         container.setAttribute("class","related__big-card");
-                        container.setAttribute("style","background-image: url(img/related-article-card.jpg);");
+                        container.setAttribute("style","background-image: url(img/"+element.image+");");
                         container.setAttribute("onclick","window.location.href = 'article.html?articleid="+element.articleid+"'");
 
                         var innerContent = document.createElement('div');

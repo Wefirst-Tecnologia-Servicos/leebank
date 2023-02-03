@@ -6,6 +6,7 @@ function setArticlesData(data) {
             
             var cardBox = document.createElement('div')
             cardBox.setAttribute("class", "cards__box")
+            cardBox.setAttribute("onclick", "window.location.href='article.html?articleid="+element.articleid+"'")
 
             var cardBoxImage = document.createElement('div')
             cardBoxImage.setAttribute("class", "cards__image")
