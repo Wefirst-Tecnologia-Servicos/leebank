@@ -7,7 +7,7 @@ function setTopicsData(data){
 
             var innerDiv = document.createElement('div')
             innerDiv.setAttribute("class","topics__item")
-            innerDiv.style.backgroundImage = "url(img/topico1.png)" //"background-image: url(img/"+ element.topico.toLowercase() +".png)"
+            innerDiv.style.backgroundImage = "url(img/"+element.image+")" //"background-image: url(img/"+ element.topico.toLowercase() +".png)"
 
             var divP = document.createElement('p')
             divP.innerHTML = element.topic

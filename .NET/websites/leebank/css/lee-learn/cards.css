@@ -12,6 +12,7 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     margin-right: 2rem;
     width: 25vw;
+    cursor: pointer;
 }
 
 .cards__image {

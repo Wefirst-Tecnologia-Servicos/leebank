@@ -28,7 +28,7 @@ function setArticlesData(data) {
                 var container = document.createElement('div')
                 container.setAttribute("class", "recent__big-card")
                 container.setAttribute("onclick", "window.location.href='article.html?articleid=" + element.articleid + "'")
-                container.style.backgroundImage = " url(img/recent-img.jpg"
+                container.style.backgroundImage = " url(img/"+element.image+")"
 
                 var containerWrapper = document.createElement('div')
 
