@@ -9,7 +9,7 @@ function setArticlesData(data) {
 
             var cardBoxImage = document.createElement('div')
             cardBoxImage.setAttribute("class", "cards__image")
-            cardBoxImage.style.backgroundImage = "url(img/topics-block1.png)"
+            cardBoxImage.style.backgroundImage = "url(img/"+element.image+")"
 
             var cardBoxTheme = document.createElement('div')
             cardBoxTheme.setAttribute("class", "cards__info")
