@@ -1,0 +1,50 @@
+.tox-tinymce{
+    margin: 5rem 10rem;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.tox-promotion, .tox-statusbar__branding{
+    display: none;
+}
+
+.tox-editor-header{
+    margin-bottom: 3rem !important;
+    border: none;
+}
+
+.tox-editor-container{
+    border: none;
+}
+
+.tox .tox-tbtn, .tox .tox-mbtn, .tox .tox-collection__item, .tox .tox-statusbar, .tox .tox-statusbar a, .tox .tox-statusbar__path-item, .tox .tox-statusbar__wordcount{
+    color: #fff !important;
+}
+
+.tox .tox-tbtn svg{
+    fill: #fff !important;
+}
+
+.tox:not(.tox-tinymce-inline) .tox-editor-header, .tox .tox-menubar, .tox .tox-toolbar-overlord, .tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary, .tox .tox-collection--list .tox-collection__item--active, .tox .tox-collection--list .tox-collection__item--enabled,  .tox .tox-edit-area__iframe, .tox .tox-statusbar{
+    background-color: #373737 !important;
+}
+
+.tox .tox-tbtn--bespoke, .tox .tox-menu, .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active), .tox .tox-mbtn--active, .tox .tox-tbtn:hover, .tox .tox-tbtn--enabled, .tox .tox-tbtn:active, .tox .tox-tbtn:focus{
+    background-color: #2b2a2a !important;
+}
+
+.tox .tox-statusbar{
+    border-top: 1px solid #9440D6 !important;
+}
+
+.tox-edit-area{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tox-statusbar{
+    border-radius: 0 0 10px 10px;
+}
+
+.tox-edit-area, .tox-statusbar{
+    border: 1px solid #9440D6 !important;
+}
