@@ -129,6 +129,14 @@
     </div>
 </body>
 
+<script src="js/custom/login/loginVerifier.js"></script>
+<script>
+    if(logado!=1){
+        window.location.href = "login.html"
+    }else if(actualGroupVerifier!="Administrador" || statusVerifier!="ATIVO"){
+        window.location.href = "login.html"
+    }
+</script>
 
 <script src="js/custom/topics/newArticlePage-setTopics.js"></script>
 <script src="js/custom/articles/newArticlePage-setArticlesData.js"></script>
