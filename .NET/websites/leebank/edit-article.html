@@ -55,21 +55,18 @@
             <h3> Criar Artigo</h3>
         </div>
 
-        <div class="pins" id="article-inputs">
-            <div>
-                <input class="pins__input" type="text" placeholder="Título" id="article-title">
-            </div>
-            <div>
-                <input class="pins__input" type="text" placeholder="Sub título" id="article-subtitle">
-            </div>
-            <div>
-                <input class="pins__input" type="text" placeholder="Categoria do artigo" id="article-theme">
-            </div>
-            <div>
+        <div class="pins">
+            <div class="pin__author">
                 <input class="pins__input" type="text" placeholder="Autor do artigo" id="article-author">
             </div>
-            <div>
-                <div>
+            <div class="pin__date">
+                <input class="pins__input" type="date" id="article-date">
+            </div>
+            <div class="pin__category">
+                <input class="pins__input" type="text" placeholder="Categoria do artigo" id="article-theme">
+            </div>
+            <div class="pin__tag-box">
+                <div class="tag__box">
                     <select class="pins__input" id="tags" style="width: 100%;" onchange="criarTag()">
                         <option value="" disabled selected hidden>Escolha...</option>
                     </select>
@@ -79,9 +76,25 @@
 
                 </div>
             </div>
-            <div>
-                <input class="pins__input" type="date" id="article-date">
+        </div>
+
+        <div class="pins__article">
+            <div class="pin__title">
+                <input class="pins__input" type="text" placeholder="Título do artigo" id="article-title">
             </div>
+    
+            <div class="pin__subtitle">
+                <input class="pins__input" type="text" placeholder="Subtítulo do artigo" id="article-subtitle">
+            </div>
+
+            <div class="pin__image">
+                <div class="pins__input">
+                    <img src="img/image-placeholder.svg">
+                    <p>Arquivo para banner do artigo.</p>
+                    <p>Arraste ou faça o download do arquivo aqui!</p>
+                </div>
+            </div>
+    
         </div>
 
         <textarea id="input">

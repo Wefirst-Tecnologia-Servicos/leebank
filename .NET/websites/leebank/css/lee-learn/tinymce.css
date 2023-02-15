@@ -2,6 +2,7 @@
     margin: 5rem 10rem;
     border-radius: 0 !important;
     border: none !important;
+    z-index: -1;
 }
 
 .tox-promotion, .tox-statusbar__branding{
