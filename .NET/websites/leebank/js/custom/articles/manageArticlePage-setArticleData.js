@@ -12,7 +12,10 @@ function setArticlesData(data){
             articleTitleWrapper.setAttribute("class","table__title")
 
             var articleTitleTitle = document.createElement('p');
+            articleTitleTitle.setAttribute("onclick","window.location.href='article.html?articleid="+element.articleid+"'")
+            articleTitleTitle.setAttribute("style","cursor: pointer;")
             articleTitleTitle.innerHTML = "<b>" + element.title + "<b>"
+            
 
             var articleTitleAuthor = document.createElement('p');
             articleTitleAuthor.innerHTML = element.author

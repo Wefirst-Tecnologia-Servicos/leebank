@@ -1,3 +1,5 @@
+var image;
+
 function editarArtigo() {
     var dados = getFormData();
 
@@ -17,11 +19,32 @@ function editarArtigo() {
     if (dados.dados == {}) {
         alert("Nenhum campo preenchido, portanto não será feita nenhuma alteração.")
         return
-    }
-
-    if (emptyFields.length > 0) {
+    }else if (emptyFields.length > 0) {
         alert("Os seguintes campos não serão alterados, pois estão vazios: " + emptyFields);
     }
+
+    if (sessionStorage.getItem("personid") != null) {
+        dados.dados.modifiedby = sessionStorage.getItem("personid");
+    } else if (localStorage.getItem("personid") != null) {
+        dados.dados.modifiedby = localStorage.getItem("personid");
+    }
+    dados.dados.modifiedon = new Date().toISOString().split('T')[0]
+
+    
+    if(image!=""){
+        uploadImage(image,(response)=>{
+            if (response != 0) {
+                delete dados.image
+                alert(response);
+            }else{
+                if(oldImage!="no-picture.jpg" && oldImage != image){
+                    removeImage("img/articleImages/" + oldImage)
+                }
+            }
+        })
+    }
+
+    console.log(dados)
 
     var settings = {
         "url": "https://61i4yuf829.execute-api.us-east-1.amazonaws.com/update/artigo",
@@ -34,7 +57,7 @@ function editarArtigo() {
     };
 
     $.ajax(settings).done(function (data) {
-        alert("Artigo incluído com sucesso")
+        alert("Artigo alterado com sucesso")
         window.location.href = "manage-article.html"
     })
 
@@ -49,6 +72,19 @@ function getFormData() {
 
     articleid = url.searchParams.get("articleid").toString();
 
+    if (document.getElementById('image').files[0]) {
+        var fileExtension = document.getElementById('image').files[0].name.split(".");
+        var validExtensions = ["jpg","png","jpeg","jfif"]
+        if (validExtensions.includes(fileExtension[fileExtension.length - 1].toLowerCase())) {
+            image = "artigo" + articleid + "." + fileExtension[fileExtension.length - 1];
+        } else {
+            alert("A imagem escolhida possui uma extensão inválida, portanto não ira aletrar a imagem atual do artigo")
+            image = "";
+        }
+    } else {
+        image = "";
+    }
+
     var dados = {
         "articleid": articleid,
         dados: {
@@ -56,11 +92,9 @@ function getFormData() {
             "subtitle": document.getElementById('article-subtitle').value,
             "theme": document.getElementById('article-theme').value,
             "content": tinymce.activeEditor.getContent(),
-            "image": "no-picture.jpg",
+            "image": image,
             "author": document.getElementById('article-author').value,
             "articleDate": document.getElementById('article-date').value,
-            "modifiedby": "sistema",
-            "modifiedon": new Date().toISOString().split('T')[0]
         },
         topico: ""
     }

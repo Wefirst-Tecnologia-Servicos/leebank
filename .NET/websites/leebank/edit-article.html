@@ -55,7 +55,7 @@
             <h3> Criar Artigo</h3>
         </div>
 
-        <div class="pins">
+        <div class="pins" id="article-inputs">
             <div class="pin__author">
                 <input class="pins__input" type="text" placeholder="Autor do artigo" id="article-author">
             </div>
@@ -88,7 +88,8 @@
             </div>
 
             <div class="pin__image">
-                <div class="pins__input">
+                <div class="pins__input image-input-div">
+                    <input type="file" id="image" class="input__image">
                     <img src="img/image-placeholder.svg">
                     <p>Arquivo para banner do artigo.</p>
                     <p>Arraste ou faça o download do arquivo aqui!</p>
@@ -182,6 +183,8 @@
 <script src="js/custom/topics/getTopics.js"></script>
 <script src="js/custom/articles/getArticle.js"></script>
 <script src="js/custom/articles/editArticle.js"></script>
+<script src="js/custom/uploadImage/uploadImage.js"></script>
+<script src="js/custom/uploadImage/removeImage.js"></script>
 
 
 <script>

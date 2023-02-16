@@ -71,7 +71,7 @@
                         <option value="" disabled selected hidden>Escolha...</option>
                     </select>
                 </div>
-                
+
                 <div class="pins__tags" id="tags-results">
 
                 </div>
@@ -82,24 +82,25 @@
             <div class="pin__title">
                 <input class="pins__input" type="text" placeholder="Título do artigo" id="article-title">
             </div>
-    
+
             <div class="pin__subtitle">
                 <input class="pins__input" type="text" placeholder="Subtítulo do artigo" id="article-subtitle">
             </div>
 
             <div class="pin__image">
-                <div class="pins__input">
+                <div class="pins__input image-input-div">
+                    <input type="file" id="image" class="input__image">
                     <img src="img/image-placeholder.svg">
                     <p>Arquivo para banner do artigo.</p>
                     <p>Arraste ou faça o download do arquivo aqui!</p>
                 </div>
             </div>
-    
+
         </div>
 
         <textarea id="input">
             Escreva o conteúdo de seu artigo aqui!
-         </textarea>
+        </textarea>
 
         <div class="button-box">
             <button class="button-box__button" onclick="cadastrarArtigo()">Enviar Artigo</button>
@@ -131,9 +132,9 @@
 
 <script src="js/custom/login/loginVerifier.js"></script>
 <script>
-    if(logado!=1){
+    if (logado != 1) {
         window.location.href = "login.html"
-    }else if(actualGroupVerifier!="Administrador" || statusVerifier!="ATIVO"){
+    } else if (actualGroupVerifier != "Administrador" || statusVerifier != "ATIVO") {
         window.location.href = "login.html"
     }
 </script>
@@ -143,27 +144,28 @@
 <script src="js/custom/topics/getTopics.js"></script>
 <script src="js/custom/articles/getArticles.js"></script>
 <script src="js/custom/articles/insertArticle.js"></script>
+<script src="js/custom/uploadImage/uploadImage.js"></script>
 <script>
     var tags = []
 
-    function criarTag(){
+    function criarTag() {
         var selectedTag = document.getElementById('tags').value
 
-        if(!tags.includes(selectedTag)){
+        if (!tags.includes(selectedTag)) {
             tags.push(selectedTag)
 
             var fatherAppends = document.getElementById('tags-results')
 
             var resultBox = document.createElement('div')
-            resultBox.setAttribute("class","pins__tag")
-            resultBox.setAttribute("id","tag-selected-"+selectedTag.replace(/ /g,''))
+            resultBox.setAttribute("class", "pins__tag")
+            resultBox.setAttribute("id", "tag-selected-" + selectedTag.replace(/ /g, ''))
 
             var resultBoxtext = document.createElement('p')
-            resultBoxtext.innerHTML="<b>"+ selectedTag +"</b>"
+            resultBoxtext.innerHTML = "<b>" + selectedTag + "</b>"
 
             var resultBoxImage = document.createElement('img')
-            resultBoxImage.setAttribute("src","img/x-button.svg")
-            resultBoxImage.setAttribute("onclick","removeTag('"+selectedTag+"')")
+            resultBoxImage.setAttribute("src", "img/x-button.svg")
+            resultBoxImage.setAttribute("onclick", "removeTag('" + selectedTag + "')")
 
             resultBox.appendChild(resultBoxtext)
             resultBox.appendChild(resultBoxImage)
@@ -171,14 +173,14 @@
             fatherAppends.appendChild(resultBox)
         }
 
-        document.getElementById('tags').value=""
+        document.getElementById('tags').value = ""
     }
 
-    function removeTag(tagName){
-        if(tags.includes(tagName)){
+    function removeTag(tagName) {
+        if (tags.includes(tagName)) {
             var index = tags.indexOf(tagName)
             tags.splice(index, 1);
-            $('#tag-selected-' + tagName.replace(/ /g,'')).remove();
+            $('#tag-selected-' + tagName.replace(/ /g, '')).remove();
         }
     }
 </script>

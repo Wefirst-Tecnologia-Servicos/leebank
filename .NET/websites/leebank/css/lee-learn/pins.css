@@ -83,3 +83,8 @@
 .pin__image .pins__input p{
     margin-bottom: 0
 }
+
+.image-input-div{
+    position: relative;
+    justify-content: center;
+}

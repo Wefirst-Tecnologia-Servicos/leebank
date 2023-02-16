@@ -1,3 +1,5 @@
+var oldImage;
+
 function setArticleData(data) {
     console.log(data)
 
@@ -6,6 +8,7 @@ function setArticleData(data) {
     document.getElementById('article-theme').value=data.theme
     document.getElementById('article-author').value=data.author
     document.getElementById('article-date').value=new Date(data.articleDate).toISOString().split('T')[0]
+    oldImage = data.image
 
     if(data.modifiedon){
         var fatherAppends = document.getElementById('article-inputs')

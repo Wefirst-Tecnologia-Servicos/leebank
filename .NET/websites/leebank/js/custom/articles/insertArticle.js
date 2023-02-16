@@ -1,3 +1,5 @@
+var image
+
 function cadastrarArtigo() {
     var dados = getFormData();
     console.log(dados)
@@ -30,12 +32,39 @@ function cadastrarArtigo() {
     };
     
     $.ajax(settings).done(function (data) {
+        if(image!="no-image.jpg"){
+            uploadImage(image,(response)=>{
+                if (response != 0) {
+                    alert(response);
+                }
+            })
+        }
         alert("Artigo incluído com sucesso")
         window.location.href = "manage-article.html"
     })
 }
 
 function getFormData() {
+    var personid;
+
+    if (sessionStorage.getItem("personid") != null) {
+        personid = sessionStorage.getItem("personid");
+    } else if (localStorage.getItem("personid") != null) {
+        personid = localStorage.getItem("personid");
+    }
+    
+    if (document.getElementById('image').files[0]) {
+        var fileExtension = document.getElementById('image').files[0].name.split(".");
+        var validExtensions = ["jpg","png","jpeg","jfif"]
+        if (validExtensions.includes(fileExtension[fileExtension.length - 1].toLowerCase())) {
+            image = "artigo" + currentArticleid + "." + fileExtension[fileExtension.length - 1];
+        } else {
+            alert("A imagem escolhida possui uma extensão inválida, portanto não foi carregada")
+            image = "no-image.jpg";
+        }
+    } else {
+        image = "no-image.jpg";
+    }
 
     var dados = {
         artigo: {
@@ -44,10 +73,10 @@ function getFormData() {
             "subtitle": document.getElementById('article-subtitle').value,
             "theme": document.getElementById('article-theme').value,
             "content": tinymce.activeEditor.getContent(),
-            "image": "no-picture.jpg",
+            "image": image,
             "author": document.getElementById('article-author').value,
             "articleDate": document.getElementById('article-date').value,
-            "createdby": "sistema",
+            "createdby": personid,
         },
         topico: []
     }

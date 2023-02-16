@@ -19,7 +19,7 @@ function setArticleData(data){
         articleLI.appendChild(articleP);
         fatherAppend.appendChild(articleLI);
     }
-    document.getElementById('article-image').setAttribute("style","background-image: url(img/"+data.image+");")
+    document.getElementById('article-image').setAttribute("style","background-image: url(img/articleImages/"+data.image+");")
     document.getElementById('article-title').innerHTML = data.title
     document.getElementById('article-author').innerHTML = data.author
     document.getElementById('article-subtitle').innerHTML = data.subtitle

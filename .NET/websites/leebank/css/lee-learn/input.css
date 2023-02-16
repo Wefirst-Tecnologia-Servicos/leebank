@@ -46,3 +46,11 @@
     margin-top: 1rem;
     width: 100%;
 }
+
+.input__image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
