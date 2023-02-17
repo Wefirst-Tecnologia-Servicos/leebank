@@ -14,7 +14,8 @@
     margin: 1rem;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .topics__item p {
@@ -23,13 +24,11 @@
 }
 
 .topics__title {
-    padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
 .topics__banner {
     background-image: url(../../img/topics-banner.png);
-    height: 85vh;
     display: flex;
     align-items: flex-end;
     background-size: 100% 100%;
@@ -41,10 +40,59 @@
     width: 46%;
     margin-top: 1rem;
     margin-bottom: 5rem;
-    margin-left: 6rem;
-
 }
 
-.topics__h1 h1 {
-    font-size: 5rem;
+@media only screen and (max-width: 600px) {
+    .topics {
+        padding: 0;
+    }
+    
+    .topics__title {
+        padding-right: 10rem;
+        padding-left: 1rem;
+    } 
+
+    .topics__item {
+        width: 100vw;
+    }
+
+    .topics__banner {
+        height: 60vh;
+    }
+
+    .topics__h1 h1 {
+        font-size: 2rem;
+    }
+
+    .topics__h1 {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .topics {
+        padding: 0 8rem;
+    }
+
+    .topics__title {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+
+    .topics__item {
+        width: auto;
+    }
+
+    .topics__banner {
+        height: 85vh;
+    }
+
+    .topics__h1 h1 {
+        font-size: 5rem;
+    }
+
+    .topics__h1 {
+        margin-left: 6rem;
+    }
+
 }

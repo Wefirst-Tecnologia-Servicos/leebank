@@ -1,7 +1,3 @@
-.recent {
-    margin: 5rem 10rem;
-}
-
 .recent__box {
     display: flex;
     justify-content: space-between;
@@ -48,6 +44,30 @@
     margin-bottom: 2rem
 }
 
-.recent__link {
-    text-align: end;
+@media only screen and (max-width: 600px) {
+    .recent {
+        margin: 5rem 1rem;
+    }
+
+    .recent__box{
+        display: none;
+    }
+
+    .recent__link {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .recent {
+        margin: 5rem 10rem;
+    }
+
+    .recent__box{
+        display: flex;
+    }
+
+    .recent__link {
+        text-align: end;
+    }
 }

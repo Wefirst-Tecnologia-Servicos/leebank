@@ -1,18 +1,9 @@
-.article{
-    margin-top: 10rem;
-}
-
-.article__time {
-    margin: 0rem 10rem;
-}
-
 .article__time p {
     margin-bottom: 0;
 }
 
 .article__info {
     display: flex;
-    margin: 0rem 10rem;
 }
 
 .article__info p, .article__info ul{
@@ -37,20 +28,8 @@
     padding: 3rem 10rem;
 }
 
-.article__image h1{
-    width: 25%;
-}
-
-.article__author {
-    margin: 1rem 10rem;
-}
-
 .article__text {
-    margin-right: 10rem;
-    margin-left: 10rem;
-    width: 45%;
     text-align: justify;
-    text-indent: 4rem;
     margin-bottom: 10rem;
 }
 
@@ -60,10 +39,6 @@
     margin-bottom: 5rem;
     color: #C0A4D6;
     font-weight: bold;
-
-    margin-right: 10rem;
-    margin-left: 10rem;
-    width: 45%;
 }
 
 .article__paragraph {
@@ -96,10 +71,89 @@
     margin: 1rem;
     background-color: #191818;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0.25rem 3.5rem;
+    padding: 0.25rem 0.75rem;
     text-indent: 0;
 }
 
 .article__tag p {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .article{
+        margin-top: 6rem;
+    }   
+
+    .article__time {
+        margin: 0rem 1rem;
+    }
+
+    .article__info {
+        margin: 0rem 1rem;
+    }
+
+    .article__image{
+        padding: 3rem 1rem;
+    }
+
+    .article__author {
+        margin: 1rem 1rem;
+    }
+
+    .article__first-title {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        width: 80%;
+    }
+
+    .article__text {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: 92%;
+        text-indent: 0rem;
+    }
+
+    .article__image h1{
+        width: 75%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    .article{
+        margin-top: 10rem;
+    } 
+    
+    .article__time {
+        margin: 0rem 10rem;
+    }
+
+    .article__info {
+        margin: 0rem 10rem;
+    }
+
+    .article__image{
+        padding: 3rem 10rem;
+    }
+
+    .article__author {
+        margin: 1rem 10rem;
+    }
+
+    .article__first-title {
+        margin-right: 10rem;
+        margin-left: 10rem;
+        width: 45%;
+    }
+
+    .article__text {
+        margin-right: 10rem;
+        margin-left: 10rem;
+        width: 45%;
+        text-indent: 4rem;
+    }
+
+    .article__image h1{
+        width: 25%;
+    }
 }

@@ -1,12 +1,10 @@
 .footer {
     position: relative;
     display: flex;
-    min-height: 53vh;
     margin-top: 11rem;
 }
 
 .footer__info {
-    margin: 0rem 10rem;
     width: 100%;
     align-self: center;
 }
@@ -28,7 +26,47 @@
 
 .footer__image {
     position: absolute;
-    right: 3vw;
-    top: 0px;
     z-index: -999;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        min-height: 30vh;
+    }
+
+    .footer__info {
+        margin: 0rem 1rem;
+        width: 100%;
+        align-self: center;
+    }
+
+    .footer__image {
+        right: -33vw;
+        top: 45px;
+    }
+
+    .footer__image img{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) {
+    .footer {
+        min-height: 53vh;
+    }
+
+    .footer__info {
+        margin: 0rem 10rem;
+    }
+
+    .footer__image {
+        right: 3vw;
+        top: 0px;
+    }
+
+    .footer__image img{
+        width: initial;
+    }
+    
 }

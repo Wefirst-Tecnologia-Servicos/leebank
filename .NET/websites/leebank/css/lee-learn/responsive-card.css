@@ -1,0 +1,45 @@
+.responsive__card {
+    background-color: #252525;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.responsive__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.responsive__card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+}
+
+.responsive__card-info {
+    justify-content: space-around;
+    width: 65%;
+    padding-top: 0.75rem;
+    padding-left: 0.75rem;
+    display: flex;
+}
+
+.responsive__card-text{
+    padding: 1rem 1.25rem;    
+}
+
+@media only screen and (max-width: 600px) {
+    .responsive-card-box{
+        display: initial;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .responsive-card-box{
+        display: none;
+    }
+}
+

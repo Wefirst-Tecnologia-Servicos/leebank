@@ -4,14 +4,11 @@
 
 .cards__row {
     display: flex;
-    padding: 0 10rem;
 }
 
 .cards__box {
     background-color: rgba(55, 55, 55, 0.3);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
-    margin-right: 2rem;
-    width: 25vw;
     cursor: pointer;
 }
 
@@ -42,4 +39,28 @@
     border:none;
     padding: .4rem 4rem;
     filter: drop-shadow(4px 4px 13px rgba(0, 0, 0, 0.5));
+}
+
+@media only screen and (max-width: 600px) {
+    .cards__row {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    .cards__box {
+        margin: 1rem;
+        width: 95vw;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .cards__row {
+        flex-wrap: nowrap;
+        padding: 0 10rem;
+    }
+
+    .cards__box {
+        margin: 0 2rem 0 0;
+        width: 25vw;
+    }
 }
