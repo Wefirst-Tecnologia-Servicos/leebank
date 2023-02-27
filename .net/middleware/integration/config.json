@@ -1,7 +1,7 @@
 {
   "dbConnection": {
     "mySql": {
-      "host": "201.30.147.96",
+      "host": "34.206.39.235",
       "user": "SDG",
       "password": "SDG",
       "database": "leebank"
